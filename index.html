@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Yan Wu's Portfolio</title>
-    <link rel='stylesheet' href='http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css' />
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../global.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet"/>
 </head>
-
-
 <body>
+<div class="container">
+    <h1>Olympic Medal Count in the 2012 Summer Games</h1>
+    <div class="btn-group">
+        <div class="btn-primary btn" id="year-1900">1900</div>
+        <div class="btn-primary btn" id="year-1960">1960</div>
+        <div class="btn-primary btn" id="year-2012">2012</div>
+        <div class="btn-primary btn" id="year-2016">2016</div>
+    </div>
+    <section class="canvas" id="canvas">
+    </section>
+</div>
 
-<h3>Yan Wu</h3>
+
+<script src="../d3.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
-

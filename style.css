@@ -1,0 +1,14 @@
+.axis .tick line{
+    stroke:#eeeeee;
+}
+.axis .domain{
+    display:none;
+}
+.country rect{
+        fill-opacity:.8;
+}
+
+.btn{
+  background-color: #0011cc;
+  border-color: white;
+}
