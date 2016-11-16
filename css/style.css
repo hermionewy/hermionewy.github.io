@@ -9,6 +9,9 @@ body {
   overflow: hidden;
   background-color: #333;
 }
+.nav_bar{
+  background-color: #333;
+}
 .li_fl{
   float:left;
 }
@@ -94,36 +97,21 @@ i:hover {
 }
 
 .span4 {
-    width: 28%;
+    width: 35%;
     margin: 20px 40px 40px 0px;
     float: left;
 }
-
-.span6{
-  width: 45%;
-  margin: 20px 40px 40px 0px;
-  float: left;
+.span6 {
+    width: 35%;
+    margin: 20px 40px 40px 0px;
+    float: left;
 }
-
-.span4:last-child {
-    margin-right: 0;
-}
-
 .span4 img {
     width: 100%;
     padding: 0 0 10 0px;
 }
-.span6 img{
-  width: 100%;
-  padding: 0 0 10 0px;
-}
 
 .span4 .wrapper {
-    border: 1px solid #ececec;
-    margin: 0 0 10px 0;
-}
-
-.span6 .wrapper {
     border: 1px solid #ececec;
     margin: 0 0 10px 0;
 }
@@ -138,14 +126,8 @@ i:hover {
   color: #646464;
 }
 
-.span6 h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  margin: 0 0 10px 0;
-  padding: 0 5px 0 0;
-  font-size: 17px;
-  line-height: 20px;
-  color: #646464;
+.topic h3{
+  text-align: center;
 }
 
 .span4 p {
@@ -154,11 +136,6 @@ i:hover {
     font-family: 'Abel', sans-serif;
 }
 
-.span6 p {
-    font-size: 16px;
-    font-weight: 200;
-    font-family: 'Abel', sans-serif;
-}
 
 .type {
     font-weight: 100;
@@ -169,5 +146,27 @@ i:hover {
     letter-spacing: 1px;
 }
 
+.thumbnails img {
+		height: 50px;
+		border: 1px solid #EEEEEE;
+		padding: 1px;
+		margin: 0 5px 5px 0;
+	}
 
-}
+	.thumbnails img:hover {
+		border: 1px solid #EEEEEE;
+		cursor:pointer;
+	}
+
+	.preview img {
+		border: 1px solid #EEEEEE;
+		padding: 1px;
+		width: auto;
+    height: 454px;
+	}
+  .gallery{
+    padding-top: 20px;
+  }
+  .preview{
+    padding: 10px 0 10px 0;
+  }
