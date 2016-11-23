@@ -1,0 +1,88 @@
+<head>
+        <style>
+                .topic{
+                        color:#CF2A27}
+                .row{
+                        padding:10px;
+                }
+                #numAlert{
+                        color:#990000;
+                        font-style: italic;
+                        font-size: 9px;
+                }
+                #alertMsg{
+                        font-style: italic;
+                        }
+
+        </style>
+</head>
+
+<body onload="setFocus()">>
+        <h2 class="topic">Get Quote on Painting</h2>
+        <hr>
+        <div class="row">Number of Rooms:
+                <input type="number" id="numField" min="1" max="7" placeholder="1"/>
+                <span id="numAlert"></span>
+        </div>
+
+        <div class="row">
+                <input type="checkbox" id="isCeiling" />
+                Paint Ceiling?
+        </div>
+
+        <div class="row">
+                Needed by:
+                <input type="date" name="needDay" min="2016-11-22" placeholder="2016-11-22" novalidate/>
+        </div>
+        <div class="row">
+                <button type="button" onClick="processForm()">Request Estimate</button>
+
+        </div>
+
+        <div id="alertMsg"></div>
+
+        <script>
+        function setFocus()
+        {
+             document.getElementById("numField").focus();
+        }
+
+        function processForm(){
+          var alertMsg=document.getElementById("alertMsg");
+          var ceiling=document.getElementById("isCeiling").checked;
+          var msg="";
+          var cost=0;
+          var roomNum=document.getElementById("numField").value;
+          var numText=document.getElementById("numAlert");
+          alertMsg.innerHTML="";
+
+          if (roomNum>0 && roomNum<2){
+             cost=400*roomNum;
+             if(ceiling==true){
+                     msg=" with ceiling ";
+                     cost=cost+100*roomNum;}
+             alertMsg.innerHTML="The estimate cost of painting "+roomNum+" room "+msg+" is $"+cost;
+             } else if (roomNum>1 && roomNum<3){
+                cost=400*roomNum;
+                if(ceiling==true){
+                        msg=" with ceiling ";
+                        cost=cost+100*roomNum;}
+                alertMsg.innerHTML="The estimate cost of painting "+roomNum+" rooms "+msg+" is $"+cost;
+              }else if(roomNum >2&& roomNum<9){
+                        cost=400*roomNum*0.9;
+                        if(ceiling==true){
+                        msg=" with ceiling ";
+                        cost=cost+100*roomNum*0.9;
+                        }
+                cost=cost.toFixed(0);
+                alertMsg.innerHTML="The estimate cost of painting "+roomNum+" rooms"+msg+" is $"+cost;
+                } else{
+                        numText.innerHTML="Enter a number between 1 and 8!";
+                        alertMsg.innerHTML="No estimate available!";
+                        return 0;
+                }
+         }
+
+
+        </script>
+</body>

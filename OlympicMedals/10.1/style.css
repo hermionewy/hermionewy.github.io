@@ -1,0 +1,29 @@
+.axis .tick line{
+    stroke:rgb(150,150,150);
+}
+
+.axis .tick line{
+    stroke-width:.5px;
+}
+
+.node{
+    fill:rgb(200,200,200);
+    stroke:white;
+}
+
+.country{
+  fill:rgb(200,200,200)
+}
+h1{
+  font-family: 'Publico', serif;
+}
+.col-md-9{
+  display:block;
+}
+.col-md-3{
+  float:right;
+  margin-top: 70px;
+}
+.dropDown{
+  margin-left: 45px;
+}
