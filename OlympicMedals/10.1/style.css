@@ -18,12 +18,28 @@ h1{
   font-family: 'Publico', serif;
 }
 .col-md-9{
-  display:block;
+  margin:0;
 }
 .col-md-3{
-  float:right;
-  margin-top: 70px;
+  float:left;
+  margin-top: 250px;
+  position: absolute;
 }
+.btn-group{
+  margin-left: 10px;
+}
+
 .dropDown{
-  margin-left: 45px;
+  margin-bottom: 10px;
+  display: block;
+}
+.medalImg{
+  background-color: white;
+  width: 50px;
+}
+.toggle{
+  float:right;
+  position:absolute;
+  margin-top: 680px;
+  margin-left: 820px;
 }

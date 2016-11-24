@@ -7,11 +7,18 @@ var m = {t:50,r:50,b:50,l:50},
 var plot = d3.select('.canvas')
     .append('div').attr('class','col-md-9 serif')
     .append('svg')
-    .attr('width', w + m.l + m.r)
-    .attr('height', 2*h + m.t + m.b)
+    .attr('width', 1.3*w + m.l + m.r)
+    .attr('height', 1.5*h + m.t + m.b)
     .append('g').attr('class','plot')
     .attr('transform','translate('+ m.l+','+ m.t+')');
 
+    var plotTwo = d3.select('.canvas')
+        .append('div').attr('class','col-md-9 serif')
+        .append('svg')
+        .attr('width', w + m.l + m.r)
+        .attr('height', h + m.t + m.b)
+        .append('g').attr('class','plotTwo')
+        .attr('transform','translate('+ m.l+','+ m.t+')');
 //Mapping specific functions
 //Projection
 var projection = d3.geoMercator();
@@ -38,12 +45,12 @@ var scaleXP = d3.scaleLinear()
     .domain([1890,2010])
     .range([0,w]);
 var scaleYP = d3.scaleLinear()
-    .domain([0,500])
+    .domain([0,420])
     .range([h,0]);
 
 var axisY = d3.axisLeft()
     .scale(scaleYP)
-    .tickSize(-w-150);
+    .tickSize(-w);
 var axisX = d3.axisBottom()
     .scale(scaleXP)
     .tickSize(-h);
@@ -92,27 +99,26 @@ d3.queue()
 // draw path
 plot.append('path').attr('class','time-series');
 drawAxis();
+plotTwo.append('path').attr('class','time-series');
 
 var button=d3.select('.btn-group')
     .selectAll('.btn')
     .data(medalsByTopic)
     .enter()
     .append('a')
-    .html(function(d){return d.key})
-    .attr('href','#')
-    .attr('class','btn btn-default')
-    .style('color','white')
-    .style('background',function(d){return scaleColor(d.key)})
-    .style('border-color','white');
+    .append('img')
+    .attr('src',function(d){return '../data/'+d.key+'.png'})
+    .attr('class','medalImg')
+    .style('margin','10px')
+    .style('display','block')
 
  button.on('click',function(d){
         medalsPerYear={};
         medalsPerYear=medalsSort.entries(data.filter(function(data){return data.medal==d.key}));//medalsPerYear.entries(data.filter(function(data){return data.medal==d.key}));
         medalsPerYear.forEach(function(year){
         year.allMedals=d3.sum(year.values,function(d){return d.value})});
-        console.log(medalsPerYear);
+        return medalsPerYear;
       });
-        console.log(medalsPerYear);
 //Dropdown Menu One
 var dropDown=d3.select('.dropDown'),
     options = dropDown.selectAll('option')
@@ -200,10 +206,10 @@ d3.select(this).transition().style('opacity',.7);
 }
     // Draw axis
 function drawAxis(){
-  plot.append('g').attr('class','axis axis-x')
+  plotTwo.append('g').attr('class','axis axis-x')
       .attr('transform','translate(0,'+h+')')
       .call(axisX);
-  plot.append('g').attr('class','axis axis-y')
+  plotTwo.append('g').attr('class','axis axis-y')
       .call(axisY);
 }
 
@@ -213,7 +219,7 @@ var lineGenerator = d3.line()
       .y(function(d){return scaleYP(d.value)})
       .curve(d3.curveCardinal);
 
-  plot.select('.time-series')
+  plotTwo.select('.time-series')
       .datum(d)
       .attr('d',function(d){return lineGenerator(d)})
       .style('fill','none')
@@ -222,7 +228,7 @@ var lineGenerator = d3.line()
 }
 
 function drawNode(node){
-  var node=plot.selectAll('.circle')
+  var node=plotTwo.selectAll('.circle')
     .data(node,function(d){return d.key})
   var nodeEnter = node.enter()//placeholder to all the DOM
     .append('circle').attr('class','circle')
