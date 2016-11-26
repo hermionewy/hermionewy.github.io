@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 300;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y:hidden;
+}
+
+#control {
+    position: absolute;
+    top: 5;
+    right: 10;
+    color: white;
+    font-family: Georgia;
+    font-size: small;
+    padding-left: 20;
+    padding-right: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#bkcard {
+    background-color: rgba(0, 0, 0, .8);
+    /*border-radius: 5px;*/
+    z-index: 0;
+    color: white;
+    overflow-y: scroll;
+}
+
+#bkcard h2 {
+    color: white;
+    padding-left: 20;
+    margin-bottom: 0;
+    font-size: 25;
+}
+
+#bkcard h3 {
+    color: white;
+    padding-left: 20;
+    font-weight: 400;
+}
+
+#bkcard h4 {
+    color: white;
+    padding-left: 20;
+    padding-top: 0;
+}
+
+#bkcard span {
+    color: #c51b8a;
+    padding-left: 5;
+    padding-top: 0;
+    font-size: 20;
+}
+
+#bkcard h5 {
+    color: white;
+    font-size: 10;
+    padding-left: 20;
+    padding-top: 0;
+    font-weight: 300;
+}
+
+#bkcard p {
+    color: white;
+    font-size: 12;
+    padding-left: 20;
+    padding-top: 0;
+    font-weight: 300;
+    padding-right: 20;
+}
+
+#bkcard #credit {
+    font-size: 12;
+}
+
+div.cartodb-searchbox {
+    position: absolute;
+    top: 90;
+    left: 20;
+    z-index: 99 !important;
+}
+
+#switch_off {
+    margin: 15 100 0;
+    position: absolute;
+    left: 50;
+    top: -5;
+    vertical-align: baseline;
+    width: 100;
+    padding: 12;
+    text-align: center;
+    font: bold 12 "Helvetica", Arial;
+    line-height: normal;
+    color: #555;
+    border-radius: 4;
+    border: 1 solid lightgrey;
+    text-decoration: none;
+    cursor: pointer;
+    background: white;
+    box-shadow: 2 2 2 2 darkgrey;
+    outline: none;
+}
+
+#switch_off.selected,
+#switch_off:hover {
+    color: steelblue;
+}
+
+#menu {
+    background: transparent;
+    z-index: 10;
+    padding-left: 20;
+    margin-top: -10;
+
+}
+
+#menu a {
+    margin: 15 10 0 0;
+   /* float: left;*/
+    vertical-align: baseline;
+    width: 125;
+    padding: 10;
+    text-align: center;
+    font: bold 8 "Helvetica", Arial;
+    line-height: normal;
+    color: #555;
+    border-radius: 4;
+    border: 1 solid #777777;
+    background: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu a.selected,
+#menu a:hover {
+    color: steelblue;
+}
+
+path.leaflet-clickable {
+    fill: black;
+    stroke: black;
+    opacity: 1;
+}
+
+#map {
+    z-index: -1;
+}
+
+#power-gauge2 {
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#power-gauge1 g.pointer {
+    fill: white;
+    stroke: lightgrey;
+}
+
+#power-gauge2 g.pointer {
+    fill: white;
+    stroke: lightgrey;
+}
+
+#power-gauge1 g.label text {
+    text-anchor: middle;
+    font-size: 10;
+    font-weight: bold;
+    fill: white;
+}
+
+#power-gauge2 g.label text {
+    text-anchor: middle;
+    font-size: 10;
+    font-weight: bold;
+    fill: white;
+}
+
+#gauges {
+  /*  float: left;*/
+    padding-top: 15;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cartodb-legend{
+    position: absolute;
+    top:0;
+    left: 180;
+    width: 100;
+    background: transparent;
+}
+
+div.cartodb-legend{
+    background:none;
+    border:none;
+    box-shadow: none;
+}
+
+div.cartodb-legend.density li.graph div{
+    width:5;
+}
+
+#inside{
+    margin-top: 20;
+}
+
+#outside{
+    margin-top: 30;
+    color:#c51b8a;
+}
+
+@media (max-width:767) {
+
+#bkcard{
+    position:absolute;
+    bottom:0;
+    height:260;
+    width:100%;
+}
+
+#bkcard h2,p {
+    display:none;
+}
+
+#bkcard h4{
+    font-size: 12;
+}
+
+#inside, #outside, #detect{
+    display:none;
+}
+
+#bkcard #subtitle{
+    margin-bottom: 0;
+    font-size: 16;
+}
+
+#menu{
+    margin-top:10;
+}
+
+#credit{
+    margin-top: 3;
+    margin-bottom: 10;
+}
+
+
+#gauges{
+    padding-top: 0;
+}
+
+}
+
+@media (min-width:768) {
+
+#bkcard{
+    position:absolute;
+    right:0;
+    width: 350;
+    height:100%;
+}
+        }

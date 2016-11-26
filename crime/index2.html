@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=urf-8/>
+  <!--   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=yes' /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>San Francisco Car Break-ins Crime Map</title>
+    <link rel='stylesheet' href='http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css' />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <script src='http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js'></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+    <div id='map'></div>
+    <a id="switch_off" class="button switch_off">HIDE THE CITY LAYER</a>
+
+    <div id="bkcard">
+        <h2>HOW SAFE IS THIS AREA?</h2>
+        <h4 id="subtitle">A <span style ="color:#b2182b">LIVE</span> Boston Burge Map</h4>
+        <h5 id="credit">By Jieqian Zhang</h5>
+        <p><strong>Instructions:</strong> </p>
+        <p>Click on the button below to see the break-ins rate compared to the city average</p>
+        <h4 id="inside">If you are in San Francisco:</h4>
+        <div id='menu' onclick="detectUserLocation()">
+            <a id="">FIND BREAK-INS NEAR YOU</a>
+        </div>
+        <h4 id="outside">If you are outside of San Francisco:</h4>
+        <div id='menu' onclick="exploreCivicCenter()">
+            <a id="detect">EXPLORE AROUND THE CIVIC CENTER</a>
+        </div>
+        <div id="gauges">
+            <h4> The break-ins rate in the circle is <span id="loc_num"> _ </span> times the city average</h4>
+            <div id="power-gauge2"></div>
+            <!-- <h4> City-wide average break-ins: <span id="city_num"></span></h4>
+            <div id="power-gauge1"></div> -->
+            <p><strong>Notes:</strong></p>
+            <p>This tool uses car break-in crime data from the San Francisco Police Department Incident Reporting system. The data behind the map is updated daily. While the full dataset goes back to 2003, this map is set to visualize incidents from the past year.</p>
+            <p> Clicking the "Find break-ins near you" button will show the number of break-ins for a circle with a 100 meter radius (about the size of one block in San Francisco) around your current location, compared to the entire city.</p>
+            <p> Clicking the "Explore around Civic Center" button  will display results  for similar circle around the San Francisco City Hall.</p>
+            <h5>*Built with Socrata API, CartoDB.js, PostGIS and d3.js.</h5>
+        </div>
+    </div>
+
+
+    <script>
+    var map = new L.map('map').setView([37.759272, -122.3593494], 12);
+
+
+    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+
+    var sublayer;
+
+
+    var sql = new cartodb.SQL({
+        user: 'jqzhang',
+        format: 'json'
+    });
+
+
+    cartodb.createLayer(map, {
+            user_name: "jqzhang",
+            type: 'cartodb',
+            sublayers: [{
+                sql: "WITH crimes AS (SELECT * FROM (SELECT *, to_date(date, 'MM/DD/YYYY') AS incdate FROM yvry) AS crimes WHERE incdate >= now() - interval '1 year') SELECT neighborhoods_areas.the_geom_webmercator,neighborhoods_areas.neighborho, (COUNT(crimes.the_geom_webmercator)/neighborhoods_areas.area) / ((SELECT COUNT(cartodb_id) FROM (SELECT * FROM (SELECT *, to_date(date, 'MM/DD/YYYY') AS incdate FROM yvry) AS crimes WHERE incdate >= now() - interval '1 year') AS year_crime)/(SELECT SUM(area) FROM neighborhoods_areas)) AS index FROM neighborhoods_areas, crimes WHERE ST_Contains(neighborhoods_areas.the_geom_webmercator, crimes.the_geom_webmercator) GROUP BY neighborhoods_areas.the_geom_webmercator, neighborhoods_areas.neighborho, neighborhoods_areas.area",
+                cartocss: "#yvry{polygon-fill: #FFFFB2; polygon-opacity: 0.8;line-color: #FFF;line-width: 0.5;line-opacity: 1;}#yvry[index<=8]{polygon-fill: #b2182b;}#yvry[index<=6]{polygon-fill: #ef6962;}#yvry[index<=4]{polygon-fill: #ed8984;}#yvry[index<=2]{polygon-fill: #fadece;}#yvry[index<=1]{polygon-fill: #d9e9e7;}#yvry[index<=0.75]{polygon-fill: #a9e9e0;}#yvry[index<=0.5]{polygon-fill: #5ab4ac;}#yvry[index<=0.25]{polygon-fill: #01665e;}",
+            }]
+        })
+        .addTo(map, 2)
+        .done(function(layer) {
+
+            $("#switch_off").click(function() {
+                if (this.text == "HIDE THE CITY LAYER") {
+                    document.getElementById("switch_off").innerHTML = "SHOW THE CITY LAYER";
+                    layer.getSubLayer(0).hide();
+                } else if (this.text == "SHOW THE CITY LAYER") {
+                    document.getElementById("switch_off").innerHTML = "HIDE THE CITY LAYER";
+                    layer.getSubLayer(0).show();
+                }
+            })
+        })
+        .on('error', function() {
+            //log the error
+        });
+
+
+
+
+
+    // ************************************************************************************* calculate the crime rate per m2 in the entire city  &&&&&  create a buffer and calculate the crime rate within 1 km radius of the user's location *****************************************************************//
+
+
+    // get geolocation from the web-browser
+    function mapToPosition(position) {
+
+        var lon = position.coords.longitude;
+        var lat = position.coords.latitude;
+        map.setView(new L.LatLng(lat, lon), 17);
+        new L.CircleMarker([lat, lon], {
+            radius: 5
+        }).addTo(map);
+
+
+        // create a buffer
+        cartodb.createLayer(map, {
+                user_name: "jqzhang",
+                type: 'cartodb',
+                sublayers: [{
+                    sql: "SELECT ST_Transform(ST_Buffer(CDB_LatLng(" + lat + "," + lon + ")::geography,100)::geometry, 3857) AS the_geom_webmercator, 1 AS cartodb_id",
+                    cartocss: '#yvry{polygon-fill: white; polygon-opacity: 0.2;line-color: black;line-width: 2; line-opacity: 8;}',
+                }]
+            })
+            .addTo(map, 3);
+
+
+        // calculate the (rate/ city_crime_rate) within 100 meter radius of the user
+        sql.execute("WITH crimes AS (SELECT * FROM (SELECT *, to_date(date, 'MM/DD/YYYY') AS incdate FROM yvry) AS crimes WHERE incdate >= now() - interval '1 year'), buffer AS (SELECT ST_Buffer(CDB_LatLng("+ lat + "," + lon + ")::geography,100)::geometry AS the_geom) SELECT COUNT(cartodb_id)/((SELECT ST_AREA(buffer.the_geom::geography) FROM buffer) * ((SELECT COUNT(cartodb_id) FROM (SELECT * FROM (SELECT *, to_date(date, 'MM/DD/YYYY') AS incdate FROM yvry) AS crimes WHERE incdate >= now() - interval '1 year') AS year_crime)/(SELECT SUM(area) FROM neighborhoods_areas))) AS loc_crime_rate FROM crimes, buffer WHERE ST_Intersects(crimes.the_geom, buffer.the_geom)")
+            .done(function(data) {
+
+                var loc_crime_rate = data.rows[0].loc_crime_rate;
+                powerGauge2.update(loc_crime_rate);
+                document.getElementById("loc_num").innerHTML = Math.round(loc_crime_rate * 100) / 100;
+            });
+
+    };
+
+
+    // get geolocation of the Civic Center
+    function locateCivicCenter() {
+        map.setView([37.779272, -122.4193494], 17)
+        new L.CircleMarker([37.779272, -122.4193494], {
+            radius: 5
+        }).addTo(map);
+
+
+        // create a buffer
+        cartodb.createLayer(map, {
+                user_name: "jqzhang",
+                type: 'cartodb',
+                sublayers: [{
+                    sql: "SELECT ST_Transform(ST_Buffer(CDB_LatLng(37.779272, -122.4193494)::geography,100)::geometry, 3857) AS the_geom_webmercator, 1 AS cartodb_id",
+                    cartocss: '#yvry{polygon-fill: white; polygon-opacity: 0.2;line-color: black;line-width: 2; line-opacity: 8;}',
+                }]
+            })
+            .addTo(map, 3);
+
+        //show the points within the buffer
+        cartodb.createLayer(map, {
+                user_name: "jqzhang",
+                type: 'cartodb',
+                sublayers: [{
+                    sql: "SELECT ST_Transform(ST_Buffer(CDB_LatLng(37.779272, -122.4193494)::geography,100)::geometry, 3857) AS the_geom_webmercator, 1 AS cartodb_id",
+                    cartocss: '#yvry{polygon-fill: white; polygon-opacity: 0.2;line-color: black;line-width: 2; line-opacity: 8;}',
+                }]
+            })
+            .addTo(map, 3);
+
+
+        // calculate the (rate/ city_crime_rate) around the civic center
+
+        sql.execute("WITH crimes AS (SELECT * FROM (SELECT *, to_date(date, 'MM/DD/YYYY') AS incdate FROM yvry) AS crimes WHERE incdate >= now() - interval '1 year'), buffer AS (SELECT ST_Buffer(CDB_LatLng(37.779272, -122.4193494)::geography,100)::geometry AS the_geom) SELECT COUNT(cartodb_id)/((SELECT ST_AREA(buffer.the_geom::geography) FROM buffer) * ((SELECT COUNT(cartodb_id) FROM (SELECT * FROM (SELECT *, to_date(date, 'MM/DD/YYYY') AS incdate FROM yvry) AS crimes WHERE incdate >= now() - interval '1 year') AS year_crime)/(SELECT SUM(area) FROM neighborhoods_areas))) AS loc_crime_rate FROM crimes, buffer WHERE ST_Intersects(crimes.the_geom, buffer.the_geom)")
+            .done(function(data) {
+
+                var loc_crime_rate = data.rows[0].loc_crime_rate;
+                powerGauge2.update(loc_crime_rate);
+                document.getElementById("loc_num").innerHTML = Math.round(loc_crime_rate * 100) / 100;
+                console.log(loc_crime_rate);
+
+            });
+
+    };
+
+
+
+    function alertError(error) {
+        mapToPosition({
+            coords: {
+                latitude: 37.779272,
+                longitude: -122.4193494
+            }
+        });
+    }
+
+
+    function detectUserLocation() {
+        if (navigator.geolocation) {
+            var timeoutVal = 10 * 1000 * 1000;
+            navigator.geolocation.getCurrentPosition(
+                mapToPosition,
+                alertError, {
+                    enableHighAccuracy: true,
+                    timeout: timeoutVal,
+                    maximumAge: 0
+                }
+            );
+        } else {
+            alert("Geolocation is not supported by this browser");
+        }
+
+
+    };
+
+    function exploreCivicCenter() {
+                locateCivicCenter();
+    };
+
+
+    </script>
+    <!--  *******************************************************************************************************draw two half gauges**************************************************************************************** this graphic is modified from msqr's block http://bl.ocks.org/msqr/3202712 ************************** -->
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script>
+    var gauge = function(container, configuration) {
+        var that = {};
+        var config = {
+            size: 200,
+            clipWidth: 200,
+            clipHeight: 110,
+            ringInset: 15,
+            ringWidth: 20,
+
+            pointerWidth: 10,
+            pointerTailLength: 7,
+            pointerHeadLengthPercent: 0.9,
+
+            minValue: 0,
+            maxValue: 8,
+
+            minAngle: -90,
+            maxAngle: 90,
+
+            transitionMs: 750,
+
+            majorTicks: 8,
+            labelFormat: d3.format(',g'),
+            labelInset: 10,
+
+            arcColorFn: ["#01665e", "#5ab4ac", "#a9e9e0","#d9e9e7", "#fadece", "#ed8984", "#ef6962", "#b2182b"]
+
+        };
+        var range = undefined;
+        var r = undefined;
+        var pointerHeadLength = undefined;
+        var value = 0;
+
+        var svg = undefined;
+        var arc = undefined;
+        var scale = undefined;
+        var ticks = undefined;
+        var tickData = undefined;
+        var pointer = undefined;
+
+        var donut = d3.layout.pie();
+
+        function deg2rad(deg) {
+            return deg * Math.PI / 180;
+        }
+
+        function newAngle(d) {
+            var ratio = scale(d);
+            var newAngle = config.minAngle + (ratio * range);
+            return newAngle;
+        }
+
+        function configure(configuration) {
+            var prop = undefined;
+            for (prop in configuration) {
+                config[prop] = configuration[prop];
+            }
+
+            range = config.maxAngle - config.minAngle;
+            r = config.size / 2;
+            pointerHeadLength = Math.round(r * config.pointerHeadLengthPercent);
+
+            // a linear scale that maps domain values to a percent from 0..1
+            scale = d3.scale.linear()
+                .range([0,0.125,0.25,0.375,0.5,0.625,0.875,1])
+                // .domain([0,0.125,0.25,0.375,0.5,0.625,0.875,1]);
+                .domain([0,0.25,0.5,0.75,1,1.25,1.5,1.75,2]);
+
+            ticks = scale.ticks(config.majorTicks);
+            tickData = d3.range(config.majorTicks).map(function() {
+                return 1 / config.majorTicks;
+            });
+
+            arc = d3.svg.arc()
+                .innerRadius(r - config.ringWidth - config.ringInset)
+                .outerRadius(r - config.ringInset)
+                .startAngle(function(d, i) {
+                    var ratio = d * i;
+                    return deg2rad(config.minAngle + (ratio * range));
+                })
+                .endAngle(function(d, i) {
+                    var ratio = d * (i + 1);
+                    return deg2rad(config.minAngle + (ratio * range));
+                });
+        }
+        that.configure = configure;
+
+        function centerTranslation() {
+            return 'translate(' + r + ',' + r + ')';
+        }
+
+        function isRendered() {
+            return (svg !== undefined);
+        }
+        that.isRendered = isRendered;
+
+        function render(newValue) {
+            svg = d3.select(container)
+                .append('svg:svg')
+                .attr('class', 'gauge')
+                .attr('width', config.clipWidth)
+                .attr('height', config.clipHeight);
+
+            var centerTx = centerTranslation();
+
+            var arcs = svg.append('g')
+                .attr('class', 'arc')
+                .attr('transform', centerTx);
+
+            arcs.selectAll('path')
+                .data(tickData)
+                .enter().append('path')
+                .attr('fill', function(d, i) {
+                    return config.arcColorFn[i];
+                })
+                .attr('d', arc);
+
+            // var tickvalues = ["","Safer","","","","","",""," More dangerous",""];
+
+            // var lg = svg.append('g')
+            //     .attr('class', 'label')
+            //     .attr('transform', centerTx);
+            // lg.selectAll('text')
+            //     .data(ticks)
+            //     .enter()
+            //     .append('text')
+            //     .attr('transform', function(d) {
+            //         var ratio = scale(d);
+            //         var newAngle = config.minAngle + (ratio * range);
+            //         return 'rotate(' + newAngle + ') translate(0,' + (config.labelInset - r) + ')';
+            //     })
+            //     .text(function(d,i){
+            //         return tickvalues[i];
+            //     });
+
+
+
+            var lineData = [
+                [config.pointerWidth / 2, 0],
+                [0, -pointerHeadLength],
+                [-(config.pointerWidth / 2), 0],
+                [0, config.pointerTailLength],
+                [config.pointerWidth / 2, 0]
+            ];
+            var pointerLine = d3.svg.line().interpolate('monotone');
+            var pg = svg.append('g').data([lineData])
+                .attr('class', 'pointer')
+                .attr('transform', centerTx);
+
+            pointer = pg.append('path')
+                .attr('d', pointerLine /*function(d) { return pointerLine(d) +'Z';}*/ )
+                .attr('transform', 'rotate(' + config.minAngle + ')');
+
+            update(newValue === undefined ? 0 : newValue);
+        }
+        that.render = render;
+
+     // ************************************************************************************** Change to the dual scales **************************************************************************
+
+        function update(newValue, newConfiguration) {
+            if (newConfiguration !== undefined) {
+                configure(newConfiguration);
+            }
+
+            if (newValue < 1){
+
+            var ratio = scale(newValue);
+            var newAngle = config.minAngle + (ratio * range);
+
+            } else if(newValue < 10){
+
+            var newAngle = (newValue - 1) * 90 / 7;
+
+            }
+
+            pointer.transition()
+                .duration(config.transitionMs)
+                .ease('elastic')
+                .attr('transform', 'rotate(' + newAngle + ')');
+        }
+        that.update = update;
+
+        configure(configuration);
+
+        return that;
+    };
+    </script>
+    <script>
+    var powerGauge1;
+    // var powerGauge2;
+
+    function onDocumentReady() {
+
+        powerGauge2 = gauge('#power-gauge2', {
+            size: 180,
+            clipWidth: 180,
+            clipHeight: 120,
+            ringWidth: 30,
+            maxValue: 8,
+            transitionMs: 4000,
+        });
+        powerGauge2.render();
+
+    }
+
+
+    if (!window.isLoaded) {
+        window.addEventListener("load", function() {
+            onDocumentReady();
+        }, false);
+    } else {
+        onDocumentReady();
+    }
+
+    </script>
+
+    <script>
+    function responsive() {
+     width = $(window).width();
+     height = $(window).height();
+    if (width < 768) {
+        map.setView([37.689272, -122.4593494], 11);
+    } else if (width > 768) {
+        map.setView([37.759272, -122.3593494], 12);
+    }
+ }
+
+   $(window).ready(responsive).resize(responsive);
+
+    </script>
+</body>
+
+</html>
