@@ -1,25 +1,82 @@
-.canvas{
-    width:100%;
-    min-height:600px;
+#mapid { width: 720; height: 480px; }
+body {
+   padding: 0;
+   margin: 0;
+}
+html, body, #map {
+   height: 100vh;
+   width: 100vw;
 }
 
-/* tooltip */
-.container{
-    position:relative;
+div.info.leaflet-control{
+  color:white;
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  width:30vw;
+  padding:20px;
+  margin: 0;
 }
-.custom-tooltip{
-    position:absolute;
-    width:180px;
-    min-height:50px;
-    padding:10px 5px;
-    background:white;
-    box-shadow: 0 2px 2px 0px rgba(0,0,0,.1);
-    top:0;
-    left:0;
-    visibility:hidden;
-    opacity:0;
+.dropdown{
+  float: left;
+  position:fixed;
+  top: 100px;
+  margin-right:155px;
+  padding-bottom: 100px;
+  position:fixed;
 }
-    .custom-tooltip .title{
-        font-size:1.2em;
-        font-weight:bold;
-    }
+#helpbutton{
+  float: left;
+  position: fixed;
+  top: 160px;
+  margin-left: 20px;
+  font-size: 8px;
+  color:white;
+  background-color: rgba(0,0,0,.3);
+}
+#crimeOne #crimeTwo #crimeThree #crimeFour{
+  float: left;
+  position: fixed;
+  margin-top: 90px;
+  margin-left: 20px;
+  font-size: 8px;
+}
+#infoBoston{
+  top: 130px;
+  padding-right: 214px;
+  color: white;
+}
+.legend {
+    line-height: 18px;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 1;
+}
+.menu{
+  height: 20vh;
+  width:30vw;
+  float: left;
+  position:fixed;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+.leaflet-bottom .leaflet-right{
+
+}
+div.info.leaflet-control.legend{
+  top: 240px;
+  background-color: rgba(0,0,0,0);
+}
+#note{
+  width: 30vw;
+  padding: 20px;
+  color: white;
+  font-size: 12px;
+  margin-top: 340px;
+}
+#bostonData{
+  color:white;
+}

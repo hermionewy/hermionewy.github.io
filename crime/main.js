@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var map = L.map('map').setView([42.32, -71.03], 12);
+var map = L.map('map').setView([42.18, -71.03], 12);
 var geojson;
 var info = L.control();
 var legend = L.control({position: 'bottomright'});
@@ -129,6 +129,33 @@ var crime = d3.nest()
         .entries(data);
 
 console.log(crime);
+
+var district = d3.nest()
+    .key(function(d) { return d.district; }).sortKeys(d3.ascending)
+    .rollup(function(leaves) { return leaves.length; })
+    .entries(data);
+var districtOrder=district.sort(function(a, b) {
+    return b.value-a.value;
+});
+console.log(districtOrder);
+
+var loc=[{name:'B2' ,location:[42.328255,-71.084109]},
+{name:'C11' ,location:[42.298067,-71.059173]},
+{name:'B3' ,location:[42.284748,-71.091404]},
+{name:'D4' ,location:[42.33957,-71.069355]},
+{name:'A1' ,location:[42.3618,-71.060312]},]
+var percent=[];
+var avg=data.length/12;
+for(var j=0;j<5;j++){
+  percent.push(100*(districtOrder[j].value-avg)/avg);
+};
+loc.forEach(function(d,i){
+  var marker=L.marker(d.location).addTo(map);
+  marker.bindPopup("<b>Boston Police District "+ d.name +"</b><br>The number of crime case is "+ percent[i].toFixed(2) +"% higher than Boston average.").openPopup();
+});
+
+
+
 });
 
 

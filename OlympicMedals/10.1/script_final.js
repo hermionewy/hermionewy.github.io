@@ -128,7 +128,7 @@ var dropDown=d3.select('.dropDown'),
       .text(function(d){return d.key;})
       .attr('value',function(d){return d.allMedals});
 
-    dropDown.on('change',menuChanged)
+    dropDown.on('change',menuChanged);
     function menuChanged(){
       var si   = dropDown.property('selectedIndex'),
           s    = options.filter(function (d, i) { return i === si }),
