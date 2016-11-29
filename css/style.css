@@ -35,12 +35,12 @@ body {
   background-color: #FFFFFF;
 }
 #profile_pic{
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
     position: absolute;
     left:50%;
-    margin-left: -50px;
+    margin-left: -70px;
 }
 
 .intro_text{

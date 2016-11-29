@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var map = L.map('map').setView([42.18, -71.03], 12);
+var map = L.map('map').setView([42.30, -71.08], 12);
 var geojson;
 var info = L.control();
 var legend = L.control({position: 'bottomright'});
