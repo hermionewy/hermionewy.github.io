@@ -1,4 +1,5 @@
 #mapid { width: 720; height: 480px; }
+#map{position: relative; z-index: 0;}
 body {
    padding: 0;
    margin: 0;
@@ -16,13 +17,13 @@ div.info.leaflet-control{
   padding:20px;
   margin: 0;
 }
-.dropdown{
-  float: left;
+#dropdown{
+  float: right;
   position:fixed;
   top: 100px;
+  left:72vw;
   margin-right:155px;
-  padding-bottom: 100px;
-  position:fixed;
+  z-index: 1000;
 }
 #helpbutton{
   float: left;
@@ -36,13 +37,13 @@ div.info.leaflet-control{
 #crimeOne #crimeTwo #crimeThree #crimeFour{
   float: left;
   position: fixed;
-  margin-top: 90px;
+  top: 90px;
   margin-left: 20px;
   font-size: 8px;
 }
 #infoBoston{
   top: 130px;
-  padding-right: 214px;
+  padding-right: 230px;
   color: white;
 }
 .legend {
@@ -60,7 +61,7 @@ div.info.leaflet-control{
   width:30vw;
   float: left;
   position:fixed;
-  margin-top: 70px;
+  top: 70px;
   margin-left: 20px;
 }
 .leaflet-bottom .leaflet-right{
@@ -68,6 +69,7 @@ div.info.leaflet-control{
 }
 div.info.leaflet-control.legend{
   top: 240px;
+  left:12px;
   background-color: rgba(0,0,0,0);
 }
 #note{

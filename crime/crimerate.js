@@ -3,23 +3,16 @@ $(document).ready(function(){
 var map = L.map('map').setView([42.32, -71.03], 12);
 var geojson;
 var sidebar;
+var circleLayer = new L.FeatureGroup();
 var info = L.control();
 var dscp= L.control({position:'bottomright'});
+var colorCircle=['#61b2f4','#f46161','#ff2828','#db8708','#f79b4a'];
+var crimeCatgory = ['Assault','Vandalism','Arson','Theft','Burglary'];
 L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/civzwvota003e2kqraacncehj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
     id: 'mapbox.street',
     attribution: ''
 }).addTo(map);
 
-function getColor(d) {
-    return d > 1.6 ? '#800026' :
-           d > 1.4  ? '#BD0026' :
-           d > 1.2  ? '#E31A1C' :
-           d > 1.0  ? '#FC4E2A' :
-           d > 0.8   ? '#FD8D3C' :
-           d > 0.6   ? '#FEB24C' :
-           d > 0.4   ? '#FED976' :
-                      '#FFEDA0';
-}
 
 function style(feature) {
     return {
@@ -170,24 +163,55 @@ var districtOrder=district.sort(function(a, b) {
 });
 console.log(districtOrder);
 
-// Add dropdown menu
-var dropDown= d3.select('.leaflet-control-container')
-    .append('div').attr('class','leaflet-top leaflet-right')
-    .append('select').attr('class','dropdown');
+//
+data.forEach(function(d){
+  if(d.offenseCode=="Simple Assault"|| d.offenseCode=="Aggravated Assault"|| d.offenseCode=="Indecent Assault"){
+    d.code = 'Assault';
+  }else if (d.offenseCode=='Vandalism'){
+    d.code ='Vandalism';
+  }else if (d.offenseCode=='Arson'){
+    d.code='Arson';
+  }else if(d.offenseCode=='Auto Theft'|| d.offenseCode=='Auto Theft Recovery'){
+    d.code='Theft';
+  }else {
+    d.code='Burglary';
+}
+});
+var fiveCrime = d3.nest()
+        .key(function(d){return d.code})
+        .entries(data);
+console.log(fiveCrime);
 
-    dropDown.selectAll('option')
-    .data(crime)
+// dropdown list
+var dropDown=d3.select('select')
+var options = dropDown
+    .selectAll('option')
+    .data(crimeCatgory)
     .enter()
     .append('option')
-    .text(function(d){return d.key;})
-    .attr('value',function(d){return d.total});
+    .text(function(s){return s;})
 
     dropDown.on('change',menuChanged);
     function menuChanged(){
       var si   = dropDown.property('selectedIndex'),
           s    = options.filter(function (d, i) { return i === si }),
-          data = s.datum();
-      console.log(data);}
+          choice = s.datum();
+          console.log(choice);
+      map.removeLayer(circleLayer);
+      circleLayer = new L.FeatureGroup();
+      for (var j=0; j<5; ) {
+        if (fiveCrime[j].key==choice){
+            fiveCrime[j].values.forEach(function(d){
+             var circles = L.circle(d.location, circleStyle(d.offenseCode));
+             circleLayer.addLayer(circles);
+            })
+            map.addLayer(circleLayer);
+            return fiveCrime[j].key;
+        }else{ j++; }
+      }
+
+    }
+
 
 // Add button to find location
   var button = new L.Control.Button(L.DomUtil.get('helpbutton'), { toggleButton: 'active' });
@@ -196,42 +220,43 @@ var dropDown= d3.select('.leaflet-control-container')
 
 
 //var colorCircle=['#61b2f4','#f46161','#ff2828','#db8708','#f79b4a','#dd0000','#fce82f','#81af2b','#cec0c5'];
-var colorCircle=['#61b2f4','#f46161','#ff2828','#db8708','#f79b4a'];
-var crimeCatgory = ['Assault','Vandalism','Arson','Theft','Others'];
+
 // append cirles as crime cases
-console.log(district.values);
 
 function circleStyle(d){
     if(d=='Simple Assault'|| d=='Aggravated Assault'|| d=='Indecent Assault'){
-      return{color: colorCircle[0],
+      return{
+      color:colorCircle[0],
       fillColor: colorCircle[0],
-      fillOpacity: 0.1,
+      fillOpacity: 0.5,
       radius: 1};
     }else if (d=='Vandalism'){
-      return{color: colorCircle[1],
+      return{
+      color:colorCircle[1],
       fillColor: colorCircle[1],
-      fillOpacity: 0.1,
+      fillOpacity: 0.5,
       radius: 1};
     }else if (d=='Arson'){
-      return{color: colorCircle[2],
+      return{
+        color:colorCircle[2],
       fillColor: colorCircle[2],
-      fillOpacity: 0.1,
+      fillOpacity: 0.5,
       radius: 1};
     }else if(d=='Auto Theft'|| d=='Auto Theft Recovery'){
-      return{color: colorCircle[3],
+      return{color:colorCircle[3],
       fillColor: colorCircle[3],
-      fillOpacity: 0.1,
+      fillOpacity: 0.5,
       radius: 1};
     }else {
-      return{color: colorCircle[4],
+      return{color:colorCircle[4],
       fillColor: colorCircle[4],
-      fillOpacity: 0.1,
+      fillOpacity: 0.5,
       radius: 1};
 }
 }
-data.forEach(function(d){
-  L.circle(d.location, circleStyle(d.offenseCode)).addTo(map);
-});
+// data.forEach(function(d){
+//   L.circle(d.location, circleStyle(d.offenseCode)).addTo(map);
+// });
 
 var colorBox=L.control({position:'bottomright'});
     colorBox.onAdd=function(map){
