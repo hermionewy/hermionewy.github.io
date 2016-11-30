@@ -8,6 +8,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+
 }
 .nav_bar{
   background-color: #333;
@@ -44,19 +45,20 @@ body {
 }
 
 .intro_text{
+
     font-size: 15px;
     line-height: 25px;
 }
 
 .intro_text a{
-    background-color: #F77962;
+    background-color: #d1b559;
     color:white;
     padding-left: 3px;
     padding-right: 3px;
 }
 
 .intro_text a:hover{
-    background-color: #F85A3E;
+    background-color: #ad8c20;
     color:white;
     text-decoration: none;
 }
@@ -72,9 +74,12 @@ body {
 }
 
 .intro_text{
-    font-family: 'Abel', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+p.intro_text{
+  font-family: 'Roboto', sans-serif;
+}
 i {
     color: grey;
 }
@@ -100,6 +105,7 @@ i:hover {
     width: 28%;
     margin: 40px 40px 0px 0px;
     float: left;
+
 }
 .row{
     margin: 0 auto;
@@ -123,7 +129,7 @@ i:hover {
 }
 
 .span4 h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 0 0 10px 0;
   padding: 0 5px 0 0;
@@ -137,12 +143,34 @@ i:hover {
 }
 
 .span4 p {
-    font-size: 16px;
-    font-weight: 200;
-    font-family: 'Abel', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
 }
-
-
+.span4 i {
+  font-style: normal;
+  background-color: #d1b559;
+  color:#ffffff;
+}
+.span6 h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 20px 0 5px 0;
+  padding: 5px 5px 0 0;
+  font-size: 17px;
+  line-height: 20px;
+  color: #646464;
+}
+.span6 p{
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+.span6 i{
+  font-style: normal;
+  background-color: #d1b559;
+  color:#ffffff;
+}
 .type {
     font-weight: 100;
     background-color: #399AD3;
