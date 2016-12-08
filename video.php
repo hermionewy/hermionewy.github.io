@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 
     // create table structure
-    echo "<div class='span6'>";
+    echo "<div class='span6' style='margin-top: 40px; margin-left: 40px; font-family:Arial'>";
     echo "<h3>".$row["vName"]. "</h3>";
     echo "<p>" .$row["vDesp"]. " </p>";
     echo " <iframe width='560' height='315' src=' " . $row["vUrl"] . "'frameborder='0' allowfullscreen></iframe>";
