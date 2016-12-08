@@ -2,6 +2,12 @@ body {
     height: 100%;
     width:100%;
 }
+#ads{
+  position: fixed;
+  top:200px;
+  left:900px;
+  background-color: #eee;
+}
 .nav_details{
   list-style-type: none;
   margin: 0;
@@ -36,14 +42,14 @@ body {
   background-color: #FFFFFF;
 }
 #profile_pic{
-    width: 150px;
-    height: 150px;
-    margin-top: 30px;
-    position: absolute;
-    left:50%;
-    margin-left: -70px;
+  width: 120px;
+height: 120px;
+margin-top: 0px;
+top: 70px;
+position: absolute;
+left: 49%;
+margin-left: -50px;
 }
-
 .intro_text{
 
     font-size: 15px;
@@ -75,6 +81,7 @@ body {
 
 .intro_text{
     font-family: 'Roboto', sans-serif;
+    font-weight:100;
 }
 
 p.intro_text{
@@ -179,7 +186,6 @@ i:hover {
     margin: 0 5px 0 0;
     letter-spacing: 1px;
 }
-
 .thumbnails img {
 		height: 50px;
 		border: 1px solid #EEEEEE;
@@ -189,6 +195,8 @@ i:hover {
 
 	.thumbnails img:hover {
 		border: 1px solid #EEEEEE;
+    height: 52px;
+    padding: 0;
 		cursor:pointer;
 	}
 
@@ -204,3 +212,34 @@ i:hover {
   .preview{
     padding: 10px 0 10px 0;
   }
+
+div.crop.span2.wrapper{
+    width: 15%;
+    float:left;
+    margin: 5px;
+  }
+#logoDes{
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+#uivi{
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+#dataweb{
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.error-message {
+    color: #990000;
+    font-size: 9px;
+    font-style: italic;
+}
+
+.estimate {
+    font-style: italic;
+}

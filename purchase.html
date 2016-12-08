@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Yan, Yan Wu, Data, Visualization, Graphics, Boston, Purchase">
+    <meta name="author" content="Yan Wu">
+    <title>Purchase Yan Wu's Design</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="javascripts/jquery-3.1.1.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/script.js"></script>
+    <script src="javascripts/design.js"></script>
+</head>
+
+<body>
+  <div class="nav_bar">
+    <div id="logo">
+      <img src="images/logo.png" width="48"/>
+    </div>
+    <div class ="nav_choices">
+      <ul class ="nav_details">
+        <li class="li_fl"><a href="index.html">Home</a></li>
+        <li class="li_fl"><a href="data.html">Data & Web</a></li>
+        <li class="li_fl"><a href="design.html">Design</a></li>
+        <li class="li_fl"><a href="stories.html">Stories</a></li>
+        <li class="li_fl"><a href="video.html">Video</a></li>
+        <li class="li_fl"><a href="purchase.html">Purchase</a></li>
+        <li class="li_fl"><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="ads"> <h6>Welcome to Yan's <a href="https://yans-design.myshopify.com/collections/all" target="_blank">Design Class</a></h6></div>
+  <div class="container intro">
+    <div class = "row">
+        <div class="crop span2 wrapper">
+          <img id="logoDes" src="images/logoDes.png" onmouseover="textChange(this)" onmouseout="moveText(this)" alt="Logo"/>
+        </div>
+
+          <div class="crop span2 wrapper">
+          <img id="uivi" src="images/uivi.png" onmouseover="textChange(this)" onmouseout="moveText(this)" alt="UI & VI"/>
+          </div>
+
+            <div class="crop span2 wrapper">
+            <img id="dataweb" src="images/dataweb.png" onmouseover="textChange(this)" onmouseout="moveText(this)" alt=" Data & Web"/>
+            </div>
+            <br />
+      <div class = "row">          <p class="intro_text" id="introOne" > </p>       </div>      <hr>
+      <div class="row">
+      <h2>Estimate Your Cost</h2><br />
+
+
+LOGO Design
+<input id="logoCheck"
+       type="checkbox"/>
+       &nbsp;&nbsp;Estimate Hour:
+       <input id="logoCount"
+              type="number"
+              autofocus
+              min="1"
+              max="20"
+              value="1"/>
+      <span id="errorOne" class="error-message"></span>
+<br/>
+<br/>
+
+UI & VI Design
+<input id="uiviCheck"
+       type="checkbox"/>
+&nbsp;&nbsp;Estimate Hour:
+<input id="uiviCount"
+       type="number"
+       min="5"
+       max="30"
+       value="5"/>
+<span id="errorTwo" class="error-message"></span>
+<br/>
+<br/>
+Web Design
+<input id="webCheck"
+       type="checkbox"/>
+
+&nbsp;&nbsp;Estimate Hour:
+<input id="webCount"
+       type="number"
+       min="20"
+       max="100"
+       value="20"/>
+       <span id="errorThree" class="error-message"></span>
+<br /><br />
+Needed by:
+<input type="date"/>
+<br /><br />
+<img width="100px" src="http://b.fastcompany.net/multisite_files/coexist/imagecache/1280/article_feature/captcha-internet-translate.jpg"/>
+<input id="captcha" type="text"/>
+<br/>
+<br/>
+<button onclick="requestEstimate()">
+    Request Estimate
+</button>
+
+<span id="estimate" class="estimate"></span>
+</div>
+
+<br/>
+<div id="wufoo-zmwyd790ctwrd7" class="row">
+Fill out my <a href="https://hermionewy.wufoo.com/forms/zmwyd790ctwrd7">online form</a>.
+</div>
+<script type="text/javascript">var zmwyd790ctwrd7;(function(d, t) {
+var s = d.createElement(t), options = {
+'userName':'hermionewy',
+'formHash':'zmwyd790ctwrd7',
+'autoResize':true,
+'height':'731',
+'async':true,
+'host':'wufoo.com',
+'header':'show',
+'ssl':true};
+s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+s.onload = s.onreadystatechange = function() {
+var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+try { zmwyd790ctwrd7 = new WufooForm();zmwyd790ctwrd7.initialize(options);zmwyd790ctwrd7.display(); } catch (e) {}};
+var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+})(document, 'script');</script>
+
+
+
+
+  </div>
+
+  </div>
+  <script type="text/javascript" src="http://i0.poll.fm/survey.js" charset="UTF-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    polldaddy.add( {
+      type: 'slider',
+      embed: 'poll',
+      delay: 100,
+      visit: 'single',
+      id: 9601225
+    } );
+  </script>
+  <noscript><a href="http://polldaddy.com/poll/9601225/">What do you think my design?</a></noscript>
+
+</body>
+
+
+</html>

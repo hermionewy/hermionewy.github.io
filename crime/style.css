@@ -4,6 +4,13 @@ body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     font-weight: 300;
 }
+#iframe{
+  position: absolute;
+  top: -95px;
+  left: -25px;
+  width: 1024px;
+  height: 768px;
+}
 
 #map {
     position: absolute;

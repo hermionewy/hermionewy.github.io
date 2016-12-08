@@ -77,6 +77,7 @@ d3.queue()
           .key(function(d){return d.edition}).sortKeys(d3.ascending)
           .rollup(function(leaves) { return leaves.length; });
 
+          console.log(medalsSort);
       var medalsPerYear = medalsSort.entries(data);
       //all medals descending
       medalsPerYear.forEach(function(year){
