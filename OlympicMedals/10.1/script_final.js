@@ -32,7 +32,6 @@ var rate = d3.map();
 
 var scaleColor = d3.scaleLinear().domain([0,300,2000]).range(['#7ddde8', '#edd465', '#ff2a00']);
 
-// bars
 var scaleX = d3.scaleTime()
     .domain([0,19])
     .range([0,w]);
@@ -77,12 +76,14 @@ d3.queue()
           .key(function(d){return d.edition}).sortKeys(d3.ascending)
           .rollup(function(leaves) { return leaves.length; });
 
-          console.log(medalsSort);
+
       var medalsPerYear = medalsSort.entries(data);
       //all medals descending
       medalsPerYear.forEach(function(year){
       year.allMedals=d3.sum(year.values,function(d){return d.value})
     });
+    console.log(medalsPerYear);
+    dropSelected(medalsPerYear);
       /*var medalSequence = medalsPerYear.sort(function(a,b){
             return b.allMedals - a.allMedals;
           })
@@ -114,29 +115,34 @@ var button=d3.select('.btn-group')
     .style('display','block')
 
  button.on('click',function(d){
-        medalsPerYear={};
-        medalsPerYear=medalsSort.entries(data.filter(function(data){return data.medal==d.key}));//medalsPerYear.entries(data.filter(function(data){return data.medal==d.key}));
-        medalsPerYear.forEach(function(year){
-        year.allMedals=d3.sum(year.values,function(d){return d.value})});
-        return medalsPerYear;
+        medalsPY=medalsSort.entries(data.filter(function(data){return data.medal==d.key}));//medalsPerYear.entries(data.filter(function(data){return data.medal==d.key}));
+        medalsPY.forEach(function(a){
+        a.allMedals=d3.sum(a.values,function(d){return d.value})});
+        console.log(medalsPY);
+        //dropSelected(medalsPY);
       });
 //Dropdown Menu One
-var dropDown=d3.select('.dropDown'),
-    options = dropDown.selectAll('option')
-      .data(medalsPerYear)
-      .enter()
-      .append('option')
-      .text(function(d){return d.key;})
-      .attr('value',function(d){return d.allMedals});
+function dropSelected (medalsPY){
+  console.log(medalsPY);
+  var dropDown=d3.select('.dropDown'),
+      options = dropDown.selectAll('option')
+        .data(medalsPY)
+        .enter()
+        .append('option')
+        .text(function(d){return d.key;})
+        .attr('value',function(d){return d.allMedals});
 
-    dropDown.on('change',menuChanged);
-    function menuChanged(){
-      var si   = dropDown.property('selectedIndex'),
-          s    = options.filter(function (d, i) { return i === si }),
-          data = s.datum();
-      console.log(data);
-      drawPath(data.values);
-      drawNode(data.values);
+        menuChanged();
+      dropDown.on('change',menuChanged);
+      function menuChanged(){
+        var si   = dropDown.property('selectedIndex'),
+            s    = options.filter(function (d, i) { return i === si }),
+            data = s.datum();
+        drawPath(data.values);
+        drawNode(data.values);
+}
+
+
     }
 
         // append path
@@ -215,6 +221,7 @@ function drawAxis(){
 }
 
 function drawPath(d){
+  console.log(d);
 var lineGenerator = d3.line()
       .x(function(d){return scaleXP(d.key)})
       .y(function(d){return scaleYP(d.value)})
@@ -225,10 +232,11 @@ var lineGenerator = d3.line()
       .attr('d',function(d){return lineGenerator(d)})
       .style('fill','none')
       .style('stroke-width','2px')
-      .style('stroke','gray');
+      .style('stroke','#00ccff');
 }
 
 function drawNode(node){
+  console.log(node);
   var node=plotTwo.selectAll('.circle')
     .data(node,function(d){return d.key})
   var nodeEnter = node.enter()//placeholder to all the DOM
@@ -237,8 +245,8 @@ function drawNode(node){
     .attr('cx',function(d){return scaleXP(d.key)})
     .attr('cy',function(d){return scaleYP(d.value)})
     .attr('r',3)
-    .style('fill','red')
-    .style('fill-opacity',.75);
+    .style('fill','#ff9933')
+    .style('fill-opacity',.70);
 
     node.exit().remove();
 
@@ -256,28 +264,7 @@ function drawNode(node){
         .on('mouseleave',mouseLeave)
 
 }
-    // draw bars function
-function draw(d){
-  var nodes = plot.selectAll('.bars')
-      .data(d)
-      .enter()
-      .append('g')
-      .attr('class','bars')
-      .attr('transform', function(d,i){
-        return 'translate('+ scaleX(i) +',0)';
-      });
 
-      nodes.append('g')
-      .append('rect')
-      .attr('y', function(d){ return scaleY(d.value);})
-      .attr('width', 20)
-      .attr('height', function(d){return h-scaleY(d.value);});
-
-      nodes.append('text')
-      .attr('y',h+20)
-      .attr('text-anchor','right')
-      .text(function(d){return d.key;});
-    }
 
 function parseData(d){
   return {
