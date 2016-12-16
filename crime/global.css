@@ -25,15 +25,35 @@ div.info.leaflet-control{
   margin-right:155px;
   z-index: 1000;
 }
+
+#infoBoston{
+  top: 130px;
+  left: 72vw;
+  color: white;
+}
+
 #helpbutton{
-  float: left;
   position: fixed;
-  top: 160px;
+  top: 150px;
   margin-left: 20px;
   font-size: 8px;
   color:white;
   background-color: rgba(0,0,0,.3);
 }
+#infoOutside{
+  top: 195px;
+  left: 72vw;
+  color: white;
+}
+#buttonExpl{
+position: fixed;
+top: 215px;
+margin-left: 20px;
+font-size: 8px;
+color: white;
+background-color: rgba(0, 0, 0, .3);
+}
+
 #crimeOne #crimeTwo #crimeThree #crimeFour{
   float: left;
   position: fixed;
@@ -41,11 +61,7 @@ div.info.leaflet-control{
   margin-left: 20px;
   font-size: 8px;
 }
-#infoBoston{
-  top: 130px;
-  padding-right: 230px;
-  color: white;
-}
+
 .legend {
     line-height: 18px;
 }
@@ -68,7 +84,7 @@ div.info.leaflet-control{
 
 }
 div.info.leaflet-control.legend{
-  top: 240px;
+  top: 270px;
   left:12px;
   background-color: rgba(0,0,0,0);
 }

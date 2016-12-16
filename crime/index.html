@@ -17,17 +17,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/leaflet-pip@latest/leaflet-pip.js"></script>
 <script src="crimerate.js"></script>
-<style>
-</style>
+
 </head>
 
 <body>
   <select id="dropdown">  </select>
 <div id="map"></div>
-<div class="menu leaflet-top leaflet-right">
-</div>
 <div class="leaflet-top leaflet-right" id="infoBoston">If you are in Boston:</div>
-<div id='note' class="leaflet-top leaflet-right" id="infoBoston">
+<div id="note" class="leaflet-top leaflet-right">
   <hr>
   <h5>Note:</h5><br />
   This graph shows crime incidents of theft, assault, vandalism, etc. happend in Boston from January 1st, 2016 to November 26th, 2016.<br/>
@@ -35,9 +32,9 @@
   Every circle shows a crime case happened in the exact location in Boston.
 </div>
 <button id="helpbutton" role="button" class="btn">Find Crime Cases near you</button>
-
+<div class="leaflet-top leaflet-right" id="infoOutside">If you are not in Boston:</div>
+<button id="buttonExpl" role="button" class="btn" >Explore the Crime Cases</button>
 <script>
-
 
 
 </script>

@@ -8,6 +8,7 @@ var info = L.control();
 var dscp= L.control({position:'bottomright'});
 var colorCircle=['#ff2828','#f99c11','#e8c320','#12b586','#796eef'];
 var crimeCatgory = ['Assault','Vandalism','Arson','Theft','Burglary'];
+var popup = L.popup();
 L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/civzwvota003e2kqraacncehj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
     id: 'mapbox.street',
     attribution: ''
@@ -17,17 +18,17 @@ L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/civzwvota003e2kqraacnce
 function style(feature) {
     return {
         //fillColor: getColor(feature.properties.UnempRatio),
-        fillColor:'#eee',
-        weight: 1,
-        opacity: 0.2,
-        color: 'white',
+        fillColor:'#555',
+        weight: 4,
+        opacity: 1,
+        color: '#aaa',
         dashArray: '3',
         fillOpacity: 0
     };
 }
 
 function onLocationFound(e) {
-    var radius = e.accuracy;
+    var radius = 100;
 
     L.marker(e.latlng).addTo(map)
         .bindPopup("Within " + radius + " meters from your location.").openPopup();
@@ -48,11 +49,8 @@ function locate(){
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
 }
-function onEachFeature(feature, layer) {
-    layer.on({
-        //click: zoomToFeature
-    });
-}
+
+
 
 d3.queue()
     .defer(d3.json, 'data/bos_neighborhoods.json')
@@ -76,11 +74,6 @@ d3.queue()
         'E18':[Hyde Park]
       }*/
 
- geojson = L.geoJson(geo, {
-        style: style,
-        onEachFeature: onEachFeature
-    }).addTo(map);
-
 
 
     info.onAdd = function (map) {
@@ -93,10 +86,9 @@ function highlightFeature(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 2,
-        color: '#666',
-        dashArray: '',
-        fillOpacity: 0
+        weight: 5,
+        color: '#ccc',
+        fillOpacity: 0.2
     });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -115,13 +107,14 @@ function zoomToFeature(e) {
 }
 function onEachFeature(feature, layer) {
     layer.on({
+        highlightFeature,
         mouseover:highlightFeature,
         mouseout: resetHighlight,
-        //click: zoomToFeature
+        click: zoomToFeature
     });
 }
 
-// method that we will use to update the control based on feature properties passed
+// method that I will use to update the control based on feature properties passed
   info.update = function (props) {
     this._div.innerHTML = '<h4>Boston Crime Cases in 2016</h4>' +  (props ?
         '<b>' + props.Name + '</b><br />'
@@ -191,6 +184,7 @@ var options = dropDown
     .append('option')
     .text(function(s){return s;})
 
+    menuChanged();
     dropDown.on('change',menuChanged);
     function menuChanged(){
       var si   = dropDown.property('selectedIndex'),
@@ -204,6 +198,7 @@ var options = dropDown
             fiveCrime[j].values.forEach(function(d){
              var circles = L.circle(d.location, circleStyle(d.offenseCode));
              circleLayer.addLayer(circles);
+             circles.bindPopup(d.date);
             })
             map.addLayer(circleLayer);
             return fiveCrime[j].key;
@@ -219,6 +214,14 @@ var options = dropDown
   button.on('click',locate);
 
 
+  var buttonTwo = new L.Control.Button(L.DomUtil.get('buttonExpl'), { toggleButton: 'active' });
+  buttonTwo.addTo(map);
+  buttonTwo.on('click',function(){
+    geojson = L.geoJson(geo, {
+           style: style,
+           onEachFeature: onEachFeature
+       }).addTo(map);
+  });
 //var colorCircle=['#61b2f4','#f46161','#ff2828','#db8708','#f79b4a','#dd0000','#fce82f','#81af2b','#cec0c5'];
 
 // append cirles as crime cases
