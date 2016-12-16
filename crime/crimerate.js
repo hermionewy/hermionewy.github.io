@@ -6,7 +6,7 @@ var sidebar;
 var circleLayer = new L.FeatureGroup();
 var info = L.control();
 var dscp= L.control({position:'bottomright'});
-var colorCircle=['#ff2828','#f99c11','#e8c320','#12b586','#796eef'];
+var colorCircle=['#ff2828','#f99c11','#ff00e1','#796eef','#0054d3'];
 var crimeCatgory = ['Assault','Vandalism','Arson','Theft','Burglary'];
 var popup = L.popup();
 L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/civzwvota003e2kqraacncehj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
