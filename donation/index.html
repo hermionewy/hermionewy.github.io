@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+
+    <!-- METADATA -->
+    <title>Game: How to be a writer - Los Angeles Times</title>
+
+        <meta charset="utf-8" />
+        <meta name="description" content="
+Aspiring writers often ask established authors, "How did you do it?" The truth is that there is no single path to literary success. We sent a nonscientific survey to writers participating in the Los Angeles Times Festival of Books: Did they keep a diary as a child? Did they ever have a book rejected? Did they earn a living from writing? We tabulated more than 200 responses to make a board game. Roll a die and see where the writing life takes you.
+" />
+        <meta name="keywords" content="data desk, los angeles times, latimes, l.a. times" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="http://d1qqc1e9kvmdh8.cloudfront.net/img/favicon.ico">
+        <link rel="publisher" href="https://plus.google.com/u/0/112727226361732924638" />
+        <meta name="google-site-verification" content="a9pAUAoFTyj7Nut3H5OiQ-fUyyqdwdVT7VcFGICrpTo" />
+
+    <meta name="robots" content="" />
+    <meta property="og:title" content="Are you William Shakespeare or Ayn Rand? Play our interactive How to Be A Writer game"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://graphics.latimes.com/how-to-be-a-writer/"/>
+    <meta property="og:image" content="http://graphics.latimes.com/static/img/writer-game-tease.jpg"/>
+    <meta property="og:site_name" content="graphics.latimes.com"/>
+    <meta property="og:description" content="Aspiring writers often ask established authors, &quot;How did you do it?&quot; The truth is that there is no single path to literary success. We sent a nonscientific survey to writers participating in the Los Angeles Times Festival of Books: Did they keep a diary as a child? Did they ever have a book rejected? Did they earn a living from writing? We tabulated more than 200 responses to make a board game. Roll a die and see where the writing life takes you."/>
+    <meta property="fb:admins" content="1257725335"/>
+    <meta property="fb:app_id" content="171740782909828" />
+
+    <meta property="twitter:site" content="@latimesbooks" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://graphics.latimes.com/how-to-be-a-writer/" />
+    <meta property="twitter:title" content="Are you William Shakespeare or Ayn Rand? Play our interactive How to Be A Writer game" />
+    <meta property="twitter:description" content="Aspiring writers often ask established authors, &quot;How did you do it?&quot; The truth is that there is no single path to literary success. We sent a nonscientific survey to writers participating in the Los Angeles Times Festival of Books: Did they keep a diary as a child? Did they ever have a book rejected? Did they earn a living from writing? We tabulated more than 200 responses to ..." />
+    <meta property="twitter:image" content="http://graphics.latimes.com/static/img/writer-game-tease.jpg" />
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" type="text/css" href="http://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-0.0.18.css" />
+
+
+
+    <style type="text/css">
+
+        circle {
+          fill: #d07333;
+          stroke: #fff;
+          stroke-width: 3px;
+          opacity: 0.8;
+        }
+
+        .move_path {
+          stroke: red;
+          opacity: 0.5;
+          stroke-width: 5px;
+          /*visibility: hidden;*/
+        }
+
+        #top_area_container {
+          display: block;
+          height: 72px;
+        }
+
+        #top_area {
+          border-radius: 10px;
+          width: 940px;
+          height: 78px;
+          border: 1px solid #eeeeee;
+        }
+
+        #top_area p {
+          margin: 0 0 0 60px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        #roll_area {
+          float: left;
+
+        }
+
+        #roll_message {
+          float: left;
+          height: 70px;
+          margin: 16px 20px 0 0;
+        }
+
+        #space_message {
+          float: left;
+          margin: 24px 0 0 0;
+          line-height: 100%;
+          font-size: 22px;
+          max-width: 600px;
+        }
+
+        #total_points {
+          float: right;
+          padding: 5px 10px;
+          color: #eeeeee;
+          background: #555555;
+          height: 68px;
+          border-radius: 0px 10px 10px 0px;
+        }
+
+        #total_points h4 {
+          font-size: 20px;
+          margin: 0 0 10px;
+          font-weight: normal;
+          color: #eeeeee;
+        }
+
+        #total_points #point_count {
+          text-align: center;
+          font-size: 40px;
+          font-weight: bold;
+        }
+
+        #die {
+          cursor: pointer;
+          margin: 5px 10px 0 5px;
+          float: left;
+        }
+
+        #roll_message {
+          line-height: 40px;
+          padding: 0 0 0 10px;
+          vertical-align: top;
+        }
+
+        #die {
+          display: inline-block;
+          background: url(/static/img/die-animation.gif) 0 0 no-repeat;
+          width: 58px;
+          height: 60px;
+        }
+
+        #show_path {
+          cursor: pointer;
+        }
+
+      .sticky {
+          position: fixed;
+          top: 0px;
+          background: #ffffff;
+          border: none !important;
+          border-radius: 0px 0px 10px 10px !important;
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+      }
+
+      .sticky #total_points {
+        border-radius: 0px 0px 10px 0px;
+      }
+
+      #gameboard {
+          clear: both;
+      }
+
+      #end_container {
+        text-align: center;
+      }
+
+      #end_container h2 {
+        text-align: left;
+      }
+
+      #end_container i {
+          padding: 10px;
+          display: inline-block;
+          cursor: pointer;
+          font-size: 30px;
+      }
+
+      #end_container i.LATTwitter:hover {
+        color: #2CAAE1 !important;
+      }
+
+      #end_container i.LATFacebook:hover {
+        color: #3B59B6 !important;
+      }
+
+      #end_container .sharebuttons {
+        display: inline-block;
+
+      }
+
+      #end_container .sharebuttons .sharebuttons_submenu {
+        left: 0;
+        margin-top: -46px;
+      }
+
+      #end_container a {
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        background: #282828;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      #end_message {
+        margin: 0 0 20px;
+      }
+
+      #end_container a#share_score {
+        margin: 0 20px 0 0;
+        width: 170px;
+      }
+
+      #end_container a#share_score:before {
+        content: none;
+      }
+
+      .graphicCredit {
+        clear: both;
+      }
+
+
+      #end_container a:hover {
+        color: #ffffff;
+        background: #666666;
+        text-decoration: none;
+      }
+
+      #player_piece {
+        cursor: pointer;
+      }
+
+      #player_piece:hover {
+        opacity: 0.4;
+      }
+
+    </style>
+
+
+    <!-- JAVASCRIPT -->
+
+
+    <!--[if lt IE 9]>
+          <script type="text/javascript" src="http://d1qqc1e9kvmdh8.cloudfront.net/js/html5shiv.js"></script>
+     <![endif]-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="http://d1qqc1e9kvmdh8.cloudfront.net/js/underscore-1.5.2-min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3__DtSKSbXYhP8sIktzK9JpdlsamQDyMMY2b-8HnY2yXO2rNPXmUqNbpeL2SWdyKfZ"></script>
+    <script type="text/javascript" src="http://d1qqc1e9kvmdh8.cloudfront.net/js/ngux-tophat-0.2.2.min.js"></script>
+    <!--[if lte IE 7]><script type="text/javascript" src="http://d1qqc1e9kvmdh8.cloudfront.net/js/icons-ie7.js"></script><![endif]-->
+    <script type="text/javascript" src="http://d1qqc1e9kvmdh8.cloudfront.net/js/ngux-ads-2.4.1.min.js"></script>
+
+
+
+    <script src="/static/js/d3.v3.min.js"></script>
+    <script src="/static/js/modernizr-2.6.2.js"></script>
+
+
+
+</head>
+<body data-ad-path="4011/trb.latimes/news/datadesk" data-ad-ptype="s" data-ad-iframe-url="/static/ngux-tophat-ad-iframe.html" >
+    <!-- NAV -->
+
+    <div id="tophat-container">
+        <div id="tophat" class="tophat-small">
+            <span id="tophat-dropdown" class="tophat-dropdown-small">
+                <hr />
+                <hr />
+                <hr />
+            </span>
+            <a id="tophat-logo" href="http://www.latimes.com/"></a>
+            <div id="tophat-title">
+            </div>
+            <div class="tophat-links">
+                <ul>
+    <li>
+        <a href="http://www.latimes.com/local">Local</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/sports">Sports</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/entertainment">Entertainment</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/nation">Nation</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/world">World</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/business">Business</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/opinion">Opinion</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/style">Lifestyle</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/travel">Travel</a>
+    </li>
+    <li>
+        <a href="http://www.latimes.com/visuals">Photos & Video</a>
+    </li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CONTENT GOES HERE -->
+    <div class="container" id="container">
+
+            <aside title="Advertisement" class="banner-ad">
+    <div class="tophat-banner-container">
+        <div class="tophat-banner">
+            <div class="advert"></div>
+            <span class="tophat-ad-label">ADVERTISEMENT</span>
+        </div>
+    </div>
+</aside>
+
+
+
+
+    <div class="sharebuttons"
+
+
+
+    >
+    <div class="sharebuttons_submenu">
+        <i class="LATPinterest" data-socialshare-type="pinterest"></i>
+        <i class="LATGooglePlus" data-socialshare-type="googleplus"></i>
+        <i class="LATLinkedIn" data-socialshare-type="linkedin"></i>
+        <i class="LATStumbleUpon" data-socialshare-type="stumbleupon"></i>
+        <i class="LATDigg" data-socialshare-type="digg"></i>
+    </div>
+    <i class="LATFacebook" data-socialshare-type="facebook"></i>
+    <i class="LATTwitter" data-socialshare-type="twitter" ></i>
+    <i data-triggered="false" class="LATShare" data-socialshare-type="shareParent"></i>
+    <i class="LATEmail" data-socialshare-type="email"></i>
+    <i class="LATPrinter" data-socialshare-type="print"></i>
+    <div class="clear"></div>
+</div>
+
+    <h1>How to be a writer</h1>
+    <p class="byline">
+        By <span class="author"><a href="mailto:paul.duginski@latimes.com">Paul Duginski</a>, <a href="mailto:jon.schleuss@latimes.com">Jon Schleuss</a>, <a href="mailto:Joy.Press@latimes.com">Joy Press</a></span> and <span class="author"><a href="mailto:Carolyn.Kellogg@latimes.com">Carolyn Kellogg</a></span>
+    </p>
+
+    <p>Aspiring writers often ask established authors, "How did you do it?" The truth is that there is no single path to literary success. We sent a nonscientific survey to writers participating in the <a href="http://www.latimes.com/festivalofbooks2014/" target="_blank">Los Angeles Times Festival of Books</a>: Did they keep a diary as a child? Did they ever have a book rejected? Did they earn a living from writing? We tabulated more than 200 responses to make the board game below. Roll a die and see where the writing life takes you.</p>
+
+    <div id="top_area_container">
+      <div id="top_area">
+        <div id="roll_area">
+            <div id="die" class="die_select"></div>
+        </div>
+
+        <h2 id="roll_message" class="die_select">Roll die to begin</h2>
+        <h3 id="space_message"></h3>
+
+        <div id="total_points">
+            <h4>Total</h4>
+            <div id="point_count">0</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="game_board_container"></div>
+
+
+    <div id="end_container">
+
+      <div class="sharebuttons">
+          <div class="sharebuttons_submenu">
+              <i class="LATFacebook" data-socialshare-type="facebook"></i>
+              <i class="LATTwitter" data-socialshare-type="twitter" ></i>
+              <i class="LATGooglePlus" data-socialshare-type="googleplus"></i>
+              <i class="LATEmail" data-socialshare-type="email"></i>
+              </div>
+
+          <!-- <i data-triggered="false" class="LATShare" data-socialshare-type="shareParent"></i> -->
+              <a id="share_score" data-triggered="false" class="LATShare" data-socialshare-type="shareParent">Share score</a>
+
+          <div class="clear"></div>
+      </div>
+
+      <!-- <i class="LATFacebook" data-socialshare-type="facebook"></i>
+      <i class="LATTwitter" data-socialshare-type="twitter" ></i> -->
+      <a id="play_again">Play again</a>
+    </div>
+
+    <p class="graphicCredit">
+      Written/researched by <a href="mailto:joy.press@latimes.com">Joy Press</a> and <a href="mailto:carolyn.kellogg@latimes.com">Carolyn Kellogg</a><br />
+      Illustrations by <a href="mailto:paul.duginski@latimes.com">Paul Duginski</a><br />Programming by <a href="mailto:jon.schleuss@latimes.com">Jon Schleuss</a></p>
+
+    <script type="text/javascript">
+
+      // Modernizer stuff
+      var fallBackImg = "/static/img/author-game-board-fallback.jpg";
+      if (Modernizr.svg){  // script tests for svg functionality
+
+
+        var spaceInfo = [
+              {"space":0,"text":"Start","points":0,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":1,"text":"Learn to read Dr. Seuss","points":5,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":2,"text":"Get library card\nADVANCE 2","points":0,"move":2,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":3,"text":"Read","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":4,"text":"Start a diary","points":5,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":5,"text":"Write","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":6,"text":"Decide to be a writer","points":10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":7,"text":"Read a life-changing book\nADVANCE 1","points":5,"move":1,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":8,"text":"Read","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":9,"text":"Poem published in school paper","points":2,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":10,"text":"Story rejected by lit mag\nGO BACK 2","points":-2,"move":-2,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":11,"text":"Take job in bookstore","points":2,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":12,"text":"Write","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":13,"text":"Get creative writing MFA ","points":10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":14,"text":"MFA loans are due\nGO BACK 3","points":-10,"move":-3,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":15,"text":"Get agent: Andrew Wylie!","points":10,"move":0,"hidden_text":"Wylie is the most powerful agent in publishing, so fearsome that he is known as the Jackal.","h_top":"1200px","h_left":"10px"},
+              {"space":16,"text":"Revise","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":17,"text":"Publish in Zyzzyva\nADVANCE 1","points":2,"move":1,"hidden_text":"Founded in 1985, San Francisco-based literary magazine <a href=\"http://www.zyzzyva.org/about/zyzzyvas-100th-issue-celebration/\" target=\"_blank\">Zyzzyva</a> will publish its 100th issue in May.","h_top":"1230px","h_left":"10px"},
+              {"space":18,"text":"Write","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":19,"text":"Take writing class with James Franco ","points":2,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":20,"text":"Manuscript rejected\nGO BACK 2 ","points":-5,"move":-2,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":21,"text":"Self-publish e-book\nADVANCE 1","points":2,"move":1,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":22,"text":"Guest edit a lit mag","points":2,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":23,"text":"Revise","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":24,"text":"Book deal! ","points":10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":25,"text":"Celebrate","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":26,"text":"First book tour","points":2,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":27,"text":"Fall into Twitter hole","points":-5,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":28,"text":"Go to Yaddo writer's retreat\nADVANCE 2","points":2,"move":2,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":29,"text":"Write","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":30,"text":"Complete second book draft","points":0,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":31,"text":"Lose manuscript in computer crash","points":-10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":32,"text":"Weep","points":-1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":33,"text":"Crisis of confidence","points":-5,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":34,"text":"Take adjunct job, teach 5 classes","points":2,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":35,"text":"Teach","points":0,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":36,"text":"Grade","points":0,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":37,"text":"Writers block\nGO BACK 1","points":0,"move":-1,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":38,"text":"Write","points":1,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":39,"text":"Finish new draft\nADVANCE 2","points":0,"move":2,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":40,"text":"Manuscript rejected\nGO BACK 1","points":-5,"move":-1,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":41,"text":"Revise","points":0,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":42,"text":"Book deal! ","points":10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":43,"text":"Gary Shteyngart blurbs your book\nADVANCE 1","points":2,"move":1,"hidden_text":"Shteyngart's clever aphorisms have made him the king of book blurbs. \"Not since Tolstoy's 'Anna Karenina' has there been a novel about shopping with so much verve and panache,\" he recently improvised about no book in particular.","h_top":"1650px","h_left":"450px"},
+              {"space":44,"text":"Accept tenured MFA job","points":5,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":45,"text":"Finalist for L.A. Times Book Prize!","points":2,"move":0,"hidden_text":"The <a href=\"http://events.latimes.com/festivalofbooks/bookprizes/\" target=\"_blank\">L.A. Times Book Prizes</a> were first awarded in 1980.","h_top":"1700px","h_left":"500px"},
+              {"space":46,"text":"Writer's block","points":-2,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":47,"text":"Hit bestseller list","points":10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":48,"text":"Surprise! MacArthur \"Genius\" Fellowship","points":5,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":49,"text":"Scorsese makes a movie from your book","points":20,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":50,"text":"James Wood pans  your book\nGO BACK 4","points":-5,"move":-4,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":51,"text":"Win a National Book Award","points":5,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":52,"text":"Write essay on the death of the book","points":-10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":53,"text":"Leave your archives to the Ransom Center","points":5,"move":0,"hidden_text":"The Harry Ransom Center in Austin, Texas, holds the preeminent literary archive of writers from the 20th and 21st centuries.","h_top":"1890px","h_left":"250px"},
+              {"space":54,"text":"Nobel Committee calls: You're a laureate! ","points":10,"move":0,"hidden_text":null,"h_top":null,"h_left":null},
+              {"space":55,"text":"THE END","points":0,"move":0,"hidden_text":null,"h_top":null,"h_left":null}];
+
+        var points = [[89,13],
+                      [166,49],
+                      [236,30],
+                      [302,22],
+                      [372,26],
+                      [445,34],
+                      [510,48],
+                      [595,75],
+                      [613,168],
+                      [639,216],
+                      [610,285],
+                      [523,324],
+                      [459,348],
+                      [372,346],
+                      [310,327],
+                      [215,331],
+                      [128,354],
+                      [73,400],
+                      [40,464],
+                      [38,525],
+                      [36,618],
+                      [116,667],
+                      [182,678],
+                      [254,666],
+                      [346,651],
+                      [426,626],
+                      [509,617],
+                      [565,617],
+                      [649,637],
+                      [724,666],
+                      [764,736],
+                      [729,809],
+                      [623,780],
+                      [554,759],
+                      [435,759],
+                      [363,833],
+                      [361,890],
+                      [407,939],
+                      [476,964],
+                      [545,945],
+                      [621,879],
+                      [702,867],
+                      [799,890],
+                      [798,969],
+                      [750,1073],
+                      [691,1124],
+                      [637,1157],
+                      [554,1180],
+                      [468,1163],
+                      [395,1111],
+                      [333,1077],
+                      [266,1043],
+                      [195,1052],
+                      [105,1107],
+                      [62,1179],
+                      [13,1238]];
+
+
+        var endMessages = ["You're not a writer yet: Keep your day job.","You’re Ayn Rand: You have some avid fans, but even more critics.","You're Ernest Hemingway: You're celebrated, but not by everyone.","You're William Shakespeare: A writer for the ages!"];
+
+        // Build gameboard
+        var svg = d3.select("#game_board_container").append("svg")
+            .attr("width", 940)
+            .attr("height", 1700);
+
+        // Background game board
+        var player = svg.append("svg:image")
+                        .attr("xlink:href", "/static/img/author-game-board.jpg")
+                        .attr("width",940)
+                        .attr("height",1700)
+                        .attr("x",startX)
+                        .attr("y",startY);
+
+
+        // Store player's locations
+        var playerLocations = [];
+        playerLocations.push(points[0]);
+
+        // Start roll count
+        var rollCount = 0;
+
+        // Player starts with zero points at first location
+        var playerLocation = 0,
+            pointCount = 0;
+
+        // Offsets to match drawing
+        var xOffset = 60,
+            yOffset = 230;
+
+
+        // Global variables
+        var prevLocation, move, movePoints, newPoints, spaceMessage, dieMessage, spacePoints, vertDiff, pointStr, rollMessage, windowTop, pieceLocation;
+
+
+        // Rolls the die
+        function rollDie () {
+            // Random number between 1 and 6
+            move = Math.floor((Math.random()*6)+1);
+            // Set die's correct possition (show move number)
+            d3.select("#die")
+              .style("background","url(/static/img/die-sprite.gif)")
+              .style("background-position",(move*-58+58)+"px 0px");
+
+            return move;
+        }
+
+        // Cache selectors outside callback for performance.
+        var $window = $(window),
+           $stickyEl = $('#top_area'),
+           elTop = $stickyEl.offset().top+70;
+
+        $window.scroll(function() {
+            $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+        });
+
+
+
+        var startX = points[0][0] + xOffset,
+            startY = points[0][1] + yOffset;
+
+        var bookWidth = 70,
+            bookHeight = 67;
+
+
+            // Book piece
+        var player = svg.append("svg:image")
+                        .attr("xlink:href", "/static/img/book-game-piece.png")
+                        .attr("width",bookWidth)
+                        .attr("height",bookHeight)
+                        .attr("x",startX-bookWidth/2)
+                        .attr("class","die_select")
+                        .attr("id","player_piece")
+                        .attr("y",startY-bookHeight/2);
+
+
+        // Takes start and end and get's the relative points in between
+        function getMovePoints (start,end) {
+              movePoints = []; // clear array
+
+              if (end > start) {
+                for (var j = start; j < end+1; j++) {
+                    var x = points[j][0]-xOffset-bookWidth-10,
+                        y = points[j][1]-yOffset-(bookHeight/2)+20;
+                    movePoints.push({x: x, y: y}); // wrap it into an object for easier reading
+                }
+              } else {
+                for (var i = start; i > end-1; i--) {
+                    var x = points[i][0]-xOffset-bookWidth-10,
+                        y = points[i][1]-yOffset-(bookHeight/2)+20;
+                    movePoints.push({x: x, y: y}); // wrap it into an object for easier reading
+                }
+              }
+
+              return movePoints;
+        }
+
+        // Show/hide user path
+        var hidePath = true;
+        d3.select("#show_path").on("click", function () {
+          var showMessage = d3.select("#show_path").text();
+          if (showMessage === "Show your path") {
+            d3.selectAll(".move_path").style("visibility","visible");
+            d3.select("#show_path").text("Hide your path");
+            hidePath = false;
+          } else {
+            d3.selectAll(".move_path").style("visibility","hidden");
+            d3.select("#show_path").text("Show your path");
+            hidePath = true;
+          }
+        });
+
+        var freezeDie = false;
+
+        // PLAY AGAIN
+        d3.select("#play_again").on("click", function () {
+          // Release die
+          freezeDie = false;
+
+          d3.select("#die").style("background","url(/static/img/die-animation.gif) 0 0 no-repeat");
+
+          // Reset point count
+          pointCount = 0;
+          d3.select("#point_count").text(pointCount);
+
+          d3.select("#roll_message").text("Roll die to begin");
+
+          // Hide points and path option
+          d3.select("#points_graf").style("display","none");
+          d3.select("#show_path").style("display","none");
+
+          d3.select("#space_message").text("");
+
+          // Move player back to start
+          player.transition()
+                .duration(1000)
+                .attr("transform", "translate(" + [startX-xOffset-bookWidth-10,startY-yOffset-(bookHeight/2)+20] + ")");
+
+          // Vertical difference between previous and next location
+          scrollPage(-points[(points.length-1)][1]);
+
+          // Reset player location
+          playerLocation = 0;
+
+          var metaTags = d3.selectAll("[property='og:title'], [property='twitter:title']");
+          shareMessage = "Are you William Shakespeare or Ayn Rand? Play our interactive How to Be A Writer game";
+          metaTags.attr("content", shareMessage);
+
+        });
+
+        // Fired when die, or text is clicked
+        d3.selectAll(".die_select").on("click", function () {
+        // Remove intro message
+        d3.select("#intro_message").style("display","none");
+
+        // Show points and path option
+        d3.select("#points_graf").style("display","block");
+        d3.select("#show_path").style("display","block");
+
+        // do nothing if die is frozen
+        if (!freezeDie) {
+          freezeDie = true; // immediately freeze die
+
+          prevLocation = playerLocation; // save previous location
+
+          move = rollDie(); // Store number of spaces to move
+
+          // Grab windowTop
+          windowTop = $(window).scrollTop();
+
+
+          // Check for end of game
+          if ((prevLocation + move) >= (spaceInfo.length-1)) {
+            // end of game
+
+            movePoints = getMovePoints(prevLocation,spaceInfo.length-1);
+            movePath(movePoints); // move the player along
+
+            playerLocation = spaceInfo.length; // set playerLocation to last spot
+
+            var pointGrammar = (pointCount === 1 || pointCount === -1) ? "point" : "points";
+
+            var pointMessage = (pointCount<20) ? endMessages[0] :
+                               (pointCount<30) ? endMessages[1] :
+                               (pointCount<40) ? endMessages[2] : endMessages[3];
+
+            d3.select("#space_message")
+              .style("margin",function () { return (pointCount<20) ? "24px 0 0 0" : "10px 0 0 0" ; })
+              .html("You scored " + pointCount + " " + pointGrammar + ". " + pointMessage);
+            // d3.select("#end_message").html("You scored " + pointCount + " " + pointGrammar + ". " + pointMessage);
+
+            // update message & reduce font size
+            d3.select("#roll_message").html("");
+
+            // d3.select("#space_message").text(""); // kill out space message
+
+            d3.select("#end_container").style("display","block");
+
+            d3.select("#end_message")
+            // end of game stuff...
+            var shareMessages = [
+              'Guess I should keep my day job. I scored ' + pointCount + ' points in the "How to be a writer" game',
+              'Oh no! I scored ' + pointCount + ' points and got Ayn Rand in the "How to be a writer" game',
+              'Not bad! I scored ' + pointCount + ' points and got Ernest Hemingway in the "How to be a writer" game',
+              'Can\'t beat that! I scored ' + pointCount + ' points and got William Shakespeare in the "How to be a writer" game'
+            ];
+            var metaTags = d3.selectAll("[property='og:title'], [property='twitter:title']");
+            var shareMessage = (pointCount<20) ? shareMessages[0] :
+                               (pointCount<30) ? shareMessages[1] :
+                               (pointCount<40) ? shareMessages[2] : shareMessages[3];
+
+            metaTags.attr("content", shareMessage);
+
+
+            // Vertical difference between previous and next location
+            scrollPage(points[(points.length-1)][1]-points[(prevLocation)][1]);
+
+          } else {
+            // still playing
+
+            // Update roll count
+            rollCount++;
+
+            // Update points
+            newPoints = spaceInfo[(prevLocation+move)].points;
+            pointCount = pointCount + newPoints;
+
+            // Update player location
+            playerLocation = prevLocation + move;
+
+            // playerLocations.push(points[playerLocation]);
+
+            // Points as grammar
+            pointStr = (spaceInfo[playerLocation].points === 1) ? "(1 pt)" : "(" + spaceInfo[playerLocation].points + " pts)";
+
+            // Update messages & points for user
+            rollMessage = "Rolled " + move + "!";
+            spaceMessage = spaceInfo[playerLocation].text + " " + pointStr,
+            spacePoints = spaceInfo[(prevLocation+move)].points;
+            d3.select("#die_message").text(dieMessage);
+
+            d3.select("#roll_message").text(rollMessage);
+            d3.select("#space_message").style("margin","24px 0 0 0").text(spaceMessage);
+            d3.select("#space_points").text(spacePoints);
+            d3.select("#point_count").text(pointCount);
+
+            // Scroll more if first roll
+            if (rollCount === 1) {
+              pieceLocation = points[0][1] + 450;
+              scrollPage(pieceLocation-windowTop);
+            } else {
+
+              pieceLocation = points[playerLocation][1] + 450;
+              scrollPage(pieceLocation-windowTop);
+
+              // Vertical difference between previous and next location
+              // scrollPage(points[playerLocation][1] - points[prevLocation][1]);
+            }
+
+            // points to move across
+            movePoints = getMovePoints(prevLocation,playerLocation);
+            movePath(movePoints); // move the player along
+
+            // // Show hidden text & links
+            // if (spaceInfo[playerLocation].hidden_text != null) {
+            //     hiddenText.style("display","block")
+            //       .style("top", function () { return spaceInfo[playerLocation].h_top; })
+            //       .style("left", function () { return spaceInfo[playerLocation].h_left; })
+            //       .style("height","auto")
+            //       .html(spaceInfo[playerLocation].hidden_text);
+
+            // } else {
+            //   hiddenText.style("display","none");
+            // }
+
+
+            // if Agent Andrew Wylie
+            if (playerLocation === 15) {
+              setTimeout(function moveAgain () {
+                movePoints = []; // reset movePoints
+                prevLocation = 15;
+                movePoints.push({x: points[15][0]-xOffset-bookWidth-10, y: points[15][1]-yOffset-(bookHeight/2)+20}); // space #15
+                movePoints.push({x: 310-xOffset-bookWidth-10, y: 491-yOffset-(bookHeight/2)+20}); // make it curved
+                movePoints.push({x: points[24][0]-xOffset-bookWidth-10, y: points[24][1]-yOffset-(bookHeight/2)+20}); // space #24
+                playerLocation = 24; // set new playerLocation
+                movePath(movePoints); // move the player along
+
+                // Update points
+                newPoints = spaceInfo[(playerLocation)].points;
+                pointCount = pointCount + newPoints;
+
+                // Points as grammar
+                pointStr = (spaceInfo[playerLocation].points === 1) ? "(1 pt)" : "(" + spaceInfo[playerLocation].points + " pts)";
+
+                spaceMessage = spaceMessage + " to " + spaceInfo[playerLocation].text + " " + pointStr;
+
+                // update message & reduce font size
+                d3.select("#space_message").html(spaceMessage);
+
+                // Update total points
+                d3.select("#point_count").text(pointCount);
+
+                // Vertical difference between previous and next location
+                scrollPage(points[playerLocation][1] - points[prevLocation][1]);
+
+              }, 1200);
+            } else if (playerLocation === 30) {
+              // If landing on complete second draft
+              setTimeout(function moveAgain () {
+                movePoints = []; // reset movePoints
+                prevLocation = 30;
+                movePoints.push({x: points[30][0]-xOffset-bookWidth-10, y: points[30][1]-yOffset-(bookHeight/2)+20}); // space #30
+                movePoints.push({x: points[42][0]-xOffset-bookWidth-10, y: points[42][1]-yOffset-(bookHeight/2)+20}); // space #42
+                playerLocation = 42; // set new playerLocation
+                movePath(movePoints); // move the player along
+
+
+
+
+                // Update points
+                newPoints = spaceInfo[(playerLocation)].points;
+                pointCount = pointCount + newPoints;
+
+                // Points as grammar
+                pointStr = (spaceInfo[playerLocation].points === 1) ? "(1 pt)" : "(" + spaceInfo[playerLocation].points + " pts)";
+
+                spaceMessage = spaceMessage + " to " + spaceInfo[playerLocation].text + " " + pointStr;
+
+                // update message & reduce font size
+                d3.select("#space_message").style("margin","10px 0 0 0").html(spaceMessage);
+
+                // Update total points
+                d3.select("#point_count").text(pointCount);
+
+                // Vertical difference between previous and next location
+                scrollPage(points[playerLocation][1] - points[prevLocation][1]);
+
+              }, 1200);
+
+
+
+            }
+
+
+            if (spaceInfo[playerLocation].move != 0) { // Move again?
+              setTimeout(function moveAgain () {
+                // Store previous and next locations
+                prevLocation = playerLocation;
+                playerLocation = playerLocation + spaceInfo[playerLocation].move;
+
+                // points to move across
+                movePoints = getMovePoints(prevLocation,playerLocation);
+                movePath(movePoints); // move the player along
+
+                // Update points
+                newPoints = spaceInfo[(playerLocation)].points;
+                pointCount = pointCount + newPoints;
+
+                // Points as grammar
+                pointStr = (spaceInfo[playerLocation].points === 1) ? "(1 pt)" : "(" + spaceInfo[playerLocation].points + " pts)";
+
+                spaceMessage = spaceMessage + " to " + spaceInfo[playerLocation].text + " " + pointStr;
+
+                // update message & reduce font size
+                d3.select("#space_message")
+                  .style("margin",function () { return (spaceMessage.length>65) ? "12px 0 0 0" : "24px 0 0 0" ; })
+                  .html(spaceMessage);
+
+                // Update total points
+                d3.select("#point_count").text(pointCount);
+
+                // Vertical difference between previous and next location
+                scrollPage(points[playerLocation][1] - points[prevLocation][1]);
+
+
+                if (playerLocation === 30) {
+                  // If landing on complete second draft
+                  setTimeout(function moveAgain () {
+                    movePoints = []; // reset movePoints
+                    prevLocation = 30;
+                    movePoints.push({x: points[30][0]-xOffset-bookWidth-10, y: points[30][1]-yOffset-(bookHeight/2)+20}); // space #30
+                    movePoints.push({x: points[42][0]-xOffset-bookWidth-10, y: points[42][1]-yOffset-(bookHeight/2)+20}); // space #42
+                    playerLocation = 42; // set new playerLocation
+                    movePath(movePoints); // move the player along
+
+                    // Update points
+                    newPoints = spaceInfo[(playerLocation)].points;
+                    pointCount = pointCount + newPoints;
+
+                    // Points as grammar
+                    pointStr = (spaceInfo[playerLocation].points === 1) ? "(1 pt)" : "(" + spaceInfo[playerLocation].points + " pts)";
+
+                    spaceMessage = spaceMessage + " to " + spaceInfo[playerLocation].text + " " + pointStr;
+
+                    // update message & reduce font size
+                    d3.select("#space_message").style("margin","10px 0 0 0").html(spaceMessage);
+
+                    // Update total points
+                    d3.select("#point_count").text(pointCount);
+
+                    // Vertical difference between previous and next location
+                    scrollPage(points[playerLocation][1] - points[prevLocation][1]);
+
+                  }, 1200);
+                }
+
+                // Move again, again?
+                if (spaceInfo[playerLocation].move != 0) {
+                  setTimeout(moveAgain, 1200);
+                } else {
+                  // release die after pause
+                  setTimeout(function () {
+                    freezeDie = false;
+                  }, 1200);
+                }
+
+              }, 1500); // setTimeout
+            } else {
+                // release die after pause
+                setTimeout(function () {
+                  freezeDie = false;
+                }, 1200);
+            }
+
+
+          } // else playing
+
+
+        }
+
+        });
+
+        function movePath (movePoints) {
+          // Sets up move path
+          var lineFunction = d3.svg.line()
+                                   .x(function(d) { return d.x+xOffset; })
+                                   .y(function(d) { return d.y+yOffset; })
+                                   .interpolate("linear");
+
+          var movePath = svg.append("path")
+                            .attr("d", lineFunction(movePoints))
+                            .attr("class","move_path")
+                            .attr("stroke", "red")
+                            .attr("stroke-width","10")
+                            .style("visibility",function () { return (hidePath) ? "hidden" : "visible"; });
+
+          // Move player
+          player.transition()
+                // .duration(function () { return (move*1000)/4; })
+                .duration(1000)
+                .attrTween("transform", translateAlong(movePath.node()));
+
+        }
+
+
+        // Scrolls the page
+        function scrollPage (vertDiff) {
+          $('body,html').animate({
+            scrollTop: $(window).scrollTop() + vertDiff
+          }, 800);
+        }
+
+
+        // moves point along given path.node()
+        function translateAlong(path) {
+          var l = path.getTotalLength();
+          return function(d, i, a) {
+            return function(t) {
+              var p = path.getPointAtLength(t * l);
+              return "translate(" + p.x + "," + p.y + ")";
+            };
+          };
+        }
+
+      // Second part of Modernizer script replaces d3 stuff with an image
+      } else {
+
+        document.getElementById('top_area_container').style.display="none";
+        document.getElementById('end_container').style.display="none";
+        document.getElementById('game_board_container').innerHTML = '<a href="https://www.google.com/intl/en/chrome/browser/" target="_blank"><img src="'+fallBackImg+'" alt="How to be a writer game" /></a>';
+      }
+
+
+
+    </script>
+
+
+    </div>
+
+
+
+        <!-- Google Analytics code -->
+        <script type="text/javascript">
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-22575524-1', 'latimes.com');
+              ga('send', 'pageview');
+        </script>
+
+
+<script type="text/javascript">
+    ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {
+
+        // pageName:
+        //  The unique identifier that must be customized for each page.
+        // Convention:
+        //  <site-slug>:<subdomain>:<path>:data-<page-slug>:<content-type>.
+        //  (Don't miss our team's "data" prefix or period at the end.)
+        // Examples:
+        //  lat:projects:local:data-pat-tillman:graphic.
+        //  lat:timelines:local:data-timelog-complete-guide-lafd-hiring-controversy:graphic.
+        //  lat:ilivehere:local:data-downtown:graphic.
+        //  lat:ilivehere:local:data-page not found.
+        pageName: 'lat:graphics:local:data-game-how-to-be-a-writer:graphic.',
+
+        // server:
+        //  The domain the page is served by
+        // Examples:
+        //  projects.latimes.com
+        //  recipes.latimes.com
+        //  timelines.latimes.com
+        //  homicide.latimes.com
+        server: 'graphics.latimes.com',
+
+        // prop38:
+        //  The content type of the page, classified in the system listed
+        //  below. Most things we do should just be shoehorned into "graphic"
+        // Examples:
+        //  graphic
+        //  front
+        //  page not found
+        //  story
+        prop38: 'graphic',
+
+        // channel:
+        //  The "path" where the page should be filed, which is just slang
+        //  for the subdirectory of the site it should be associated with,
+        //  but substituting colons for slashes.
+        // Examples:
+        //  local
+        //  local:political
+        //  food
+        //  business:technology
+        channel: 'books',
+
+        // hier1:
+        //  The "path" again, but with an "latimes" prefix.
+        // Examples:
+        //  latimes:local
+        //  latimes:local:political
+        //  latimes:food
+        //  latimes:business:technology
+        hier1: 'latimes:books',
+
+        // hier2:
+        //  The "path" again, but no prefix.
+        // Examples:
+        //  local
+        //  local:political
+        //  food
+        //  business:technology
+        hier2: 'books',
+
+        // prop2:
+        //  The "path" yet again, but this time only the first namespace.
+        // Examples:
+        //  local
+        //  local
+        //  food
+        //  business
+        prop2: 'books',
+
+        // Other stuff we don't need to worry about
+        eVar20: 'latimes',
+        eVar21: 'D=c38',
+        eVar34: 'D=ch',
+        eVar35: 'D=gn'
+    });
+</script>
+<!-- The Omniture code hosted by Tribune that makes it all go.
+     Don't touch this unless you know what you're doing. -->
+<script type="text/javascript" src="http://www.latimes.com/thirdpartyservice?disablenav=true"></script>
+
+
+
+
+    <footer>
+
+        <div id="footer-container">
+            <div id="footer">
+                <a class="sub-logo" href="http://www.latimes.com/"></a>
+                <div id="tos">
+                    <a href="http://www.latimes.com/lat-terms,0,7374802.story">Terms of Service</a> |
+                    <a href="http://privacy.tribune.com">Privacy Policy</a> |
+                    <a href="http://www.latimes.com/lat-about-our-ads,0,3875412.htmlstory">About Our Ads</a> |
+                    <a href="http://www.latimes.com/services/site/la-reprint-request-splash,0,6731163.htmlstory">&copy; <script type="text/javascript">document.write(new Date().getFullYear())</script></a> |
+                    <a href="http://www.latimes.com/about/">About This Site</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+<script type="text/javascript">
+var _sf_async_config={};
+    /** CONFIGURATION START **/
+    _sf_async_config.uid = 3908;
+    _sf_async_config.domain = 'www.latimes.com';
+    _sf_async_config.useCanonical = true;
+    _sf_async_config.sections = '';
+    _sf_async_config.authors = 'Data Desk';
+    /** CONFIGURATION END **/
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script>
+
+</body>
+    <!--Good with data?-->
+    <!--Tired of grinding on the same old apps?-->
+    <!--Want to use your skills in defense of truth, justice and the American way?-->
+    <!--Email datadesk@latimes.com and let us know you're out there.-->
+</html>
