@@ -198,7 +198,7 @@ var options = dropDown
             fiveCrime[j].values.forEach(function(d){
              var circles = L.circle(d.location, circleStyle(d.offenseCode));
              circleLayer.addLayer(circles);
-             circles.bindPopup(d.date);
+             circles.bindPopup("Description: "+ d.offenseDes.toLowerCase() + "<br />Time: "+d.date +".");
             })
             map.addLayer(circleLayer);
             return fiveCrime[j].key;
