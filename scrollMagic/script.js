@@ -36,7 +36,7 @@ var scene1 = new ScrollMagic.Scene({
 	.on('enter',function(){
 		//what happens when we 'enter' the scene i.e. #scene-1 reaches the top of the screen
 		console.log('Enter Scene 1');
-		d3.select('#plot').transition().style('background','red');
+		d3.select('#plot').transition();
 	})
 	.addTo(scrollController);
 
@@ -47,7 +47,7 @@ var scene2 = new ScrollMagic.Scene({
 	})
 	.on('enter',function(){
 		console.log('Enter Scene 2');
-		d3.select('#plot').transition().style('background','green');
+		d3.select('#plot').transition();
 	})
 	.addTo(scrollController);
 
@@ -58,7 +58,7 @@ var scene3 = new ScrollMagic.Scene({
 	})
 	.on('enter',function(){
 		console.log('Enter Scene 3');
-		d3.select('#plot').transition().style('background','blue');
+		d3.select('#plot').transition();
 	})
 	.addTo(scrollController);
 
