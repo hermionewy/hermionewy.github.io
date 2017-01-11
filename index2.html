@@ -1,0 +1,57 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    	<link href="scrollMagic/style.css" rel="stylesheet"/>
+    <style>
+    #dataDiv{
+      height: 800px;
+      top:800px;
+    }
+    #dataIframe {
+     top: -85px;
+     width: 100%;
+     height: 800px;
+   }
+    </style>
+  </head>
+	<body>
+		<div class="viz-container">
+			<div class="canvas" id="plot"></div>
+		</div><!--this element will stay fixed-->
+
+		<div class="animation-timeline"><!--this element will scroll, triggering scroll-based animation-->
+      <section class="scene" id="scene-1">
+        <div class="scene-commentary" id="indexDiv">
+        <iframe class="PageOne" src="index.html" frameborder="0"></iframe>
+      </div>
+      </section>
+      <section class="scene" id="scene-2">
+				<div class="scene-commentary" id="dataDiv">
+					<iframe class="PageOne" src="data.html" frameborder="0" margin-top="50px" id="dataIframe"></iframe>
+				</div>
+			</section>
+			<section class="scene" id="scene-3">
+				<div class="scene-commentary">
+					<iframe class="PageOne" src="stories.html" frameborder="0" id="storiesIframe"></iframe>
+				</div>
+			</section>
+			<section class="scene scene-continuous" id="scene-4">
+				<div class="scene-commentary">
+					<h3>This particular scene changes the visualization on a continuous basis, based on current scroll position</h3>
+					<p>Ball will roll across the page.</p>
+				</div>
+			</section>
+			<section class="scene"></section><!--just a padder-->
+		</div>
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	<script src="scrollMagic/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script src="scrollMagic/script.js"></script>
+</html>
