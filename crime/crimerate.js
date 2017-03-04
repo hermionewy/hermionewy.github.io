@@ -56,25 +56,6 @@ d3.queue()
     .defer(d3.json, 'data/bos_neighborhoods.json')
     .defer(d3.csv, 'data/boston_crime.csv',parseData)
     .await(function(err, geo, data){
-      console.log(geo);
-
-
-  /*    var geoDistrict={
-        'A1':[Downtown],
-        'A7': [East Boston],
-        'A15':[Charlestown],
-        'B2':[Roxbury, Mission],
-        'B3':[Mattapan],
-        'C6'[South Boston],
-        'C11':[Dorchester],
-        'D4':[South End, Back Bay, Fenway],
-        'D14':[Allston, Brighton],
-        'E5':[West Roxbury, Roslindale],
-        'E13':[Jamaica Plain],
-        'E18':[Hyde Park]
-      }*/
-
-
 
     info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -92,7 +73,7 @@ function highlightFeature(e) {
     });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
+        //layer.bringToFront();
         info.update(layer.feature.properties);
     }
 }
@@ -129,7 +110,6 @@ var crime = d3.nest()
         .key(function(d) { return d.district; }).sortKeys(d3.ascending)
         .rollup(function(leaves) { return leaves.length; })
         .entries(data);
-    console.log(crime);
 
     crime.forEach(function(d){
         d.total=d3.sum(d.values,function(d){return d.value})});
@@ -142,10 +122,6 @@ var district=d3.nest()
     district.forEach(function(d){
         d.total=d3.sum(d.values,function(d){return d.value})});
 
-console.log(district);
-
-
-
 
 var districts = d3.nest()
     .key(function(d) { return d.district; }).sortKeys(d3.ascending)
@@ -154,7 +130,6 @@ var districts = d3.nest()
 var districtOrder=district.sort(function(a, b) {
     return b.value-a.value;
 });
-console.log(districtOrder);
 
 //
 data.forEach(function(d){
@@ -186,6 +161,7 @@ var options = dropDown
 
     menuChanged();
     dropDown.on('change',menuChanged);
+
     function menuChanged(){
       var si   = dropDown.property('selectedIndex'),
           s    = options.filter(function (d, i) { return i === si }),
@@ -196,7 +172,7 @@ var options = dropDown
       for (var j=0; j<5; ) {
         if (fiveCrime[j].key==choice){
             fiveCrime[j].values.forEach(function(d){
-             var circles = L.circle(d.location, circleStyle(d.offenseCode));
+             var circles = L.circle(d.location, circleStyle(d.offenseCode)).setRadius(5);
              circleLayer.addLayer(circles);
              circles.bindPopup("Description: "+ d.offenseDes.toLowerCase() + "<br />Time: "+d.date +".");
             })
@@ -217,10 +193,12 @@ var options = dropDown
   var buttonTwo = new L.Control.Button(L.DomUtil.get('buttonExpl'), { toggleButton: 'active' });
   buttonTwo.addTo(map);
   buttonTwo.on('click',function(){
+    map.removeLayer(circleLayer);
     geojson = L.geoJson(geo, {
            style: style,
            onEachFeature: onEachFeature
        }).addTo(map);
+       map.addLayer(circleLayer);
   });
 //var colorCircle=['#61b2f4','#f46161','#ff2828','#db8708','#f79b4a','#dd0000','#fce82f','#81af2b','#cec0c5'];
 
@@ -232,29 +210,29 @@ function circleStyle(d){
       color:colorCircle[0],
       fillColor: colorCircle[0],
       fillOpacity: 0.5,
-      radius: 1};
+    };
     }else if (d=='Vandalism'){
       return{
       color:colorCircle[1],
       fillColor: colorCircle[1],
       fillOpacity: 0.5,
-      radius: 1};
+    };
     }else if (d=='Arson'){
       return{
         color:colorCircle[2],
       fillColor: colorCircle[2],
       fillOpacity: 0.5,
-      radius: 1};
+      };
     }else if(d=='Auto Theft'|| d=='Auto Theft Recovery'){
       return{color:colorCircle[3],
       fillColor: colorCircle[3],
       fillOpacity: 0.5,
-      radius: 1};
+      };
     }else {
       return{color:colorCircle[4],
       fillColor: colorCircle[4],
       fillOpacity: 0.5,
-      radius: 1};
+      };
 }
 }
 // data.forEach(function(d){

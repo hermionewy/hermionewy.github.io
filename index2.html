@@ -1,57 +1,64 @@
-<!doctype HTML>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
 
-    	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
-    	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-    	<link href="scrollMagic/style.css" rel="stylesheet"/>
-    <style>
-    #dataDiv{
-      height: 800px;
-      top:800px;
-    }
-    #dataIframe {
-     top: -85px;
-     width: 100%;
-     height: 800px;
-   }
-    </style>
-  </head>
-	<body>
-		<div class="viz-container">
-			<div class="canvas" id="plot"></div>
-		</div><!--this element will stay fixed-->
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Yan, Yan Wu, Data, Visualization, Graphics, Boston">
+  <meta name="author" content="Yan Wu">
+  <title>Yan Wu</title>
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/style2.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="javascripts/jquery-3.1.1.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/script.js"></script>
+</head>
 
-		<div class="animation-timeline"><!--this element will scroll, triggering scroll-based animation-->
-      <section class="scene" id="scene-1">
-        <div class="scene-commentary" id="indexDiv">
-        <iframe class="PageOne" src="index.html" frameborder="0"></iframe>
-      </div>
-      </section>
-      <section class="scene" id="scene-2">
-				<div class="scene-commentary" id="dataDiv">
-					<iframe class="PageOne" src="data.html" frameborder="0" margin-top="50px" id="dataIframe"></iframe>
-				</div>
-			</section>
-			<section class="scene" id="scene-3">
-				<div class="scene-commentary">
-					<iframe class="PageOne" src="stories.html" frameborder="0" id="storiesIframe"></iframe>
-				</div>
-			</section>
-			<section class="scene scene-continuous" id="scene-4">
-				<div class="scene-commentary">
-					<h3>This particular scene changes the visualization on a continuous basis, based on current scroll position</h3>
-					<p>Ball will roll across the page.</p>
-				</div>
-			</section>
-			<section class="scene"></section><!--just a padder-->
+<body>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <img id="logo" src="images/logo.png" width="48"/>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#">Page 1</a></li>
+	      <li><a href="#">Page 2</a></li>
+	      <li><a href="#">Page 3</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="container intro">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+					<div align="center"> <img id="profile_pic" width="120px" class="img-circle" src="images/YanWu.jpg"></div>
+					<div class="text-center">
+							<h3 class="text-center">Yan Wu</h3>
+							<p class="text-center intro_text">- HELLO WORLD -
+									<br>I am a graphics and data reporter,
+									<br>currently studying in <a href="http://www.northeastern.edu/camd/journalism/" target="_blank">Northeastern University School of Journalism</a>.
+									<br>I am also working as a columnist for <a href="http://www.storybench.org" target="_blank">Storybench</a>.
+									<br> Previously, I was an editor and journalist in <a href="http://wb.sznews.com/html/2016-11/15/node_1722.htm" target="_blank"> Shenzhen Evening News</a>.
+									<br>I enjoy coding, building tools and making videos.
+									<br>You can download my <a href="CV_Yan Wu.pdf" target="_blank">resume</a>, my previous <a href="Yan Wu's Design Portfolio.pdf" target="_blank">design portfolio</a> and my previous <a href="images/People and City_Wu Yan's Portfolio.pdf" target="_blank">visual stories</a>.
+									<hr width="50%"/>
+									<br> My Skills:  HTML,  JQuery,  JavaScript,  D3,  MySql,
+									<br>             Photoshop,  Premiere,  Indesign,  Illustrator,  3Ds Max,
+									<br>             Photography,  videography,
+									<br>             Chinese,  English.
+
+							</p>
+					</div>
 		</div>
-	</body>
+	</div>
+	</div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-	<script src="scrollMagic/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-	<script src="scrollMagic/script.js"></script>
+
+</body>
+
+
 </html>
