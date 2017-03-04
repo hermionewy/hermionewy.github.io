@@ -172,7 +172,7 @@ var options = dropDown
       for (var j=0; j<5; ) {
         if (fiveCrime[j].key==choice){
             fiveCrime[j].values.forEach(function(d){
-             var circles = L.circle(d.location, circleStyle(d.offenseCode)).setRadius(5);
+             var circles = L.circle(d.location, circleStyle(d.offenseCode)).setRadius(8);
              circleLayer.addLayer(circles);
              circles.bindPopup("Description: "+ d.offenseDes.toLowerCase() + "<br />Time: "+d.date +".");
             })
@@ -208,30 +208,20 @@ function circleStyle(d){
     if(d=='Simple Assault'|| d=='Aggravated Assault'|| d=='Indecent Assault'){
       return{
       color:colorCircle[0],
-      fillColor: colorCircle[0],
-      fillOpacity: 0.5,
     };
     }else if (d=='Vandalism'){
       return{
       color:colorCircle[1],
-      fillColor: colorCircle[1],
-      fillOpacity: 0.5,
     };
     }else if (d=='Arson'){
       return{
         color:colorCircle[2],
-      fillColor: colorCircle[2],
-      fillOpacity: 0.5,
       };
     }else if(d=='Auto Theft'|| d=='Auto Theft Recovery'){
       return{color:colorCircle[3],
-      fillColor: colorCircle[3],
-      fillOpacity: 0.5,
       };
     }else {
       return{color:colorCircle[4],
-      fillColor: colorCircle[4],
-      fillOpacity: 0.5,
       };
 }
 }
