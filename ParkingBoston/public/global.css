@@ -1,0 +1,131 @@
+html,body,h1,h2,h3,h4,h4,p,div,a{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:rgb(252,252,252);
+}
+
+html,body,h1,h2,h3,h4,h4,p,div,a{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:rgb(252,252,252);
+}
+#introText{
+	font-size: 15px;
+}
+.plot{
+	min-height:500px;
+}
+#grayArea{
+	padding-top: 72px;
+}
+#map{
+	min-height:500px;
+	margin: 20px;
+}
+
+div .selectMenu{
+	padding-bottom: 10px;
+}
+p .small{
+	font-size: 14px;
+}
+span{
+	color:blue;
+	font-size: 16px;
+	font-family: impact;
+}
+#year{
+	position: absolute;
+	z-index: 1000;
+	top: 380px;
+	left: 1000px;
+}
+button .location .leaflet-control{
+	position: absolute;
+	z-index: 1000;
+	top: 200px;
+	left: 20px
+}
+
+.info {
+	  min-height:500px;
+		width: 200px;
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+.control{
+	height:100px;
+	position:relative;
+	padding:20px 100px 0;
+}
+	.control .navbar{background:white;}
+
+
+/*pie-charts*/
+.pie-chart .slice line{
+	fill:none;
+	stroke:rgb(80,80,80);
+	stroke-width:1px;
+}
+.pie-chart .slice .text{
+	fill:(80,80,80);
+}
+
+/*time-series*/
+.time-series .line{
+	stroke:rgb(80,80,80);
+	fill:none;
+	stroke-width:1px;
+}
+.time-series .area{
+	fill-opacity:.1;
+}
+.time-series .axis-y .tick line{
+	stroke:white;
+	stroke-width:.5px;
+}
+.time-series .axis-y .domain{
+	display:none;
+}
+
+/*#plot3*/
+.time-series-radial .area{
+	fill-opacity:.2;
+}
+g .plot-radial .am{ fill:rgb(255,50,0); }
+g .plot-radial .pm{ fill:#03afeb }
+g .plot-radial .am-line{
+	fill:none;
+	stroke-width:1.5px;
+}
+	g .plot-radial .am-line{ stroke:rgb(255,50,0); }
+	g .plot-radial .pm-line{ stroke:#03afeb; }
+
+.axis-radial .tick-y{
+	fill:none;
+	stroke:rgb(220,220,220);
+}
+	.axis-radial .major{stroke-width:1.5px;}
+.axis-radial .tick-x text{
+	font-size:10px;
+}
+	.axis-radial .am text{ fill:rgb(255,50,0); }
+	.axis-radial .pm text{ fill:#03afeb; }
+	.axis-radial .am line{ stroke:rgb(255,50,0); }
+	.axis-radial .pm line{ stroke:#03afeb; }

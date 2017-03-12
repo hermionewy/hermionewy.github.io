@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link href='../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css' rel='stylesheet' />
+		<link href='../global.css' rel='stylesheet' />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	</head>
+	<body>
+		<nav class='navbar navbar-inverse navbar-fixed-top'>
+		<div class='navbar-header'><a class='navbar-brand' href='#'>Boston Safety</a></div>
+		<div id='navbar' class='navbar-collapse collapse'></div>
+	 </nav>
+					<div class='jumbotron' id='grayArea'>
+
+						<div class='container'>
+							<h2>How to park safe in Boston?</h2><br/>
+							<blockquote><p id ='introText'>Parking is a task that drivers must perform every day, and unfortunately it can come with many risks. Chew on these parking lot stats, for example: The Insurance Institute for Highway Safety found that 20 percent of vehicle accidents and more than half of all back-over injuries occur in parking lots.<br/>
+							According to the Bureau of Justice Statistics, 1 in 10 property crimes is related to cars. All this said, it’d be helpful to provide you with an interactive graphic on car-related incidents in Boston.<br/>
+							I sifted through data from the Boston Police Department to compile an accurate graphic of the parking safest in Boston.</p></blockquote>
+							<div class='row'>
+								<div class='plot col-md-10' id='mapid'></div>
+								<div class='col-md-2'>
+									<div class='selectMenu'><select id='dropDown'>	</select> </div>
+									<div class='selectMenu'><select id='yearOptions'></select><br/></div>
+									<div class='selectMenu' id='mapText'></div>
+								<div class='selectMenu'>	<button type='button' class='btn btn-info btn-block btn-xs'>Your Location</button></div>
+								</div>
+							</div>
+							<div class='row'>
+									<div class='plot col-md-8' id='plot2'></div>
+									<div class='plot col-md-4' id='plot2_1'>
+										  <h4>How to park safe in Boston?</h4>
+									</div>
+						 </div>
+
+						 <div class='row'>
+								 <div class='plot col-md-4' id='plot3_1'>
+								 			<h4>How to park safe in Boston?</h4>
+								 </div>
+								 <div class='plot col-md-8' id='plot3'></div>
+						</div>
+
+						</div>
+			</div>
+
+
+
+			<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+		<script src='../lib/d3.js' type='text/javascript'></script>
+		<script src='../lib/crossfilter/crossfilter.js'></script>
+		<script src='../lib/jquery/jquery-1.12.4.min.js'></script>
+		<script src='../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+		<!--include modules-->
+		<script src='./modules/Circles.js'></script>
+		<script src='modules/Map.js'></script>
+		<script src='modules/L.Control.Button.js'></script>
+		<script src='modules/Timeseries.js'></script>
+		<script src='modules/CasesByHour.js'></script>
+		<script src='app.js' type='text/javascript'></script>
+	</body>
+</html>
