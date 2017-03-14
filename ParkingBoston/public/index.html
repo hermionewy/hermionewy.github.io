@@ -14,35 +14,44 @@
 					<div class='jumbotron' id='grayArea'>
 
 						<div class='container'>
-							<h2>How to park safe in Boston?</h2><br/>
-							<blockquote><p id ='introText'>Parking is a task that drivers must perform every day, and unfortunately it can come with many risks. Chew on these parking lot stats, for example: The Insurance Institute for Highway Safety found that 20 percent of vehicle accidents and more than half of all back-over injuries occur in parking lots.<br/>
-							According to the Bureau of Justice Statistics, 1 in 10 property crimes is related to cars. All this said, it’d be helpful to provide you with an interactive graphic on car-related incidents in Boston.<br/>
-							I sifted through data from the Boston Police Department to compile an accurate graphic of the parking safest in Boston.</p></blockquote>
+							<h2>How scary it is to drive in Boston?</h2><br/>
+							<div class='row'>
+								<div class='col-md-2'><p>A Boston driver is <strong>167.6%</strong> more likely to have an accident than the national average.</div></p>
+									<div class='col-md-10'>
+							<p id ='introText'>Massachusetts drivers were ranked the worst in the nation for the third year in a row. Drivers in Boston were named the worst of the worst.<br/>
+According to the auto insurer Allstate’s annual “Best Drivers Report”, which ranks motorists in the 200 most populous cities in the country, a Boston driver has a new accident every <span>7.1</span> years on average. Fortunately, that’s up from every <span>3.9</span> years, estimated in last year’s report. <br/>
+Boston has seen a significant rise on the number of motor vehicle accident reports of 2016, which is two times as large as the number of 2014.
+</p></div>			</div>
+							</div>
+						</div>
+						<div class='container'>
 							<div class='row'>
 								<div class='plot col-md-10' id='mapid'></div>
 								<div class='col-md-2'>
-									<div class='selectMenu'><select id='dropDown'>	</select> </div>
-									<div class='selectMenu'><select id='yearOptions'></select><br/></div>
+									<!-- <div class='selectMenu'><select id='dropDown'>	</select> </div>
+									<div class='selectMenu'><select id='yearOptions'></select><br/></div> -->
 									<div class='selectMenu' id='mapText'></div>
-								<div class='selectMenu'>	<button type='button' class='btn btn-info btn-block btn-xs'>Your Location</button></div>
+								<div class='selectMenu'>	<button type='button' class='btn btn-default btn-xs' id="locButton">Your Location</button></div>
 								</div>
 							</div>
 							<div class='row'>
-									<div class='plot col-md-8' id='plot2'></div>
-									<div class='plot col-md-4' id='plot2_1'>
-										  <h4>How to park safe in Boston?</h4>
-									</div>
+								<div class='plot col-md-2' id='plot2_1'></div>
+								<div class='plot col-md-10' id='plot2'></div>
+
+
+
 						 </div>
 
 						 <div class='row'>
-								 <div class='plot col-md-4' id='plot3_1'>
-								 			<h4>How to park safe in Boston?</h4>
+							 	 <div class='plot col-md-4' id='plot3_0'></div>
+								 <div class='plot col-md-6' id='plot3'></div>
+								 <div class='plot col-md-2' id='plot3_1'>
+
 								 </div>
-								 <div class='plot col-md-8' id='plot3'></div>
 						</div>
 
 						</div>
-			</div>
+
 
 
 
@@ -53,11 +62,11 @@
 		<script src='../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
 		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 		<!--include modules-->
-		<script src='./modules/Circles.js'></script>
 		<script src='modules/Map.js'></script>
 		<script src='modules/L.Control.Button.js'></script>
 		<script src='modules/Timeseries.js'></script>
 		<script src='modules/CasesByHour.js'></script>
+		<script src='modules/CasesByWeekDay.js'></script>
 		<script src='app.js' type='text/javascript'></script>
 	</body>
 </html>

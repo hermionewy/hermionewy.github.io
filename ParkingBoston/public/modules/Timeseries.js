@@ -8,13 +8,9 @@ function Timeseries(){
 	};
 
 	var W, H, M ={t:30,r:40,b:30,l:40};
-	var brush = d3.brushX()
-		.on('end',brushend);
 	var scaleX, scaleY;
 	var _dispatcher = d3.dispatch('timerange:select');
 
-	var _brushable = true;
-	var _snapping = false;
 
 	var exports = function(selection){
 		//Set initial internal values
@@ -22,9 +18,6 @@ function Timeseries(){
 		W = W || selection.node().clientWidth - M.l - M.r;
 		H = H || selection.node().clientHeight - M.t - M.b;
 		var arr = selection.datum()?selection.datum():[];
-
-		//Set brush extent
-		brush.extent([[0,0],[W,H]]);
 
 		//Histogram layout
 		//The value, domain and threshold properties are internal to this function
@@ -45,7 +38,7 @@ function Timeseries(){
 			.x(function(d){return scaleX(d.x0)})
 			.y(function(d){return scaleY(d.length)})
       .curve(d3.curveBasis);
-      
+
 		var area = d3.area()
 			.x(function(d){return scaleX(d.x0)})
 			.y0(function(d){return H})
@@ -53,11 +46,11 @@ function Timeseries(){
       .curve(d3.curveBasis);
 		var axisX = d3.axisBottom()
 			.scale(scaleX)
-			.ticks(d3.timeMonth.every(1));
+			.ticks(d3.timeMonth.every(3));
 		var axisY = d3.axisLeft()
 			.tickSize(-W)
 			.scale(scaleY)
-			.ticks(4);
+			.ticks(6);
 
 		//Set up the DOM structure like so:
 		/*
@@ -90,10 +83,33 @@ function Timeseries(){
 		var plot = svg.merge(svgEnter)
 			.select('.plot')
 			.attr('transform','translate('+M.l+','+M.t+')');
+
+		var clipRect = d3.select(plot.node().parentNode)
+				.append('defs')
+				.append('clipPath').attr('id','view-port')
+				.append('rect')
+				.attr('width',W/2)
+				.attr('height',H);
+
+		var pointer = plot.append('circle')
+				.attr('class','pointer')
+				.attr('fill','rgb(80,80,80)')
+				.attr('r',3)
+				.style('opacity',0);
+
+				//Append a rect as mouse target
+		var bisectDate = d3.bisector(function(d){return d.x0}).right;
+
+		var tooltip = d3.select('.container')
+		.append('div').attr('class','custom-tooltip');
+		tooltip.append('p').attr('class','heading');
+		tooltip.append('p').attr('class','value');
+
 		plot.select('.area').transition()
 			.attr('d',area);
 		plot.select('.line').transition()
-			.attr('d',line);
+			.attr('d',line)
+			.attr('clip-path','url(#view-port)');
 		plot.select('.axis-y').transition()
 			.call(axisY);
 		plot.select('.axis-x')
@@ -101,34 +117,58 @@ function Timeseries(){
 			.transition()
 			.call(axisX);
 
-		//Determine if brush snaps
-		if(_snapping){
-			brush
-				.on('brush', brushSnap);
-		}
 
-		//Call brush function
-		if(_brushable){
-			plot.select('.brush').call(brush);
-		}
-	}
+			plot.append('rect')
+					.attr('x',0).attr('y',0)
+					.attr('width',W)
+					.attr('height',H).attr('class','mouse-target')
+					.style('opacity',0)
+					.on('mouseenter',function(){
+						console.log('timeseries:mouseenter');
+						var tooltip = d3.select('.custom-tooltip')
+							.style('visibility','visible')
+							.transition()
+							.style('opacity',1);
+						pointer.style('opacity',1);
+					})
+					.on('mousemove',function(){
+						var plotX = d3.mouse(this)[0],
+							mouseX = d3.mouse(d3.select('.container').node())[0],
+							mouseY = d3.mouse(d3.select('.container').node())[1],
+							time = scaleX.invert(plotX);
+						//what would the right insertion point?
+						var i = bisectDate(dayBins, time),
+							targetBin = dayBins[i];
+						//Given this insertion point
+						var x = scaleX(new Date((targetBin.x0.valueOf()+targetBin.x1.valueOf())/2)),
+							y = scaleY(targetBin.length);
 
-	function brushend(){
-		if(!d3.event.selection) {_dispatcher.call('timerange:select',this,null); return;}
-		var t0 = scaleX.invert(d3.event.selection[0]),
-			t1 = scaleX.invert(d3.event.selection[1]);
-		_dispatcher.call('timerange:select',this,[t0,t1]);
-	}
+						pointer
+							.attr('cx', x)
+							.attr('cy', y);
 
-	function brushSnap(){
-  		if (d3.event.sourceEvent.type === "brush") return;
-  		var _t0 = scaleX.invert(d3.event.selection[0]),
-  			_t1 = scaleX.invert(d3.event.selection[1]),
-  			t0 = d3.timeMonth.floor(_t0),
-  			t1 = d3.timeMonth.ceil(_t1);
+						clipRect.attr('width',plotX);
 
-  		d3.select(this).call(d3.event.target.move, [scaleX(t0),scaleX(t1)]);
-	}
+						tooltip
+							.style('left',(mouseX-100)+'px')
+							.style('top',(mouseY+50)+'px')
+							.select('.heading')
+							.html((targetBin.x0.getMonth()+1)+'/'+targetBin.x0.getDate()+'/'+targetBin.x0.getFullYear() );
+
+						tooltip
+							.select('.value')
+							.html('There are '+ targetBin.length + ' MV accidents happend in Boston.');
+
+					})
+					.on('mouseleave',function(){
+						var tooltip = d3.select('.custom-tooltip')
+							.style('visibility','none')
+							.style('opacity',0);
+
+						pointer.style('opacity',0);
+						clipRect.attr('width',0);
+					});
+}
 
 	//setting config values
 	//"Getter" and "setter" functions
@@ -152,18 +192,6 @@ function Timeseries(){
 
 	exports.on = function(){
 		_dispatcher.on.apply(_dispatcher,arguments);
-		return this;
-	}
-
-	exports.brushable = function(_){
-		if(!arguments.length) return _brushable;
-		_brushable = _;
-		return this;
-	}
-
-	exports.snapping = function(_){
-		if(!arguments.length) return _snapping;
-		_snapping = _;
 		return this;
 	}
 

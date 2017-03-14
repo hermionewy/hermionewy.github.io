@@ -9,9 +9,11 @@ var dscp= L.control({position:'bottomright'});
 var colorCircle=['#ff2828','#f99c11','#ff00e1','#796eef','#0054d3'];
 var crimeCatgory = ['Assault','Vandalism','Arson','Theft','Burglary'];
 var popup = L.popup();
+
 L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/civzwvota003e2kqraacncehj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
     id: 'mapbox.street',
-    attribution: ''
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
 }).addTo(map);
 
 
@@ -151,7 +153,7 @@ var fiveCrime = d3.nest()
 console.log(fiveCrime);
 
 // dropdown list
-var dropDown=d3.select('select')
+var dropDown=d3.select('select');
 var options = dropDown
     .selectAll('option')
     .data(crimeCatgory)

@@ -32,12 +32,10 @@ body{
 div .selectMenu{
 	padding-bottom: 10px;
 }
-p .small{
-	font-size: 14px;
-}
-span{
-	color:blue;
-	font-size: 16px;
+
+p span{
+	color:#d34e4e;
+	font-size: 20px;
 	font-family: impact;
 }
 #year{
@@ -88,13 +86,14 @@ button .location .leaflet-control{
 }
 
 /*time-series*/
-.time-series .line{
-	stroke:rgb(80,80,80);
+/*.time-series .line{
+	stroke:fill:rgb(180,180,180);
 	fill:none;
 	stroke-width:1px;
-}
+}*/
 .time-series .area{
-	fill-opacity:.1;
+	fill-opacity:.2;
+	fill:rgb(255,50,0);
 }
 .time-series .axis-y .tick line{
 	stroke:white;
@@ -129,3 +128,41 @@ g .plot-radial .am-line{
 	.axis-radial .pm text{ fill:#03afeb; }
 	.axis-radial .am line{ stroke:rgb(255,50,0); }
 	.axis-radial .pm line{ stroke:#03afeb; }
+
+	/*tooltip*/
+	.custom-tooltip{
+		position:absolute;
+		width:200px;
+		padding:10px 10px;
+		color:rgb(80,80,80);
+		font-size:.8em;
+		left:0;
+		box-shadow:0 5px 10px rgba(0,0,0,.1);
+		opacity:0;
+		background:white;
+	}
+		.custom-tooltip .heading{ font-weight:bold; }
+		.custom-tooltip .value{ font-size:1.5em; }
+
+.time-series .line{
+	stroke:rgb(255,50,0);
+	fill:none;
+	stroke-width:1px;
+}
+#mapText #plot2_1{
+	margin-top: 50px;
+}
+#plot2 .axis-y .tick line{
+	stroke:white;
+	stroke-width:.5px;
+}
+#plot2 .axis-y .domain{
+	display:none;
+}
+
+rect{
+  background-color: #03afeb;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}

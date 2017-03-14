@@ -6,9 +6,17 @@ function Map(){
       fillOpacity: 0.1,
       radius: 5
   };
+  var _circleStyle2={
+  		color: 'blue',
+  		fillColor: '#30f',
+  		fillOpacity: 0.1,
+  		radius: 5
+  };
+  //var _dispatcher = d3.dispatch('larceny:on','mvaccident:on');
   var exports = function(selection){
     //Set the map!
     console.log('Set the Map');
+    var arr = selection.datum();
     var mapid = 'mapid';
     var streetMap = L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/cizyuiigg00602rs68enzq17p/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
         id: 'mapbox.street',
@@ -20,17 +28,17 @@ function Map(){
     		});
 
 
-    var circles = Array.from(arr,function(d){
+    var theftCircles = Array.from(arr,function(d){
       d.circle = L.circle(JSON.parse(d.location),_circleStyle)
-             .bindPopup("Description: " + d.description.toLowerCase() + "<br />Time: "+d.time );
+             .bindPopup("Street:" + d.street+"<br/>Description: " + d.description.toLowerCase() + "<br/>Time: "+d.time  );
              return d.circle;
     })
-    var circleGroup = L.layerGroup(circles);
+    var theftGroup = L.layerGroup(theftCircles);
 
     var map = L.map(mapid, {
         center: [42.356, -71.072],
-        zoom: 14.4,
-        layers: [streetMap, circleGroup],
+        zoom: 13.3,
+        layers: [streetMap, theftGroup],
     		scrollWheelZoom: false
     });
 
@@ -40,32 +48,16 @@ function Map(){
     };
 
     var overlayMaps = {
-        "Circles": circleGroup
+        "Circles": theftGroup,
+//        "Larceny": larcenyGroup,
+//        "MV Accident":mvAccidentGroup
     };
 
     L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 
-
-    // info box, the whte background
-    var info = L.control();
-
-    info.onAdd = function (map) {
-        this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-        this.update();
-        return this._div;
-    };
-
-
-    // method that we will use to update the control based on feature properties passed
-    info.update = function (props) {
-        this._div.innerHTML = '<p> Parking Safety in Boston</p>';
-    };
-
-    info.addTo(map);
-
     // Add button to find location
-    var button = new L.Control.Button(L.DomUtil.create('button','location'), { toggleButton: 'active' });
+    var button = new L.Control.Button(L.DomUtil.get('locButton'), { toggleButton: 'active' });
     button.addTo(map);
     button.on('click',locate);
 
@@ -89,6 +81,10 @@ function Map(){
   exports.style = function(_){
     if(!arguments.length) return _circleStyle;
     _circleStyle = _;
+    return this;
+  }
+  exports.on = function(){
+    _dispatcher.on.apply(_dispatcher,arguments);
     return this;
   }
   return exports;
