@@ -37,7 +37,7 @@ function Map(){
 
     var map = L.map(mapid, {
         center: [42.356, -71.072],
-        zoom: 13.3,
+        zoom: 13,
         layers: [streetMap, theftGroup],
     		scrollWheelZoom: false
     });

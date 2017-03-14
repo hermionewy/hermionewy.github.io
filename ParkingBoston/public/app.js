@@ -60,7 +60,7 @@ d3.json(MVAccUrl, function (data) {
 		//d3.select('#plot2').datum(MVAccDataByTime.top(Infinity)).call(timeseries);
  		var num = MVAccData.length;
 		var num2017= MVAccData.filter(function(d){ return d.time.getYear()==117}).length;
- 		document.getElementById('mapText').innerHTML = '<p><span style="font-size: 25px">'+num2017+'</span><br/>MV accidents in 2017</p><hr/>'+'<p style="font-size:14px">The map shows the <span>'+num+'</span> MV accidents took place in Boston since August 12, 2015.<br/><br/>From 2013 to 2016, the numbers of MV accidents records are 4662, 4605, 9301, 11531, according to the report released by Boston Police Department.<br/><br/>Click the "Your Location" button on the Map to see the accidents happened near you </p>';
+ 		document.getElementById('mapText').innerHTML = '<p><span style="font-size: 25px">'+num2017+'</span><br/><strong>MV accidents in 2017</strong></p><hr/>'+'<p style="font-size:14px">The map shows the <span>'+num+'</span> MV accidents took place in Boston since August 12, 2015.<br/><br/>From 2013 to 2016, the numbers of MV accidents records are 4662, 4605, 9301, 11531, according to the report released by Boston Police Department.<br/><br/>Click the "Your Location" button on the Map to see the accidents happened near you </p>';
 });
 
 d3.csv('/data/BPD_MVAcc2013~2016.csv', function(data) {
@@ -74,14 +74,14 @@ d3.csv('/data/BPD_MVAcc2013~2016.csv', function(data) {
 	 }
 	 console.log(num);
    d3.select('#plot2').datum(MVAccDataByTime.top(Infinity)).call(timeseries);
-	 document.getElementById('plot2_1').innerHTML = '<hr/><p><span>MISTERY</span><br/>There is a significant rise on motor vehicle accident numbers started on June 16. There are <span>48</span> MV accident records on that single day.<br/> <br/>The Boston Police Department changed to a new system later on August 12 when there were <span>22</span> accidents took place on that day, and then the numbers of the accident records come back to normal with a rise on average. </p>';
+	 document.getElementById('plot2_1').innerHTML = '<hr/><p><span>MISTERY</span><br/><br/>There is a significant rise on motor vehicle accident numbers started on June 16. There are <span>48</span> MV accident records on that single day.<br/> <br/>The Boston Police Department changed to a new system later on August 12 when there were <span>22</span> accidents took place on that day, and then the numbers of the accident records come back to normal with a rise on average. </p>';
 //Bar Chart
 	 var CaseDay=CasesByWeekDay();
 	 d3.select('#plot3_0').datum(dataset).call(CaseDay);
 // radial histogram
 	 var CaseHour= CasesByHour().interval(1/4);
 	 d3.select('#plot3').datum(dataset).call(CaseHour);
-	 document.getElementById('plot3_1').innerHTML = '<hr/></p><strong>MV Accidents Pattern<br/></strong><br/><br/> The bar chart shows that more MV accidents happend on Friday than other days of week, while less accidents took place on Sunday . <br/><br/>The graphic on the right shows the frequency of MV accidents happend in 24 hours based on the data from 2012 to 2016. <br/><br/>According to the graphic, there are more accidents happend on <span>3:00p.m~7:00p.m</span> than other time.</p>';
+	 document.getElementById('plot3_1').innerHTML = '<hr/><p><span>History Patterns</span><br/><br/>The bar chart shows that more MV accidents happend on <span>Friday</span> than other days of week, while less accidents took place on Sunday. <br/><br/>The graphic on the right shows the frequency of MV accidents happend in 24 hours based on the data from 2012 to 2016. <br/><br/>There are more accidents happend between <span>3:00p.m~7:00p.m</span> than other time although with a lot of incidents were recorded to happen on midnight.</p>';
 
 	});
 
