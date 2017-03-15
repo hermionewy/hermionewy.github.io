@@ -63,7 +63,7 @@ d3.json(MVAccUrl, function (data) {
  		document.getElementById('mapText').innerHTML = '<p><span style="font-size: 25px">'+num2017+'</span><br/><strong>MV accidents in 2017</strong></p><hr/>'+'<p style="font-size:14px">The map shows the <span>'+num+'</span> MV accidents took place in Boston since August 12, 2015.<br/><br/>From 2013 to 2016, the numbers of MV accidents records are 4662, 4605, 9301, 11531, according to the report released by Boston Police Department.<br/><br/>Click the "Your Location" button on the Map to see the accidents happened near you or change the basemap to see them on the satellite view. </p>';
 });
 
-d3.csv('/data/BPD_MVAcc2013~2016.csv', function(data) {
+d3.csv('data/BPD_MVAcc2013~2016.csv', function(data) {
    var dataset = data.map(parseCSV);
 	 var cf = crossfilter(dataset);
 	 var MVAccDataByTime = cf.dimension(function(d){return d.time});
