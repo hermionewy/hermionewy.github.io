@@ -17,6 +17,11 @@ body{
 #plot3{
 	height:500px;
 }
+/*#mapid*/
+#mapid{
+	height:500px;
+	margin: 20px;
+}
 
 /*#plot1*/
 .histogram .bin{
