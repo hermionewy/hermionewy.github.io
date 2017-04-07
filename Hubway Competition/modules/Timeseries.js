@@ -2,157 +2,108 @@ function Timeseries(){
 
 	var T0 = new Date(2013,3,1),
 		  T1 = new Date(2013,10,31);
-	var _interval = d3.timeDay;
+	//var _thresholds = [T0,T1].range(T0,T1,1);
+	var _domain = [0,0.4];
+
 	var _accessor = function(d){
-		return d.startTime;
+		return d.utility;
 	};
 	var W, H, M ={t:30,r:40,b:30,l:40};
 	var scaleX, scaleY;
 	var _dispatcher = d3.dispatch('timerange:select');
+	var _thresholds = d3.range(0,0.4,0.01);
 	var exports = function(selection){
 		//Set initial internal values
 		//Some of these will be based on the incoming selection argument
 		W = W || selection.node().clientWidth - M.l - M.r;
 		H = H || selection.node().clientHeight - M.t - M.b;
-		var arr = selection.datum()?selection.datum():[];
+		var arr = selection.datum()?selection.datum():[]; //tripsByUtility.top(Infinity)
+		var brush = d3.brushX()
+				.on('end',brushend);
 		//Histogram layout
 		//The value, domain and threshold properties are internal to this function
-    var histogram = d3.histogram()
-     			.value(_accessor)
-     			.domain([T0,T1])
-     			.thresholds(_interval.range(T0,T1,1));
 
-		var maxY = 8,
-		scaleX = d3.scaleTime().domain([T0,T1]).range([0,W]),
-		scaleY = d3.scaleLinear().domain([0,maxY]).range([H,0]);
-    console.log(maxY);
+
+		// console.log(arr);
+		// var scale = d3.quantile(arr, 0, function(d){ return d.utility});
+		// console.log(scale);
+		// var quantile = Array.from(arr, function(d){ return d.utility});
+		// _thresholds = d3.scaleQuantile().domain(quantile).range(0,W);
+
+		var histogram = d3.histogram()
+     			.value(_accessor)
+     			.domain(_domain)
+     			.thresholds(_thresholds);
+		var dayBins = histogram(arr);
+
+		var maxY = d3.max(dayBins,function(d){return d.length});
+		var scaleX = d3.scaleLinear().domain([0,0.4]).range([0,W]);
+		var scaleY = d3.scaleLinear().domain([0,maxY]).range([H,0]);
 
 		//Represent
 		//Axis, line and area generators
 
 		var line = d3.line()
 			.x(function(d){return scaleX(d.x0)})
-			.y(function(d){return scaleY(
-						d3.sum(d, function(bike){
-							return bike.duration/3600;
-						})
-				)} );
+			.y(function(d){return scaleY(d.length)} )
+			.curve(d3.curveCatmullRom.alpha(0.5));
+		var area = d3.area()
+			.x(function(d){return scaleX(d.x0)})
+			.y0(function(d){return H})
+			.y1(function(d){return scaleY(d.length)})
+			.curve(d3.curveCatmullRom.alpha(0.5));
 		var axisX = d3.axisBottom()
+		  .tickSize(-5)
 			.scale(scaleX)
-			.ticks(d3.timeMonth.every(1));
+			.ticks(10);
 		var axisY = d3.axisLeft()
 			.tickSize(-W)
 			.scale(scaleY)
 			.ticks(4);
 
-		//Set up the DOM structure like so:
-		/*
-		<svg>
-			<g class='plot'>
-				<g class='axis axis-y' />
-				<path class='line' />
-				<g class='axis axis-x' />
-			</g>
-		</svg>
-		*/
-
 		var svg = selection.selectAll('svg')
-			.data([1]);
-
+			.data([dayBins]);
 
 		var svgEnter = svg.enter()
 			.append('svg') //ENTER
 			.attr('width', W + M.l + M.r)
 			.attr('height', H + M.t + M.b);
 
-		var plotEnter = svgEnter.append('g').attr('class','plot time-series')
-			.attr('transform','translate('+M.l+','+M.t+')');
-		plotEnter.append('g').attr('class','axis axis-y');
-		plotEnter.append('g').attr('class','axis axis-x');
-		//plotEnter.append('path').attr('class','line');
+			var plotEnter = svgEnter.append('g').attr('class','plot time-series')
+				.attr('transform','translate('+M.l+','+M.t+')');
+			plotEnter.append('path').attr('class','area');
+			plotEnter.append('g').attr('class','axis axis-y');
+			plotEnter.append('path').attr('class','line');
+			plotEnter.append('g').attr('class','axis axis-x');
+			plotEnter.append('g').attr('class','brush');
 
-		var plot = svg.merge(svgEnter)
-			.select('.plot')
-			.attr('transform','translate('+M.l+','+M.t+')');
-
-
-
-		// nest the data by id
-		var tripNestById = d3.nest()
-				.key(function(d){return d.bike_nr })
-				.entries(arr);
-
-		tripNestById.forEach(function(bike){
-			//{key:, values:}
-			// append lines
-
-				// plot
-				// 	.append('path').attr('class','line')
-				// 	.datum(histogram(bike.values))
-				// 	.transition()
-				// 	.attr('d',function(datum){
-				// 			return line(datum);
-				// 	})
-			plot
-				.append('path').attr('class','line')
-				.datum(bike)
+			//var circle =
+			//Update
+			var plot = svg.merge(svgEnter)
+				.select('.plot')
+				.attr('transform','translate('+M.l+','+M.t+')');
+			plot.select('.area').transition()
+				.attr('d',area);
+			plot.select('.line').transition()
+				.attr('d',line);
+			plot.select('.axis-y').transition()
+				.call(axisY);
+			plot.select('.axis-x')
+				.attr('transform','translate(0,'+H+')')
 				.transition()
-				.attr('d',function(datum){
-					var dayBins = histogram(datum.values);
-						return line(dayBins);
-				})
-				.style('fill','none')
-				.style('stroke-width','0.5px')
-				.style('opacity', 0.2);
-		})
+				.call(axisX);
 
-		plot.selectAll('.line')
-			.on('mouseenter',function(d){
-					var data = d3.select(this).datum()? d3.select(this).datum():[]; //{key: values:}
-					//console.log(data);
-					var utilityRate = 0.2;
-					var tooltip = d3.select('.custom-tooltip');
-					tooltip.select('.title')
-							.html( 'Bike ID'+ ':' + data.key);
-					tooltip.select('.value')
-							.html('The utility rate of this bike is '+ utilityRate)
-					tooltip.transition().style('opacity',1);
-
-					d3.select(this).style('stroke-width','2px').style('opacity', 1).style('stroke','red');
-
-					//_dispatcher.call('timerange:select',this,data.values);
-			})
-			.on('mousemove',function(d){
-					var data = d3.select(this).datum()? d3.select(this).datum():[]; //{key: values:}
-					var tooltip = d3.select('.custom-tooltip');
-					var xy = d3.mouse( d3.select('.container').node() );
-					tooltip
-							.style('left',xy[0]+10+'px')
-							.style('top',xy[1]+10+'px');
-					d3.select(this).style('stroke-width','2px').style('opacity', 1).style('stroke','red');
-			})
-			.on('mouseleave',function(d){
-					var tooltip = d3.select('.custom-tooltip');
-					tooltip.transition().style('opacity',0);
-
-					d3.select(this).style('stroke-width','0.5px').style('opacity', 0.2);
-			})
-			.on('click', function(){
-				var data = d3.select(this).datum()? d3.select(this).datum():[]; //{key: values:}
-				console.log(data);
-				_dispatcher.call('timerange:select',this,data.values);
-			});
-
-
-		plot.select('.axis-y').transition()
-			.call(axisY);
-		plot.select('.axis-x')
-			.attr('transform','translate(0,'+H+')')
-			.transition()
-			.call(axisX);
-
-
+			//Call brush function
+			plot.select('.brush')
+				.call(brush);
+			function brushend(){
+				if(!d3.event.selection) {_dispatcher.call('timerange:select',this,null); return;}
+				var t0 = scaleX.invert(d3.event.selection[0]),
+					t1 = scaleX.invert(d3.event.selection[1]);
+				_dispatcher.call('timerange:select',this,[t0,t1]);
+			}
 	}
+
 
 	//setting config values
 	//"Getter" and "setter" functions
