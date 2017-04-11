@@ -1,17 +1,20 @@
 console.log('Hubway');
 var globalDispatcher = d3.dispatch('update');
 var _lineStyle = {
+    color: '#8D99AE',
     weight: 0.5,
     opacity: 0.5
 }
 var _circleStyle ={
-    color: '#ED5C8C',
-    fillColor: '#f03',
+    color: '#F28282',
+    //fillColor: '#f03',
     fillOpacity: 0.1,
-    radius: 5
+    radius: 10
 };
-var idToLocation = d3.map();//pair the id to location;
-var idToName = d3.map();
+var idToLocation = d3.map(),//pair the id to location;
+    idToDuration = d3.map(),
+    idToName = d3.map();
+
 //Set the map!
     var mapid = 'mapid';
     var streetMap = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
@@ -20,13 +23,13 @@ var idToName = d3.map();
     });
 
 d3.queue()
+  //.defer(d3.csv, 'data/201608-hubway-tripdata.csv',parseStations)
   .defer(d3.csv,'data/2016hubway-tripdataReduced.csv',parseTrips)
-  //.defer(d3.csv,'data/201608-hubway-tripdata.csv',parseTrips)
-	//.defer(d3.csv,'data/2016hubway-tripdata.csv',parseTrips)
+  .defer(d3.json, 'data/bike-duration.json')
   .defer(d3.csv,'data/2016station_Data.csv',parseStations)
 	.await(dataLoaded);
 
-function dataLoaded(err,trips,stations){
+function dataLoaded(err,trips, bikeDuration, stations){
   var Circles = Array.from(stations,function(d){
     d.circle = L.circle(d.latLng,_circleStyle)
            .bindPopup("Station:" + d.name );
@@ -34,6 +37,7 @@ function dataLoaded(err,trips,stations){
   });
   var circleGroup = L.layerGroup(Circles);
   var circleGroup2 = L.layerGroup();
+  var lineGroup = L.layerGroup();
   var map = L.map(mapid, {
       center: [42.356, -71.072],
       zoom: 13,
@@ -48,6 +52,7 @@ function dataLoaded(err,trips,stations){
   var overlayMaps = {
       "Circles": circleGroup,
       "Circles2": circleGroup2,
+      "Lines":lineGroup
   };
 
   L.control.layers(baseMaps, overlayMaps).addTo(map);
@@ -55,35 +60,40 @@ function dataLoaded(err,trips,stations){
 // take innitial data
 function nestDataById (data){
       var tripNestById = d3.nest()
-          .key(function(d){return d.bike_nr })
+          .key(function(d){return d.bikeId })
           .entries(data);
-      tripNestById.forEach(function(bike){
-        bike.utility = d3.sum(bike.values, function(d){ return d.duration})/(3600*24*366);
-      });
       return tripNestById;
 }
 
-    var tripNestById= nestDataById(trips);
+    var tripNestById = nestDataById(trips);
+    var timeseries = Trends();
+    var bikeTrend = BikeTime();
+    d3.select('#plot1').datum(bikeDuration)
+          .call(timeseries);
+
+    var range = [120, 200];
+    var rangeUpdate = [range[0]*60*366,range[1]*60*366]; //range: duration seconds
+    var cfBikeDuration = crossfilter(bikeDuration);
+    var selectedBike = cfBikeDuration.dimension(function(d){ return d.duration }).filter(rangeUpdate).top(Infinity);
+    //filter and show
+
+    var selectedBikeId = Array.from(selectedBike,function(d){return d.bikeId});
     var cf = crossfilter(tripNestById);
-	  var tripsByUtility = cf.dimension(function(d){return d.utility});
-
-    var timeseries = Timeseries();
-    var bikeTime = BikeTime();
-    d3.select('#plot1').datum(tripsByUtility.top(Infinity))
-    			.call(timeseries);
-
-    d3.select('#plot2').datum(tripsByUtility.top(Infinity))
-           .call(bikeTime);
+    var selectedBike = cf.dimension(function(d){return d.key})
+        .filter(function(d){
+            return selectedBikeId.indexOf(d) > -1 });
+    d3.select('#plot2').datum(selectedBike.top(Infinity))
+           .call(bikeTrend);
 
     // filter data to weekend
-    var cf3 = crossfilter(trips);
+    /*var cf3 = crossfilter(trips);
     var tripsByWeekend = cf3.dimension (function(d){ return d.startTime;}).filter(function(d){
       return d.getDay()== 6 || d.getDay()==0 ;
     });
-    var dataWeekend = nestDataById(tripsByWeekend.top(Infinity));
+    var dataWeekend = nestDataById(tripsByWeekend.top(Infinity));*/
     //WeekEnd trips
-     d3.select('#plot1_2').datum(dataWeekend)
-            .call(timeseries);
+    //  d3.select('#plot1_2').datum(dataWeekend)
+    //         .call(timeseries);
     // var tripsBySummer = cf3.dimension (function(d){ return d.startTime;}. filter(function(d){
     //   return d.getMonth() == 6 || d.getMonth() == 7 || d.getMonth() == 8 ;
     // }));
@@ -91,41 +101,38 @@ function nestDataById (data){
     //        .call(timeseries);
 
     timeseries.on('timerange:select', function(range){
-        var arr = tripsByUtility.filter(range).top(Infinity);
-        var bikeNum = arr.length;
-        console.log(bikeNum);
-         d3.select('#plot2').datum(arr)
-               .call(bikeTime);
-        var bikeid = Array.from(arr,function(d){return d.key});
-        var cf2 = crossfilter(trips);
-        var tripsById = cf2.dimension(function(d){return d.bike_nr})
+        var rangeUpdate = [range[0]*60*366,range[1]*60*366]; //range: duration seconds
+        var cf2 = crossfilter(bikeDuration);
+        var selectedBike = cf2.dimension(function(d){ return d.duration }).filter(rangeUpdate).top(Infinity);
+        //filter and show
+
+        var bikeNum = selectedBike.length,
+            bikeid = Array.from(selectedBike,function(d){return d.bikeId});
+
+        var cf = crossfilter(tripNestById);
+        var selectedBikeTrips = cf.dimension(function(d){return d.key})
             .filter(function(d){
-                return bikeid.indexOf(d) > -1;});
+                return bikeid.indexOf(d) > -1 });
+
+        d3.select('#plot2').datum(selectedBikeTrips.top(Infinity))
+               .call(bikeTrend);
       //  console.log(tripsById.top(Infinity));
-        var tripsByStation = d3.nest()
-            .key(function(d) { return d.startStn; })
-            .rollup(function(leaves) { return leaves.length; })
-            .entries(tripsById.top(Infinity));
 
-        drawCircles(tripsByStation);
 
-        function drawCircles(stations){
-          console.log(stations);
-          circleGroup2.clearLayers();
-          map.removeLayer(circleGroup2);
-          map.addLayer(circleGroup2);
-
-           // for each station append a circle
-           var maxY = d3.max(stations, function(d){ return d.value/bikeNum})
-          var scaleR = d3.scaleLinear().domain([0,maxY]).range([0,120]);
-           var BigCircles = stations.forEach(function(d){
-             //console.log(scaleR(+d.value/ bikeNum));
-             var circle = L.circle(idToLocation.get(d.key),{   color: '#A5C0D1',fillColor: '#f03',fillOpacity: 0.1, radius: scaleR(+d.value/ bikeNum)})
-             .bindPopup("Station:" + idToName.get(d.key)+"<br/>Trips Count Per Bike: "+ (d.value / bikeNum).toFixed(2) );
-              circleGroup2.addLayer(circle);
-           });
-           };
          });
+
+    bikeTrend.on('selectBike', function(d){
+        drawLines(d);
+        function drawLines(trips){
+            lineGroup.clearLayers();
+            map.removeLayer(lineGroup);
+            map.addLayer(lineGroup);
+            trips.forEach(function(trip){
+              var line = L.polyline([idToLocation.get(trip.startStn), idToLocation.get(trip.endStn)], _lineStyle);
+              lineGroup.addLayer(line);
+            });
+        }
+    });
   }
 
 
@@ -133,13 +140,20 @@ function nestDataById (data){
 // "1",835,"2016-03-01 00:01:42","2016-03-01 00:15:38",140,"Danehy Park",42.388966,-71.132788,95,"Cambridge St - at Columbia St / Webster Ave",42.372969,-71.094445,864,"Subscriber","1987",1
 function parseTrips(d){
 	return {
-		bike_nr:d.bikeid,
+		bikeId:d.bikeid,
 		duration:+d.tripduration,
 		startStn:d.startStn,
     endStn:d.endStn,
 		startTime:parseTime(d.starttime),
 		endTime:parseTime(d.stoptime)
 	}
+}
+function parseDuration(d){
+  idToDuration.set(d.bikeId,d.duration);
+  return {
+    bikeId:d.bikeId,
+    duration:d.duration
+  }
 }
 // startStationId,startStationName,startStationLongitude,startStationLatitude,sum
 // 36,Boston Public Library - 700 Boylston St.,-71.077303,42.349673,13841

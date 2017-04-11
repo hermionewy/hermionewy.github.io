@@ -1,0 +1,7210 @@
+[
+  {
+    "bikeId": "1406",
+    "duration": 507456
+  },
+  {
+    "bikeId": "1121",
+    "duration": 938679
+  },
+  {
+    "bikeId": "474",
+    "duration": 844574
+  },
+  {
+    "bikeId": "1504",
+    "duration": 935871
+  },
+  {
+    "bikeId": "913",
+    "duration": 927632
+  },
+  {
+    "bikeId": "620",
+    "duration": 650426
+  },
+  {
+    "bikeId": "204",
+    "duration": 1190660
+  },
+  {
+    "bikeId": "750",
+    "duration": 865326
+  },
+  {
+    "bikeId": "909",
+    "duration": 2353436
+  },
+  {
+    "bikeId": "813",
+    "duration": 318366
+  },
+  {
+    "bikeId": "1281",
+    "duration": 1740855
+  },
+  {
+    "bikeId": "661",
+    "duration": 1143962
+  },
+  {
+    "bikeId": "451",
+    "duration": 658247
+  },
+  {
+    "bikeId": "1471",
+    "duration": 873826
+  },
+  {
+    "bikeId": "1218",
+    "duration": 737238
+  },
+  {
+    "bikeId": "887",
+    "duration": 1205960
+  },
+  {
+    "bikeId": "232",
+    "duration": 610824
+  },
+  {
+    "bikeId": "1162",
+    "duration": 1189150
+  },
+  {
+    "bikeId": "649",
+    "duration": 808598
+  },
+  {
+    "bikeId": "1217",
+    "duration": 918448
+  },
+  {
+    "bikeId": "1303",
+    "duration": 935868
+  },
+  {
+    "bikeId": "766",
+    "duration": 775371
+  },
+  {
+    "bikeId": "282",
+    "duration": 849107
+  },
+  {
+    "bikeId": "1187",
+    "duration": 349739
+  },
+  {
+    "bikeId": "1498",
+    "duration": 705364
+  },
+  {
+    "bikeId": "411",
+    "duration": 677955
+  },
+  {
+    "bikeId": "551",
+    "duration": 985392
+  },
+  {
+    "bikeId": "348",
+    "duration": 393622
+  },
+  {
+    "bikeId": "1011",
+    "duration": 650972
+  },
+  {
+    "bikeId": "94",
+    "duration": 971820
+  },
+  {
+    "bikeId": "772",
+    "duration": 1500682
+  },
+  {
+    "bikeId": "639",
+    "duration": 765029
+  },
+  {
+    "bikeId": "86",
+    "duration": 1432451
+  },
+  {
+    "bikeId": "866",
+    "duration": 605941
+  },
+  {
+    "bikeId": "1062",
+    "duration": 861356
+  },
+  {
+    "bikeId": "1496",
+    "duration": 676182
+  },
+  {
+    "bikeId": "835",
+    "duration": 631704
+  },
+  {
+    "bikeId": "1572",
+    "duration": 1485099
+  },
+  {
+    "bikeId": "1495",
+    "duration": 886824
+  },
+  {
+    "bikeId": "13",
+    "duration": 1069011
+  },
+  {
+    "bikeId": "1270",
+    "duration": 590630
+  },
+  {
+    "bikeId": "1562",
+    "duration": 834864
+  },
+  {
+    "bikeId": "271",
+    "duration": 932049
+  },
+  {
+    "bikeId": "322",
+    "duration": 571778
+  },
+  {
+    "bikeId": "674",
+    "duration": 733704
+  },
+  {
+    "bikeId": "450",
+    "duration": 794980
+  },
+  {
+    "bikeId": "1194",
+    "duration": 784427
+  },
+  {
+    "bikeId": "1139",
+    "duration": 1335364
+  },
+  {
+    "bikeId": "774",
+    "duration": 815803
+  },
+  {
+    "bikeId": "1215",
+    "duration": 1149692
+  },
+  {
+    "bikeId": "1086",
+    "duration": 1227721
+  },
+  {
+    "bikeId": "1475",
+    "duration": 840884
+  },
+  {
+    "bikeId": "1454",
+    "duration": 1117137
+  },
+  {
+    "bikeId": "1085",
+    "duration": 909077
+  },
+  {
+    "bikeId": "1568",
+    "duration": 930898
+  },
+  {
+    "bikeId": "285",
+    "duration": 1969367
+  },
+  {
+    "bikeId": "642",
+    "duration": 2757024
+  },
+  {
+    "bikeId": "1186",
+    "duration": 1128647
+  },
+  {
+    "bikeId": "1002",
+    "duration": 1074334
+  },
+  {
+    "bikeId": "738",
+    "duration": 651961
+  },
+  {
+    "bikeId": "644",
+    "duration": 3036615
+  },
+  {
+    "bikeId": "948",
+    "duration": 875154
+  },
+  {
+    "bikeId": "1488",
+    "duration": 658789
+  },
+  {
+    "bikeId": "1069",
+    "duration": 1020725
+  },
+  {
+    "bikeId": "156",
+    "duration": 985760
+  },
+  {
+    "bikeId": "1122",
+    "duration": 1622612
+  },
+  {
+    "bikeId": "14",
+    "duration": 797993
+  },
+  {
+    "bikeId": "751",
+    "duration": 780159
+  },
+  {
+    "bikeId": "1114",
+    "duration": 1181987
+  },
+  {
+    "bikeId": "708",
+    "duration": 844134
+  },
+  {
+    "bikeId": "784",
+    "duration": 1621068
+  },
+  {
+    "bikeId": "1100",
+    "duration": 3419485
+  },
+  {
+    "bikeId": "1538",
+    "duration": 852961
+  },
+  {
+    "bikeId": "1550",
+    "duration": 985259
+  },
+  {
+    "bikeId": "1431",
+    "duration": 1072049
+  },
+  {
+    "bikeId": "853",
+    "duration": 985370
+  },
+  {
+    "bikeId": "1017",
+    "duration": 1554346
+  },
+  {
+    "bikeId": "691",
+    "duration": 756365
+  },
+  {
+    "bikeId": "387",
+    "duration": 806777
+  },
+  {
+    "bikeId": "1104",
+    "duration": 677955
+  },
+  {
+    "bikeId": "196",
+    "duration": 211461
+  },
+  {
+    "bikeId": "1134",
+    "duration": 919134
+  },
+  {
+    "bikeId": "1514",
+    "duration": 1127633
+  },
+  {
+    "bikeId": "449",
+    "duration": 500450
+  },
+  {
+    "bikeId": "754",
+    "duration": 980322
+  },
+  {
+    "bikeId": "371",
+    "duration": 723387
+  },
+  {
+    "bikeId": "1293",
+    "duration": 743495
+  },
+  {
+    "bikeId": "1473",
+    "duration": 763959
+  },
+  {
+    "bikeId": "1094",
+    "duration": 1050879
+  },
+  {
+    "bikeId": "155",
+    "duration": 678685
+  },
+  {
+    "bikeId": "347",
+    "duration": 942538
+  },
+  {
+    "bikeId": "646",
+    "duration": 977282
+  },
+  {
+    "bikeId": "121",
+    "duration": 1348952
+  },
+  {
+    "bikeId": "1456",
+    "duration": 849487
+  },
+  {
+    "bikeId": "893",
+    "duration": 5794
+  },
+  {
+    "bikeId": "90",
+    "duration": 1972973
+  },
+  {
+    "bikeId": "277",
+    "duration": 973740
+  },
+  {
+    "bikeId": "260",
+    "duration": 862859
+  },
+  {
+    "bikeId": "1534",
+    "duration": 1626189
+  },
+  {
+    "bikeId": "1481",
+    "duration": 608165
+  },
+  {
+    "bikeId": "56",
+    "duration": 8908933
+  },
+  {
+    "bikeId": "1558",
+    "duration": 852522
+  },
+  {
+    "bikeId": "1566",
+    "duration": 1029247
+  },
+  {
+    "bikeId": "862",
+    "duration": 951854
+  },
+  {
+    "bikeId": "985",
+    "duration": 721662
+  },
+  {
+    "bikeId": "1041",
+    "duration": 619795
+  },
+  {
+    "bikeId": "1274",
+    "duration": 804134
+  },
+  {
+    "bikeId": "339",
+    "duration": 687323
+  },
+  {
+    "bikeId": "781",
+    "duration": 898411
+  },
+  {
+    "bikeId": "1119",
+    "duration": 1019831
+  },
+  {
+    "bikeId": "1161",
+    "duration": 943320
+  },
+  {
+    "bikeId": "638",
+    "duration": 1233220
+  },
+  {
+    "bikeId": "42",
+    "duration": 1051385
+  },
+  {
+    "bikeId": "476",
+    "duration": 1107966
+  },
+  {
+    "bikeId": "421",
+    "duration": 903536
+  },
+  {
+    "bikeId": "841",
+    "duration": 773416
+  },
+  {
+    "bikeId": "125",
+    "duration": 463035
+  },
+  {
+    "bikeId": "864",
+    "duration": 809912
+  },
+  {
+    "bikeId": "136",
+    "duration": 954460
+  },
+  {
+    "bikeId": "863",
+    "duration": 1048713
+  },
+  {
+    "bikeId": "236",
+    "duration": 777557
+  },
+  {
+    "bikeId": "996",
+    "duration": 1017797
+  },
+  {
+    "bikeId": "896",
+    "duration": 621984
+  },
+  {
+    "bikeId": "572",
+    "duration": 543941
+  },
+  {
+    "bikeId": "865",
+    "duration": 818477
+  },
+  {
+    "bikeId": "1204",
+    "duration": 3287145
+  },
+  {
+    "bikeId": "681",
+    "duration": 5208808
+  },
+  {
+    "bikeId": "357",
+    "duration": 640411
+  },
+  {
+    "bikeId": "130",
+    "duration": 1564634
+  },
+  {
+    "bikeId": "1268",
+    "duration": 822702
+  },
+  {
+    "bikeId": "1556",
+    "duration": 1364237
+  },
+  {
+    "bikeId": "1450",
+    "duration": 699767
+  },
+  {
+    "bikeId": "791",
+    "duration": 1002296
+  },
+  {
+    "bikeId": "1095",
+    "duration": 6769
+  },
+  {
+    "bikeId": "704",
+    "duration": 763684
+  },
+  {
+    "bikeId": "1292",
+    "duration": 868469
+  },
+  {
+    "bikeId": "923",
+    "duration": 697582
+  },
+  {
+    "bikeId": "635",
+    "duration": 576675
+  },
+  {
+    "bikeId": "797",
+    "duration": 678941
+  },
+  {
+    "bikeId": "1118",
+    "duration": 1160880
+  },
+  {
+    "bikeId": "1239",
+    "duration": 856561
+  },
+  {
+    "bikeId": "1289",
+    "duration": 907444
+  },
+  {
+    "bikeId": "919",
+    "duration": 2886158
+  },
+  {
+    "bikeId": "836",
+    "duration": 788695
+  },
+  {
+    "bikeId": "856",
+    "duration": 801887
+  },
+  {
+    "bikeId": "888",
+    "duration": 832635
+  },
+  {
+    "bikeId": "660",
+    "duration": 965877
+  },
+  {
+    "bikeId": "1103",
+    "duration": 708878
+  },
+  {
+    "bikeId": "643",
+    "duration": 753515
+  },
+  {
+    "bikeId": "1539",
+    "duration": 870288
+  },
+  {
+    "bikeId": "1312",
+    "duration": 1161589
+  },
+  {
+    "bikeId": "171",
+    "duration": 2340762
+  },
+  {
+    "bikeId": "685",
+    "duration": 996687
+  },
+  {
+    "bikeId": "364",
+    "duration": 458439
+  },
+  {
+    "bikeId": "331",
+    "duration": 865751
+  },
+  {
+    "bikeId": "55",
+    "duration": 918855
+  },
+  {
+    "bikeId": "634",
+    "duration": 776924
+  },
+  {
+    "bikeId": "956",
+    "duration": 847508
+  },
+  {
+    "bikeId": "583",
+    "duration": 622945
+  },
+  {
+    "bikeId": "71",
+    "duration": 601306
+  },
+  {
+    "bikeId": "932",
+    "duration": 672305
+  },
+  {
+    "bikeId": "186",
+    "duration": 1169673
+  },
+  {
+    "bikeId": "647",
+    "duration": 1199676
+  },
+  {
+    "bikeId": "1571",
+    "duration": 1070738
+  },
+  {
+    "bikeId": "310",
+    "duration": 1133687
+  },
+  {
+    "bikeId": "1313",
+    "duration": 884155
+  },
+  {
+    "bikeId": "1259",
+    "duration": 986893
+  },
+  {
+    "bikeId": "957",
+    "duration": 1194068
+  },
+  {
+    "bikeId": "326",
+    "duration": 936625
+  },
+  {
+    "bikeId": "895",
+    "duration": 707449
+  },
+  {
+    "bikeId": "452",
+    "duration": 905062
+  },
+  {
+    "bikeId": "858",
+    "duration": 747938
+  },
+  {
+    "bikeId": "1561",
+    "duration": 844183
+  },
+  {
+    "bikeId": "375",
+    "duration": 3026156
+  },
+  {
+    "bikeId": "658",
+    "duration": 745869
+  },
+  {
+    "bikeId": "610",
+    "duration": 862193
+  },
+  {
+    "bikeId": "1546",
+    "duration": 118628
+  },
+  {
+    "bikeId": "637",
+    "duration": 739533
+  },
+  {
+    "bikeId": "1046",
+    "duration": 1058458
+  },
+  {
+    "bikeId": "87",
+    "duration": 1420986
+  },
+  {
+    "bikeId": "1120",
+    "duration": 1266036
+  },
+  {
+    "bikeId": "1574",
+    "duration": 1083821
+  },
+  {
+    "bikeId": "1196",
+    "duration": 744379
+  },
+  {
+    "bikeId": "786",
+    "duration": 1025535
+  },
+  {
+    "bikeId": "894",
+    "duration": 814097
+  },
+  {
+    "bikeId": "581",
+    "duration": 769195
+  },
+  {
+    "bikeId": "1529",
+    "duration": 1246242
+  },
+  {
+    "bikeId": "568",
+    "duration": 1206995
+  },
+  {
+    "bikeId": "275",
+    "duration": 1537070
+  },
+  {
+    "bikeId": "659",
+    "duration": 1821719
+  },
+  {
+    "bikeId": "762",
+    "duration": 868754
+  },
+  {
+    "bikeId": "788",
+    "duration": 495019
+  },
+  {
+    "bikeId": "1308",
+    "duration": 980249
+  },
+  {
+    "bikeId": "1316",
+    "duration": 740474
+  },
+  {
+    "bikeId": "562",
+    "duration": 816753
+  },
+  {
+    "bikeId": "859",
+    "duration": 895545
+  },
+  {
+    "bikeId": "794",
+    "duration": 737792
+  },
+  {
+    "bikeId": "247",
+    "duration": 578374
+  },
+  {
+    "bikeId": "355",
+    "duration": 612460
+  },
+  {
+    "bikeId": "1078",
+    "duration": 943020
+  },
+  {
+    "bikeId": "959",
+    "duration": 776985
+  },
+  {
+    "bikeId": "761",
+    "duration": 1642131
+  },
+  {
+    "bikeId": "477",
+    "duration": 767263
+  },
+  {
+    "bikeId": "604",
+    "duration": 744366
+  },
+  {
+    "bikeId": "398",
+    "duration": 1662082
+  },
+  {
+    "bikeId": "1111",
+    "duration": 1088481
+  },
+  {
+    "bikeId": "670",
+    "duration": 3183142
+  },
+  {
+    "bikeId": "1283",
+    "duration": 2436002
+  },
+  {
+    "bikeId": "1499",
+    "duration": 1426704
+  },
+  {
+    "bikeId": "838",
+    "duration": 6707109
+  },
+  {
+    "bikeId": "682",
+    "duration": 639048
+  },
+  {
+    "bikeId": "546",
+    "duration": 902821
+  },
+  {
+    "bikeId": "795",
+    "duration": 657658
+  },
+  {
+    "bikeId": "648",
+    "duration": 826986
+  },
+  {
+    "bikeId": "613",
+    "duration": 1778546
+  },
+  {
+    "bikeId": "510",
+    "duration": 775386
+  },
+  {
+    "bikeId": "557",
+    "duration": 889809
+  },
+  {
+    "bikeId": "25",
+    "duration": 867208
+  },
+  {
+    "bikeId": "709",
+    "duration": 634905
+  },
+  {
+    "bikeId": "84",
+    "duration": 766515
+  },
+  {
+    "bikeId": "876",
+    "duration": 778035
+  },
+  {
+    "bikeId": "1010",
+    "duration": 2086562
+  },
+  {
+    "bikeId": "1189",
+    "duration": 636952
+  },
+  {
+    "bikeId": "207",
+    "duration": 1143009
+  },
+  {
+    "bikeId": "448",
+    "duration": 643407
+  },
+  {
+    "bikeId": "366",
+    "duration": 839137
+  },
+  {
+    "bikeId": "1531",
+    "duration": 413665
+  },
+  {
+    "bikeId": "272",
+    "duration": 4449884
+  },
+  {
+    "bikeId": "1332",
+    "duration": 729651
+  },
+  {
+    "bikeId": "1166",
+    "duration": 1080283
+  },
+  {
+    "bikeId": "76",
+    "duration": 1256777
+  },
+  {
+    "bikeId": "108",
+    "duration": 1116137
+  },
+  {
+    "bikeId": "1282",
+    "duration": 968892
+  },
+  {
+    "bikeId": "1159",
+    "duration": 1775453
+  },
+  {
+    "bikeId": "654",
+    "duration": 1014050
+  },
+  {
+    "bikeId": "1544",
+    "duration": 1225351
+  },
+  {
+    "bikeId": "805",
+    "duration": 672615
+  },
+  {
+    "bikeId": "495",
+    "duration": 616210
+  },
+  {
+    "bikeId": "1331",
+    "duration": 1162687
+  },
+  {
+    "bikeId": "1579",
+    "duration": 993620
+  },
+  {
+    "bikeId": "1541",
+    "duration": 993916
+  },
+  {
+    "bikeId": "1426",
+    "duration": 866337
+  },
+  {
+    "bikeId": "615",
+    "duration": 791997
+  },
+  {
+    "bikeId": "1113",
+    "duration": 1019893
+  },
+  {
+    "bikeId": "1056",
+    "duration": 1130591
+  },
+  {
+    "bikeId": "703",
+    "duration": 56962
+  },
+  {
+    "bikeId": "718",
+    "duration": 1011763
+  },
+  {
+    "bikeId": "657",
+    "duration": 775507
+  },
+  {
+    "bikeId": "484",
+    "duration": 1349755
+  },
+  {
+    "bikeId": "1023",
+    "duration": 834673
+  },
+  {
+    "bikeId": "857",
+    "duration": 1173176
+  },
+  {
+    "bikeId": "1221",
+    "duration": 856244
+  },
+  {
+    "bikeId": "867",
+    "duration": 990442
+  },
+  {
+    "bikeId": "381",
+    "duration": 1122971
+  },
+  {
+    "bikeId": "1255",
+    "duration": 1045132
+  },
+  {
+    "bikeId": "1315",
+    "duration": 1094315
+  },
+  {
+    "bikeId": "1578",
+    "duration": 56695
+  },
+  {
+    "bikeId": "908",
+    "duration": 877811
+  },
+  {
+    "bikeId": "875",
+    "duration": 1105387
+  },
+  {
+    "bikeId": "869",
+    "duration": 895397
+  },
+  {
+    "bikeId": "671",
+    "duration": 1078942
+  },
+  {
+    "bikeId": "683",
+    "duration": 680709
+  },
+  {
+    "bikeId": "1144",
+    "duration": 1005235
+  },
+  {
+    "bikeId": "1157",
+    "duration": 719306
+  },
+  {
+    "bikeId": "1291",
+    "duration": 736178
+  },
+  {
+    "bikeId": "414",
+    "duration": 860871
+  },
+  {
+    "bikeId": "567",
+    "duration": 946915
+  },
+  {
+    "bikeId": "699",
+    "duration": 870328
+  },
+  {
+    "bikeId": "614",
+    "duration": 860181
+  },
+  {
+    "bikeId": "1090",
+    "duration": 996646
+  },
+  {
+    "bikeId": "715",
+    "duration": 760156
+  },
+  {
+    "bikeId": "1057",
+    "duration": 688711
+  },
+  {
+    "bikeId": "782",
+    "duration": 1391334
+  },
+  {
+    "bikeId": "655",
+    "duration": 849597
+  },
+  {
+    "bikeId": "717",
+    "duration": 822283
+  },
+  {
+    "bikeId": "676",
+    "duration": 631607
+  },
+  {
+    "bikeId": "1565",
+    "duration": 2572790
+  },
+  {
+    "bikeId": "1276",
+    "duration": 8164
+  },
+  {
+    "bikeId": "806",
+    "duration": 856858
+  },
+  {
+    "bikeId": "1287",
+    "duration": 674196
+  },
+  {
+    "bikeId": "713",
+    "duration": 575126
+  },
+  {
+    "bikeId": "167",
+    "duration": 893813
+  },
+  {
+    "bikeId": "1116",
+    "duration": 8032479
+  },
+  {
+    "bikeId": "920",
+    "duration": 847743
+  },
+  {
+    "bikeId": "714",
+    "duration": 1452169
+  },
+  {
+    "bikeId": "1251",
+    "duration": 689965
+  },
+  {
+    "bikeId": "1135",
+    "duration": 1069801
+  },
+  {
+    "bikeId": "164",
+    "duration": 4614971
+  },
+  {
+    "bikeId": "1549",
+    "duration": 792164
+  },
+  {
+    "bikeId": "741",
+    "duration": 703593
+  },
+  {
+    "bikeId": "763",
+    "duration": 1012809
+  },
+  {
+    "bikeId": "283",
+    "duration": 1051327
+  },
+  {
+    "bikeId": "22",
+    "duration": 885271
+  },
+  {
+    "bikeId": "744",
+    "duration": 1030153
+  },
+  {
+    "bikeId": "1298",
+    "duration": 896888
+  },
+  {
+    "bikeId": "798",
+    "duration": 836001
+  },
+  {
+    "bikeId": "1533",
+    "duration": 797577
+  },
+  {
+    "bikeId": "1004",
+    "duration": 940400
+  },
+  {
+    "bikeId": "1142",
+    "duration": 3894725
+  },
+  {
+    "bikeId": "621",
+    "duration": 755953
+  },
+  {
+    "bikeId": "1530",
+    "duration": 1712722
+  },
+  {
+    "bikeId": "146",
+    "duration": 700411
+  },
+  {
+    "bikeId": "1001",
+    "duration": 949206
+  },
+  {
+    "bikeId": "1547",
+    "duration": 670416
+  },
+  {
+    "bikeId": "1295",
+    "duration": 1469177
+  },
+  {
+    "bikeId": "723",
+    "duration": 1122521
+  },
+  {
+    "bikeId": "984",
+    "duration": 553016
+  },
+  {
+    "bikeId": "262",
+    "duration": 971459
+  },
+  {
+    "bikeId": "1310",
+    "duration": 1854510
+  },
+  {
+    "bikeId": "767",
+    "duration": 771493
+  },
+  {
+    "bikeId": "653",
+    "duration": 797817
+  },
+  {
+    "bikeId": "1202",
+    "duration": 873554
+  },
+  {
+    "bikeId": "1569",
+    "duration": 1118528
+  },
+  {
+    "bikeId": "737",
+    "duration": 697623
+  },
+  {
+    "bikeId": "650",
+    "duration": 851862
+  },
+  {
+    "bikeId": "623",
+    "duration": 906026
+  },
+  {
+    "bikeId": "1271",
+    "duration": 1632934
+  },
+  {
+    "bikeId": "1075",
+    "duration": 1121806
+  },
+  {
+    "bikeId": "1080",
+    "duration": 575505
+  },
+  {
+    "bikeId": "967",
+    "duration": 915408
+  },
+  {
+    "bikeId": "854",
+    "duration": 683250
+  },
+  {
+    "bikeId": "1006",
+    "duration": 1263692
+  },
+  {
+    "bikeId": "777",
+    "duration": 698441
+  },
+  {
+    "bikeId": "707",
+    "duration": 806740
+  },
+  {
+    "bikeId": "1267",
+    "duration": 852451
+  },
+  {
+    "bikeId": "1031",
+    "duration": 846213
+  },
+  {
+    "bikeId": "771",
+    "duration": 794067
+  },
+  {
+    "bikeId": "870",
+    "duration": 889899
+  },
+  {
+    "bikeId": "940",
+    "duration": 1754575
+  },
+  {
+    "bikeId": "924",
+    "duration": 705691
+  },
+  {
+    "bikeId": "694",
+    "duration": 766976
+  },
+  {
+    "bikeId": "926",
+    "duration": 885684
+  },
+  {
+    "bikeId": "1072",
+    "duration": 1920916
+  },
+  {
+    "bikeId": "1433",
+    "duration": 1205254
+  },
+  {
+    "bikeId": "917",
+    "duration": 702776
+  },
+  {
+    "bikeId": "1266",
+    "duration": 887178
+  },
+  {
+    "bikeId": "1070",
+    "duration": 778123
+  },
+  {
+    "bikeId": "656",
+    "duration": 628761
+  },
+  {
+    "bikeId": "651",
+    "duration": 1887962
+  },
+  {
+    "bikeId": "1536",
+    "duration": 944968
+  },
+  {
+    "bikeId": "961",
+    "duration": 888546
+  },
+  {
+    "bikeId": "219",
+    "duration": 1876709
+  },
+  {
+    "bikeId": "1299",
+    "duration": 815258
+  },
+  {
+    "bikeId": "1112",
+    "duration": 699737
+  },
+  {
+    "bikeId": "1128",
+    "duration": 1386287
+  },
+  {
+    "bikeId": "1077",
+    "duration": 977088
+  },
+  {
+    "bikeId": "1015",
+    "duration": 647825
+  },
+  {
+    "bikeId": "1280",
+    "duration": 1106435
+  },
+  {
+    "bikeId": "877",
+    "duration": 6935177
+  },
+  {
+    "bikeId": "852",
+    "duration": 860834
+  },
+  {
+    "bikeId": "690",
+    "duration": 372578
+  },
+  {
+    "bikeId": "943",
+    "duration": 1099395
+  },
+  {
+    "bikeId": "816",
+    "duration": 733795
+  },
+  {
+    "bikeId": "1294",
+    "duration": 870411
+  },
+  {
+    "bikeId": "525",
+    "duration": 3085852
+  },
+  {
+    "bikeId": "1564",
+    "duration": 827710
+  },
+  {
+    "bikeId": "749",
+    "duration": 1508182
+  },
+  {
+    "bikeId": "666",
+    "duration": 696042
+  },
+  {
+    "bikeId": "883",
+    "duration": 830598
+  },
+  {
+    "bikeId": "1526",
+    "duration": 173290
+  },
+  {
+    "bikeId": "878",
+    "duration": 738956
+  },
+  {
+    "bikeId": "803",
+    "duration": 636911
+  },
+  {
+    "bikeId": "983",
+    "duration": 235935
+  },
+  {
+    "bikeId": "1269",
+    "duration": 726366
+  },
+  {
+    "bikeId": "900",
+    "duration": 213434
+  },
+  {
+    "bikeId": "706",
+    "duration": 4525822
+  },
+  {
+    "bikeId": "1108",
+    "duration": 777788
+  },
+  {
+    "bikeId": "1101",
+    "duration": 1272416
+  },
+  {
+    "bikeId": "897",
+    "duration": 1072573
+  },
+  {
+    "bikeId": "796",
+    "duration": 899290
+  },
+  {
+    "bikeId": "759",
+    "duration": 853008
+  },
+  {
+    "bikeId": "1305",
+    "duration": 1124712
+  },
+  {
+    "bikeId": "672",
+    "duration": 1088435
+  },
+  {
+    "bikeId": "799",
+    "duration": 1843221
+  },
+  {
+    "bikeId": "1087",
+    "duration": 810638
+  },
+  {
+    "bikeId": "861",
+    "duration": 975927
+  },
+  {
+    "bikeId": "1272",
+    "duration": 837011
+  },
+  {
+    "bikeId": "1028",
+    "duration": 1128385
+  },
+  {
+    "bikeId": "1005",
+    "duration": 950407
+  },
+  {
+    "bikeId": "1047",
+    "duration": 758067
+  },
+  {
+    "bikeId": "1540",
+    "duration": 1053710
+  },
+  {
+    "bikeId": "1084",
+    "duration": 900530
+  },
+  {
+    "bikeId": "1311",
+    "duration": 656066
+  },
+  {
+    "bikeId": "1096",
+    "duration": 893824
+  },
+  {
+    "bikeId": "1290",
+    "duration": 660381
+  },
+  {
+    "bikeId": "874",
+    "duration": 1213710
+  },
+  {
+    "bikeId": "1527",
+    "duration": 947862
+  },
+  {
+    "bikeId": "1105",
+    "duration": 1159203
+  },
+  {
+    "bikeId": "1542",
+    "duration": 1199571
+  },
+  {
+    "bikeId": "747",
+    "duration": 772794
+  },
+  {
+    "bikeId": "1324",
+    "duration": 806397
+  },
+  {
+    "bikeId": "755",
+    "duration": 11387914
+  },
+  {
+    "bikeId": "1076",
+    "duration": 958100
+  },
+  {
+    "bikeId": "679",
+    "duration": 735270
+  },
+  {
+    "bikeId": "668",
+    "duration": 804290
+  },
+  {
+    "bikeId": "1560",
+    "duration": 1232922
+  },
+  {
+    "bikeId": "1552",
+    "duration": 1317402
+  },
+  {
+    "bikeId": "769",
+    "duration": 761302
+  },
+  {
+    "bikeId": "1209",
+    "duration": 825972
+  },
+  {
+    "bikeId": "253",
+    "duration": 965436
+  },
+  {
+    "bikeId": "636",
+    "duration": 1209376
+  },
+  {
+    "bikeId": "1535",
+    "duration": 971183
+  },
+  {
+    "bikeId": "945",
+    "duration": 1029630
+  },
+  {
+    "bikeId": "889",
+    "duration": 728525
+  },
+  {
+    "bikeId": "1537",
+    "duration": 945161
+  },
+  {
+    "bikeId": "731",
+    "duration": 1238674
+  },
+  {
+    "bikeId": "1288",
+    "duration": 1017244
+  },
+  {
+    "bikeId": "1022",
+    "duration": 881181
+  },
+  {
+    "bikeId": "1109",
+    "duration": 1320012
+  },
+  {
+    "bikeId": "1577",
+    "duration": 962643
+  },
+  {
+    "bikeId": "1093",
+    "duration": 1288128
+  },
+  {
+    "bikeId": "1325",
+    "duration": 539212
+  },
+  {
+    "bikeId": "886",
+    "duration": 791316
+  },
+  {
+    "bikeId": "1099",
+    "duration": 728009
+  },
+  {
+    "bikeId": "1557",
+    "duration": 923843
+  },
+  {
+    "bikeId": "764",
+    "duration": 859649
+  },
+  {
+    "bikeId": "1091",
+    "duration": 646256
+  },
+  {
+    "bikeId": "1007",
+    "duration": 851511
+  },
+  {
+    "bikeId": "734",
+    "duration": 1334616
+  },
+  {
+    "bikeId": "1528",
+    "duration": 991362
+  },
+  {
+    "bikeId": "1554",
+    "duration": 1726868
+  },
+  {
+    "bikeId": "753",
+    "duration": 771826
+  },
+  {
+    "bikeId": "1089",
+    "duration": 800184
+  },
+  {
+    "bikeId": "1297",
+    "duration": 830241
+  },
+  {
+    "bikeId": "702",
+    "duration": 721589
+  },
+  {
+    "bikeId": "746",
+    "duration": 684171
+  },
+  {
+    "bikeId": "1300",
+    "duration": 311452
+  },
+  {
+    "bikeId": "1110",
+    "duration": 1440457
+  },
+  {
+    "bikeId": "778",
+    "duration": 1205417
+  },
+  {
+    "bikeId": "732",
+    "duration": 772823
+  },
+  {
+    "bikeId": "748",
+    "duration": 735571
+  },
+  {
+    "bikeId": "1548",
+    "duration": 1051471
+  },
+  {
+    "bikeId": "1545",
+    "duration": 1005468
+  },
+  {
+    "bikeId": "770",
+    "duration": 564742
+  },
+  {
+    "bikeId": "801",
+    "duration": 1301663
+  },
+  {
+    "bikeId": "1003",
+    "duration": 1265143
+  },
+  {
+    "bikeId": "880",
+    "duration": 761502
+  },
+  {
+    "bikeId": "773",
+    "duration": 1037948
+  },
+  {
+    "bikeId": "739",
+    "duration": 795659
+  },
+  {
+    "bikeId": "1082",
+    "duration": 889808
+  },
+  {
+    "bikeId": "881",
+    "duration": 788011
+  },
+  {
+    "bikeId": "1262",
+    "duration": 732645
+  },
+  {
+    "bikeId": "928",
+    "duration": 928067
+  },
+  {
+    "bikeId": "1073",
+    "duration": 804389
+  },
+  {
+    "bikeId": "1567",
+    "duration": 946491
+  },
+  {
+    "bikeId": "851",
+    "duration": 940389
+  },
+  {
+    "bikeId": "822",
+    "duration": 710967
+  },
+  {
+    "bikeId": "998",
+    "duration": 890809
+  },
+  {
+    "bikeId": "664",
+    "duration": 739935
+  },
+  {
+    "bikeId": "938",
+    "duration": 651441
+  },
+  {
+    "bikeId": "1570",
+    "duration": 951632
+  },
+  {
+    "bikeId": "1563",
+    "duration": 858049
+  },
+  {
+    "bikeId": "736",
+    "duration": 968111
+  },
+  {
+    "bikeId": "1265",
+    "duration": 845965
+  },
+  {
+    "bikeId": "962",
+    "duration": 756912
+  },
+  {
+    "bikeId": "645",
+    "duration": 751903
+  },
+  {
+    "bikeId": "783",
+    "duration": 841870
+  },
+  {
+    "bikeId": "891",
+    "duration": 769667
+  },
+  {
+    "bikeId": "1543",
+    "duration": 1477136
+  },
+  {
+    "bikeId": "1098",
+    "duration": 1186536
+  },
+  {
+    "bikeId": "735",
+    "duration": 789220
+  },
+  {
+    "bikeId": "1106",
+    "duration": 784767
+  },
+  {
+    "bikeId": "1275",
+    "duration": 762732
+  },
+  {
+    "bikeId": "1307",
+    "duration": 948695
+  },
+  {
+    "bikeId": "871",
+    "duration": 726561
+  },
+  {
+    "bikeId": "1555",
+    "duration": 5168711
+  },
+  {
+    "bikeId": "1573",
+    "duration": 694328
+  },
+  {
+    "bikeId": "890",
+    "duration": 897026
+  },
+  {
+    "bikeId": "1044",
+    "duration": 209894
+  },
+  {
+    "bikeId": "1581",
+    "duration": 918615
+  },
+  {
+    "bikeId": "641",
+    "duration": 774055
+  },
+  {
+    "bikeId": "1081",
+    "duration": 534074
+  },
+  {
+    "bikeId": "1273",
+    "duration": 834465
+  },
+  {
+    "bikeId": "1171",
+    "duration": 690784
+  },
+  {
+    "bikeId": "743",
+    "duration": 679580
+  },
+  {
+    "bikeId": "898",
+    "duration": 776699
+  },
+  {
+    "bikeId": "1553",
+    "duration": 803471
+  },
+  {
+    "bikeId": "1576",
+    "duration": 844283
+  },
+  {
+    "bikeId": "1339",
+    "duration": 1195913
+  },
+  {
+    "bikeId": "701",
+    "duration": 847819
+  },
+  {
+    "bikeId": "733",
+    "duration": 587348
+  },
+  {
+    "bikeId": "716",
+    "duration": 997511
+  },
+  {
+    "bikeId": "1083",
+    "duration": 752824
+  },
+  {
+    "bikeId": "1064",
+    "duration": 901463
+  },
+  {
+    "bikeId": "1092",
+    "duration": 1101019
+  },
+  {
+    "bikeId": "1079",
+    "duration": 830528
+  },
+  {
+    "bikeId": "46",
+    "duration": 991081
+  },
+  {
+    "bikeId": "1314",
+    "duration": 888177
+  },
+  {
+    "bikeId": "740",
+    "duration": 969641
+  },
+  {
+    "bikeId": "662",
+    "duration": 958156
+  },
+  {
+    "bikeId": "1277",
+    "duration": 1443787
+  },
+  {
+    "bikeId": "1278",
+    "duration": 1617764
+  },
+  {
+    "bikeId": "1296",
+    "duration": 824525
+  },
+  {
+    "bikeId": "914",
+    "duration": 581524
+  },
+  {
+    "bikeId": "752",
+    "duration": 791908
+  },
+  {
+    "bikeId": "1141",
+    "duration": 882321
+  },
+  {
+    "bikeId": "756",
+    "duration": 856388
+  },
+  {
+    "bikeId": "860",
+    "duration": 996231
+  },
+  {
+    "bikeId": "663",
+    "duration": 1267621
+  },
+  {
+    "bikeId": "705",
+    "duration": 882953
+  },
+  {
+    "bikeId": "1102",
+    "duration": 687626
+  },
+  {
+    "bikeId": "906",
+    "duration": 990900
+  },
+  {
+    "bikeId": "1097",
+    "duration": 2333828
+  },
+  {
+    "bikeId": "673",
+    "duration": 750864
+  },
+  {
+    "bikeId": "958",
+    "duration": 952554
+  },
+  {
+    "bikeId": "1088",
+    "duration": 1141033
+  },
+  {
+    "bikeId": "990",
+    "duration": 1128145
+  },
+  {
+    "bikeId": "999",
+    "duration": 664597
+  },
+  {
+    "bikeId": "111",
+    "duration": 5459676
+  },
+  {
+    "bikeId": "1264",
+    "duration": 1027060
+  },
+  {
+    "bikeId": "992",
+    "duration": 936763
+  },
+  {
+    "bikeId": "742",
+    "duration": 919747
+  },
+  {
+    "bikeId": "949",
+    "duration": 579701
+  },
+  {
+    "bikeId": "779",
+    "duration": 1251522
+  },
+  {
+    "bikeId": "1140",
+    "duration": 813528
+  },
+  {
+    "bikeId": "1306",
+    "duration": 966587
+  },
+  {
+    "bikeId": "1074",
+    "duration": 573810
+  },
+  {
+    "bikeId": "800",
+    "duration": 1737422
+  },
+  {
+    "bikeId": "892",
+    "duration": 1132197
+  },
+  {
+    "bikeId": "842",
+    "duration": 1168430
+  },
+  {
+    "bikeId": "935",
+    "duration": 931212
+  },
+  {
+    "bikeId": "1060",
+    "duration": 787950
+  },
+  {
+    "bikeId": "1559",
+    "duration": 1277855
+  },
+  {
+    "bikeId": "768",
+    "duration": 552418
+  },
+  {
+    "bikeId": "882",
+    "duration": 811885
+  },
+  {
+    "bikeId": "687",
+    "duration": 948882
+  },
+  {
+    "bikeId": "1532",
+    "duration": 672731
+  },
+  {
+    "bikeId": "802",
+    "duration": 1005857
+  },
+  {
+    "bikeId": "1302",
+    "duration": 479079
+  },
+  {
+    "bikeId": "1286",
+    "duration": 916762
+  },
+  {
+    "bikeId": "873",
+    "duration": 996641
+  },
+  {
+    "bikeId": "1107",
+    "duration": 770708
+  },
+  {
+    "bikeId": "1279",
+    "duration": 847271
+  },
+  {
+    "bikeId": "652",
+    "duration": 2661892
+  },
+  {
+    "bikeId": "640",
+    "duration": 826923
+  },
+  {
+    "bikeId": "667",
+    "duration": 766926
+  },
+  {
+    "bikeId": "351",
+    "duration": 786220
+  },
+  {
+    "bikeId": "530",
+    "duration": 831778
+  },
+  {
+    "bikeId": "1151",
+    "duration": 840538
+  },
+  {
+    "bikeId": "463",
+    "duration": 788384
+  },
+  {
+    "bikeId": "228",
+    "duration": 698269
+  },
+  {
+    "bikeId": "1220",
+    "duration": 2230340
+  },
+  {
+    "bikeId": "248",
+    "duration": 3989896
+  },
+  {
+    "bikeId": "556",
+    "duration": 834315
+  },
+  {
+    "bikeId": "872",
+    "duration": 646026
+  },
+  {
+    "bikeId": "10",
+    "duration": 1086257
+  },
+  {
+    "bikeId": "1164",
+    "duration": 1135980
+  },
+  {
+    "bikeId": "1133",
+    "duration": 749439
+  },
+  {
+    "bikeId": "830",
+    "duration": 809488
+  },
+  {
+    "bikeId": "147",
+    "duration": 1691755
+  },
+  {
+    "bikeId": "607",
+    "duration": 1562935
+  },
+  {
+    "bikeId": "1172",
+    "duration": 1036048
+  },
+  {
+    "bikeId": "278",
+    "duration": 964743
+  },
+  {
+    "bikeId": "206",
+    "duration": 830503
+  },
+  {
+    "bikeId": "243",
+    "duration": 961320
+  },
+  {
+    "bikeId": "1054",
+    "duration": 765366
+  },
+  {
+    "bikeId": "1257",
+    "duration": 895305
+  },
+  {
+    "bikeId": "519",
+    "duration": 978329
+  },
+  {
+    "bikeId": "1210",
+    "duration": 682942
+  },
+  {
+    "bikeId": "545",
+    "duration": 561383
+  },
+  {
+    "bikeId": "487",
+    "duration": 724136
+  },
+  {
+    "bikeId": "1195",
+    "duration": 701130
+  },
+  {
+    "bikeId": "433",
+    "duration": 897988
+  },
+  {
+    "bikeId": "69",
+    "duration": 1109671
+  },
+  {
+    "bikeId": "1042",
+    "duration": 1107532
+  },
+  {
+    "bikeId": "390",
+    "duration": 964606
+  },
+  {
+    "bikeId": "442",
+    "duration": 784642
+  },
+  {
+    "bikeId": "496",
+    "duration": 659299
+  },
+  {
+    "bikeId": "1203",
+    "duration": 495876
+  },
+  {
+    "bikeId": "1201",
+    "duration": 177822
+  },
+  {
+    "bikeId": "1145",
+    "duration": 1017176
+  },
+  {
+    "bikeId": "439",
+    "duration": 630526
+  },
+  {
+    "bikeId": "273",
+    "duration": 991183
+  },
+  {
+    "bikeId": "549",
+    "duration": 569944
+  },
+  {
+    "bikeId": "1338",
+    "duration": 817709
+  },
+  {
+    "bikeId": "1188",
+    "duration": 828460
+  },
+  {
+    "bikeId": "982",
+    "duration": 790821
+  },
+  {
+    "bikeId": "608",
+    "duration": 565710
+  },
+  {
+    "bikeId": "513",
+    "duration": 1032327
+  },
+  {
+    "bikeId": "436",
+    "duration": 663282
+  },
+  {
+    "bikeId": "1132",
+    "duration": 1091879
+  },
+  {
+    "bikeId": "356",
+    "duration": 884100
+  },
+  {
+    "bikeId": "1318",
+    "duration": 765477
+  },
+  {
+    "bikeId": "552",
+    "duration": 599933
+  },
+  {
+    "bikeId": "527",
+    "duration": 780828
+  },
+  {
+    "bikeId": "1152",
+    "duration": 1163301
+  },
+  {
+    "bikeId": "518",
+    "duration": 291994
+  },
+  {
+    "bikeId": "81",
+    "duration": 1537554
+  },
+  {
+    "bikeId": "460",
+    "duration": 1135660
+  },
+  {
+    "bikeId": "290",
+    "duration": 791118
+  },
+  {
+    "bikeId": "558",
+    "duration": 813915
+  },
+  {
+    "bikeId": "1206",
+    "duration": 743632
+  },
+  {
+    "bikeId": "1130",
+    "duration": 898968
+  },
+  {
+    "bikeId": "149",
+    "duration": 744620
+  },
+  {
+    "bikeId": "1147",
+    "duration": 810239
+  },
+  {
+    "bikeId": "548",
+    "duration": 1008040
+  },
+  {
+    "bikeId": "1185",
+    "duration": 1052308
+  },
+  {
+    "bikeId": "246",
+    "duration": 703959
+  },
+  {
+    "bikeId": "1224",
+    "duration": 604550
+  },
+  {
+    "bikeId": "176",
+    "duration": 1945971
+  },
+  {
+    "bikeId": "338",
+    "duration": 1085518
+  },
+  {
+    "bikeId": "404",
+    "duration": 1070377
+  },
+  {
+    "bikeId": "537",
+    "duration": 1682187
+  },
+  {
+    "bikeId": "470",
+    "duration": 842706
+  },
+  {
+    "bikeId": "1156",
+    "duration": 851007
+  },
+  {
+    "bikeId": "885",
+    "duration": 586518
+  },
+  {
+    "bikeId": "523",
+    "duration": 2222238
+  },
+  {
+    "bikeId": "169",
+    "duration": 246194
+  },
+  {
+    "bikeId": "1146",
+    "duration": 1284333
+  },
+  {
+    "bikeId": "1127",
+    "duration": 1572798
+  },
+  {
+    "bikeId": "210",
+    "duration": 928236
+  },
+  {
+    "bikeId": "1036",
+    "duration": 836109
+  },
+  {
+    "bikeId": "485",
+    "duration": 1710981
+  },
+  {
+    "bikeId": "1258",
+    "duration": 879179
+  },
+  {
+    "bikeId": "812",
+    "duration": 940045
+  },
+  {
+    "bikeId": "369",
+    "duration": 935539
+  },
+  {
+    "bikeId": "1",
+    "duration": 922409
+  },
+  {
+    "bikeId": "1115",
+    "duration": 705699
+  },
+  {
+    "bikeId": "185",
+    "duration": 738093
+  },
+  {
+    "bikeId": "500",
+    "duration": 1748897
+  },
+  {
+    "bikeId": "209",
+    "duration": 1696314
+  },
+  {
+    "bikeId": "249",
+    "duration": 1222767
+  },
+  {
+    "bikeId": "218",
+    "duration": 239360
+  },
+  {
+    "bikeId": "826",
+    "duration": 729746
+  },
+  {
+    "bikeId": "148",
+    "duration": 1485916
+  },
+  {
+    "bikeId": "521",
+    "duration": 778550
+  },
+  {
+    "bikeId": "1182",
+    "duration": 678500
+  },
+  {
+    "bikeId": "359",
+    "duration": 926154
+  },
+  {
+    "bikeId": "281",
+    "duration": 851884
+  },
+  {
+    "bikeId": "570",
+    "duration": 1561468
+  },
+  {
+    "bikeId": "1174",
+    "duration": 692257
+  },
+  {
+    "bikeId": "606",
+    "duration": 759500
+  },
+  {
+    "bikeId": "177",
+    "duration": 850170
+  },
+  {
+    "bikeId": "528",
+    "duration": 954281
+  },
+  {
+    "bikeId": "408",
+    "duration": 1281454
+  },
+  {
+    "bikeId": "569",
+    "duration": 1289778
+  },
+  {
+    "bikeId": "428",
+    "duration": 818879
+  },
+  {
+    "bikeId": "295",
+    "duration": 683455
+  },
+  {
+    "bikeId": "563",
+    "duration": 8308
+  },
+  {
+    "bikeId": "712",
+    "duration": 961243
+  },
+  {
+    "bikeId": "498",
+    "duration": 1442727
+  },
+  {
+    "bikeId": "365",
+    "duration": 747644
+  },
+  {
+    "bikeId": "469",
+    "duration": 512568
+  },
+  {
+    "bikeId": "1167",
+    "duration": 1248902
+  },
+  {
+    "bikeId": "1190",
+    "duration": 719032
+  },
+  {
+    "bikeId": "1125",
+    "duration": 620313
+  },
+  {
+    "bikeId": "386",
+    "duration": 1182373
+  },
+  {
+    "bikeId": "819",
+    "duration": 681363
+  },
+  {
+    "bikeId": "374",
+    "duration": 686552
+  },
+  {
+    "bikeId": "242",
+    "duration": 793800
+  },
+  {
+    "bikeId": "259",
+    "duration": 656046
+  },
+  {
+    "bikeId": "370",
+    "duration": 742520
+  },
+  {
+    "bikeId": "213",
+    "duration": 682727
+  },
+  {
+    "bikeId": "1137",
+    "duration": 1092661
+  },
+  {
+    "bikeId": "205",
+    "duration": 689929
+  },
+  {
+    "bikeId": "406",
+    "duration": 1299949
+  },
+  {
+    "bikeId": "710",
+    "duration": 1046621
+  },
+  {
+    "bikeId": "1177",
+    "duration": 1089694
+  },
+  {
+    "bikeId": "217",
+    "duration": 1642365
+  },
+  {
+    "bikeId": "616",
+    "duration": 668078
+  },
+  {
+    "bikeId": "361",
+    "duration": 570938
+  },
+  {
+    "bikeId": "489",
+    "duration": 1432776
+  },
+  {
+    "bikeId": "265",
+    "duration": 861789
+  },
+  {
+    "bikeId": "574",
+    "duration": 1812701
+  },
+  {
+    "bikeId": "912",
+    "duration": 554690
+  },
+  {
+    "bikeId": "553",
+    "duration": 795515
+  },
+  {
+    "bikeId": "618",
+    "duration": 2054886
+  },
+  {
+    "bikeId": "600",
+    "duration": 1586768
+  },
+  {
+    "bikeId": "586",
+    "duration": 966398
+  },
+  {
+    "bikeId": "539",
+    "duration": 1012360
+  },
+  {
+    "bikeId": "493",
+    "duration": 1383348
+  },
+  {
+    "bikeId": "544",
+    "duration": 728258
+  },
+  {
+    "bikeId": "256",
+    "duration": 1593230
+  },
+  {
+    "bikeId": "385",
+    "duration": 1269426
+  },
+  {
+    "bikeId": "543",
+    "duration": 748164
+  },
+  {
+    "bikeId": "199",
+    "duration": 758573
+  },
+  {
+    "bikeId": "502",
+    "duration": 979100
+  },
+  {
+    "bikeId": "481",
+    "duration": 1382982
+  },
+  {
+    "bikeId": "396",
+    "duration": 788507
+  },
+  {
+    "bikeId": "292",
+    "duration": 985677
+  },
+  {
+    "bikeId": "235",
+    "duration": 768299
+  },
+  {
+    "bikeId": "354",
+    "duration": 752833
+  },
+  {
+    "bikeId": "910",
+    "duration": 716277
+  },
+  {
+    "bikeId": "1192",
+    "duration": 777340
+  },
+  {
+    "bikeId": "252",
+    "duration": 609481
+  },
+  {
+    "bikeId": "215",
+    "duration": 12001
+  },
+  {
+    "bikeId": "1068",
+    "duration": 1138224
+  },
+  {
+    "bikeId": "1129",
+    "duration": 963100
+  },
+  {
+    "bikeId": "1030",
+    "duration": 790538
+  },
+  {
+    "bikeId": "1225",
+    "duration": 741918
+  },
+  {
+    "bikeId": "1261",
+    "duration": 937711
+  },
+  {
+    "bikeId": "102",
+    "duration": 1805853
+  },
+  {
+    "bikeId": "109",
+    "duration": 707985
+  },
+  {
+    "bikeId": "254",
+    "duration": 744802
+  },
+  {
+    "bikeId": "144",
+    "duration": 733906
+  },
+  {
+    "bikeId": "1061",
+    "duration": 598240
+  },
+  {
+    "bikeId": "95",
+    "duration": 740160
+  },
+  {
+    "bikeId": "824",
+    "duration": 1038406
+  },
+  {
+    "bikeId": "1143",
+    "duration": 4828216
+  },
+  {
+    "bikeId": "224",
+    "duration": 678545
+  },
+  {
+    "bikeId": "471",
+    "duration": 705648
+  },
+  {
+    "bikeId": "305",
+    "duration": 1289942
+  },
+  {
+    "bikeId": "40",
+    "duration": 719170
+  },
+  {
+    "bikeId": "311",
+    "duration": 679675
+  },
+  {
+    "bikeId": "16",
+    "duration": 793450
+  },
+  {
+    "bikeId": "1212",
+    "duration": 905844
+  },
+  {
+    "bikeId": "274",
+    "duration": 681677
+  },
+  {
+    "bikeId": "214",
+    "duration": 54658
+  },
+  {
+    "bikeId": "257",
+    "duration": 1214021
+  },
+  {
+    "bikeId": "101",
+    "duration": 529257
+  },
+  {
+    "bikeId": "461",
+    "duration": 665346
+  },
+  {
+    "bikeId": "140",
+    "duration": 1743666
+  },
+  {
+    "bikeId": "19",
+    "duration": 880323
+  },
+  {
+    "bikeId": "424",
+    "duration": 833936
+  },
+  {
+    "bikeId": "711",
+    "duration": 944311
+  },
+  {
+    "bikeId": "110",
+    "duration": 786573
+  },
+  {
+    "bikeId": "77",
+    "duration": 709724
+  },
+  {
+    "bikeId": "409",
+    "duration": 3594571
+  },
+  {
+    "bikeId": "168",
+    "duration": 783677
+  },
+  {
+    "bikeId": "981",
+    "duration": 663385
+  },
+  {
+    "bikeId": "1058",
+    "duration": 838197
+  },
+  {
+    "bikeId": "504",
+    "duration": 1005947
+  },
+  {
+    "bikeId": "1197",
+    "duration": 126611
+  },
+  {
+    "bikeId": "399",
+    "duration": 880683
+  },
+  {
+    "bikeId": "266",
+    "duration": 878935
+  },
+  {
+    "bikeId": "454",
+    "duration": 660549
+  },
+  {
+    "bikeId": "465",
+    "duration": 795809
+  },
+  {
+    "bikeId": "380",
+    "duration": 740987
+  },
+  {
+    "bikeId": "63",
+    "duration": 537506
+  },
+  {
+    "bikeId": "143",
+    "duration": 691524
+  },
+  {
+    "bikeId": "1154",
+    "duration": 928113
+  },
+  {
+    "bikeId": "443",
+    "duration": 1513111
+  },
+  {
+    "bikeId": "284",
+    "duration": 1310505
+  },
+  {
+    "bikeId": "418",
+    "duration": 1208561
+  },
+  {
+    "bikeId": "50",
+    "duration": 1989474
+  },
+  {
+    "bikeId": "508",
+    "duration": 1047274
+  },
+  {
+    "bikeId": "115",
+    "duration": 1060389
+  },
+  {
+    "bikeId": "420",
+    "duration": 813033
+  },
+  {
+    "bikeId": "384",
+    "duration": 1176327
+  },
+  {
+    "bikeId": "251",
+    "duration": 1410093
+  },
+  {
+    "bikeId": "78",
+    "duration": 755802
+  },
+  {
+    "bikeId": "98",
+    "duration": 768277
+  },
+  {
+    "bikeId": "413",
+    "duration": 1639297
+  },
+  {
+    "bikeId": "92",
+    "duration": 1221245
+  },
+  {
+    "bikeId": "395",
+    "duration": 2660845
+  },
+  {
+    "bikeId": "377",
+    "duration": 1050998
+  },
+  {
+    "bikeId": "223",
+    "duration": 4322763
+  },
+  {
+    "bikeId": "1160",
+    "duration": 739643
+  },
+  {
+    "bikeId": "165",
+    "duration": 1006686
+  },
+  {
+    "bikeId": "417",
+    "duration": 939215
+  },
+  {
+    "bikeId": "422",
+    "duration": 1228996
+  },
+  {
+    "bikeId": "363",
+    "duration": 849979
+  },
+  {
+    "bikeId": "388",
+    "duration": 924801
+  },
+  {
+    "bikeId": "566",
+    "duration": 1020850
+  },
+  {
+    "bikeId": "203",
+    "duration": 1426283
+  },
+  {
+    "bikeId": "792",
+    "duration": 744541
+  },
+  {
+    "bikeId": "879",
+    "duration": 732693
+  },
+  {
+    "bikeId": "480",
+    "duration": 1200463
+  },
+  {
+    "bikeId": "522",
+    "duration": 572225
+  },
+  {
+    "bikeId": "230",
+    "duration": 694225
+  },
+  {
+    "bikeId": "490",
+    "duration": 1199543
+  },
+  {
+    "bikeId": "97",
+    "duration": 688722
+  },
+  {
+    "bikeId": "255",
+    "duration": 1962283
+  },
+  {
+    "bikeId": "279",
+    "duration": 968428
+  },
+  {
+    "bikeId": "1178",
+    "duration": 757188
+  },
+  {
+    "bikeId": "1184",
+    "duration": 835045
+  },
+  {
+    "bikeId": "472",
+    "duration": 906922
+  },
+  {
+    "bikeId": "226",
+    "duration": 882424
+  },
+  {
+    "bikeId": "7",
+    "duration": 660349
+  },
+  {
+    "bikeId": "494",
+    "duration": 815693
+  },
+  {
+    "bikeId": "150",
+    "duration": 1336139
+  },
+  {
+    "bikeId": "263",
+    "duration": 985667
+  },
+  {
+    "bikeId": "533",
+    "duration": 849318
+  },
+  {
+    "bikeId": "180",
+    "duration": 863745
+  },
+  {
+    "bikeId": "393",
+    "duration": 923975
+  },
+  {
+    "bikeId": "1153",
+    "duration": 1001451
+  },
+  {
+    "bikeId": "96",
+    "duration": 1082047
+  },
+  {
+    "bikeId": "466",
+    "duration": 526984
+  },
+  {
+    "bikeId": "447",
+    "duration": 690151
+  },
+  {
+    "bikeId": "785",
+    "duration": 727198
+  },
+  {
+    "bikeId": "276",
+    "duration": 3000115
+  },
+  {
+    "bikeId": "1149",
+    "duration": 1515902
+  },
+  {
+    "bikeId": "400",
+    "duration": 1337711
+  },
+  {
+    "bikeId": "301",
+    "duration": 1292026
+  },
+  {
+    "bikeId": "161",
+    "duration": 679373
+  },
+  {
+    "bikeId": "216",
+    "duration": 3257257
+  },
+  {
+    "bikeId": "423",
+    "duration": 890919
+  },
+  {
+    "bikeId": "152",
+    "duration": 922101
+  },
+  {
+    "bikeId": "775",
+    "duration": 676176
+  },
+  {
+    "bikeId": "491",
+    "duration": 1594214
+  },
+  {
+    "bikeId": "132",
+    "duration": 1589939
+  },
+  {
+    "bikeId": "182",
+    "duration": 841126
+  },
+  {
+    "bikeId": "222",
+    "duration": 1038759
+  },
+  {
+    "bikeId": "158",
+    "duration": 763427
+  },
+  {
+    "bikeId": "317",
+    "duration": 896709
+  },
+  {
+    "bikeId": "52",
+    "duration": 695004
+  },
+  {
+    "bikeId": "349",
+    "duration": 706692
+  },
+  {
+    "bikeId": "312",
+    "duration": 841140
+  },
+  {
+    "bikeId": "1035",
+    "duration": 682002
+  },
+  {
+    "bikeId": "142",
+    "duration": 1530261
+  },
+  {
+    "bikeId": "520",
+    "duration": 1423717
+  },
+  {
+    "bikeId": "106",
+    "duration": 2868014
+  },
+  {
+    "bikeId": "151",
+    "duration": 766913
+  },
+  {
+    "bikeId": "550",
+    "duration": 724222
+  },
+  {
+    "bikeId": "1207",
+    "duration": 834254
+  },
+  {
+    "bikeId": "426",
+    "duration": 920254
+  },
+  {
+    "bikeId": "455",
+    "duration": 1981008
+  },
+  {
+    "bikeId": "139",
+    "duration": 898234
+  },
+  {
+    "bikeId": "291",
+    "duration": 1058327
+  },
+  {
+    "bikeId": "1175",
+    "duration": 698475
+  },
+  {
+    "bikeId": "576",
+    "duration": 998332
+  },
+  {
+    "bikeId": "459",
+    "duration": 696067
+  },
+  {
+    "bikeId": "827",
+    "duration": 794929
+  },
+  {
+    "bikeId": "268",
+    "duration": 695450
+  },
+  {
+    "bikeId": "828",
+    "duration": 1377721
+  },
+  {
+    "bikeId": "137",
+    "duration": 1288214
+  },
+  {
+    "bikeId": "526",
+    "duration": 1261362
+  },
+  {
+    "bikeId": "1326",
+    "duration": 1291059
+  },
+  {
+    "bikeId": "1327",
+    "duration": 1353609
+  },
+  {
+    "bikeId": "765",
+    "duration": 649876
+  },
+  {
+    "bikeId": "47",
+    "duration": 792152
+  },
+  {
+    "bikeId": "74",
+    "duration": 1996721
+  },
+  {
+    "bikeId": "1371",
+    "duration": 1074955
+  },
+  {
+    "bikeId": "12",
+    "duration": 719278
+  },
+  {
+    "bikeId": "509",
+    "duration": 1062104
+  },
+  {
+    "bikeId": "112",
+    "duration": 1054463
+  },
+  {
+    "bikeId": "80",
+    "duration": 974774
+  },
+  {
+    "bikeId": "1330",
+    "duration": 864506
+  },
+  {
+    "bikeId": "456",
+    "duration": 641643
+  },
+  {
+    "bikeId": "506",
+    "duration": 650456
+  },
+  {
+    "bikeId": "1176",
+    "duration": 842562
+  },
+  {
+    "bikeId": "124",
+    "duration": 1195642
+  },
+  {
+    "bikeId": "1138",
+    "duration": 899148
+  },
+  {
+    "bikeId": "1329",
+    "duration": 680230
+  },
+  {
+    "bikeId": "179",
+    "duration": 1054465
+  },
+  {
+    "bikeId": "1334",
+    "duration": 845937
+  },
+  {
+    "bikeId": "30",
+    "duration": 719382
+  },
+  {
+    "bikeId": "362",
+    "duration": 1061652
+  },
+  {
+    "bikeId": "918",
+    "duration": 759337
+  },
+  {
+    "bikeId": "1378",
+    "duration": 939873
+  },
+  {
+    "bikeId": "467",
+    "duration": 917867
+  },
+  {
+    "bikeId": "315",
+    "duration": 874172
+  },
+  {
+    "bikeId": "131",
+    "duration": 658684
+  },
+  {
+    "bikeId": "113",
+    "duration": 703731
+  },
+  {
+    "bikeId": "431",
+    "duration": 833048
+  },
+  {
+    "bikeId": "173",
+    "duration": 750250
+  },
+  {
+    "bikeId": "100",
+    "duration": 905196
+  },
+  {
+    "bikeId": "159",
+    "duration": 711538
+  },
+  {
+    "bikeId": "412",
+    "duration": 1035125
+  },
+  {
+    "bikeId": "1333",
+    "duration": 885844
+  },
+  {
+    "bikeId": "181",
+    "duration": 751095
+  },
+  {
+    "bikeId": "341",
+    "duration": 696473
+  },
+  {
+    "bikeId": "4",
+    "duration": 889472
+  },
+  {
+    "bikeId": "1328",
+    "duration": 1493986
+  },
+  {
+    "bikeId": "343",
+    "duration": 759917
+  },
+  {
+    "bikeId": "336",
+    "duration": 1221964
+  },
+  {
+    "bikeId": "72",
+    "duration": 767359
+  },
+  {
+    "bikeId": "403",
+    "duration": 1167464
+  },
+  {
+    "bikeId": "172",
+    "duration": 741642
+  },
+  {
+    "bikeId": "1021",
+    "duration": 1010537
+  },
+  {
+    "bikeId": "501",
+    "duration": 493526
+  },
+  {
+    "bikeId": "1155",
+    "duration": 2152278
+  },
+  {
+    "bikeId": "342",
+    "duration": 468778
+  },
+  {
+    "bikeId": "129",
+    "duration": 1485540
+  },
+  {
+    "bikeId": "458",
+    "duration": 1098253
+  },
+  {
+    "bikeId": "1180",
+    "duration": 1453702
+  },
+  {
+    "bikeId": "70",
+    "duration": 40392
+  },
+  {
+    "bikeId": "104",
+    "duration": 585976
+  },
+  {
+    "bikeId": "499",
+    "duration": 802673
+  },
+  {
+    "bikeId": "435",
+    "duration": 751932
+  },
+  {
+    "bikeId": "538",
+    "duration": 810290
+  },
+  {
+    "bikeId": "160",
+    "duration": 858863
+  },
+  {
+    "bikeId": "162",
+    "duration": 7537700
+  },
+  {
+    "bikeId": "267",
+    "duration": 757823
+  },
+  {
+    "bikeId": "407",
+    "duration": 902288
+  },
+  {
+    "bikeId": "529",
+    "duration": 609175
+  },
+  {
+    "bikeId": "488",
+    "duration": 1883735
+  },
+  {
+    "bikeId": "1059",
+    "duration": 369532
+  },
+  {
+    "bikeId": "446",
+    "duration": 807940
+  },
+  {
+    "bikeId": "1148",
+    "duration": 965491
+  },
+  {
+    "bikeId": "402",
+    "duration": 113054
+  },
+  {
+    "bikeId": "389",
+    "duration": 715312
+  },
+  {
+    "bikeId": "198",
+    "duration": 889870
+  },
+  {
+    "bikeId": "83",
+    "duration": 674799
+  },
+  {
+    "bikeId": "234",
+    "duration": 931105
+  },
+  {
+    "bikeId": "360",
+    "duration": 600120
+  },
+  {
+    "bikeId": "787",
+    "duration": 760407
+  },
+  {
+    "bikeId": "516",
+    "duration": 783978
+  },
+  {
+    "bikeId": "1040",
+    "duration": 772951
+  },
+  {
+    "bikeId": "1117",
+    "duration": 831832
+  },
+  {
+    "bikeId": "397",
+    "duration": 959338
+  },
+  {
+    "bikeId": "353",
+    "duration": 843811
+  },
+  {
+    "bikeId": "107",
+    "duration": 954349
+  },
+  {
+    "bikeId": "437",
+    "duration": 1055326
+  },
+  {
+    "bikeId": "511",
+    "duration": 560106
+  },
+  {
+    "bikeId": "394",
+    "duration": 1338283
+  },
+  {
+    "bikeId": "821",
+    "duration": 816305
+  },
+  {
+    "bikeId": "565",
+    "duration": 840916
+  },
+  {
+    "bikeId": "9",
+    "duration": 686463
+  },
+  {
+    "bikeId": "531",
+    "duration": 1437492
+  },
+  {
+    "bikeId": "31",
+    "duration": 1357445
+  },
+  {
+    "bikeId": "1051",
+    "duration": 579651
+  },
+  {
+    "bikeId": "532",
+    "duration": 2687187
+  },
+  {
+    "bikeId": "15",
+    "duration": 538947
+  },
+  {
+    "bikeId": "790",
+    "duration": 594323
+  },
+  {
+    "bikeId": "473",
+    "duration": 1291295
+  },
+  {
+    "bikeId": "561",
+    "duration": 1086304
+  },
+  {
+    "bikeId": "1335",
+    "duration": 778075
+  },
+  {
+    "bikeId": "922",
+    "duration": 682096
+  },
+  {
+    "bikeId": "323",
+    "duration": 1023633
+  },
+  {
+    "bikeId": "105",
+    "duration": 636967
+  },
+  {
+    "bikeId": "831",
+    "duration": 705704
+  },
+  {
+    "bikeId": "833",
+    "duration": 1045982
+  },
+  {
+    "bikeId": "183",
+    "duration": 1616229
+  },
+  {
+    "bikeId": "325",
+    "duration": 821774
+  },
+  {
+    "bikeId": "45",
+    "duration": 1208806
+  },
+  {
+    "bikeId": "804",
+    "duration": 1019665
+  },
+  {
+    "bikeId": "1372",
+    "duration": 1462463
+  },
+  {
+    "bikeId": "324",
+    "duration": 865891
+  },
+  {
+    "bikeId": "316",
+    "duration": 728411
+  },
+  {
+    "bikeId": "1049",
+    "duration": 817169
+  },
+  {
+    "bikeId": "969",
+    "duration": 794286
+  },
+  {
+    "bikeId": "328",
+    "duration": 654325
+  },
+  {
+    "bikeId": "88",
+    "duration": 618106
+  },
+  {
+    "bikeId": "444",
+    "duration": 790514
+  },
+  {
+    "bikeId": "208",
+    "duration": 886548
+  },
+  {
+    "bikeId": "973",
+    "duration": 703148
+  },
+  {
+    "bikeId": "815",
+    "duration": 670214
+  },
+  {
+    "bikeId": "524",
+    "duration": 884141
+  },
+  {
+    "bikeId": "334",
+    "duration": 1157162
+  },
+  {
+    "bikeId": "843",
+    "duration": 912595
+  },
+  {
+    "bikeId": "391",
+    "duration": 742180
+  },
+  {
+    "bikeId": "220",
+    "duration": 776444
+  },
+  {
+    "bikeId": "1126",
+    "duration": 763131
+  },
+  {
+    "bikeId": "979",
+    "duration": 605293
+  },
+  {
+    "bikeId": "368",
+    "duration": 671204
+  },
+  {
+    "bikeId": "335",
+    "duration": 585214
+  },
+  {
+    "bikeId": "844",
+    "duration": 612986
+  },
+  {
+    "bikeId": "286",
+    "duration": 914362
+  },
+  {
+    "bikeId": "373",
+    "duration": 1048813
+  },
+  {
+    "bikeId": "1208",
+    "duration": 906494
+  },
+  {
+    "bikeId": "321",
+    "duration": 1218350
+  },
+  {
+    "bikeId": "302",
+    "duration": 965463
+  },
+  {
+    "bikeId": "60",
+    "duration": 672454
+  },
+  {
+    "bikeId": "1380",
+    "duration": 1125580
+  },
+  {
+    "bikeId": "1379",
+    "duration": 922052
+  },
+  {
+    "bikeId": "555",
+    "duration": 830140
+  },
+  {
+    "bikeId": "1374",
+    "duration": 1254706
+  },
+  {
+    "bikeId": "1373",
+    "duration": 828907
+  },
+  {
+    "bikeId": "453",
+    "duration": 1259862
+  },
+  {
+    "bikeId": "1376",
+    "duration": 764021
+  },
+  {
+    "bikeId": "1377",
+    "duration": 718034
+  },
+  {
+    "bikeId": "153",
+    "duration": 1281839
+  },
+  {
+    "bikeId": "202",
+    "duration": 1546191
+  },
+  {
+    "bikeId": "237",
+    "duration": 1205773
+  },
+  {
+    "bikeId": "1008",
+    "duration": 896740
+  },
+  {
+    "bikeId": "486",
+    "duration": 846065
+  },
+  {
+    "bikeId": "1375",
+    "duration": 878928
+  },
+  {
+    "bikeId": "303",
+    "duration": 1022370
+  },
+  {
+    "bikeId": "980",
+    "duration": 790656
+  },
+  {
+    "bikeId": "401",
+    "duration": 806424
+  },
+  {
+    "bikeId": "1337",
+    "duration": 567810
+  },
+  {
+    "bikeId": "972",
+    "duration": 726177
+  },
+  {
+    "bikeId": "440",
+    "duration": 558113
+  },
+  {
+    "bikeId": "986",
+    "duration": 1063952
+  },
+  {
+    "bikeId": "379",
+    "duration": 805815
+  },
+  {
+    "bikeId": "1014",
+    "duration": 990574
+  },
+  {
+    "bikeId": "1304",
+    "duration": 538435
+  },
+  {
+    "bikeId": "457",
+    "duration": 1118263
+  },
+  {
+    "bikeId": "350",
+    "duration": 1618663
+  },
+  {
+    "bikeId": "1223",
+    "duration": 948511
+  },
+  {
+    "bikeId": "976",
+    "duration": 712075
+  },
+  {
+    "bikeId": "462",
+    "duration": 600102
+  },
+  {
+    "bikeId": "832",
+    "duration": 720731
+  },
+  {
+    "bikeId": "344",
+    "duration": 691792
+  },
+  {
+    "bikeId": "554",
+    "duration": 1306032
+  },
+  {
+    "bikeId": "261",
+    "duration": 644194
+  },
+  {
+    "bikeId": "200",
+    "duration": 749976
+  },
+  {
+    "bikeId": "178",
+    "duration": 1164657
+  },
+  {
+    "bikeId": "432",
+    "duration": 1209566
+  },
+  {
+    "bikeId": "540",
+    "duration": 594202
+  },
+  {
+    "bikeId": "1260",
+    "duration": 1145622
+  },
+  {
+    "bikeId": "975",
+    "duration": 1060730
+  },
+  {
+    "bikeId": "48",
+    "duration": 710543
+  },
+  {
+    "bikeId": "383",
+    "duration": 885221
+  },
+  {
+    "bikeId": "427",
+    "duration": 707330
+  },
+  {
+    "bikeId": "392",
+    "duration": 1075063
+  },
+  {
+    "bikeId": "245",
+    "duration": 746978
+  },
+  {
+    "bikeId": "1198",
+    "duration": 726102
+  },
+  {
+    "bikeId": "1168",
+    "duration": 2407160
+  },
+  {
+    "bikeId": "1214",
+    "duration": 1036753
+  },
+  {
+    "bikeId": "244",
+    "duration": 905718
+  },
+  {
+    "bikeId": "974",
+    "duration": 1104036
+  },
+  {
+    "bikeId": "535",
+    "duration": 720251
+  },
+  {
+    "bikeId": "1199",
+    "duration": 820340
+  },
+  {
+    "bikeId": "837",
+    "duration": 595188
+  },
+  {
+    "bikeId": "609",
+    "duration": 685580
+  },
+  {
+    "bikeId": "482",
+    "duration": 1038904
+  },
+  {
+    "bikeId": "174",
+    "duration": 999833
+  },
+  {
+    "bikeId": "134",
+    "duration": 627100
+  },
+  {
+    "bikeId": "258",
+    "duration": 1227183
+  },
+  {
+    "bikeId": "559",
+    "duration": 766609
+  },
+  {
+    "bikeId": "1179",
+    "duration": 704658
+  },
+  {
+    "bikeId": "8",
+    "duration": 775358
+  },
+  {
+    "bikeId": "289",
+    "duration": 963778
+  },
+  {
+    "bikeId": "1048",
+    "duration": 895771
+  },
+  {
+    "bikeId": "593",
+    "duration": 1104861
+  },
+  {
+    "bikeId": "1052",
+    "duration": 739868
+  },
+  {
+    "bikeId": "410",
+    "duration": 972551
+  },
+  {
+    "bikeId": "438",
+    "duration": 699710
+  },
+  {
+    "bikeId": "1124",
+    "duration": 824029
+  },
+  {
+    "bikeId": "337",
+    "duration": 1109594
+  },
+  {
+    "bikeId": "840",
+    "duration": 552970
+  },
+  {
+    "bikeId": "1158",
+    "duration": 1232973
+  },
+  {
+    "bikeId": "1123",
+    "duration": 820485
+  },
+  {
+    "bikeId": "345",
+    "duration": 334001
+  },
+  {
+    "bikeId": "73",
+    "duration": 807063
+  },
+  {
+    "bikeId": "591",
+    "duration": 717257
+  },
+  {
+    "bikeId": "582",
+    "duration": 804647
+  },
+  {
+    "bikeId": "319",
+    "duration": 728288
+  },
+  {
+    "bikeId": "1009",
+    "duration": 653111
+  },
+  {
+    "bikeId": "505",
+    "duration": 66431
+  },
+  {
+    "bikeId": "241",
+    "duration": 358584
+  },
+  {
+    "bikeId": "28",
+    "duration": 3685994
+  },
+  {
+    "bikeId": "547",
+    "duration": 902814
+  },
+  {
+    "bikeId": "921",
+    "duration": 664403
+  },
+  {
+    "bikeId": "367",
+    "duration": 673608
+  },
+  {
+    "bikeId": "430",
+    "duration": 653000
+  },
+  {
+    "bikeId": "27",
+    "duration": 930511
+  },
+  {
+    "bikeId": "240",
+    "duration": 640077
+  },
+  {
+    "bikeId": "665",
+    "duration": 584822
+  },
+  {
+    "bikeId": "128",
+    "duration": 627415
+  },
+  {
+    "bikeId": "61",
+    "duration": 758478
+  },
+  {
+    "bikeId": "99",
+    "duration": 601523
+  },
+  {
+    "bikeId": "1136",
+    "duration": 746967
+  },
+  {
+    "bikeId": "507",
+    "duration": 715883
+  },
+  {
+    "bikeId": "93",
+    "duration": 726058
+  },
+  {
+    "bikeId": "82",
+    "duration": 719815
+  },
+  {
+    "bikeId": "231",
+    "duration": 1306597
+  },
+  {
+    "bikeId": "1191",
+    "duration": 793830
+  },
+  {
+    "bikeId": "497",
+    "duration": 825186
+  },
+  {
+    "bikeId": "517",
+    "duration": 551949
+  },
+  {
+    "bikeId": "478",
+    "duration": 885541
+  },
+  {
+    "bikeId": "51",
+    "duration": 734537
+  },
+  {
+    "bikeId": "122",
+    "duration": 678208
+  },
+  {
+    "bikeId": "611",
+    "duration": 826920
+  },
+  {
+    "bikeId": "588",
+    "duration": 853238
+  },
+  {
+    "bikeId": "175",
+    "duration": 755094
+  },
+  {
+    "bikeId": "468",
+    "duration": 2137218
+  },
+  {
+    "bikeId": "1200",
+    "duration": 491424
+  },
+  {
+    "bikeId": "64",
+    "duration": 638120
+  },
+  {
+    "bikeId": "823",
+    "duration": 869670
+  },
+  {
+    "bikeId": "238",
+    "duration": 1044093
+  },
+  {
+    "bikeId": "53",
+    "duration": 699510
+  },
+  {
+    "bikeId": "601",
+    "duration": 642314
+  },
+  {
+    "bikeId": "17",
+    "duration": 1305581
+  },
+  {
+    "bikeId": "541",
+    "duration": 837687
+  },
+  {
+    "bikeId": "293",
+    "duration": 943075
+  },
+  {
+    "bikeId": "584",
+    "duration": 916995
+  },
+  {
+    "bikeId": "599",
+    "duration": 802157
+  },
+  {
+    "bikeId": "834",
+    "duration": 545658
+  },
+  {
+    "bikeId": "59",
+    "duration": 720216
+  },
+  {
+    "bikeId": "330",
+    "duration": 815244
+  },
+  {
+    "bikeId": "977",
+    "duration": 629880
+  },
+  {
+    "bikeId": "1317",
+    "duration": 877069
+  },
+  {
+    "bikeId": "580",
+    "duration": 1004912
+  },
+  {
+    "bikeId": "1071",
+    "duration": 825102
+  },
+  {
+    "bikeId": "3",
+    "duration": 745361
+  },
+  {
+    "bikeId": "587",
+    "duration": 763979
+  },
+  {
+    "bikeId": "120",
+    "duration": 484921
+  },
+  {
+    "bikeId": "103",
+    "duration": 864768
+  },
+  {
+    "bikeId": "300",
+    "duration": 1093435
+  },
+  {
+    "bikeId": "154",
+    "duration": 690817
+  },
+  {
+    "bikeId": "29",
+    "duration": 759763
+  },
+  {
+    "bikeId": "612",
+    "duration": 733508
+  },
+  {
+    "bikeId": "589",
+    "duration": 507571
+  },
+  {
+    "bikeId": "1163",
+    "duration": 830275
+  },
+  {
+    "bikeId": "911",
+    "duration": 924559
+  },
+  {
+    "bikeId": "492",
+    "duration": 540677
+  },
+  {
+    "bikeId": "960",
+    "duration": 2230471
+  },
+  {
+    "bikeId": "1250",
+    "duration": 757352
+  },
+  {
+    "bikeId": "724",
+    "duration": 619178
+  },
+  {
+    "bikeId": "1228",
+    "duration": 656162
+  },
+  {
+    "bikeId": "1029",
+    "duration": 650330
+  },
+  {
+    "bikeId": "1253",
+    "duration": 830628
+  },
+  {
+    "bikeId": "728",
+    "duration": 1111233
+  },
+  {
+    "bikeId": "1285",
+    "duration": 702292
+  },
+  {
+    "bikeId": "190",
+    "duration": 1060789
+  },
+  {
+    "bikeId": "693",
+    "duration": 1021129
+  },
+  {
+    "bikeId": "726",
+    "duration": 843268
+  },
+  {
+    "bikeId": "239",
+    "duration": 662600
+  },
+  {
+    "bikeId": "605",
+    "duration": 542643
+  },
+  {
+    "bikeId": "1165",
+    "duration": 926221
+  },
+  {
+    "bikeId": "332",
+    "duration": 742454
+  },
+  {
+    "bikeId": "269",
+    "duration": 1726972
+  },
+  {
+    "bikeId": "1038",
+    "duration": 681543
+  },
+  {
+    "bikeId": "1181",
+    "duration": 547441
+  },
+  {
+    "bikeId": "818",
+    "duration": 864749
+  },
+  {
+    "bikeId": "1227",
+    "duration": 1240517
+  },
+  {
+    "bikeId": "901",
+    "duration": 834454
+  },
+  {
+    "bikeId": "603",
+    "duration": 854594
+  },
+  {
+    "bikeId": "560",
+    "duration": 589016
+  },
+  {
+    "bikeId": "1019",
+    "duration": 728397
+  },
+  {
+    "bikeId": "1032",
+    "duration": 768313
+  },
+  {
+    "bikeId": "1039",
+    "duration": 1097482
+  },
+  {
+    "bikeId": "1233",
+    "duration": 1047736
+  },
+  {
+    "bikeId": "624",
+    "duration": 753450
+  },
+  {
+    "bikeId": "1205",
+    "duration": 1126739
+  },
+  {
+    "bikeId": "987",
+    "duration": 683296
+  },
+  {
+    "bikeId": "233",
+    "duration": 831558
+  },
+  {
+    "bikeId": "617",
+    "duration": 695745
+  },
+  {
+    "bikeId": "899",
+    "duration": 799444
+  },
+  {
+    "bikeId": "296",
+    "duration": 925441
+  },
+  {
+    "bikeId": "915",
+    "duration": 638739
+  },
+  {
+    "bikeId": "907",
+    "duration": 1005416
+  },
+  {
+    "bikeId": "696",
+    "duration": 1433948
+  },
+  {
+    "bikeId": "1222",
+    "duration": 914928
+  },
+  {
+    "bikeId": "1034",
+    "duration": 912674
+  },
+  {
+    "bikeId": "1067",
+    "duration": 1394705
+  },
+  {
+    "bikeId": "189",
+    "duration": 816898
+  },
+  {
+    "bikeId": "1247",
+    "duration": 935788
+  },
+  {
+    "bikeId": "729",
+    "duration": 815265
+  },
+  {
+    "bikeId": "678",
+    "duration": 801133
+  },
+  {
+    "bikeId": "1256",
+    "duration": 18509
+  },
+  {
+    "bikeId": "625",
+    "duration": 750391
+  },
+  {
+    "bikeId": "993",
+    "duration": 930926
+  },
+  {
+    "bikeId": "1053",
+    "duration": 775619
+  },
+  {
+    "bikeId": "1236",
+    "duration": 809478
+  },
+  {
+    "bikeId": "1027",
+    "duration": 892780
+  },
+  {
+    "bikeId": "946",
+    "duration": 1027704
+  },
+  {
+    "bikeId": "352",
+    "duration": 659455
+  },
+  {
+    "bikeId": "1065",
+    "duration": 2876707
+  },
+  {
+    "bikeId": "925",
+    "duration": 750537
+  },
+  {
+    "bikeId": "602",
+    "duration": 782610
+  },
+  {
+    "bikeId": "720",
+    "duration": 683779
+  },
+  {
+    "bikeId": "953",
+    "duration": 771081
+  },
+  {
+    "bikeId": "163",
+    "duration": 496946
+  },
+  {
+    "bikeId": "936",
+    "duration": 767552
+  },
+  {
+    "bikeId": "1240",
+    "duration": 1301943
+  },
+  {
+    "bikeId": "700",
+    "duration": 711939
+  },
+  {
+    "bikeId": "930",
+    "duration": 570202
+  },
+  {
+    "bikeId": "1237",
+    "duration": 1166291
+  },
+  {
+    "bikeId": "688",
+    "duration": 551247
+  },
+  {
+    "bikeId": "1232",
+    "duration": 3230366
+  },
+  {
+    "bikeId": "941",
+    "duration": 1668333
+  },
+  {
+    "bikeId": "727",
+    "duration": 913265
+  },
+  {
+    "bikeId": "571",
+    "duration": 644593
+  },
+  {
+    "bikeId": "187",
+    "duration": 733791
+  },
+  {
+    "bikeId": "85",
+    "duration": 704358
+  },
+  {
+    "bikeId": "1213",
+    "duration": 641131
+  },
+  {
+    "bikeId": "1045",
+    "duration": 673709
+  },
+  {
+    "bikeId": "1322",
+    "duration": 704958
+  },
+  {
+    "bikeId": "937",
+    "duration": 1982455
+  },
+  {
+    "bikeId": "166",
+    "duration": 1021729
+  },
+  {
+    "bikeId": "479",
+    "duration": 765210
+  },
+  {
+    "bikeId": "1013",
+    "duration": 663343
+  },
+  {
+    "bikeId": "829",
+    "duration": 509754
+  },
+  {
+    "bikeId": "1248",
+    "duration": 631530
+  },
+  {
+    "bikeId": "954",
+    "duration": 785624
+  },
+  {
+    "bikeId": "1246",
+    "duration": 760747
+  },
+  {
+    "bikeId": "622",
+    "duration": 731061
+  },
+  {
+    "bikeId": "1241",
+    "duration": 1424722
+  },
+  {
+    "bikeId": "903",
+    "duration": 782887
+  },
+  {
+    "bikeId": "978",
+    "duration": 797354
+  },
+  {
+    "bikeId": "1320",
+    "duration": 752199
+  },
+  {
+    "bikeId": "575",
+    "duration": 624508
+  },
+  {
+    "bikeId": "1012",
+    "duration": 188691
+  },
+  {
+    "bikeId": "846",
+    "duration": 769334
+  },
+  {
+    "bikeId": "904",
+    "duration": 571517
+  },
+  {
+    "bikeId": "950",
+    "duration": 1015965
+  },
+  {
+    "bikeId": "997",
+    "duration": 453025
+  },
+  {
+    "bikeId": "1226",
+    "duration": 768042
+  },
+  {
+    "bikeId": "594",
+    "duration": 758405
+  },
+  {
+    "bikeId": "195",
+    "duration": 737118
+  },
+  {
+    "bikeId": "1033",
+    "duration": 811458
+  },
+  {
+    "bikeId": "415",
+    "duration": 897522
+  },
+  {
+    "bikeId": "211",
+    "duration": 752506
+  },
+  {
+    "bikeId": "514",
+    "duration": 599950
+  },
+  {
+    "bikeId": "995",
+    "duration": 659061
+  },
+  {
+    "bikeId": "686",
+    "duration": 697780
+  },
+  {
+    "bikeId": "197",
+    "duration": 761521
+  },
+  {
+    "bikeId": "425",
+    "duration": 798175
+  },
+  {
+    "bikeId": "280",
+    "duration": 892192
+  },
+  {
+    "bikeId": "2",
+    "duration": 544555
+  },
+  {
+    "bikeId": "1216",
+    "duration": 794240
+  },
+  {
+    "bikeId": "79",
+    "duration": 903302
+  },
+  {
+    "bikeId": "127",
+    "duration": 1604900
+  },
+  {
+    "bikeId": "118",
+    "duration": 688627
+  },
+  {
+    "bikeId": "5",
+    "duration": 765558
+  },
+  {
+    "bikeId": "1252",
+    "duration": 752548
+  },
+  {
+    "bikeId": "902",
+    "duration": 383880
+  },
+  {
+    "bikeId": "1230",
+    "duration": 453281
+  },
+  {
+    "bikeId": "1245",
+    "duration": 1030964
+  },
+  {
+    "bikeId": "719",
+    "duration": 600894
+  },
+  {
+    "bikeId": "680",
+    "duration": 645304
+  },
+  {
+    "bikeId": "730",
+    "duration": 624037
+  },
+  {
+    "bikeId": "939",
+    "duration": 5174525
+  },
+  {
+    "bikeId": "991",
+    "duration": 672044
+  },
+  {
+    "bikeId": "194",
+    "duration": 2022901
+  },
+  {
+    "bikeId": "966",
+    "duration": 857738
+  },
+  {
+    "bikeId": "1211",
+    "duration": 1333104
+  },
+  {
+    "bikeId": "1244",
+    "duration": 944239
+  },
+  {
+    "bikeId": "1242",
+    "duration": 1441816
+  },
+  {
+    "bikeId": "1150",
+    "duration": 801959
+  },
+  {
+    "bikeId": "1231",
+    "duration": 799890
+  },
+  {
+    "bikeId": "116",
+    "duration": 645624
+  },
+  {
+    "bikeId": "1193",
+    "duration": 560767
+  },
+  {
+    "bikeId": "684",
+    "duration": 902452
+  },
+  {
+    "bikeId": "34",
+    "duration": 1154602
+  },
+  {
+    "bikeId": "1323",
+    "duration": 1198850
+  },
+  {
+    "bikeId": "1025",
+    "duration": 587329
+  },
+  {
+    "bikeId": "1321",
+    "duration": 899786
+  },
+  {
+    "bikeId": "358",
+    "duration": 1369995
+  },
+  {
+    "bikeId": "597",
+    "duration": 954324
+  },
+  {
+    "bikeId": "1263",
+    "duration": 1171991
+  },
+  {
+    "bikeId": "1235",
+    "duration": 825894
+  },
+  {
+    "bikeId": "964",
+    "duration": 1308831
+  },
+  {
+    "bikeId": "619",
+    "duration": 789079
+  },
+  {
+    "bikeId": "1243",
+    "duration": 767869
+  },
+  {
+    "bikeId": "968",
+    "duration": 579159
+  },
+  {
+    "bikeId": "1020",
+    "duration": 752217
+  },
+  {
+    "bikeId": "1024",
+    "duration": 701807
+  },
+  {
+    "bikeId": "825",
+    "duration": 1128718
+  },
+  {
+    "bikeId": "789",
+    "duration": 1351214
+  },
+  {
+    "bikeId": "212",
+    "duration": 1054293
+  },
+  {
+    "bikeId": "695",
+    "duration": 916247
+  },
+  {
+    "bikeId": "1254",
+    "duration": 788345
+  },
+  {
+    "bikeId": "1229",
+    "duration": 3502591
+  },
+  {
+    "bikeId": "721",
+    "duration": 814907
+  },
+  {
+    "bikeId": "692",
+    "duration": 539018
+  },
+  {
+    "bikeId": "1319",
+    "duration": 869153
+  },
+  {
+    "bikeId": "1131",
+    "duration": 922109
+  },
+  {
+    "bikeId": "573",
+    "duration": 886600
+  },
+  {
+    "bikeId": "1066",
+    "duration": 733524
+  },
+  {
+    "bikeId": "1026",
+    "duration": 854888
+  },
+  {
+    "bikeId": "698",
+    "duration": 895155
+  },
+  {
+    "bikeId": "689",
+    "duration": 937537
+  },
+  {
+    "bikeId": "934",
+    "duration": 693965
+  },
+  {
+    "bikeId": "49",
+    "duration": 512403
+  },
+  {
+    "bikeId": "346",
+    "duration": 583743
+  },
+  {
+    "bikeId": "416",
+    "duration": 876038
+  },
+  {
+    "bikeId": "989",
+    "duration": 539433
+  },
+  {
+    "bikeId": "445",
+    "duration": 838546
+  },
+  {
+    "bikeId": "1249",
+    "duration": 653387
+  },
+  {
+    "bikeId": "697",
+    "duration": 680099
+  },
+  {
+    "bikeId": "1234",
+    "duration": 814132
+  },
+  {
+    "bikeId": "20",
+    "duration": 1238110
+  },
+  {
+    "bikeId": "36",
+    "duration": 754589
+  },
+  {
+    "bikeId": "57",
+    "duration": 1002898
+  },
+  {
+    "bikeId": "955",
+    "duration": 695255
+  },
+  {
+    "bikeId": "307",
+    "duration": 881451
+  },
+  {
+    "bikeId": "1238",
+    "duration": 697422
+  },
+  {
+    "bikeId": "18",
+    "duration": 773350
+  },
+  {
+    "bikeId": "596",
+    "duration": 893535
+  },
+  {
+    "bikeId": "191",
+    "duration": 1429642
+  },
+  {
+    "bikeId": "626",
+    "duration": 599475
+  },
+  {
+    "bikeId": "41",
+    "duration": 955658
+  },
+  {
+    "bikeId": "1043",
+    "duration": 761873
+  },
+  {
+    "bikeId": "298",
+    "duration": 1209992
+  },
+  {
+    "bikeId": "1183",
+    "duration": 1109227
+  },
+  {
+    "bikeId": "11",
+    "duration": 927120
+  },
+  {
+    "bikeId": "114",
+    "duration": 698906
+  },
+  {
+    "bikeId": "590",
+    "duration": 618511
+  },
+  {
+    "bikeId": "320",
+    "duration": 893115
+  },
+  {
+    "bikeId": "65",
+    "duration": 716736
+  },
+  {
+    "bikeId": "37",
+    "duration": 609647
+  },
+  {
+    "bikeId": "306",
+    "duration": 668867
+  },
+  {
+    "bikeId": "38",
+    "duration": 1089988
+  },
+  {
+    "bikeId": "44",
+    "duration": 726590
+  },
+  {
+    "bikeId": "483",
+    "duration": 636977
+  },
+  {
+    "bikeId": "376",
+    "duration": 1009899
+  },
+  {
+    "bikeId": "595",
+    "duration": 707339
+  },
+  {
+    "bikeId": "24",
+    "duration": 1012619
+  },
+  {
+    "bikeId": "329",
+    "duration": 907572
+  },
+  {
+    "bikeId": "592",
+    "duration": 701309
+  },
+  {
+    "bikeId": "299",
+    "duration": 820609
+  },
+  {
+    "bikeId": "119",
+    "duration": 604875
+  },
+  {
+    "bikeId": "294",
+    "duration": 1048036
+  },
+  {
+    "bikeId": "62",
+    "duration": 1073331
+  },
+  {
+    "bikeId": "67",
+    "duration": 377037
+  },
+  {
+    "bikeId": "578",
+    "duration": 896444
+  },
+  {
+    "bikeId": "33",
+    "duration": 931338
+  },
+  {
+    "bikeId": "579",
+    "duration": 1385919
+  },
+  {
+    "bikeId": "54",
+    "duration": 798088
+  },
+  {
+    "bikeId": "68",
+    "duration": 994614
+  },
+  {
+    "bikeId": "585",
+    "duration": 670015
+  },
+  {
+    "bikeId": "58",
+    "duration": 750435
+  },
+  {
+    "bikeId": "327",
+    "duration": 878332
+  },
+  {
+    "bikeId": "39",
+    "duration": 559570
+  },
+  {
+    "bikeId": "26",
+    "duration": 579285
+  },
+  {
+    "bikeId": "309",
+    "duration": 634098
+  },
+  {
+    "bikeId": "333",
+    "duration": 671021
+  },
+  {
+    "bikeId": "419",
+    "duration": 959935
+  },
+  {
+    "bikeId": "577",
+    "duration": 536491
+  },
+  {
+    "bikeId": "66",
+    "duration": 1059302
+  },
+  {
+    "bikeId": "23",
+    "duration": 692425
+  },
+  {
+    "bikeId": "35",
+    "duration": 1110093
+  },
+  {
+    "bikeId": "135",
+    "duration": 543191
+  },
+  {
+    "bikeId": "43",
+    "duration": 664892
+  },
+  {
+    "bikeId": "227",
+    "duration": 765906
+  },
+  {
+    "bikeId": "297",
+    "duration": 1058149
+  },
+  {
+    "bikeId": "314",
+    "duration": 843319
+  },
+  {
+    "bikeId": "32",
+    "duration": 1316583
+  },
+  {
+    "bikeId": "378",
+    "duration": 801814
+  },
+  {
+    "bikeId": "133",
+    "duration": 560386
+  },
+  {
+    "bikeId": "598",
+    "duration": 869147
+  },
+  {
+    "bikeId": "308",
+    "duration": 765634
+  },
+  {
+    "bikeId": "944",
+    "duration": 635058
+  },
+  {
+    "bikeId": "839",
+    "duration": 1392672
+  },
+  {
+    "bikeId": "1506",
+    "duration": 956750
+  },
+  {
+    "bikeId": "1474",
+    "duration": 1007503
+  },
+  {
+    "bikeId": "1523",
+    "duration": 1095059
+  },
+  {
+    "bikeId": "1501",
+    "duration": 1155275
+  },
+  {
+    "bikeId": "1391",
+    "duration": 923680
+  },
+  {
+    "bikeId": "1509",
+    "duration": 952768
+  },
+  {
+    "bikeId": "1494",
+    "duration": 725358
+  },
+  {
+    "bikeId": "1446",
+    "duration": 975811
+  },
+  {
+    "bikeId": "1500",
+    "duration": 1522031
+  },
+  {
+    "bikeId": "1470",
+    "duration": 1958947
+  },
+  {
+    "bikeId": "1516",
+    "duration": 1125806
+  },
+  {
+    "bikeId": "1417",
+    "duration": 905840
+  },
+  {
+    "bikeId": "1510",
+    "duration": 1329749
+  },
+  {
+    "bikeId": "1507",
+    "duration": 747326
+  },
+  {
+    "bikeId": "1486",
+    "duration": 862848
+  },
+  {
+    "bikeId": "1440",
+    "duration": 610005
+  },
+  {
+    "bikeId": "1421",
+    "duration": 690524
+  },
+  {
+    "bikeId": "1435",
+    "duration": 1048210
+  },
+  {
+    "bikeId": "1453",
+    "duration": 729271
+  },
+  {
+    "bikeId": "1455",
+    "duration": 961433
+  },
+  {
+    "bikeId": "1467",
+    "duration": 1247548
+  },
+  {
+    "bikeId": "1521",
+    "duration": 851114
+  },
+  {
+    "bikeId": "1491",
+    "duration": 680242
+  },
+  {
+    "bikeId": "1448",
+    "duration": 589569
+  },
+  {
+    "bikeId": "1438",
+    "duration": 917990
+  },
+  {
+    "bikeId": "1503",
+    "duration": 855436
+  },
+  {
+    "bikeId": "1413",
+    "duration": 1008731
+  },
+  {
+    "bikeId": "1489",
+    "duration": 1486210
+  },
+  {
+    "bikeId": "1432",
+    "duration": 867505
+  },
+  {
+    "bikeId": "1396",
+    "duration": 1107730
+  },
+  {
+    "bikeId": "1422",
+    "duration": 1016201
+  },
+  {
+    "bikeId": "1518",
+    "duration": 866210
+  },
+  {
+    "bikeId": "1385",
+    "duration": 986041
+  },
+  {
+    "bikeId": "1479",
+    "duration": 831946
+  },
+  {
+    "bikeId": "1468",
+    "duration": 857966
+  },
+  {
+    "bikeId": "1505",
+    "duration": 742752
+  },
+  {
+    "bikeId": "1384",
+    "duration": 882152
+  },
+  {
+    "bikeId": "1408",
+    "duration": 1546571
+  },
+  {
+    "bikeId": "1397",
+    "duration": 590545
+  },
+  {
+    "bikeId": "1511",
+    "duration": 740746
+  },
+  {
+    "bikeId": "1483",
+    "duration": 890628
+  },
+  {
+    "bikeId": "1458",
+    "duration": 865771
+  },
+  {
+    "bikeId": "1452",
+    "duration": 930801
+  },
+  {
+    "bikeId": "1487",
+    "duration": 2435648
+  },
+  {
+    "bikeId": "1480",
+    "duration": 875894
+  },
+  {
+    "bikeId": "1389",
+    "duration": 902968
+  },
+  {
+    "bikeId": "1399",
+    "duration": 823961
+  },
+  {
+    "bikeId": "1447",
+    "duration": 543668
+  },
+  {
+    "bikeId": "1415",
+    "duration": 942570
+  },
+  {
+    "bikeId": "1477",
+    "duration": 1695033
+  },
+  {
+    "bikeId": "855",
+    "duration": 649573
+  },
+  {
+    "bikeId": "1402",
+    "duration": 805310
+  },
+  {
+    "bikeId": "1436",
+    "duration": 948645
+  },
+  {
+    "bikeId": "1517",
+    "duration": 1755322
+  },
+  {
+    "bikeId": "1434",
+    "duration": 916350
+  },
+  {
+    "bikeId": "1451",
+    "duration": 907935
+  },
+  {
+    "bikeId": "1442",
+    "duration": 598360
+  },
+  {
+    "bikeId": "1050",
+    "duration": 1651736
+  },
+  {
+    "bikeId": "1522",
+    "duration": 1119959
+  },
+  {
+    "bikeId": "1484",
+    "duration": 579482
+  },
+  {
+    "bikeId": "1520",
+    "duration": 758587
+  },
+  {
+    "bikeId": "1457",
+    "duration": 1103289
+  },
+  {
+    "bikeId": "1390",
+    "duration": 970562
+  },
+  {
+    "bikeId": "1513",
+    "duration": 912355
+  },
+  {
+    "bikeId": "1429",
+    "duration": 1142262
+  },
+  {
+    "bikeId": "1401",
+    "duration": 771763
+  },
+  {
+    "bikeId": "1472",
+    "duration": 946888
+  },
+  {
+    "bikeId": "1476",
+    "duration": 855322
+  },
+  {
+    "bikeId": "1490",
+    "duration": 633325
+  },
+  {
+    "bikeId": "1400",
+    "duration": 1206139
+  },
+  {
+    "bikeId": "1512",
+    "duration": 1089306
+  },
+  {
+    "bikeId": "1430",
+    "duration": 649477
+  },
+  {
+    "bikeId": "1407",
+    "duration": 1018669
+  },
+  {
+    "bikeId": "1419",
+    "duration": 649100
+  },
+  {
+    "bikeId": "1428",
+    "duration": 1051872
+  },
+  {
+    "bikeId": "1444",
+    "duration": 804612
+  },
+  {
+    "bikeId": "1445",
+    "duration": 1034252
+  },
+  {
+    "bikeId": "1412",
+    "duration": 459764
+  },
+  {
+    "bikeId": "1449",
+    "duration": 867439
+  },
+  {
+    "bikeId": "1441",
+    "duration": 953304
+  },
+  {
+    "bikeId": "1404",
+    "duration": 1513022
+  },
+  {
+    "bikeId": "1437",
+    "duration": 912307
+  },
+  {
+    "bikeId": "1394",
+    "duration": 440586
+  },
+  {
+    "bikeId": "1420",
+    "duration": 814303
+  },
+  {
+    "bikeId": "1395",
+    "duration": 1135199
+  },
+  {
+    "bikeId": "1519",
+    "duration": 3641799
+  },
+  {
+    "bikeId": "1411",
+    "duration": 867367
+  },
+  {
+    "bikeId": "1485",
+    "duration": 678964
+  },
+  {
+    "bikeId": "1405",
+    "duration": 517402
+  },
+  {
+    "bikeId": "1502",
+    "duration": 585568
+  },
+  {
+    "bikeId": "1443",
+    "duration": 849102
+  },
+  {
+    "bikeId": "1425",
+    "duration": 464687
+  },
+  {
+    "bikeId": "1410",
+    "duration": 2202625
+  },
+  {
+    "bikeId": "1508",
+    "duration": 521643
+  },
+  {
+    "bikeId": "1409",
+    "duration": 464566
+  },
+  {
+    "bikeId": "1414",
+    "duration": 678193
+  },
+  {
+    "bikeId": "963",
+    "duration": 736947
+  },
+  {
+    "bikeId": "1416",
+    "duration": 1050964
+  },
+  {
+    "bikeId": "1423",
+    "duration": 1855295
+  },
+  {
+    "bikeId": "1403",
+    "duration": 536452
+  },
+  {
+    "bikeId": "1418",
+    "duration": 412076
+  },
+  {
+    "bikeId": "1427",
+    "duration": 232557
+  },
+  {
+    "bikeId": "1424",
+    "duration": 949714
+  },
+  {
+    "bikeId": "1398",
+    "duration": 792214
+  },
+  {
+    "bikeId": "1590",
+    "duration": 1318748
+  },
+  {
+    "bikeId": "848",
+    "duration": 722005
+  },
+  {
+    "bikeId": "849",
+    "duration": 4947982
+  },
+  {
+    "bikeId": "929",
+    "duration": 737342
+  },
+  {
+    "bikeId": "758",
+    "duration": 817294
+  },
+  {
+    "bikeId": "809",
+    "duration": 589765
+  },
+  {
+    "bikeId": "916",
+    "duration": 1267940
+  },
+  {
+    "bikeId": "1170",
+    "duration": 628668
+  },
+  {
+    "bikeId": "745",
+    "duration": 1210703
+  },
+  {
+    "bikeId": "994",
+    "duration": 481309
+  },
+  {
+    "bikeId": "905",
+    "duration": 638470
+  },
+  {
+    "bikeId": "760",
+    "duration": 611271
+  },
+  {
+    "bikeId": "927",
+    "duration": 676617
+  },
+  {
+    "bikeId": "810",
+    "duration": 715870
+  },
+  {
+    "bikeId": "1439",
+    "duration": 1148818
+  },
+  {
+    "bikeId": "847",
+    "duration": 935147
+  },
+  {
+    "bikeId": "1016",
+    "duration": 850859
+  },
+  {
+    "bikeId": "757",
+    "duration": 491185
+  },
+  {
+    "bikeId": "1593",
+    "duration": 2241123
+  },
+  {
+    "bikeId": "1589",
+    "duration": 1040797
+  },
+  {
+    "bikeId": "942",
+    "duration": 738143
+  },
+  {
+    "bikeId": "1595",
+    "duration": 952461
+  },
+  {
+    "bikeId": "1594",
+    "duration": 1112701
+  },
+  {
+    "bikeId": "1591",
+    "duration": 1093827
+  },
+  {
+    "bikeId": "1592",
+    "duration": 812133
+  },
+  {
+    "bikeId": "970",
+    "duration": 521852
+  },
+  {
+    "bikeId": "1599",
+    "duration": 319735
+  },
+  {
+    "bikeId": "1524",
+    "duration": 810851
+  },
+  {
+    "bikeId": "1596",
+    "duration": 646912
+  },
+  {
+    "bikeId": "1597",
+    "duration": 212501
+  },
+  {
+    "bikeId": "1381",
+    "duration": 566868
+  },
+  {
+    "bikeId": "931",
+    "duration": 4317473
+  },
+  {
+    "bikeId": "1600",
+    "duration": 687734
+  },
+  {
+    "bikeId": "1598",
+    "duration": 1466874
+  },
+  {
+    "bikeId": "1601",
+    "duration": 829260
+  },
+  {
+    "bikeId": "811",
+    "duration": 899056
+  },
+  {
+    "bikeId": "807",
+    "duration": 1064186
+  },
+  {
+    "bikeId": "845",
+    "duration": 599502
+  },
+  {
+    "bikeId": "808",
+    "duration": 530984
+  },
+  {
+    "bikeId": "820",
+    "duration": 749949
+  },
+  {
+    "bikeId": "1000",
+    "duration": 500849
+  },
+  {
+    "bikeId": "1525",
+    "duration": 685108
+  },
+  {
+    "bikeId": "850",
+    "duration": 739132
+  },
+  {
+    "bikeId": "988",
+    "duration": 615521
+  },
+  {
+    "bikeId": "884",
+    "duration": 999823
+  },
+  {
+    "bikeId": "947",
+    "duration": 970001
+  },
+  {
+    "bikeId": "1609",
+    "duration": 940804
+  },
+  {
+    "bikeId": "1608",
+    "duration": 3137183
+  },
+  {
+    "bikeId": "814",
+    "duration": 677003
+  },
+  {
+    "bikeId": "817",
+    "duration": 509268
+  },
+  {
+    "bikeId": "1615",
+    "duration": 1263371
+  },
+  {
+    "bikeId": "1614",
+    "duration": 708620
+  },
+  {
+    "bikeId": "1611",
+    "duration": 869854
+  },
+  {
+    "bikeId": "1612",
+    "duration": 2172794
+  },
+  {
+    "bikeId": "1613",
+    "duration": 595101
+  },
+  {
+    "bikeId": "776",
+    "duration": 470176
+  },
+  {
+    "bikeId": "382",
+    "duration": 595103
+  },
+  {
+    "bikeId": "1619",
+    "duration": 1079607
+  },
+  {
+    "bikeId": "1622",
+    "duration": 307507
+  },
+  {
+    "bikeId": "1623",
+    "duration": 1145758
+  },
+  {
+    "bikeId": "1624",
+    "duration": 800680
+  },
+  {
+    "bikeId": "1618",
+    "duration": 619729
+  },
+  {
+    "bikeId": "1616",
+    "duration": 676907
+  },
+  {
+    "bikeId": "1617",
+    "duration": 530085
+  },
+  {
+    "bikeId": "1625",
+    "duration": 768657
+  },
+  {
+    "bikeId": "1621",
+    "duration": 543480
+  },
+  {
+    "bikeId": "1620",
+    "duration": 657825
+  },
+  {
+    "bikeId": "722",
+    "duration": 7750656
+  },
+  {
+    "bikeId": "1393",
+    "duration": 738724
+  },
+  {
+    "bikeId": "1637",
+    "duration": 685090
+  },
+  {
+    "bikeId": "1630",
+    "duration": 1334254
+  },
+  {
+    "bikeId": "1631",
+    "duration": 1461776
+  },
+  {
+    "bikeId": "1628",
+    "duration": 414147
+  },
+  {
+    "bikeId": "1632",
+    "duration": 595041
+  },
+  {
+    "bikeId": "1627",
+    "duration": 558903
+  },
+  {
+    "bikeId": "1635",
+    "duration": 785318
+  },
+  {
+    "bikeId": "1634",
+    "duration": 1111406
+  },
+  {
+    "bikeId": "1638",
+    "duration": 315565
+  },
+  {
+    "bikeId": "1636",
+    "duration": 699955
+  },
+  {
+    "bikeId": "1629",
+    "duration": 660880
+  },
+  {
+    "bikeId": "1633",
+    "duration": 671363
+  },
+  {
+    "bikeId": "1647",
+    "duration": 373441
+  },
+  {
+    "bikeId": "1642",
+    "duration": 447667
+  },
+  {
+    "bikeId": "1639",
+    "duration": 196181
+  },
+  {
+    "bikeId": "1643",
+    "duration": 180699
+  },
+  {
+    "bikeId": "1641",
+    "duration": 432808
+  },
+  {
+    "bikeId": "1640",
+    "duration": 471281
+  },
+  {
+    "bikeId": "1649",
+    "duration": 152837
+  },
+  {
+    "bikeId": "1646",
+    "duration": 135210
+  },
+  {
+    "bikeId": "1645",
+    "duration": 240818
+  },
+  {
+    "bikeId": "1644",
+    "duration": 472084
+  },
+  {
+    "bikeId": "1693",
+    "duration": 520151
+  },
+  {
+    "bikeId": "1695",
+    "duration": 1098536
+  },
+  {
+    "bikeId": "1492",
+    "duration": 75748
+  },
+  {
+    "bikeId": "1493",
+    "duration": 595324
+  },
+  {
+    "bikeId": "1688",
+    "duration": 526504
+  },
+  {
+    "bikeId": "1692",
+    "duration": 369491
+  },
+  {
+    "bikeId": "1689",
+    "duration": 1552195
+  },
+  {
+    "bikeId": "1691",
+    "duration": 605202
+  },
+  {
+    "bikeId": "1690",
+    "duration": 708076
+  },
+  {
+    "bikeId": "1694",
+    "duration": 724218
+  },
+  {
+    "bikeId": "1482",
+    "duration": 239396
+  },
+  {
+    "bikeId": "1604",
+    "duration": 547798
+  },
+  {
+    "bikeId": "1602",
+    "duration": 726761
+  },
+  {
+    "bikeId": "1497",
+    "duration": 692375
+  },
+  {
+    "bikeId": "1606",
+    "duration": 2749006
+  },
+  {
+    "bikeId": "1605",
+    "duration": 832927
+  },
+  {
+    "bikeId": "1652",
+    "duration": 488615
+  },
+  {
+    "bikeId": "1650",
+    "duration": 330636
+  },
+  {
+    "bikeId": "1607",
+    "duration": 478419
+  },
+  {
+    "bikeId": "1515",
+    "duration": 697494
+  },
+  {
+    "bikeId": "1585",
+    "duration": 129577
+  },
+  {
+    "bikeId": "1584",
+    "duration": 184095
+  },
+  {
+    "bikeId": "1586",
+    "duration": 333642
+  },
+  {
+    "bikeId": "1603",
+    "duration": 467968
+  },
+  {
+    "bikeId": "1587",
+    "duration": 347061
+  },
+  {
+    "bikeId": "1387",
+    "duration": 464892
+  },
+  {
+    "bikeId": "170",
+    "duration": 821770
+  },
+  {
+    "bikeId": "1466",
+    "duration": 207480
+  },
+  {
+    "bikeId": "1392",
+    "duration": 658558
+  },
+  {
+    "bikeId": "1583",
+    "duration": 371
+  },
+  {
+    "bikeId": "1582",
+    "duration": 414
+  },
+  {
+    "bikeId": "1655",
+    "duration": 327818
+  },
+  {
+    "bikeId": "1656",
+    "duration": 385291
+  },
+  {
+    "bikeId": "1654",
+    "duration": 149021
+  },
+  {
+    "bikeId": "1660",
+    "duration": 684164
+  },
+  {
+    "bikeId": "1672",
+    "duration": 316104
+  },
+  {
+    "bikeId": "1382",
+    "duration": 344714
+  },
+  {
+    "bikeId": "1658",
+    "duration": 183036
+  },
+  {
+    "bikeId": "1657",
+    "duration": 428309
+  },
+  {
+    "bikeId": "1648",
+    "duration": 500245
+  },
+  {
+    "bikeId": "1651",
+    "duration": 455400
+  },
+  {
+    "bikeId": "1463",
+    "duration": 120683
+  },
+  {
+    "bikeId": "1698",
+    "duration": 6419215
+  },
+  {
+    "bikeId": "1664",
+    "duration": 237202
+  },
+  {
+    "bikeId": "1663",
+    "duration": 278442
+  },
+  {
+    "bikeId": "1669",
+    "duration": 103031
+  },
+  {
+    "bikeId": "1671",
+    "duration": 562347
+  },
+  {
+    "bikeId": "1667",
+    "duration": 394581
+  },
+  {
+    "bikeId": "1677",
+    "duration": 134490
+  },
+  {
+    "bikeId": "1683",
+    "duration": 294238
+  },
+  {
+    "bikeId": "1673",
+    "duration": 146619
+  },
+  {
+    "bikeId": "1665",
+    "duration": 205361
+  },
+  {
+    "bikeId": "1704",
+    "duration": 669173
+  },
+  {
+    "bikeId": "1679",
+    "duration": 406543
+  },
+  {
+    "bikeId": "1706",
+    "duration": 605540
+  },
+  {
+    "bikeId": "1668",
+    "duration": 328358
+  },
+  {
+    "bikeId": "1675",
+    "duration": 123623
+  },
+  {
+    "bikeId": "1666",
+    "duration": 243550
+  },
+  {
+    "bikeId": "1662",
+    "duration": 355507
+  },
+  {
+    "bikeId": "1697",
+    "duration": 535013
+  },
+  {
+    "bikeId": "1684",
+    "duration": 131111
+  },
+  {
+    "bikeId": "1681",
+    "duration": 483128
+  },
+  {
+    "bikeId": "1733",
+    "duration": 960374
+  },
+  {
+    "bikeId": "1734",
+    "duration": 414801
+  },
+  {
+    "bikeId": "1670",
+    "duration": 466953
+  },
+  {
+    "bikeId": "1696",
+    "duration": 654097
+  },
+  {
+    "bikeId": "1710",
+    "duration": 986430
+  },
+  {
+    "bikeId": "1730",
+    "duration": 537079
+  },
+  {
+    "bikeId": "1739",
+    "duration": 450513
+  },
+  {
+    "bikeId": "1703",
+    "duration": 533310
+  },
+  {
+    "bikeId": "1736",
+    "duration": 516540
+  },
+  {
+    "bikeId": "1702",
+    "duration": 806709
+  },
+  {
+    "bikeId": "1700",
+    "duration": 416577
+  },
+  {
+    "bikeId": "1732",
+    "duration": 329313
+  },
+  {
+    "bikeId": "1701",
+    "duration": 527104
+  },
+  {
+    "bikeId": "1705",
+    "duration": 988139
+  },
+  {
+    "bikeId": "1738",
+    "duration": 608890
+  },
+  {
+    "bikeId": "1699",
+    "duration": 526927
+  },
+  {
+    "bikeId": "1723",
+    "duration": 325866
+  },
+  {
+    "bikeId": "1805",
+    "duration": 727193
+  },
+  {
+    "bikeId": "1765",
+    "duration": 366808
+  },
+  {
+    "bikeId": "1764",
+    "duration": 907657
+  },
+  {
+    "bikeId": "1753",
+    "duration": 628913
+  },
+  {
+    "bikeId": "1800",
+    "duration": 497294
+  },
+  {
+    "bikeId": "1803",
+    "duration": 538958
+  },
+  {
+    "bikeId": "1788",
+    "duration": 858530
+  },
+  {
+    "bikeId": "1801",
+    "duration": 3443846
+  },
+  {
+    "bikeId": "1751",
+    "duration": 458852
+  },
+  {
+    "bikeId": "1752",
+    "duration": 532970
+  },
+  {
+    "bikeId": "515",
+    "duration": 192417
+  },
+  {
+    "bikeId": "1757",
+    "duration": 980265
+  },
+  {
+    "bikeId": "1844",
+    "duration": 343255
+  },
+  {
+    "bikeId": "1841",
+    "duration": 412989
+  },
+  {
+    "bikeId": "1707",
+    "duration": 656285
+  },
+  {
+    "bikeId": "1783",
+    "duration": 300593
+  },
+  {
+    "bikeId": "1842",
+    "duration": 433947
+  },
+  {
+    "bikeId": "1843",
+    "duration": 1636064
+  },
+  {
+    "bikeId": "1771",
+    "duration": 634381
+  },
+  {
+    "bikeId": "1790",
+    "duration": 297307
+  },
+  {
+    "bikeId": "1789",
+    "duration": 1084865
+  },
+  {
+    "bikeId": "1797",
+    "duration": 498289
+  },
+  {
+    "bikeId": "1776",
+    "duration": 451781
+  },
+  {
+    "bikeId": "1772",
+    "duration": 524897
+  },
+  {
+    "bikeId": "1767",
+    "duration": 515206
+  },
+  {
+    "bikeId": "1777",
+    "duration": 482674
+  },
+  {
+    "bikeId": "1773",
+    "duration": 348076
+  },
+  {
+    "bikeId": "1770",
+    "duration": 450882
+  },
+  {
+    "bikeId": "1779",
+    "duration": 468252
+  },
+  {
+    "bikeId": "1780",
+    "duration": 399950
+  },
+  {
+    "bikeId": "1782",
+    "duration": 320277
+  },
+  {
+    "bikeId": "1774",
+    "duration": 421997
+  },
+  {
+    "bikeId": "1775",
+    "duration": 573896
+  },
+  {
+    "bikeId": "1768",
+    "duration": 480461
+  },
+  {
+    "bikeId": "1778",
+    "duration": 549002
+  },
+  {
+    "bikeId": "1781",
+    "duration": 668796
+  },
+  {
+    "bikeId": "1798",
+    "duration": 463123
+  },
+  {
+    "bikeId": "1748",
+    "duration": 1066323
+  },
+  {
+    "bikeId": "1791",
+    "duration": 1182711
+  },
+  {
+    "bikeId": "1763",
+    "duration": 7860
+  },
+  {
+    "bikeId": "1795",
+    "duration": 717445
+  },
+  {
+    "bikeId": "1750",
+    "duration": 423942
+  },
+  {
+    "bikeId": "1792",
+    "duration": 491087
+  },
+  {
+    "bikeId": "1742",
+    "duration": 602798
+  },
+  {
+    "bikeId": "1807",
+    "duration": 175124
+  },
+  {
+    "bikeId": "1749",
+    "duration": 281269
+  },
+  {
+    "bikeId": "1746",
+    "duration": 97812
+  },
+  {
+    "bikeId": "1747",
+    "duration": 1115544
+  },
+  {
+    "bikeId": "1743",
+    "duration": 263678
+  },
+  {
+    "bikeId": "1784",
+    "duration": 415656
+  },
+  {
+    "bikeId": "1787",
+    "duration": 441895
+  },
+  {
+    "bikeId": "1758",
+    "duration": 428523
+  },
+  {
+    "bikeId": "1760",
+    "duration": 94956
+  },
+  {
+    "bikeId": "1759",
+    "duration": 388312
+  },
+  {
+    "bikeId": "1756",
+    "duration": 143740
+  },
+  {
+    "bikeId": "1815",
+    "duration": 527016
+  },
+  {
+    "bikeId": "1826",
+    "duration": 776703
+  },
+  {
+    "bikeId": "1847",
+    "duration": 370827
+  },
+  {
+    "bikeId": "1808",
+    "duration": 427479
+  },
+  {
+    "bikeId": "1769",
+    "duration": 469812
+  },
+  {
+    "bikeId": "1820",
+    "duration": 377784
+  },
+  {
+    "bikeId": "1838",
+    "duration": 376685
+  },
+  {
+    "bikeId": "1828",
+    "duration": 445959
+  },
+  {
+    "bikeId": "1819",
+    "duration": 339201
+  },
+  {
+    "bikeId": "1832",
+    "duration": 742104
+  },
+  {
+    "bikeId": "1817",
+    "duration": 270223
+  },
+  {
+    "bikeId": "1822",
+    "duration": 415531
+  },
+  {
+    "bikeId": "1824",
+    "duration": 218268
+  },
+  {
+    "bikeId": "1821",
+    "duration": 407175
+  },
+  {
+    "bikeId": "1848",
+    "duration": 192879
+  },
+  {
+    "bikeId": "1831",
+    "duration": 642974
+  },
+  {
+    "bikeId": "1835",
+    "duration": 357984
+  },
+  {
+    "bikeId": "1825",
+    "duration": 368864
+  },
+  {
+    "bikeId": "1833",
+    "duration": 428656
+  },
+  {
+    "bikeId": "1834",
+    "duration": 251611
+  },
+  {
+    "bikeId": "1829",
+    "duration": 748312
+  },
+  {
+    "bikeId": "1823",
+    "duration": 620869
+  },
+  {
+    "bikeId": "1830",
+    "duration": 497650
+  },
+  {
+    "bikeId": "1846",
+    "duration": 259616
+  },
+  {
+    "bikeId": "1766",
+    "duration": 315266
+  },
+  {
+    "bikeId": "1827",
+    "duration": 414121
+  },
+  {
+    "bikeId": "1839",
+    "duration": 436185
+  },
+  {
+    "bikeId": "1762",
+    "duration": 313133
+  },
+  {
+    "bikeId": "1845",
+    "duration": 320938
+  },
+  {
+    "bikeId": "1836",
+    "duration": 710947
+  },
+  {
+    "bikeId": "1744",
+    "duration": 372879
+  },
+  {
+    "bikeId": "1755",
+    "duration": 406120
+  },
+  {
+    "bikeId": "1853",
+    "duration": 79727
+  },
+  {
+    "bikeId": "1851",
+    "duration": 297864
+  },
+  {
+    "bikeId": "1849",
+    "duration": 408896
+  },
+  {
+    "bikeId": "1724",
+    "duration": 336213
+  },
+  {
+    "bikeId": "1786",
+    "duration": 419243
+  },
+  {
+    "bikeId": "1864",
+    "duration": 233390
+  },
+  {
+    "bikeId": "1708",
+    "duration": 461421
+  },
+  {
+    "bikeId": "1804",
+    "duration": 134376
+  },
+  {
+    "bikeId": "1813",
+    "duration": 915990
+  },
+  {
+    "bikeId": "1814",
+    "duration": 184713
+  },
+  {
+    "bikeId": "1810",
+    "duration": 438168
+  },
+  {
+    "bikeId": "1809",
+    "duration": 399503
+  },
+  {
+    "bikeId": "1811",
+    "duration": 886693
+  },
+  {
+    "bikeId": "1837",
+    "duration": 533900
+  },
+  {
+    "bikeId": "1806",
+    "duration": 299530
+  },
+  {
+    "bikeId": "1816",
+    "duration": 358280
+  },
+  {
+    "bikeId": "1840",
+    "duration": 656304
+  },
+  {
+    "bikeId": "1812",
+    "duration": 3193230
+  },
+  {
+    "bikeId": "1802",
+    "duration": 526311
+  },
+  {
+    "bikeId": "1852",
+    "duration": 373670
+  },
+  {
+    "bikeId": "1818",
+    "duration": 471920
+  },
+  {
+    "bikeId": "1863",
+    "duration": 485758
+  },
+  {
+    "bikeId": "1761",
+    "duration": 658695
+  },
+  {
+    "bikeId": "1859",
+    "duration": 434179
+  },
+  {
+    "bikeId": "1855",
+    "duration": 382119
+  },
+  {
+    "bikeId": "1856",
+    "duration": 394082
+  },
+  {
+    "bikeId": "1799",
+    "duration": 438431
+  },
+  {
+    "bikeId": "1860",
+    "duration": 378893
+  },
+  {
+    "bikeId": "1854",
+    "duration": 250484
+  },
+  {
+    "bikeId": "1858",
+    "duration": 257591
+  },
+  {
+    "bikeId": "1850",
+    "duration": 161488
+  },
+  {
+    "bikeId": "1857",
+    "duration": 468451
+  },
+  {
+    "bikeId": "1862",
+    "duration": 425998
+  },
+  {
+    "bikeId": "1785",
+    "duration": 361046
+  },
+  {
+    "bikeId": "1865",
+    "duration": 362508
+  },
+  {
+    "bikeId": "1796",
+    "duration": 285906
+  },
+  {
+    "bikeId": "1794",
+    "duration": 334063
+  },
+  {
+    "bikeId": "1861",
+    "duration": 244341
+  },
+  {
+    "bikeId": "1793",
+    "duration": 382131
+  },
+  {
+    "bikeId": "1867",
+    "duration": 256269
+  },
+  {
+    "bikeId": "1868",
+    "duration": 287361
+  },
+  {
+    "bikeId": "1870",
+    "duration": 235587
+  },
+  {
+    "bikeId": "1869",
+    "duration": 379009
+  },
+  {
+    "bikeId": "1873",
+    "duration": 170695
+  },
+  {
+    "bikeId": "1872",
+    "duration": 96662
+  },
+  {
+    "bikeId": "1874",
+    "duration": 516850
+  },
+  {
+    "bikeId": "1871",
+    "duration": 369031
+  },
+  {
+    "bikeId": "1875",
+    "duration": 264352
+  },
+  {
+    "bikeId": "1876",
+    "duration": 477205
+  },
+  {
+    "bikeId": "1866",
+    "duration": 377206
+  },
+  {
+    "bikeId": "1879",
+    "duration": 376812
+  },
+  {
+    "bikeId": "1878",
+    "duration": 498721
+  },
+  {
+    "bikeId": "1881",
+    "duration": 298307
+  },
+  {
+    "bikeId": "1880",
+    "duration": 613930
+  },
+  {
+    "bikeId": "1877",
+    "duration": 397219
+  },
+  {
+    "bikeId": "1754",
+    "duration": 14620
+  },
+  {
+    "bikeId": "1745",
+    "duration": 204219
+  },
+  {
+    "bikeId": "1741",
+    "duration": 251
+  },
+  {
+    "bikeId": "1915",
+    "duration": 162564
+  },
+  {
+    "bikeId": "1735",
+    "duration": 273514
+  },
+  {
+    "bikeId": "1883",
+    "duration": 352570
+  },
+  {
+    "bikeId": "1896",
+    "duration": 8927
+  },
+  {
+    "bikeId": "1919",
+    "duration": 56604
+  },
+  {
+    "bikeId": "1715",
+    "duration": 170966
+  },
+  {
+    "bikeId": "1899",
+    "duration": 67776
+  },
+  {
+    "bikeId": "1921",
+    "duration": 54678
+  },
+  {
+    "bikeId": "1726",
+    "duration": 163611
+  },
+  {
+    "bikeId": "1916",
+    "duration": 103984
+  },
+  {
+    "bikeId": "1712",
+    "duration": 134924
+  },
+  {
+    "bikeId": "1920",
+    "duration": 226436
+  },
+  {
+    "bikeId": "1914",
+    "duration": 446335
+  },
+  {
+    "bikeId": "1884",
+    "duration": 130859
+  },
+  {
+    "bikeId": "1917",
+    "duration": 250944
+  },
+  {
+    "bikeId": "1913",
+    "duration": 156904
+  },
+  {
+    "bikeId": "1888",
+    "duration": 98419
+  },
+  {
+    "bikeId": "1922",
+    "duration": 312805
+  },
+  {
+    "bikeId": "1925",
+    "duration": 142028
+  },
+  {
+    "bikeId": "1918",
+    "duration": 39747
+  },
+  {
+    "bikeId": "1898",
+    "duration": 187560
+  },
+  {
+    "bikeId": "1727",
+    "duration": 18314
+  },
+  {
+    "bikeId": "1928",
+    "duration": 221765
+  },
+  {
+    "bikeId": "1718",
+    "duration": 107456
+  },
+  {
+    "bikeId": "1725",
+    "duration": 235053
+  },
+  {
+    "bikeId": "1882",
+    "duration": 18727
+  },
+  {
+    "bikeId": "1900",
+    "duration": 26553
+  },
+  {
+    "bikeId": "1902",
+    "duration": 78699
+  },
+  {
+    "bikeId": "1901",
+    "duration": 228686
+  },
+  {
+    "bikeId": "1910",
+    "duration": 28161
+  },
+  {
+    "bikeId": "1889",
+    "duration": 26379
+  },
+  {
+    "bikeId": "1893",
+    "duration": 21111
+  },
+  {
+    "bikeId": "1892",
+    "duration": 113253
+  },
+  {
+    "bikeId": "1904",
+    "duration": 194910
+  },
+  {
+    "bikeId": "1906",
+    "duration": 231661
+  },
+  {
+    "bikeId": "1907",
+    "duration": 6212
+  },
+  {
+    "bikeId": "1894",
+    "duration": 281078
+  },
+  {
+    "bikeId": "1903",
+    "duration": 98513
+  },
+  {
+    "bikeId": "1731",
+    "duration": 199001
+  },
+  {
+    "bikeId": "1885",
+    "duration": 29507
+  },
+  {
+    "bikeId": "1729",
+    "duration": 197292
+  },
+  {
+    "bikeId": "1717",
+    "duration": 191217
+  },
+  {
+    "bikeId": "1912",
+    "duration": 514615
+  },
+  {
+    "bikeId": "1923",
+    "duration": 175332
+  },
+  {
+    "bikeId": "1886",
+    "duration": 11595
+  },
+  {
+    "bikeId": "1929",
+    "duration": 114767
+  },
+  {
+    "bikeId": "1887",
+    "duration": 195113
+  },
+  {
+    "bikeId": "1709",
+    "duration": 14738
+  },
+  {
+    "bikeId": "1895",
+    "duration": 12078
+  },
+  {
+    "bikeId": "1927",
+    "duration": 15397
+  },
+  {
+    "bikeId": "1728",
+    "duration": 147914
+  },
+  {
+    "bikeId": "1924",
+    "duration": 176411
+  },
+  {
+    "bikeId": "1722",
+    "duration": 707144
+  },
+  {
+    "bikeId": "1926",
+    "duration": 111269
+  },
+  {
+    "bikeId": "1740",
+    "duration": 13050
+  },
+  {
+    "bikeId": "1891",
+    "duration": 9348
+  },
+  {
+    "bikeId": "1890",
+    "duration": 77674
+  },
+  {
+    "bikeId": "1930",
+    "duration": 19529
+  },
+  {
+    "bikeId": "1720",
+    "duration": 144491
+  },
+  {
+    "bikeId": "1905",
+    "duration": 84971
+  },
+  {
+    "bikeId": "1721",
+    "duration": 93136
+  },
+  {
+    "bikeId": "1897",
+    "duration": 3022
+  },
+  {
+    "bikeId": "304",
+    "duration": 15909
+  },
+  {
+    "bikeId": "1465",
+    "duration": 103396
+  },
+  {
+    "bikeId": "1737",
+    "duration": 19145
+  },
+  {
+    "bikeId": "1911",
+    "duration": 53158
+  },
+  {
+    "bikeId": "1908",
+    "duration": 116091
+  },
+  {
+    "bikeId": "1714",
+    "duration": 695786
+  },
+  {
+    "bikeId": "1909",
+    "duration": 28099
+  },
+  {
+    "bikeId": "1719",
+    "duration": 24881
+  },
+  {
+    "bikeId": "1711",
+    "duration": 71232
+  },
+  {
+    "bikeId": "1931",
+    "duration": 39249
+  },
+  {
+    "bikeId": "1716",
+    "duration": 670
+  },
+  {
+    "bikeId": "1301",
+    "duration": 681
+  }
+]
