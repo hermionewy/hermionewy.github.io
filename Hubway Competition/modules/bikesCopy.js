@@ -1,15 +1,5 @@
-function BikeTime(){
+function BikeLines(){
 
-	var T0 = new Date(2016,0,1),
-		  T1 = new Date(2017,0,1);
-	var _interval = d3.timeWeek;
-	var _accessor = function(d){
-		return d.startTime;
-	};
-  var _time = 3600*366;
-	var W, H, M ={t:30,r:40,b:30,l:40};
-	var scaleX, scaleY;
-  var _dispatcher = d3.dispatch('selectBike');
 	var exports = function(selection){
 		//Set initial internal values
 		//Some of these will be based on the incoming selection argument
@@ -71,52 +61,6 @@ function BikeTime(){
 
 		plotEnter.append('g').attr('class','axis axis-y');
 		plotEnter.append('g').attr('class','axis axis-x');
-		//plotEnter.append('path').attr('class','line');
-    var path = svg.merge(svgEnter)
-        .select('.plot')
-        .attr('transform','translate('+M.l+','+M.t+')')
-        .selectAll('path')
-        .data(arr); //a few bikes
-    var pathEnter = path.enter()
-        .append('path')
-        .attr('class','line')
-        .on('mouseenter',function(d){
-            var tooltip = d3.select('.custom-tooltip');
-            tooltip.select('.title')
-                .html( 'Bike ID'+ ':' + d.key);
-            tooltip.select('.value')
-                .html('The overall utility rate of this bike is '+ d.utility)
-            tooltip.transition().style('opacity',1);
-
-            d3.select(this).style('stroke-width','2px').style('opacity', 1).style('stroke','red');
-        })
-        .on('mousemove',function(d){
-            var tooltip = d3.select('.custom-tooltip');
-            var xy = d3.mouse( d3.select('.container').node() );
-            tooltip
-                .style('left',xy[0]+10+'px')
-                .style('top',xy[1]+10+'px');
-            d3.select(this).style('stroke-width','2px').style('opacity', 1).style('stroke','rgb(242, 130, 130)');
-        })
-        .on('mouseleave',function(d){
-            var tooltip = d3.select('.custom-tooltip');
-            tooltip.transition().style('opacity',0);
-            d3.select(this).style('stroke-width','1px').style('opacity', 0.2);
-        })
-        .on('click', function(d){
-          _dispatcher.call('selectBike',this,d.values);
-        });
-
-        path.exit().remove();
-
-		path.merge(pathEnter)
-				.attr('d',function(datum){
-					var dayBins = histogram(datum.values);
-						return line(dayBins);
-				})
-				.style('fill','none')
-				.style('stroke-width','1px')
-				.style('opacity', 0.1);
 
 		var plot = svg.merge(svgEnter).select('.plot');
 				plot.select('.axis-y').transition()
@@ -126,6 +70,17 @@ function BikeTime(){
 					.transition()
 					.call(axisX);
 
+     var canvas = plot.append('canvas')
+		 					.style('left', M.l+'px')
+							.style('top', M.t + 'px'),
+		     context = canvas.node().getContext('2d');
+				 context.fillStyle = '#f0f';
+				 context.beginPath();
+				 ctx.beginPath();
+			    ctx.moveTo(75, 50);
+			    ctx.lineTo(100, 75);
+			    ctx.lineTo(100, 25);
+			    ctx.fill();
 
 	}
 	exports.on = function(){
