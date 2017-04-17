@@ -10,7 +10,9 @@ body{
 .container{
 	position:relative;
 }
-
+#timeline{
+	height:100px;
+}
 .plot{
 	min-height:300px;
 }

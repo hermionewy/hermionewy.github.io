@@ -56,6 +56,13 @@ function dataLoaded(err,trips, bikeDuration, stations){
   };
 
   L.control.layers(baseMaps, overlayMaps).addTo(map);
+// Draw Timeline
+    var trySlider = d3.slider().axis(true).min(1).max(12).step(1).value([3,5]).on('slide',function(evt,value){
+      d3.select('#slidertextmin').text(value[ 0 ]);
+      d3.select('#slidertextmax').text(value[ 1 ]);
+    });
+    d3.select('#slider').call(trySlider);
+
 
 // take innitial data
 function nestDataById (data){
@@ -70,69 +77,6 @@ function nestDataById (data){
     var bikeTrend = BikeTime();
     d3.select('#plot1').datum(bikeDuration)
           .call(timeseries);
-
-    var range = [120, 200];
-    var rangeUpdate = [range[0]*60*366,range[1]*60*366]; //range: duration seconds
-    var cfBikeDuration = crossfilter(bikeDuration);
-    var selectedBike = cfBikeDuration.dimension(function(d){ return d.duration }).filter(rangeUpdate).top(Infinity);
-    //filter and show
-
-    var selectedBikeId = Array.from(selectedBike,function(d){return d.bikeId});
-    var cf = crossfilter(tripNestById);
-    var selectedBike = cf.dimension(function(d){return d.key})
-        .filter(function(d){
-            return selectedBikeId.indexOf(d) > -1 });
-    d3.select('#plot2').datum(selectedBike.top(Infinity))
-           .call(bikeTrend);
-
-    // filter data to weekend
-    /*var cf3 = crossfilter(trips);
-    var tripsByWeekend = cf3.dimension (function(d){ return d.startTime;}).filter(function(d){
-      return d.getDay()== 6 || d.getDay()==0 ;
-    });
-    var dataWeekend = nestDataById(tripsByWeekend.top(Infinity));*/
-    //WeekEnd trips
-    //  d3.select('#plot1_2').datum(dataWeekend)
-    //         .call(timeseries);
-    // var tripsBySummer = cf3.dimension (function(d){ return d.startTime;}. filter(function(d){
-    //   return d.getMonth() == 6 || d.getMonth() == 7 || d.getMonth() == 8 ;
-    // }));
-    // d3.select('#plot1_3').datum(tripsBySummer.top(Infinity))
-    //        .call(timeseries);
-
-    timeseries.on('timerange:select', function(range){
-        var rangeUpdate = [range[0]*60*366,range[1]*60*366]; //range: duration seconds
-        var cf2 = crossfilter(bikeDuration);
-        var selectedBike = cf2.dimension(function(d){ return d.duration }).filter(rangeUpdate).top(Infinity);
-        //filter and show
-
-        var bikeNum = selectedBike.length,
-            bikeid = Array.from(selectedBike,function(d){return d.bikeId});
-
-        var cf = crossfilter(tripNestById);
-        var selectedBikeTrips = cf.dimension(function(d){return d.key})
-            .filter(function(d){
-                return bikeid.indexOf(d) > -1 });
-
-        d3.select('#plot2').datum(selectedBikeTrips.top(Infinity))
-               .call(bikeTrend);
-      //  console.log(tripsById.top(Infinity));
-
-
-         });
-
-    bikeTrend.on('selectBike', function(d){
-        drawLines(d);
-        function drawLines(trips){
-            lineGroup.clearLayers();
-            map.removeLayer(lineGroup);
-            map.addLayer(lineGroup);
-            trips.forEach(function(trip){
-              var line = L.polyline([idToLocation.get(trip.startStn), idToLocation.get(trip.endStn)], _lineStyle);
-              lineGroup.addLayer(line);
-            });
-        }
-    });
   }
 
 
