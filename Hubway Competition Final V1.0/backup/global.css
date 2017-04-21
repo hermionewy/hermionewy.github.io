@@ -1,0 +1,11 @@
+body {
+    position: relative;
+}
+#section0 {padding-top:50px;height:300px;color: #000; background-color: #ffffff;}
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#section4 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+.plot{
+	min-height:490px;
+}

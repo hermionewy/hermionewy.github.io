@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+
+		<link href='lib/bootstrap-3.3.7-dist/css/bootstrap.min.css' rel='stylesheet' />
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+		<link href='global.css' rel='stylesheet' />
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300" rel="stylesheet">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	</head>
+	<body style="background-color:#f6f6f4">
+		<nav class='navbar navbar-inverse navbar-fixed-top'>
+		<div class='navbar-header green'><a class='navbar-brand' href='#'>Hubway</a></div>
+		<div id='navbar' class='navbar-collapse collapse'>
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Performance</a></li>
+						<li><a href="bikes.html">Productivity</a></li>
+					</ul>
+		</div>
+	 </nav>
+
+		<div class='container-fluid' style='margin-top: 50px'>
+			<div class='row'>
+			<div class = 'col-md-4'>
+					<div id='info'>
+						<h5>Overall Perfomance</h5>
+						<p>More than 95 persent of the Hubway bikes work less than one hour per day. <br/>
+							We assume that the start station of the bikes may influence its utility.<br/>
+							Drag the brush to see where certain bikes are more likely to start from. </p>
+					</div>
+					<div class='plot'id='plot1'></div>
+					<div id='timeline'>
+						  <h5>Month: <span id="slidertextmin">March</span> to <span id="slidertextmax">May</span></h5>
+							<div id='slider'></div>
+					</div>
+					<div class='plot'id='plot2'></div>
+			</div>
+			<div class='col-md-8 plot' id='mapid'></div>
+		</div>
+		</div>
+		<div class="custom-tooltip">
+				<p class="title"></h3>
+		</div>
+
+		<script src='lib/d3.js' type='text/javascript'></script>
+		<!-- <script src='./modules/d3-scale.min.js' type='text/javascript'></script> -->
+		<script src='lib/crossfilter/crossfilter.js'></script>
+		<script src='lib/jquery/jquery-1.12.4.min.js'></script>
+		<!-- <script src='module/slider.js' type='text/javascript'></script> -->
+		<script src='lib/bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
+		<!-- <script src="lib/AnimatedMarker.js"></script> -->
+		<script src="lib/leaflet/leaflet.js" type='text/javascript'></script>
+		<!-- <script src ='lib/L.CanvasOverlay.js' type='text/javascript'></script> -->
+		<script src='modules/bikes.js' type='text/javascript'></script>
+		<script src ='modules/Timeseries2.js' type='text/javascript'></script>
+		<script src ='modules/timeSlider.js' type='text/javascript'></script>
+		<!-- <script src='./modules/map.js'></script> -->
+		<script src='script.js' type='text/javascript'></script>
+	</body>
+</html>
