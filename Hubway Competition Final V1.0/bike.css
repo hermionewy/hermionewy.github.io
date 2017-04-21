@@ -1,0 +1,137 @@
+html,body,h1,h2,h3,h4,h4,p,div,a{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:rgb(252,252,252);
+}
+
+.container{
+	position:relative;
+	height: 100%
+}
+
+.plot{
+	height:200px;
+}
+
+/*#mapid*/
+#mapid{
+	height:600px;
+	margin-top: 30px;
+}
+#info{
+	min-height: 120px;
+}
+#info p{
+	font-family: 'Open Sans', sans-serif;
+}
+#info2 p{
+	font-family: 'Open Sans', sans-serif;
+}
+#info3 p{
+	font-family: 'Open Sans', sans-serif;
+}
+#message{
+  color: #f03;
+}
+
+#info h5{
+	color: #65ba69;
+	font-size: 16px;
+	font-family: 'Lobster', cursive;
+}
+path .leaflet-inter
+{
+	stroke-opacity: 0.5;
+	stroke-width: 0.5
+}
+#checkID{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+.navbar .navbar-header .navbar-brand{
+	color: #65ba69;
+	font-family: 'Lobster', cursive;
+}
+
+.plot .medianText{
+	fill:red;
+	font-size: 8px;
+}
+.plot .meanText{
+	fill:#65ba69;
+	font-size: 8px;
+}
+/*#plot-2*/
+.time-series .line{
+	stroke:#ED5C8C;
+	fill:none;
+	stroke-width:2px;
+}
+.time-series .area{
+	fill-opacity:.1;
+}
+.navbar-header .green a{
+	color:#65ba69;
+}
+#slider .axis-x path{
+	fill:#FFC6AC;
+	stroke-width:1px;
+	stroke:#f03;
+}
+
+#slider {
+    height: 40px;
+    margin-bottom: 10px;}
+
+#slider .axis-x .tick line{
+	stroke:#f03;
+	stroke-width:1px;
+}
+#plot1 .axis-y .tick line{
+	stroke:white;
+	stroke-width:.5px;
+}
+#plot1 .axis-y .domain{
+	display:none;
+}
+#plot2 .axis-y .tick line{
+	stroke:white;
+	stroke-width:.5px;
+}
+#plot2 .axis-y .domain{
+	display:none;
+}
+/*tooltip*/
+.custom-tooltip{
+	position:absolute;
+	width:60px;
+	padding:3px 3px;
+	color:rgb(80,80,80);
+	font-size:0.7em;
+	left:0;
+	opacity:0;
+	background:white;
+}
+
+#loading {
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: rgba(255,255,255,0.7);
+	display: flex;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+#loading img {
+	position: relative;
+	width: 50px;
+	top: 300px;
+	height: 50px;
+}
