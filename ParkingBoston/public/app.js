@@ -54,13 +54,29 @@ d3.json(MVAccUrl, function (data) {
 		 MVAccData = data.map(parseJson);
 		 //console.log(MVAccData[0].time.getYear());
 		d3.select('#mapid').datum(MVAccData).call(MapA);
-		var cf = crossfilter(MVAccData);
- 		var MVAccDataByTime = cf.dimension(function(d){return d.time});
- 		//var timeseries= Timeseries().domain(d3.extent(MVAccData,function(d){ return d.time}));
-		//d3.select('#plot2').datum(MVAccDataByTime.top(Infinity)).call(timeseries);
+
  		var num = MVAccData.length;
 		var num2017= MVAccData.filter(function(d){ return d.time.getYear()==117}).length;
  		document.getElementById('mapText').innerHTML = '<p><span style="font-size: 25px">'+num2017+'</span><br/><strong>MV accidents in 2017</strong></p><hr/>'+'<p style="font-size:14px">The map shows the <span>'+num+'</span> MV accidents took place in Boston since August 12, 2015.<br/><br/>From 2013 to 2016, the numbers of MV accidents records are 4662, 4605, 9301, 11531, according to the report released by Boston Police Department.<br/><br/>Click the "Your Location" button on the Map to see the accidents happened near you or change the basemap to see them on the satellite view. </p>';
+// histogram
+		 var cf = crossfilter(MVAccData);
+		 var MVAccDataByTime = cf.dimension(function(d){return d.time});
+		 var timeseries= Timeseries().domain(d3.extent(MVAccData,function(d){ return d.time})).interval(d3.timeWeek);
+		 d3.select('#plot1_3').datum(MVAccDataByTime.top(Infinity)).call(timeseries);
+
+//text
+var extent = d3.extent(MVAccData,function(d){ return d.time});
+
+var histogram = d3.histogram()
+		.value(function(d){return d.time})
+		.domain(d3.extent(MVAccData,function(d){ return d.time}))
+		.thresholds(d3.timeMonth.range(extent[0],extent[1],1));
+
+var dayBins = histogram(MVAccDataByTime.top(Infinity));
+
+var meanNum = Math.round(d3.mean(dayBins,function(d){return d.length}));
+		document.getElementById('plot1_2').innerHTML = '<hr/><p><span>' + meanNum+'</span><br/>Accidents Per Day<br/><br/></p>';
+
 });
 
 d3.csv('data/BPD_MVAcc2013~2016.csv', function(data) {

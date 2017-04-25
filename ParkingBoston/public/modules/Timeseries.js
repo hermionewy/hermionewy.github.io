@@ -100,7 +100,7 @@ function Timeseries(){
 				//Append a rect as mouse target
 		var bisectDate = d3.bisector(function(d){return d.x0}).right;
 
-		var tooltip = d3.select('.container')
+		var tooltip = selection.select('svg')
 		.append('div').attr('class','custom-tooltip');
 		tooltip.append('p').attr('class','heading');
 		tooltip.append('p').attr('class','value');
