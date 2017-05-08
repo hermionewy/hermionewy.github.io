@@ -63,6 +63,10 @@ function Timeseries(){
 			</g>
 		</svg>
 		*/
+		var tooltip = d3.select('.container')
+		.append('div').attr('class','custom-tooltip');
+		tooltip.append('p').attr('class','heading');
+		tooltip.append('p').attr('class','value');
 		var svg = selection.selectAll('svg')
 			.data([dayBins])
 
@@ -100,10 +104,7 @@ function Timeseries(){
 				//Append a rect as mouse target
 		var bisectDate = d3.bisector(function(d){return d.x0}).right;
 
-		var tooltip = selection.select('svg')
-		.append('div').attr('class','custom-tooltip');
-		tooltip.append('p').attr('class','heading');
-		tooltip.append('p').attr('class','value');
+
 
 		plot.select('.area').transition()
 			.attr('d',area);
