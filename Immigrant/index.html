@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="global.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top" style='opacity:0.8'>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Immigrant Project</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#section1">Map</a></li>
+            <li><a href="#section2">Occupation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="section1" class="container-fluid">
+    <div class='row'>
+      <div class='canvas2 col-md-3' id='canvas2'>
+        <div class = 'info'> <h3>Are lawful American immigrants taking jobs from Americans?</h3>
+          <p>According to the data from <a href='https://www.dhs.gov/immigration-statistics'>Homeland Security Department</a>, America had not seen significant change in the number of immigrants from 2006 to 2015.
+            Most of the lawful immigrants came to America as managers, professionals, or students.<br/>
+          Explore the graphic to see some patterns of the immigrants. </p></div>
+        <div class='slider'><label for="year">Year</label>
+          <input type="range" id="year" min="2006" value="2015" max="2015" step="1" oninput="outputUpdate(value)">
+          <output for="year" id="showYear">2015</output>
+        </div>
+        <a class="btn btn-default" href="#" role="button" id='button1'>Birth Country</a>
+        <a class="btn btn-default" href="#" role="button" id='button2'>Resident States</a>
+      </div>
+      <div class='canvas2 col-md-9' id='canvas3'></div>
+    </div>
+  </div>
+  <div id="section2" class="container-fluid">
+    <div class="container">
+        <div id='tooltip'></div>
+        <section class="canvas" id="canvas"></section>
+    </div>
+  </div>
+<script src='jquery/jquery-1.12.4.min.js'></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="d3.js"></script>
+<script src = 'modules/Map.js'></script>
+<script src = 'modules/Occupation.js'></script>
+<script src = 'modules/DrawNodes.js'></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

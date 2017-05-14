@@ -1,0 +1,50 @@
+.reasonAxis path {
+	stroke-width:0px;
+}
+.reasonAxis {
+	font-size: 12px;
+}
+.reasonAxis line {
+	stroke: #ddd;
+}
+.ocpAxis path {
+	stroke-width:0px;
+}
+.ocpAxis {
+	font-size: 12px;
+}
+.ocpAxis line {
+	stroke: #ddd;
+}
+.button {
+	position: relative;
+	width: 120px;
+	float: left;
+	left: 50px;
+	height: 40px;
+	color: #969696;
+	font-size: 14px;
+}
+.button:hover{
+	cursor: pointer;
+}
+
+.clickedBtn {
+	color:rgb(146,20,12);
+}
+.canvas{
+  height: 1400px;
+}
+.plot{
+  height: 500px;
+}
+.info{
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+#section1 {padding-top:50px;height:500px;color: #000; }
+#section2 {padding-top:50px;height:1400px;color: #fff; }
+#canvas3 {height:500px}
+.slider{
+  padding-bottom: 20px;
+}

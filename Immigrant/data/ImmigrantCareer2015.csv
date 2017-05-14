@@ -1,0 +1,29 @@
+Year,Occupation,Total,Female,Male,Unknown
+2015,Total,1051031,569536,481485,10
+2015,"Management, professional, and related occupations",151755,56615,95140,-
+2015,Service occupations,25130,11985,13145,-
+2015,Sales and office occupations,18666,9555,9111,-
+2015,"Farming, fishing, and forestry occupations",4157,776,3381,-
+2015,"Construction, extraction, maintenance, and repair occupations",24112,2360,21752,-
+2015,"Production, transportation, and material moving occupations",22445,5301,17144,-
+2015,Military,37,9,28,-
+2015,No occupation/not working outside home,456532,294818,161710,4
+2015,Homemakers,139467,133099,6367,1
+2015,Students or children,251660,123675,127982,3
+2015,Retirees,11486,6625,4861,-
+2015,Unemployed,53919,31419,22500,-
+2015,Unknown,348197,188117,160074,6
+2006,Total,"1,266,264","563,034","703,213",17
+2006,"Management, professional, and related occupations","110,916","63,014","47,901",1
+2006,Service occupations,"64,722","34,545","30,177",-
+2006,Sales and office occupations,"48,284","21,509","26,775",-
+2006,"Farming, fishing, and forestry occupations","15,957","12,710","3,247",-
+2006,"Construction, extraction, maintenance and repair occupations","12,448","12,107",341,-
+2006,"Production, transportation, and material moving occupations","58,501","41,719","16,782",-
+2006,Military,99,70,29,-
+2006,No occupation/not working outside home,"582,258","205,916","376,340",2
+2006,Homemakers,"163,350","4,358","158,991",1
+2006,Students or children,"322,956","160,730","162,225",1
+2006,Retirees,"9,850","4,367","5,483",-
+2006,Unemployed,"86,102","36,461","49,641",-
+2006,Unknown,"373,079","171,444","201,621",14

@@ -21,7 +21,7 @@ var plot = d3.select('.canvas')
         .attr('transform','translate('+ m.l+','+ m.t+')');
 //Mapping specific functions
 //Projection
-var projection = d3.geoMercator();
+var projection = d3.geoEquirectangular();
 
 //Geopath
 var pathGenerator = d3.geoPath()
