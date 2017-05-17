@@ -75,7 +75,9 @@ button .location .leaflet-control{
 .pie-chart .slice .text{
 	fill:(80,80,80);
 }
-
+#plot3_0 h4{
+	padding-top: 50px;
+}
 /*time-series*/
 /*.time-series .line{
 	stroke:fill:rgb(180,180,180);
@@ -150,7 +152,9 @@ g .plot-radial .am-line{
 #plot2 .axis-y .domain{
 	display:none;
 }
-
+.navbar-inverse .navbar-brand{
+	color:#03afeb;
+}
 rect{
   background-color: #03afeb;
   padding: 3px;

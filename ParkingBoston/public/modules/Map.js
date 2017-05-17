@@ -34,7 +34,7 @@ function Map(){
              return d.circle;
     })
     var theftGroup = L.layerGroup(theftCircles);
-
+    var circleGroup2 = L.layerGroup();
     var map = L.map(mapid, {
         center: [42.356, -71.072],
         zoom: 13,
@@ -49,7 +49,7 @@ function Map(){
 
     var overlayMaps = {
         "Circles": theftGroup,
-//        "Larceny": larcenyGroup,
+        "Circles2": circleGroup2,
 //        "MV Accident":mvAccidentGroup
     };
 
@@ -75,7 +75,21 @@ function Map(){
     function locate(){
       map.locate({setView: true, maxZoom: 16});
     }
-
+    function drawCircles(stations){
+        // circleGroup2.clearLayers();
+        // map.removeLayer(circleGroup2);
+        // map.addLayer(circleGroup2);
+        //
+        //  // for each station append a circle
+        //  var maxY = d3.max(stations, function(d){ return d.value})
+        // var scaleR = d3.scaleLinear().domain([0,maxY]).range([0,600]);
+        //  var BigCircles = stations.forEach(function(d){
+        //    var latLng = (idToLocation.get(d.key))? (idToLocation.get(d.key)):([0,0]);
+        //    var circle = L.circle(latLng,{color: '#A5C0D1',fillColor: '#f03',fillOpacity: 0.1, radius: scaleR(+d.value)})
+        //    .bindPopup("Station:" + idToName.get(d.key)+"<br/>"+ d.value+"trips of selected bikes start from here. " );
+        //     circleGroup2.addLayer(circle);
+        //  });
+         }
 
   }
   exports.style = function(_){

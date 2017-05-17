@@ -11,7 +11,6 @@ function Timeseries(){
 	var scaleX, scaleY;
 	var _dispatcher = d3.dispatch('timerange:select');
 
-
 	var exports = function(selection){
 		//Set initial internal values
 		//Some of these will be based on the incoming selection argument
@@ -27,6 +26,7 @@ function Timeseries(){
 			.thresholds(_interval.range(T0,T1,1));
 
 		var dayBins = histogram(arr);
+		console.log(dayBins);
 
 		var maxY = d3.max(dayBins,function(d){return d.length});
 		scaleX = d3.scaleTime().domain([T0,T1]).range([0,W]),
@@ -36,14 +36,12 @@ function Timeseries(){
 		//Axis, line and area generators
 		var line = d3.line()
 			.x(function(d){return scaleX(d.x0)})
-			.y(function(d){return scaleY(d.length)})
-      .curve(d3.curveBasis);
+			.y(function(d){return scaleY(d.length)});
 
 		var area = d3.area()
 			.x(function(d){return scaleX(d.x0)})
 			.y0(function(d){return H})
-			.y1(function(d){return scaleY(d.length)})
-      .curve(d3.curveBasis);
+			.y1(function(d){return scaleY(d.length)});
 		var axisX = d3.axisBottom()
 			.scale(scaleX)
 			.ticks(d3.timeMonth.every(3));
@@ -68,7 +66,7 @@ function Timeseries(){
 		tooltip.append('p').attr('class','heading');
 		tooltip.append('p').attr('class','value');
 		var svg = selection.selectAll('svg')
-			.data([dayBins])
+			.data([dayBins]);
 
 		var svgEnter = svg.enter()
 			.append('svg') //ENTER
@@ -101,7 +99,6 @@ function Timeseries(){
 				.attr('r',3)
 				.style('opacity',0);
 
-				//Append a rect as mouse target
 		var bisectDate = d3.bisector(function(d){return d.x0}).right;
 
 
@@ -137,7 +134,6 @@ function Timeseries(){
 							mouseX = d3.mouse(d3.select('.container').node())[0],
 							mouseY = d3.mouse(d3.select('.container').node())[1],
 							time = scaleX.invert(plotX);
-						//what would the right insertion point?
 						var i = bisectDate(dayBins, time),
 							targetBin = dayBins[i];
 						//Given this insertion point

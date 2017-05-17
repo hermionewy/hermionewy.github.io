@@ -7,7 +7,6 @@ function CasesByWeekDay(){
 		W = W || selection.node().clientWidth - M.l - M.r;
 		H = H || selection.node().clientHeight - M.t - M.b;
     var arr= selection.datum()?selection.datum():[];
-    console.log(arr[0].time.getDay());
     var num=[];
  	  for (var i=0; i<7; i++){
  		 num[i] = arr.filter(function(d){ return d.time.getDay() == i}).length;
@@ -24,10 +23,10 @@ function CasesByWeekDay(){
     var svgEnter = svg.enter()
             .append('svg') //ENTER
             .attr('width', W + M.l + M.r)
-            .attr('height', H + M.t + M.b);
+            .attr('height', H);
 
     var plotEnter = svgEnter.append('g').attr('class','dayofweek')
-						.attr('transform','translate('+M.l+','+M.t+')');
+						.attr('transform','translate(0, -40)');
 
       plotEnter.selectAll('.chart')
       .data(num)
@@ -46,7 +45,7 @@ function CasesByWeekDay(){
       .append('text')
       .attr('x','10px')
       .attr('y',function(d,i) { return (scaleY(i)+14) + 'px'})
-      .text(function(d,i){ return dayWeek[i]})
+      .text(function(d,i){ return dayWeek[i]+': '+num[i]})
       .style('fill','white');
 
 	}

@@ -15,7 +15,11 @@ function CasesByHour(){
 			.domain([0,24])
 			.value(function(d){return d.time.getHours() + d.time.getMinutes()/60})
 			.thresholds(d3.range(0,25,_interval));
-		var arr = selection.datum()?selection.datum():[];
+		var arr0 = selection.datum()?selection.datum():[];
+		var arr = arr0.filter(function(d){
+				if(d.time.getHours()+ d.time.getMinutes()){
+					return d;
+				}});
 
 		var scaleX = d3.scaleLinear().domain([0,12]).range([0,Math.PI*2]),
 				scaleY = d3.scaleLinear().domain([0,d3.max(histogramHour(arr), function(d){return d.length})]).range([INNERR_AXIS,R_MAX]);
