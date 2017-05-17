@@ -13,3 +13,10 @@
 .custom-tooltip{
     opacity: 0;
 }
+.info{
+  width: 400px;
+  position: absolute;
+  float: right;
+  top: 70px;
+  right: 100px;
+}
