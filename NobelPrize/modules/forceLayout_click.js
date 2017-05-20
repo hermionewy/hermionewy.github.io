@@ -278,7 +278,7 @@ function ForceLayout(){
               tooltip.style('opacity',1);
               tooltip.select('.prize').html(node.category +' ('+ node.year+')');
 
-              tooltip.select('.title').html(node.name + ', ' + (node.birthday.getFullYear()) +', '+ node.birthCtr);
+              tooltip.select('.title').html(node.name + ', ' + ((!isNaN(node.birthday))?node.birthday.getFullYear():'unknown') +', '+ node.birthCtr);
 
               tooltip.select('.des').html(node.name + ' worked at ' + node.org +'. He was awarded '+ node.motivation + '.')
 

@@ -22,9 +22,6 @@ function Button(){
 	    var scaleX = d3.scaleTime()
 	        .domain([new Date(1900, 0, 1), new Date(2020, 1, 1)])
 	        .range([100,W-100]);
-      var scaleYearB= d3.scaleTime()
-	        .domain([new Date(1820, 0, 1), new Date(2020, 1, 1)])
-	        .range([100,W-100]);
 
 	    var axisX = d3.axisTop()
 	        .scale(scaleX)
@@ -44,7 +41,7 @@ function Button(){
       //var maxAge = d3.max(datum, function(d){return d.age});
       var scaleAge = d3.scaleLinear().domain([0,100]).range([H-100,50]);
       var axisYearB = d3.axisBottom()
-          .scale(scaleYearB)
+          .scale(scaleX)
           .ticks(d3.timeYear.every(10));
       var axisAge = d3.axisLeft()
           .scale(scaleAge)
@@ -102,10 +99,18 @@ function Button(){
           }
         }
       }
+      var categoryPosition2 = function(d){
+        for( var j=1; j<category.length; j++){
+          if(!d.category){ return -500;
+          }else {
+            return (H/3+scaleY(d.category)*0.15);
+          }
+        }
+      }
       var yearBPosition = function(d){
 	            if(!d.year){return -500;
 	            }else{
-	              return scaleYearB(new Date().setYear(d.year))}
+	              return scaleX(new Date().setYear(d.year))}
 	         }
       var agePosition = function(d){
 	            if(!d.age){return -500;
@@ -285,6 +290,8 @@ function Button(){
 	              d3.select('#container').datum(datum).call(forceByCountry);
 
                 d3.select('#birthCtr').on('click.birth',function(){
+                  d3.select(this).classed('clickedCtr',true);
+                  d3.select('#deathCtr').classed('clickedCtr',false);
                   forceByCountry = forceLayout
   	                   .x(xMap)
   	                   .y(yMap)
@@ -295,6 +302,8 @@ function Button(){
   	              d3.select('#container').datum(datum).call(forceByCountry);
                 });
                 d3.select('#deathCtr').on('click.birth',function(){
+                  d3.select(this).classed('clickedCtr',true);
+                  d3.select('#birthCtr').classed('clickedCtr',false);
                   forceByCountry = forceLayout
   	                   .x(xMap2)
   	                   .y(yMap2)
@@ -316,8 +325,6 @@ function Button(){
 	              d3.select('.button2').classed('clickedBtn',false);
 	              d3.select(this).classed('clickedBtn',true);
 
-
-
                 d3.selectAll('.mapData').style('opacity',0);
 	              d3.selectAll('.yearAxis').style('opacity',0);
 	              d3.selectAll('.categoryAxis').style('opacity',0);
@@ -327,14 +334,14 @@ function Button(){
                 d3.select('.colorDirector').style('visibility','hidden');
                 d3.selectAll('.sc_menu').style('opacity',0).style('visibility','hidden');
 
-	              forceByDeath = forceLayout
+	              var forceByAge = forceLayout
 	                   .x(yearBPosition)
 	                   .y(agePosition)
 	                   .r(r-1)
-	                   .collide(r+0.5)
+	                   .collide(r-1)
 	                   .strength(-1);
 
-	              d3.select('#container').datum(datum).call(forceByDeath);
+	              d3.select('#container').datum(datum).call(forceByAge);
 
 	           });//How
 

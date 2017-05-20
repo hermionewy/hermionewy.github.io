@@ -73,6 +73,10 @@ body {
 	color:rgb(136, 125, 79);
 	border-bottom: 0.5px solid rgb(136, 125, 79);
 }
+.clickedCtr{
+	background-color: rgb(136, 125, 79);
+	color: black;
+}
 
 .mapData {
 	opacity: 0;

@@ -60,14 +60,15 @@ function getText(txt){
   return txt.match(re)[1]}
 
 function parse(d){
+  if (d["Laureate Type"]=="Individual")
    return {
      year: +d["Year"],
      age: (+d["Year"]-parseTime(d["Birth Date"]).getYear()-1900)?(+d["Year"]-parseTime(d["Birth Date"]).getYear()-1900):'0',
      category: d["Category"],
-     motivation: d["Motivation"],
+     motivation: d["Motivation"]? d["Motivation"]:'for unknown reasons',
      share: d["Prize Share"],
      name : d["Full Name"],
-     birthday: d["Birth Date"]? parseTime(d["Birth Date"]):0,
+     birthday: d["Birth Date"]? parseTime(d["Birth Date"]):'unknown',
      birthCity: d["Birth City"]? d["Birth City"]:0,
      birthCtr: d["Birth Country"].includes("(")? getText(d["Birth Country"]):d["Birth Country"],
      sex: d["Sex"]?d["Sex"]:0,
@@ -75,8 +76,23 @@ function parse(d){
      orgCity: d["Organization City"],
      deathDate: parseTime(d["Death Date"])?parseTime(d["Death Date"]):' ',
      deathCtr: d["Death Country"].includes("(")? getText(d["Death Country"]):d["Death Country"]
-   };
-
+   }
+   else if (d["Laureate Type"]=="Organization") {
+     return {year: +d["Year"],
+     age: 0,
+     category: d["Category"],
+     motivation: d["Motivation"]? d["Motivation"]:'for unknown reasons',
+     share: d["Prize Share"],
+     name : d["Full Name"],
+     birthday: d["Birth Date"]? parseTime(d["Birth Date"]):'unknown',
+     birthCity: 'unknown',
+     birthCtr: 'unknown',
+     sex: 'unknown',
+     org: d["Full Name"],
+     orgCity: 'unknown',
+     deathDate: 'unknown',
+     deathCtr: 'unknown'}
+   }
 }
 
 function parseTime(timeStr){
