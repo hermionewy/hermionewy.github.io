@@ -199,6 +199,7 @@ div.sc_menu {
 	vertical-align: middle;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 1;
 
 }
 
