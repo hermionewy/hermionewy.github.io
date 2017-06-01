@@ -1,0 +1,178 @@
+City,Country,Extra Info,Quality of Life Index,Purchasing Power Index,Safety Index,Health Care Index,Cost of Living Index,Property Price to Income Ratio,Traffic Commute Time Index,Pollution Index,Climate Index
+Canberra, Australia,,1,10,29,11,138,43,9,5,40
+Raleigh,United States, NC,2,7,39,27,120,7,42,15,42
+Wellington, New Zealand,,3,27,47,77,137,39,11,1,26
+Victoria, Canada,,4,33,61,93,123,32,22,3,55
+Edinburgh, United Kingdom,,5,67,43,12,118,58,3,6,77
+Adelaide, Australia,,6,50,59,45,150,44,38,22,20
+Eindhoven, Netherlands,,7,37,27,2,110,28,40,17,122
+Vienna, Austria,,8,71,17,10,102,131,12,13,54
+San Diego, United States, CA,9,17,72,36,139,40,129,49,6
+Melbourne, Australia,,10,18,86,35,151,62,77,39,21
+Brisbane, Australia,,11,32,69,14,145,55,128,21,39
+Zurich, Switzerland,,12,13,7,41,176,91,62,4,101
+Munich, Germany,,13,22,2,8,116,116,61,9,128
+Dallas, United States, TX,14,1,91,88,108,2,109,79,62
+Sacramento, United States, CA,15,24,110,61,149,19,7,77,17
+Bursa, Turkey,,16,114,16,5,31,23,90,41,49
+Salt Lake City, United States, UT,17,3,28,80,100,13,93,90,81
+Luxembourg, Luxembourg,,18,35,24,38,146,112,60,16,93
+Cork, Ireland,,19,36,54,130,126,48,104,12,73
+Portland, United States, OR,20,34,93,64,152,30,35,23,80
+Perth, Australia,,21,44,100,60,163,52,83,35,14
+Columbus, United States, OH,22,26,95,79,115,8,15,29,110
+Copenhagen, Denmark,,23,62,14,69,167,67,44,25,85
+Ottawa, Canada,,24,20,18,81,101,46,92,7,144
+Boston, United States, MA,25,14,67,43,168,61,151,26,74
+San Jose, United States, CA,26,2,130,119,157,37,59,97,3
+Austin, United States, TX,27,19,63,58,125,22,112,53,86
+Denver, United States, CO,28,11,71,22,156,20,81,61,121
+Geneva, Switzerland,,29,25,35,82,177,100,8,38,70
+Leeds, United Kingdom,,30,57,90,17,97,24,56,62,67
+Gothenburg, Sweden,,31,46,107,118,133,86,5,18,105
+Seattle, United States, WA,32,29,80,46,169,47,131,43,57
+Hamilton, Canada,,33,15,118,13,91,42,95,69,92
+Minneapolis, United States, MN,34,30,111,15,158,14,67,14,133
+Vancouver, Canada,,35,80,68,44,121,127,130,30,11
+Tampa, United States, FL,36,66,96,83,130,18,50,24,94
+Amsterdam, Netherlands,,37,84,55,50,140,90,24,44,47
+Glasgow, United Kingdom,,38,58,113,1,103,27,142,40,82
+Sydney, Australia,,39,53,82,55,164,117,126,37,32
+Berlin, Germany,,40,39,73,19,93,72,53,73,98
+Helsinki, Finland,,41,51,32,37,141,87,78,10,135
+Halifax, Canada,,42,78,106,33,135,36,20,20,115
+Auckland, New Zealand,,43,61,103,72,161,85,108,36,31
+Toronto, Canada,,44,40,64,53,111,70,127,70,72
+Gdansk, Poland,,45,107,49,127,47,84,17,42,76
+Reykjavik, Iceland,,46,97,23,99,175,51,4,2,130
+Frankfurt, Germany,,47,42,79,59,128,73,23,57,114
+Mangalore, India,,48,56,6,18,1,29,43,11,169
+Calgary, Canada,,49,38,57,75,127,34,88,27,141
+Hamburg, Germany,,50,55,117,7,131,79,63,32,120
+Ljubljana, Slovenia,,51,106,22,114,88,105,14,33,104
+Porto, Portugal,,52,115,92,32,70,78,49,67,18
+Lisbon, Portugal,,53,118,58,90,76,135,65,48,7
+Rotterdam, Netherlands,,54,65,85,23,117,41,48,68,108
+Atlanta, United States, GA,55,5,164,106,134,9,98,92,56
+Riyadh, Saudi Arabia,,56,6,13,68,66,3,111,133,138
+Brno, Czech Republic,,57,100,37,29,51,94,16,80,90
+Tallinn, Estonia,,58,112,19,86,77,104,27,19,129
+Las Vegas, United States, NV,59,9,150,115,114,4,96,85,113
+Taipei, Taiwan,,60,28,3,6,99,143,47,82,140
+Madrid, Spain,,61,89,51,21,89,102,94,93,24
+Zagreb, Croatia,,62,113,38,89,69,98,46,54,71
+Cape Town, South Africa,,63,87,171,48,61,49,124,64,2
+San Francisco, United States, CA,64,74,126,84,171,114,107,52,1
+Montreal, Canada,,65,60,65,131,112,53,118,45,117
+Phoenix, United States, AZ,66,8,152,47,106,6,32,113,123
+Houston, United States, TX,67,4,159,39,129,1,133,100,106
+Philadelphia, United States, PA,68,16,154,70,166,5,121,86,68
+Prague, Czech Republic,,69,99,46,63,59,132,87,59,87
+Cluj-napoca, Romania,,70,132,8,95,35,121,33,51,95
+Stockholm, Sweden,,71,63,105,91,160,142,101,8,116
+Seoul, South Korea,,72,82,21,3,144,151,64,58,119
+Edmonton, Canada,,73,43,83,28,122,33,73,34,155
+Los Angeles, United States, CA,74,21,144,135,153,35,141,112,5
+Bratislava, Slovakia,,75,109,45,121,65,103,80,72,69
+Orlando, United States, FL,76,54,146,117,142,11,105,60,112
+Abu Dhabi, United Arab Emirates,,77,12,1,143,98,26,13,91,160
+Dublin, Ireland,,78,69,138,168,143,64,85,46,65
+Manchester, United Kingdom,,79,73,139,26,105,45,122,87,58
+Muscat, Oman,,80,31,25,145,80,16,1,84,163
+Chicago, United States, IL,81,23,166,110,162,17,143,63,111
+Warsaw, Poland,,82,101,30,134,49,110,97,81,97
+Timisoara, Romania,,83,141,20,124,32,113,6,102,59
+Banja Luka, Bosnia And Herzegovina,,84,135,33,165,29,124,19,83,43
+Tel Aviv-Yafo, Israel,,85,85,50,30,148,153,110,89,41
+Thessaloniki, Greece,,86,137,60,97,83,76,10,116,23
+Honolulu, United States, HI,87,88,70,109,172,82,102,75,63
+Monterrey, Mexico,,88,81,127,141,22,21,21,122,89
+Brussels, Belgium,,89,76,143,24,132,60,54,121,44
+Barcelona, Spain,,90,91,81,49,90,108,75,129,29
+Regina, Canada,,91,41,140,116,119,25,28,55,156
+Izmir, Turkey,,92,126,31,25,33,66,114,120,84
+Johannesburg, South Africa,,93,49,175,136,63,12,148,139,9
+Novi Sad, Serbia,,94,159,99,170,26,149,2,71,37
+Oslo, Norway,,95,64,121,66,174,89,116,28,143
+Durban, South Africa,,96,72,176,171,50,10,79,95,46
+Dubai, United Arab Emirates,,97,45,12,133,113,38,69,98,157
+Riga, Latvia,,98,130,77,146,72,93,30,47,132
+Krakow (Cracow), Poland,,99,104,48,123,44,99,52,128,103
+Winnipeg, Canada,,100,86,134,101,109,31,51,66,148
+Curitiba, Brazil,,101,136,165,150,74,109,99,76,8
+Pune, India,,102,59,104,105,10,68,156,148,91
+Vilnius, Lithuania,,103,127,53,74,64,141,36,31,151
+Iasi, Romania,,104,142,26,108,24,123,68,111,100
+Tokyo, Japan,,105,70,9,31,170,158,137,78,142
+New York, United States, NY,106,68,115,113,173,125,152,104,38
+Wroclaw, Poland,,107,111,66,152,42,80,119,108,96
+Sofia, Bulgaria,,108,122,102,159,39,77,37,110,75
+Medellin, Colombia,,109,161,129,42,25,144,70,119,4
+Turin, Italy,,110,94,145,100,96,92,31,145,34
+Budapest, Hungary,,111,129,78,161,60,106,76,88,88
+Guadalajara, Mexico,,112,138,141,20,16,59,153,134,30
+Doha, Qatar,,113,48,4,107,104,50,55,141,159
+Miami, United States, FL,114,83,142,154,165,54,123,65,134
+Buenos Aires, Argentina,,115,123,157,54,82,128,134,109,15
+Hyderabad, India,,116,103,76,76,4,57,115,156,118
+Ankara, Turkey,,117,116,89,67,37,56,74,140,109
+Brasilia, Brazil,,118,146,163,173,84,146,39,50,35
+Milan, Italy,,119,98,112,62,136,152,89,117,53
+Belgrade, Serbia,,120,156,75,155,34,163,58,101,33
+Paris, France,,121,77,136,52,159,147,120,127,61
+Istanbul, Turkey,,122,125,124,73,52,111,169,124,28
+Athens, Greece,,123,134,128,169,87,88,82,126,12
+Tbilisi, Georgia,,124,170,10,162,12,119,100,154,36
+Yerevan, Armenia,,125,166,44,166,28,134,29,107,99
+Santiago, Chile,,126,124,135,128,79,101,84,150,19
+Sarajevo, Bosnia And Herzegovina,,127,145,119,125,38,126,25,132,79
+Bucharest, Romania,,128,128,42,167,43,96,91,135,102
+London, United Kingdom,,129,90,109,78,154,171,150,96,50
+Minsk, Belarus,,130,163,15,140,30,155,26,74,153
+Coimbatore, India,,131,133,74,51,3,81,160,118,137
+Bangalore, India,,132,75,114,85,9,65,162,160,136
+Amman, Jordan,,133,154,98,57,92,69,157,158,25
+Jeddah (Jiddah), Saudi Arabia,,134,47,41,151,75,15,135,153,164
+Rome, Italy,,135,105,148,144,124,167,149,125,16
+Skopje, Macedonia,,136,158,94,122,27,145,66,159,52
+Montevideo, Uruguay,,137,168,149,96,107,159,161,99,22
+Ahmedabad, India,,138,117,40,65,6,74,103,138,162
+Almaty, Kazakhstan,,139,143,125,104,21,122,18,146,139
+Porto Alegre, Brazil,,140,148,173,153,78,129,136,105,45
+Gurgaon, India,,141,52,158,34,18,63,154,169,154
+Beirut, Lebanon,,142,131,122,94,95,138,72,166,78
+Chiang Mai, Thailand,,143,169,56,4,58,150,34,149,145
+Mexico City, Mexico,,144,119,167,98,23,83,166,168,48
+Hong Kong, Hong Kong,,145,92,11,92,147,175,125,130,146
+Bogota, Colombia,,146,162,160,111,41,162,146,142,60
+Baku, Azerbaijan,,147,171,34,176,13,160,106,163,83
+Lviv, Ukraine,,148,176,84,158,5,169,139,94,131
+Saint Petersburg, Russia,,149,139,88,132,62,133,163,114,152
+Shanghai, China,,150,102,62,139,81,172,145,165,107
+Moscow, Russia,,151,121,101,148,67,161,167,115,147
+Kiev, Ukraine,,152,172,123,160,11,168,86,136,125
+Lahore, Pakistan,,153,149,132,138,20,130,113,155,149
+Lima, Peru,,154,150,168,137,56,139,144,170,66
+Singapore, Singapore,,155,79,5,71,155,164,132,56,176
+Sao Paulo, Brazil,,156,153,172,157,85,154,147,161,27
+Tehran, Iran,,157,157,147,164,53,140,168,164,64
+Karachi, Pakistan,,158,152,162,149,14,71,117,175,124
+Cairo, Egypt,,159,174,151,172,2,95,164,177,51
+Chennai, India,,160,95,97,40,8,120,140,152,172
+Delhi, India,,161,96,155,103,15,136,165,172,150
+Colombo, Sri Lanka,,162,175,52,16,40,166,170,103,161
+Yekaterinburg, Russia,,163,140,133,112,45,107,57,151,167
+Beijing, China,,164,110,87,102,71,174,159,173,127
+Panama City, Panama,,165,165,108,147,94,118,71,123,166
+Davao, Philippines,,166,164,36,56,19,170,45,106,175
+Rio De Janeiro, Brazil,,167,151,174,175,86,157,171,131,126
+Jakarta, Indonesia,,168,155,137,126,68,148,172,162,158
+Bangkok, Thailand,,169,144,120,9,73,156,158,137,173
+Kolkata, India,,170,120,131,156,7,97,177,157,170
+Nairobi, Kenya,,171,173,161,142,54,176,175,143,10
+Mumbai, India,,172,108,116,120,17,173,176,167,165
+Kuala Lumpur, Malaysia,,173,93,170,129,55,75,138,144,177
+Ho Chi Minh City, Vietnam,,174,167,153,163,57,165,41,174,171
+Manila, Philippines,,175,147,156,87,48,115,173,171,174
+Dhaka, Bangladesh,,176,160,169,174,36,137,174,176,168
+Caracas, Venezuela,,177,177,177,177,46,177,155,147,13

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best City</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- <link href="global.css" rel="stylesheet"/> -->
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav class='navbar navbar-inverse navbar-fixed-top'>
+		<div class='navbar-header'>
+      <a href='index.html' class='navbar-brand'><img src= 'cityUI2/return.png'/></a>
+      <a class='navbar-brand' href='#'>Which city fits you best?</a>
+    </div>
+		<div id='navbar' class='navbar-collapse collapse'></div>
+	 </nav>
+<div class="container">
+  <div class='row'>
+				<div class='col-md-6' id='drawSvg'>
+          <div class ='info inline'>
+            <div class='button' id='button1'>
+              <p>City1</p>
+             </div>
+            <div class='button' id='button2'>
+               <p>City2</p>
+            </div>
+            <div class='button' id='button3'>
+              <p>City3</p>
+            </div>
+          </div>
+          <div class='inline' id='hint'>
+          </div>
+				  <div class='canvas' id='canvas'></div>
+				</div>
+				<div class='col-md-6'>
+				  <div class='info' id='picture'></div>
+          <div class='info' id = 'info'>
+            <p class='score'></p>
+            <p class='wiki'></p>
+            <hr/>
+            <p class='tbHint'> This project is based on the dataset provided by <a href ='https://www.numbeo.com/quality-of-life/rankings.jsp' target="_blank">NEMBEO</a>, where 177 major cities around the world are evaluated. The table below shows the scores of each city.</p>
+          </div>
+				</div>
+	</div>
+  <div class ='custom-tooltip'>
+    <p class='title'></p>
+  </div>
+</div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+<script src="d3.js"></script>
+<script src="module/radarDraw.js"></script>
+<script src="module/tableDraw.js"></script>
+<script src="script.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58458d9251de6254"></script>
+
+</body>
+</html>
