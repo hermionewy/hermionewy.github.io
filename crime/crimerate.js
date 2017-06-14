@@ -6,8 +6,8 @@ var sidebar;
 var circleLayer = new L.FeatureGroup();
 var info = L.control();
 var dscp= L.control({position:'bottomright'});
-var colorCircle=['#ff2828','#ff00e1','#c65fa6','#796eef','#0054d3'];
-var crimeCatgory = ['Aggravated Assault','Homicide','Residential Burglary','Commercial Burglary','Other Burglary'];
+var colorCircle=['#ff2828','#ff00e1','#c65fa6','#796eef','#0054d3','#7b00ff','#2810b2'];
+var crimeCatgory = ['Aggravated Assault','Homicide','Robbery','Burglary','Auto Theft','Larceny','Arson'];
 var popup = L.popup();
 
 L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/civzwvota003e2kqraacncehj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
@@ -56,8 +56,9 @@ function zoomToFeature(e) {
 
 d3.queue()
     .defer(d3.json, 'data/bos_neighborhoods.json')
-    .defer(d3.csv, 'data/Violent_Crime_Incident_2016.csv',parseData)
+    .defer(d3.csv, 'data/ViolentAndPropertyCrime2015.csv',parseData)
     .await(function(err, geo, data){
+      console.log(data);
 
     info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -99,7 +100,7 @@ function onEachFeature(feature, layer) {
 
 // method that I will use to update the control based on feature properties passed
   info.update = function (props) {
-    this._div.innerHTML = '<h4>Boston Violent Crime Map</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Boston Crime Map 2016</h4>' +  (props ?
         '<b>' + props.Name + '</b><br />'
         : 'Click on the button to learn more.');
 };
@@ -133,24 +134,31 @@ var districtOrder=district.sort(function(a, b) {
     return b.value-a.value;
 });
 
-//
+//crimeCatgory = [];
 data.forEach(function(d){
   if(d.offenseCode=="Aggravated Assault"){
     d.code = 'Aggravated Assault';
   }else if (d.offenseCode=='Homicide'){
     d.code ='Homicide';
-  }else if (d.offenseCode=='Residential Burglary'){
-    d.code='Residential Burglary';
-  }else if(d.offenseCode=='Commercial Burglary'){
-    d.code='Commercial Burglary';
-  }else {
-    d.code='Other Burglary';
-}
+  }else if (d.offenseCode=='Robbery'){
+    d.code ='Robbery';
+  }else if (d.offenseCode=='Residential Burglary' || d.offenseCode== 'Commercial Burglary' || d.offenseCode== 'Other Burglary'){
+    d.code='Burglary';
+  }else if(d.offenseCode =='Auto Theft'){
+    d.code='Auto Theft';
+  }else if(d.offenseCode=='Larceny'){
+    d.code='Larceny';
+  }else if(d.offenseCode=='Arson'){
+    d.code='Arson';
+  } else(
+    d.code ='Others'
+  )
 });
-var fiveCrime = d3.nest()
+
+var sevenCrime = d3.nest()
         .key(function(d){return d.code})
         .entries(data);
-console.log(fiveCrime);
+console.log(sevenCrime);
 
 // dropdown list
 var dropDown=d3.select('select');
@@ -168,18 +176,19 @@ var options = dropDown
       var si   = dropDown.property('selectedIndex'),
           s    = options.filter(function (d, i) { return i === si }),
           choice = s.datum();
-          console.log(choice);
+
       map.removeLayer(circleLayer);
       circleLayer = new L.FeatureGroup();
-      for (var j=0; j<5; ) {
-        if (fiveCrime[j].key==choice){
-            fiveCrime[j].values.forEach(function(d){
-             var circles = L.circle(d.location, circleStyle(d.offenseCode)).setRadius(50);
+      for (var j=0; j<8; ) {
+        if (sevenCrime[j].key==choice){
+          console.log(sevenCrime[j]);
+            sevenCrime[j].values.forEach(function(d){
+             var circles = L.circle(d.location, circleStyle(d.offenseCode)).setRadius(30);
              circleLayer.addLayer(circles);
              circles.bindPopup("Description: "+ d.offenseDes.toLowerCase() + "<br />Time: "+d.date +".");
-            })
+           });
             map.addLayer(circleLayer);
-            return fiveCrime[j].key;
+            return sevenCrime[j].key;
         }else{ j++; }
       }
 
@@ -205,7 +214,6 @@ var options = dropDown
 //var colorCircle=['#61b2f4','#f46161','#ff2828','#db8708','#f79b4a','#dd0000','#fce82f','#81af2b','#cec0c5'];
 
 // append cirles as crime cases
-
 function circleStyle(d){
     if(d=='Aggravated Assault'){
       return{
@@ -215,18 +223,25 @@ function circleStyle(d){
       return{
       color:colorCircle[1],
     };
-  }else if (d=='Residential Burglary'){
+  }else if (d=='Robbery'){
       return{
         color:colorCircle[2],
       };
-    }else if(d=='Commercial Burglary'){
+    }else if(d=='Burglary'){
       return{color:colorCircle[3],
       };
-    }else {
+    }else if(d=='Auto Theft'){
       return{color:colorCircle[4],
       };
+    }else if(d=='Larceny'){
+      return{color:colorCircle[5],
+      };
+    }else if(d=='Arson'){
+      return{color:colorCircle[6],
+      };
+    }
 }
-}
+//'Aggravated Assault','Homicide','Robbery'，‘Burglary’,'Auto Theft','Larceny','Arson'
 // data.forEach(function(d){
 //   L.circle(d.location, circleStyle(d.offenseCode)).addTo(map);
 // });
@@ -234,7 +249,7 @@ function circleStyle(d){
 var colorBox=L.control({position:'bottomright'});
     colorBox.onAdd=function(map){
       var colorDiv=L.DomUtil.create('div','info legend');
-      for(var i=0;i<5;i++){
+      for(var i=0;i<7;i++){
         colorDiv.innerHTML += '<i style="background:' + colorCircle[i] +'"></i>' + crimeCatgory[i] +'<br>';
       }
       return colorDiv;
@@ -244,9 +259,9 @@ colorBox.addTo(map);
 
 
 });
-
 // INCIDENT NUMBER,OFFENSE CODE,OFFENSE CODE GROUP,OFFENSE DESCRIPTION,DISTRICT,REPORTING AREA,SHOOTING,OCCURRED ON DATE,Hour,YEAR,MONTH,DAY OF WEEK,UCR PART,STREET,LAT,LONG,Location
 // I162070944,00520,Residential Burglary,BURGLARY - RESIDENTIAL - FORCE,B3,441,,08/31/2016 05:44:00 PM,17,2016,8,Wednesday,Part One,NIGHTINGALE ST,42.29474312,-71.08503786,"(42.29474312, -71.08503786)"
+
 
 function parseData(d){
   if(d['district']!=''){
