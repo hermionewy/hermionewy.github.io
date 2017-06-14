@@ -67,8 +67,10 @@
 	cursor: pointer;
 }
 .allUIs{
-  min-height: 450px;
+  min-height: 250px;
   padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .rowUI{
   width: 180px;
@@ -132,7 +134,7 @@ hr{
 .intro h4{
   font-weight: 200px;
   color: #00a0e9;
-  padding-left: 350px;
+  text-align : center;
 }
 #world{
   float: left;
@@ -144,4 +146,13 @@ hr{
 }
 .leftheader{
   padding-left: 500px;
+}
+.shownum{
+  padding: 5px;
+  text-align: center;
+}
+.numStrong{
+  color:#00a0e9;
+  font-family: impact;
+  font-size: 40px;
 }

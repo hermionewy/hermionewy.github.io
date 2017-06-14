@@ -7,7 +7,7 @@
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <img id ='world' src='cityUI2/world.gif'/>
+  <div class="container-fluid"><div class='col-md-4 col-xs-4' ><img id ='world' src='cityUI2/world.gif'/></div></div>
   <nav class='navbar navbar-inverse navbar-fixed-top'>
 		<div class='navbar-header leftheader'><a class='navbar-brand' href='#'>Which city fits you best?</a></div>
 		<div id='navbar' class='navbar-collapse collapse'></div>
@@ -17,13 +17,19 @@
     <h4>Select three elements you care the most.</h4>
   </div>
   <div class='row allUIs'>
-				<div class='col-md-8 col-xs-12 col-md-offset-2 allUIs'>
+				<div class='col-md-4 col-xs-12 col-md-offset-2 allUIs'>
           <img class = 'rowUI' id='cost' src='cityUI2/cost0.png '/>
           <img class = 'rowUI' id='purchase' src='cityUI2/purchase0.png '/>
+        </div>
+        <div class='col-md-4 col-xs-12 allUIs'>
           <img class = 'rowUI' id='property' src='cityUI2/property0.png '/>
           <img class = 'rowUI' id='traffic' src='cityUI2/traffic0.png '/>
+        </div>
+        <div class='col-md-4 col-xs-12 col-md-offset-2 allUIs'>
           <img class = 'rowUI' id='safety' src='cityUI2/safety0.png '/>
           <img class = 'rowUI' id='pollution' src='cityUI2/pollution0.png '/>
+        </div>
+        <div class='col-md-4 col-xs-12 allUIs'>
           <img class = 'rowUI' id='health' src='cityUI2/health0.png '/>
           <img class = 'rowUI' id='climate' src='cityUI2/climate0.png '/>
 				</div>

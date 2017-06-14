@@ -47,6 +47,7 @@
                   imgID[$(this)[0].id][1]=0;
                 $(this).attr('src', 'cityUI2/'+$(this)[0].id+'0.png');
               } else if(!(imgID[$(this)[0].id][1])){ //not selected
+                imgID[$(this)[0].id][0] --;
                 $(this).attr('src', 'cityUI2/'+$(this)[0].id+'0.png');
                 }
                 if(selected <0 ){ selected =0;}

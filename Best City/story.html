@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best City</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- <link href="global.css" rel="stylesheet"/> -->
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <nav class='navbar navbar-inverse navbar-fixed-top'>
+		<div class='navbar-header'>
+      <a href='index.html' class='navbar-brand'><img src= 'cityUI2/return.png'/></a>
+      <a class='navbar-brand' href='#'>Which city fits you best?</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="content.html">Results</a></li>
+        <li><a href="story.html">Story</a></li>
+      </ul>
+    </div>
+	 </nav>
+<div class="container">
+  <div class='row'>
+
+    <div class='col-md-10 col-xs-12 col-md-offset-1'>
+      <h3>America Ranks the First with 25 Cities Entered the Best Quality of Life List</h3><br/>
+      <p>
+        What factors will make you happy when you move to a city?
+      </p>
+      <p>
+        <a href='https://www.numbeo.com/common/about.jsp' target="_blank">NUMBEO</a>, a website conducting research and providing data which are not influenced by any governmental organizations had released <a href='https://www.numbeo.com/quality-of-life/rankings.jsp' target="_blank">Quality of Life Index 2017</a> recently. The data provided scores of quality of life of major international cities. There are 177 cities which are mentioned in the dataset, 25 cities are in the US which makes US rank the first referring to the number of cities entered this year's chart, followed by Canada and India.
+      </p>
+      <div class='col-md-4 col-xs-4 shownum'><p class='numStrong' id='NumOne'>25</p><p>America</p></div>
+      <div class='col-md-4 col-xs-4 shownum'><p class='numStrong' id='NumTwo'>11</p><p>Canada</p></div>
+      <div class='col-md-4 col-xs-4 shownum'><p class='numStrong' id='NumThree'>11</p><p>India</p></div>
+      <p>
+        This chart had provided scores and ranks of eight factors that may influence a city's quality of life: purchasing power, safety, health, cost of living, property to income ratio, pollution, climate and traffic commute time.
+      </p>
+      <div class='col-md-6 col-xs-12' id='drawRadar'>
+      </div>
+      <div class='col-md-6 col-xs-12' id='showInfo'>
+      </div>
+    </div>
+
+	</div>
+  <div class ='custom-tooltip'>
+    <p class='title'></p>
+  </div>
+</div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+<script src="d3.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
+<script src="module/radarDraw.js"></script>
+<script src="module/tableDraw.js"></script>
+<script src="story.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58458d9251de6254"></script>
+
+</body>
+</html>
