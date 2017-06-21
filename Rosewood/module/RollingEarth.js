@@ -21,7 +21,7 @@ function RollingEarth(){
       .attr("class", "countryTooltip");
 
     var projection = d3.geoOrthographic()
-    .scale(220)
+    .scale(200)
     .rotate([0, 0])
     .translate([_width / 2, _height / 2])
     .clipAngle(90);
@@ -47,7 +47,9 @@ function RollingEarth(){
       .data(_mapData.features)
       .enter().append("path")
       .attr("class", "land")
-      .attr("d", path)
+      .attr("d", path);
+
+      map
       .call(
         d3.drag()
         .subject(function() { var r = projection.rotate(); return {x: r[0] / sens, y: -r[1] / sens}; })
@@ -102,35 +104,6 @@ function RollingEarth(){
        });
 
     });
-  //     //start
-  // globalDispatch.on('select', function (sCountries){
-  //   console.log(sCountries); //one country or more
-  //   var rotate = projection.rotate();
-  //   var focusedCountry = getCenter(_mapData, sCountries[0]);
-  //   worldCenter = d3.geoCentroid(focusedCountry);
-  //
-  //   svg.selectAll(".focused").classed("focused", focused = false);
-  //
-  //   d3.transition()
-  //   .duration(2500)
-  //   .tween("rotate", function() {
-  //     var r = d3.geoInterpolate(projection.rotate(), [-worldCenter[0],-worldCenter[1]]);
-  //     return function(t) {
-  //       projection.rotate(r(t));
-  //       svg.selectAll("path.land").attr("d", path)
-  //       .classed("focused", function(d) {
-  //           for (var j=0; j< sCountries.length; j++){
-  //             if (sCountries[j] == d.properties.name){
-  //               return true;
-  //             } else {
-  //                 return false;
-  //               }
-  //           }
-  //     });
-  //   };
-  //   });
-  // }
-   //end
 
   } //exports end
 

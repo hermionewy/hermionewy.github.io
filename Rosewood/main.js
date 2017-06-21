@@ -37,7 +37,7 @@ function dataLoaded(err,worldMap, suppliers){
 
     var controller = new ScrollMagic.Controller();
 
-    var scene = new ScrollMagic.Scene({ triggerElement:'#trigger2', offset: -(document.documentElement.clientHeight/th), triggerHook: 0 }) // All races
+    var scene = new ScrollMagic.Scene({ triggerElement:'#description', offset: -(document.documentElement.clientHeight/th), triggerHook: 0 }) // All races
         .on('start',function(){
           globalDispatch.call('select', this, ['China']);
       		d3.select('.intro').selectAll('p').transition().style('opacity',1);
