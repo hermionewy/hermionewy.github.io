@@ -81,23 +81,26 @@ footer p {
 .navbar-inverse .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
 }
-section .jumbotron .text-center{
-  background: url("img/rosewood.jpg") no-repeat center center;
+section.jumbotron.text-center{
+  background: url("img/rosewood2.jpg") no-repeat center center;
   width:100%;
   height: 100%;
-  background-size: 100% 100%;
+  background-size: 100% 200%;
   }
 
 #whitep{
-  font-size: 13px;
+  font-size: 15px;
   color: white;
   text-align: left;
   padding-left: 100px;
   }
 
-h5, h2.jumbotron-heading{
+h4, h1.jumbotron-heading{
     color: white;
   }
+h4.text-white{
+  color: #333;
+}
 
 .jumbotron .container
   {
