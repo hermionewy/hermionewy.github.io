@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hubway Competition Final V1.0/script.js" afterPath="$PROJECT_DIR$/Hubway Competition Final V1.0/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParkingBoston/public/modules/Map.js" afterPath="$PROJECT_DIR$/ParkingBoston/public/modules/Map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crime/main.js" afterPath="$PROJECT_DIR$/crime/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crime/crimerate.js" afterPath="$PROJECT_DIR$/crime/crimerate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,10 +51,24 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="27" column="233" lean-forward="false" selection-start-line="27" selection-start-column="233" selection-end-line="27" selection-end-column="233" />
+            <state relative-caret-position="280">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crime/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+              <folding>
+                <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
+                <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
+                <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
               </folding>
             </state>
           </provider>
@@ -66,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
-              <caret line="91" column="343" lean-forward="false" selection-start-line="91" selection-start-column="342" selection-end-line="91" selection-end-column="343" />
+              <caret line="91" column="51" lean-forward="true" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
               <folding>
                 <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
                 <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
@@ -75,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="534">
+              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
                 <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
                 <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
@@ -105,6 +117,7 @@
         <option value="$PROJECT_DIR$/crime/main.js" />
         <option value="$PROJECT_DIR$/Hubway Competition Final V1.0/script.js" />
         <option value="$PROJECT_DIR$/ParkingBoston/public/modules/Map.js" />
+        <option value="$PROJECT_DIR$/crime/crimerate.js" />
       </list>
     </option>
   </component>
@@ -175,28 +188,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParkingBoston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,12 +304,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508457883707</updated>
-      <workItem from="1508457885206" duration="3314000" />
+      <workItem from="1508457885206" duration="3537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3314000" />
+    <option name="totallyTimeSpent" value="3537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="6" />
@@ -393,18 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crime/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
-            <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
-            <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crime/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -421,12 +400,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="27" column="233" lean-forward="false" selection-start-line="27" selection-start-column="233" selection-end-line="27" selection-end-column="233" />
+        <state relative-caret-position="534">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
-            <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
           </folding>
         </state>
       </provider>
@@ -434,7 +414,7 @@
     <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
-          <caret line="91" column="343" lean-forward="false" selection-start-line="91" selection-start-column="342" selection-end-line="91" selection-end-column="343" />
+          <caret line="91" column="51" lean-forward="true" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
           <folding>
             <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
             <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
@@ -442,13 +422,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
+    <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="280">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
-            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
+            <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crime/crimerate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <marker date="1508500812000" expanded="true" signature="710:716" ph="©" />
+            <marker date="1508500812000" expanded="true" signature="7493:7504" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crime/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
+            <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
+            <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
           </folding>
         </state>
       </provider>
