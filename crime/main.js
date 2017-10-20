@@ -5,8 +5,8 @@ var geojson;
 var info = L.control();
 var legend = L.control({position: 'bottomright'});
 var dscp= L.control({position:'topleft'});
-L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy/civy9h6dl00272kqrzszngc2t/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eSIsImEiOiJjaXZ5OWI1MTYwMXkzMzFwYzNldTl0cXRoIn0.Uxs4L2MP0f58y5U-UqdWrQ', {
-    id: 'mapbox.light',
+L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy0/cj8zu1w3sj7532ss1o74t9ffv/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eTAiLCJhIjoiY2o4enR3NTBkMnQzbjMybzRnN3RyMm54NiJ9.LRK0M9BkcWGXQeMfR69HDA', {
+    id: 'mapbox.basic',
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'
 }).addTo(map);
 
