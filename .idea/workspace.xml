@@ -2,8 +2,158 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Jamie.Shupe_.X.Issued.3.July_.2017.Picture.2.copy_-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/longhair.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shorthair.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/RatMove.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ShupeX.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/TheMargins_logo_final.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/art3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/audio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/audioPause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/audioplay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/compatible.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/finalGraphic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/fullPage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/headphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/longhair.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/mobilePlaceholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nezumi.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nezumi2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nezumihead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nonbinaryGraphic.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nonbinaryGraphicFinal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratActive.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratB.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratB.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratBeautiful.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratCircle.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratComeout.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratComeout.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratDress.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratDress.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratFuture.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratFuture.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratG.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratG.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratHope.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratHope.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratMirror.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratMirror2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratNezumi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratPoem_body.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratPoem_body.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratTarget.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratWalk.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstand.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstanding.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstanding.webm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rathead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratspeech.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratweb.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shorthair.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupe2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeArmy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeBackground.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeDMVbg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeFlag.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeHead.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeLaw.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeMarried.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupePride.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeYouth.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/slider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/tablets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/used-by-fullpage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/widePlaceholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/searchicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Immigrant/.idea/Immigrant.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Immigrant/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Immigrant/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/audiobtn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/examples.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/art1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/copyright.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratB.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratBeautiful.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratComeout.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratFuture.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratG.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratHope.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratPoem_body.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstanding.webm.xmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/indexPlayer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/index_tab.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/main2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/main2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/mainNew.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/testBubbleChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/ScrollMagic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/TweenMax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/animation.gsap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/howler.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.easings.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.fullPage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.fullPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/modernizr.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/parallax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/parallax.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/scrolloverflow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/skrollr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/.idea/nonbinaryDataViz.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/Button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/CanvasTick.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/ForceLayout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/allData.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/data15.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/data96.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/backup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/d3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/drawCircles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/forceSimulation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/main2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/mainNoUniversityName.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nonbinary/src/popper.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crime/crimerate.js" afterPath="$PROJECT_DIR$/crime/crimerate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.html" afterPath="$PROJECT_DIR$/data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nonbinary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/nonbinary/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nonbinary/index.html" afterPath="$PROJECT_DIR$/nonbinary/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nonbinary/main.css" afterPath="$PROJECT_DIR$/nonbinary/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nonbinary/main.js" afterPath="$PROJECT_DIR$/nonbinary/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,15 +165,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nonbinary/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="326" column="12" lean-forward="false" selection-start-line="326" selection-start-column="12" selection-end-line="326" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+              <folding>
+                <element signature="e#4611#4617#0" expanded="true" />
+                <element signature="e#4617#4623#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,18 +203,8 @@
       <file leaf-file-name="design.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="405">
               <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -51,8 +213,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
               </folding>
@@ -60,11 +222,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crime/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+            <state relative-caret-position="195">
+              <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
               <folding>
                 <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
                 <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
@@ -77,8 +239,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="91" column="51" lean-forward="true" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+            <state relative-caret-position="1365">
+              <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
               <folding>
                 <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
                 <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
@@ -90,8 +252,8 @@
       <file leaf-file-name="Map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="540">
+              <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding>
                 <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
                 <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
@@ -113,11 +275,12 @@
         <option value="$PROJECT_DIR$/stories.html" />
         <option value="$PROJECT_DIR$/video.html" />
         <option value="$PROJECT_DIR$/videos.html" />
-        <option value="$PROJECT_DIR$/data.html" />
         <option value="$PROJECT_DIR$/crime/main.js" />
         <option value="$PROJECT_DIR$/Hubway Competition Final V1.0/script.js" />
         <option value="$PROJECT_DIR$/ParkingBoston/public/modules/Map.js" />
         <option value="$PROJECT_DIR$/crime/crimerate.js" />
+        <option value="$PROJECT_DIR$/nonbinary/index.html" />
+        <option value="$PROJECT_DIR$/data.html" />
       </list>
     </option>
   </component>
@@ -126,6 +289,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/ParkingBoston/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -149,62 +315,18 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParkingBoston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParkingBoston" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hermionewy.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="hermionewy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hermionewy.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hermionewy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hermionewy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -216,6 +338,9 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
     </key>
@@ -233,6 +358,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -270,9 +403,6 @@
       <option name="filePath" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -304,37 +434,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508457883707</updated>
-      <workItem from="1508457885206" duration="3537000" />
+      <workItem from="1508457885206" duration="3884000" />
+      <workItem from="1509159708167" duration="2447000" />
+      <workItem from="1509215267809" duration="509000" />
+      <workItem from="1511934089699" duration="18000" />
+      <workItem from="1512231828443" duration="696000" />
+      <workItem from="1512449924266" duration="568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3537000" />
+    <option name="totallyTimeSpent" value="8122000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120200336" sideWeight="0.5059571" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120200336" sideWeight="0.4940429" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -346,8 +481,337 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crime/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
+            <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
+            <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
+            <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nonbinary/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4890">
+          <caret line="326" column="12" lean-forward="false" selection-start-line="326" selection-start-column="12" selection-end-line="326" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crime/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
+            <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
+            <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
+            <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crime/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
+            <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
+            <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
+            <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="120" column="64" lean-forward="false" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crime/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
+            <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
+            <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
+            <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="120" column="64" lean-forward="false" selection-start-line="120" selection-start-column="19" selection-end-line="120" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="51" lean-forward="true" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
+            <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crime/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
+            <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
+            <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -356,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -364,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -372,15 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -388,22 +841,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="540">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding>
             <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
             <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
@@ -413,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="91" column="51" lean-forward="true" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+        <state relative-caret-position="1365">
+          <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
           <folding>
             <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
             <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
@@ -424,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hubway Competition Final V1.0/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <marker date="1508500316000" expanded="true" signature="849:855" ph="©" />
           </folding>
@@ -436,21 +880,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <marker date="1508500812000" expanded="true" signature="710:716" ph="©" />
-            <marker date="1508500812000" expanded="true" signature="7493:7504" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crime/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="31" />
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
             <marker date="1508500244000" expanded="true" signature="484:490" ph="©" />
             <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
             <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nonbinary/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="326" column="12" lean-forward="false" selection-start-line="326" selection-start-column="12" selection-end-line="326" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <folding>
+            <element signature="e#4611#4617#0" expanded="true" />
+            <element signature="e#4617#4623#0" expanded="true" />
           </folding>
         </state>
       </provider>

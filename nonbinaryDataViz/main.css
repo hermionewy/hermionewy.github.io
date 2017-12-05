@@ -1,0 +1,184 @@
+/* See the documentation for how to load in regular weight versions */
+@font-face {
+	font-family: 'Benton';
+	src: url('https://apps.bostonglobe.com/common/font/benton-bold.woff2') format('woff2'), url('https://apps.bostonglobe.com/common/font/benton-bold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Miller';
+	src: url('https://apps.bostonglobe.com/common/font/miller-bold.woff2') format('woff2'), url('https://apps.bostonglobe.com/common/font/miller-bold.woff') format('woff');
+    font-weight: 600;
+}
+
+/* =========================== */
+/* Globe font stack examples
+/* =========================== */
+
+/* Serif (Miller) */
+/* font-family: 'Miller', Georgia, Times New Roman, Times, serif; */
+/* font-weight: 600; */
+
+/* Sans-serif (Benton) */
+/* font-family: 'Benton', Helvetica, Arial, sans-serif; */
+/* font-weight: 600; */
+
+/* Serif */
+/* font-family: 'Georgia', Times New Roman, Times, serif; */
+
+/* Sans-serif */
+/* font-family: 'Helvetica', Arial, sans-serif; */
+
+/* =========================== */
+/* Graphic styles
+/* =========================== */
+.graphichead {font-family:'BentonSans', Helvetica, Arial, sans-serif; font-size:1.2em;font-weight:bold; display:block; margin-top:30px; padding-left: 20px; padding-bottom: 30px}
+.subtitle {font-family:'BentonSans', Helvetica, Arial, sans-serif; font-size:0.9em; line-height:1.4em; margin-top:10px; margin-bottom:15px;}
+
+body{
+	background-color: black;
+	color: white;
+}
+
+#plot{
+	min-height: 600px;
+	float: left;
+}
+.fixed{
+	position: fixed;
+}
+.categoryAxis path {
+	opacity: 0;
+	stroke-width:0px;
+}
+.xAxis path {
+	opacity: 0;
+}
+
+.categoryAxis .tick line{
+	opacity: .3;
+}
+.textTrigger{
+	position: absolute;
+	padding: 20px;
+	height: 80%;
+}
+.textTrigger .trigger{
+	height: 50%;
+	border:red;
+	margin:auto;
+	margin-top: 5%;
+}
+.info{
+	width: 90%;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: large;
+}
+
+.dropbtn {
+	color: #fff;
+	margin: 0.25em 0.25em 0;
+	border-radius: 5rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: inline;
+	font-size: 0.7rem;
+	min-height: 2rem;
+	padding: 0.25em 2em;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #f5c500;
+}
+#myInput {
+	border-box: box-sizing;
+	background-image: url('./assets/searchicon.png');
+	background-position: 14px 12px;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	padding: 14px 20px 12px 45px;
+	border: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f6f6f6;
+	width: 230px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	overflow:scroll;
+	overflow-x:hidden;
+	opacity: 0.8
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 5px 10px;
+	text-decoration: none;
+	display: block;
+	font-size: 0.8em;
+}
+
+.dropdown-content a:hover {
+	background-color: #ccc
+}
+
+.show {display:block;
+	opacity: 0.8;
+	height: 50%}
+
+.tick line {
+	fill: none;
+	stroke: #dddddd;
+}
+
+.tick text {
+	font-family: sans-serif;
+	font-size: 2em;
+	opacity: 1;
+	fill: white;
+}
+
+.categoryAxis .tick text{
+	font-size: 1em;
+}
+.content p{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 1.125em;
+	font-size: 1.125em;
+	line-height: 1.75em;
+}
+
+#trigger3{
+	height: 135%;
+}
+
+@media only screen and (min-width: 720px) {
+	.textTrigger{
+		left: 55%;
+	}
+}
+@media only screen and (max-width: 720px) {
+	.categoryAxis .tick text{
+		fill:rgba(0,0,0,0);
+	}
+}
+/*#openText{*/
+	/*padding: 40vh 20vh 40vh 20vh;*/
+/*}*/
+
+.highlight{
+	background-color: #0076D1;
+}
+.mainGraphic{
+	min-height: 800px;
+}

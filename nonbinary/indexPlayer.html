@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang=en-us>
+<head>
+    <meta charset=utf-8>
+    <title>Circle player (proof-of-concept)</title>
+    <style>
+        /**,*/
+        /**:after,*/
+        /**:before {*/
+            /*box-sizing:border-box;*/
+            /*-webkit-box-sizing:border-box;*/
+            /*-moz-box-sizing:border-box;*/
+            /*-webkit-font-smoothing:antialiased;*/
+            /*-moz-font-smoothing:antialiased;*/
+            /*-o-font-smoothing:antialiased;*/
+            /*font-smoothing:antialiased;*/
+            /*text-rendering:optimizeLegibility;*/
+        /*}*/
+
+        #audiobtn{
+            width: 30px;
+            height: 30px;
+        }
+        #playable .control { opacity: 0; /* transition: opacity .2s linear; */ }
+        #playable.not-started .play, #playable.paused .play { opacity: 1; }
+        #playable.playing .pause { opacity: 1; }
+        #playable.ended .stop {opacity: 1; }
+        #playable.precache-bar .done {opacity: 0; }
+        #playable.not-started .progress-bar, #playable.ended .progress-bar { display: none; }
+        #playable.ended .progress-track { stroke-opacity: 1; }
+        #playable .progress-bar,
+        #playable .precache-bar {
+            stroke-dasharray: 298.1371428256714;
+            stroke-dashoffset: 298.1371428256714;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="audiobtn">
+<!--<audio src="imgs/ratPoem_body.mp3" preload="none" id="listen"></audio>-->
+
+    <audio id="listen">
+        <source src="./imgs/ratPoem_body.webm" type="audio/webm" />
+        <source src="./imgs/ratPoem_body.mp3" type="audio/mp3" />
+        <!--<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />-->
+        Your browser does not support the audio element.
+    </audio>
+
+    <svg id="playable" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="not-started">
+        <g class="shape">
+            <circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#000000" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="3" />
+            <circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#000000" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="3" transform="rotate(-90 50 50)" />
+            <circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="gold" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="3" transform="rotate(-90 50 50)" />
+        </g>
+        <circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#000000" opacity="0.0" pointer-events="all" />
+        <g class="control pause">
+            <line x1="40" y1="35" x2="40" y2="65" stroke="gold" fill="none" stroke-width="3" stroke-linecap="round" />
+            <line x1="60" y1="35" x2="60" y2="65" stroke="gold" fill="none" stroke-width="3" stroke-linecap="round" />
+        </g>
+        <g class="control play">
+            <line x1="45" y1="35" x2="45" y2="65" stroke="#000000" fill="none" stroke-width="3" stroke-linecap="round" />
+            <line x1="45" y1="65" x2="65" y2="50" stroke="#000000" fill="none" stroke-width="3" stroke-linecap="round" />
+            <line x1="65" y1="50" x2="45" y2="35" stroke="#000000" fill="none" stroke-width="3" stroke-linecap="round" />
+        </g>
+        <g class="control stop">
+            <rect x="35" y="35" width="30" height="30" stroke="#000000" fill="none" stroke-width="3" />
+        </g>
+    </svg>
+
+</div>
+
+<script src="audiobtn.js"></script>
+<script>
+    var testAudio = audioBtn().audioObj('listen').setAudioAttr('./imgs/ratHope.mp3');
+    testAudio();
+
+
+</script>
+
+</body>
+</html>

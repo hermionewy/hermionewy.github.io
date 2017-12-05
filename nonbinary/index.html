@@ -1,69 +1,354 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Nonbinary</title>
+    <meta name="author" content="Yan Wu" />
+    <meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll sections jquery plugin. Mouse snap." />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendor/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css" />
 
-    <title>I AM THEY</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="site-wrapper">
 
-    <div class="site-wrapper-inner">
+<div id="nb-audiobtn">
+    <svg id="playable" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="not-started">
+        <g class="shape">
+            <circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#aaaaaa" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="6" />
+            <circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#aaaaaa" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="6" transform="rotate(-90 50 50)" />
+            <circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="gold" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="6" transform="rotate(-90 50 50)" />
+        </g>
+        <circle id="clickbtn" class="controls" cx="50" cy="50" r="50" stroke="none" fill="#0077B7" opacity="0.0" pointer-events="all" />
+        <g class="control pause">
+            <line x1="40" y1="35" x2="40" y2="65" stroke="gold" fill="none" stroke-width="6" stroke-linecap="round" />
+            <line x1="60" y1="35" x2="60" y2="65" stroke="gold" fill="none" stroke-width="6" stroke-linecap="round" />
+        </g>
+        <g class="control play">
+            <line x1="45" y1="35" x2="45" y2="65" stroke="gold" fill="none" stroke-width="6" stroke-linecap="round" />
+            <line x1="45" y1="65" x2="65" y2="50" stroke="gold" fill="none" stroke-width="6" stroke-linecap="round" />
+            <line x1="65" y1="50" x2="45" y2="35" stroke="gold" fill="none" stroke-width="6" stroke-linecap="round" />
+        </g>
+        <g class="control stop">
+            <rect x="35" y="35" width="30" height="30" stroke="#aaaaaa" fill="none" stroke-width="6" />
+        </g>
+        <use xlink:href="#clickbtn" />
+    </svg>
+</div>
 
-        <div class="cover-container">
+<div id="nb-note">
+    <div id="closeDiv">
+        <img src="imgs/close.png"/>
+    </div>
+    <h4 class="noteTitle"></h4>
+    <div id="note-content"></div>
+</div>
 
-            <div class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand">THEY</h3>
-                    <nav class="nav nav-masthead">
-                        <a class="nav-link active" href="#">Top</a>
-                    </nav>
+<audio id="ratAllAudio">
+    <source id="ratAudioSource" src="">
+    Your browser doesn't support the audio.
+</audio>
+
+<div id="fullpage">
+    <div class="container-fluid">
+        <video poster="./imgs/widePlaceholder.png" id="ratDressVideo" playsinline autoplay muted loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+            <source src="./imgs/ratDress.webm" type="video/webm">
+            <source src="./imgs/ratDress.mp4" type="video/mp4">
+        </video>
+        <div class="section" id="section0">
+            <div class="row">
+                <div class="col-md-5 col-sm-12" id="nb-title">
+                    <h1>A new identity <br/>beyond he and she</h1>
+                    <p class="byline">
+                        Story: Alison Berstein, Wei Tang, Yan Wu<br/>
+                        Develop: Yan Wu<br/>
+                        <span id="openNote">NOTE: AUTOPLAY IS ON</span>
+                    </p>
+                    <!--<p class="subtitle">The fight over pronouns is only part of the struggle for non-binary transgender people</p>-->
                 </div>
             </div>
-
-            <div class="inner cover">
-                <h1 class="cover-heading">I AM THEY</h1>
-                <p class="lead">Rat Gemmiti and Jamie Shupe are two non-binary souls navigating a world that struggles to accept or understand them.</p>
+            <div class="arrow bounce" id="bouncyArrow1">
+                <a class="fa fa-chevron-down fa-2x" id='arrowNext' href=""></a>
+                <p class="scrollTip">Scroll</p>
             </div>
+        </div>
+        <div class="section" id="section1">
+            <video poster="./imgs/ratRoom.png" id="ratRoom" playsinline autoplay muted loop class="fullscreen-bg_video">
+                <source src="./imgs/ratRoom.webm" type="video/webm">
+                <source src="./imgs/ratRoom.mp4" type="video/mp4">
+            </video>
 
+            <div class="row">
+                <div class="col-sm-12 col-md-4 offset-md-1 intro">
+                    <p id="sectionOneP">
+                        Step into Rat’s bedroom and you quickly learn that this is a person not afraid of expressing themselves. This is the room of a musician, artist, child model, YouTuber, and budding entrepreneur for a small apparel company.<br/><br/>
+                        A guitar rests in the corner, waiting to be picked up. Clothes in bold colors and designs line the racks. But despite all of these avenues for expression, there is one deeply personal message that this performer wants heard more than anything else.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img src="imgs/ratspeech.png" id="ratSpeech"/>
+                    <audio id="ratPoem_body">
+                        <source src="./imgs/ratPoem_body.webm" type="audio/webm" />
+                        <source src="./imgs/ratPoem_body.mp3" type="audio/mp3" />
+                        <!--<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />-->
+                        Your browser does not support the audio element.
+                    </audio>
+
+                </div>
+                <div class="intro col-md-4 col-sm-12 ">
+                    <p>“Our beautiful, unfortunately mismatched bodies are mangled with stab wounds, angry men’s fury,” declared Rat Gemmiti, now 20, in a poem delivered to high school peers in the student library. And with that, Rat, who grew up in New York City, told their high school and the world that they were non-binary transgender. It was January 16, 2015.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="row">
+                <div class="intro col-md-4 col-sm-12 offset-md-1">
+                    <p>Rat entered a new world of self-awareness and discovery. No longer did Rat refer to themselves as “male” or “female.” Since that day, Rat has preferred the pronouns “they” or “them,” a practice that is common among the increasing number of people who identify as <span class="nb-button" id="nb-btn1">non-binary</span>.</p>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <video id="bothRat" playsinline autoplay muted loop>
+                        <source src="./imgs/bothRat.webm" type="video/webm">
+                        <source src="./imgs/bothRat.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="row">
+                <div class="intro col-md-4 col-sm-12 offset-md-1">
+                    <p>In Portland, Oregon, 53-year-old Jamie Shupe, who also uses the pronoun “they,” has achieved a remarkable victory as a non-binary transgender person. They became the first person to obtain a driver’s license with the gender “X,” the state’s designation for those who identify as neither male or female, and who are demanding that society and its institutions recognize them for who they are.
+                    </p>
+                </div>
+                <!--<div class="intro col-sm-12 col-md-6">-->
+                <!--<img src="./imgs/ShupeX.jpg"/>-->
+                <!--</div>-->
+                <div class="bgImg" id="shupeBackground">
+                    <!--<img src="imgs/shupeBackground.jpg"/>-->
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="row">
+                <div class="intro col-md-4 col-sm-12 offset-md-1">
+                    <p>Shupe was denied the right to explore gender and sexual orientation as a youth and while in the military. Shupe has been retired for two years and has gone through hormonal treatments “trying desperately to turn my body into something that resembled a female.” But through the hormonal treatments, Shupe said they realized that trying to achieve a different gender wasn’t going to work.</p>
+                </div>
+            </div>
+            <div class="bgImg" id="shupe2">
+                <!--<img src="imgs/shupeBackground.jpg"/>-->
+            </div>
+        </div>
+        <div class="section" id="section6">
+            <div class="row">
+                <div class="intro col-sm-12 col-md-4 offset-md-1">
+                    <br> After coming out as non-binary, Rat named themselves after a Japanese animation character named Nezumi, which means “rat” in English. Rat describes their namesake as a “post-apocalyptic cross-dressing bad ass.”</br></br>
+                    “I figured I’d start with the name and go from there,” Rat said of aspiring to be a “bad ass” like Nezumi, adding that they took inspiration “from the first representation of people like me who don’t fit in a box.”</br></br>
+                    But getting to that place has not been easy. Rat has faced mental health issues because of their identity.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <audio id="ratComeout">
+                        <source src="./imgs/ratComeout.webm" type="audio/webm" />
+                        <source src="./imgs/ratComeout.mp3" type="audio/mp3" />
+                        <!--<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />-->
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="leftBottomPic">
+                        <img src="imgs/ratNezumi.png" id="nezumi"/>
+                        <!--<p class="nb-Caption">Rat was inspired by Nezumi, a Japanese animation character.</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section7">
+            <div class="row">
+                <!--<div id="extraInfo">-->
+                <!--Gender identification is not only about one’s own experience of gender, but is also based on what we’ve been taught about gender and what we have internalized starting at birth, according to Margot Abels, a professor focused on gender studies at Northeastern University.-->
+                <!--</div>-->
+                <div class="intro col-md-4 offset-md-1 col-sm-12">
+                    <p>
+                        For others, identifying as non-binary didn’t come in a moment of epiphany. </br></br>
+                        Shupe did not start exploring gender and sexual orientation until their 50s. “Both my mother and the U.S. military were highly abusive, punishing, and hostile” when facing Shupe’s sexuality and gender, they said.</br></br>
+                        After hormone treatments, Shupe grew breasts, achieving a “little piece of womanhood.” But after living as a transgender female for three years, Shupe concluded that they didn’t identify with the binary definitions of gender, and that they are a “mixture of the two sexes.”</br></br>
+                        This realization was painful and caused new concerns. “As part of the LGBT community, I feel like I have to be hyper-vigilant and alert for danger in public,” Shupe explained. Shupe has been treated for PTSD and gender dysphoria.
+                    </p>
+                </div>
+
+                <!--<div class="bgImg">-->
+                <!--<img src="imgs/shupeFlag.jpg">-->
+                <!--</div>-->
+                <div class="bgImg" id="shupeFlag">
+                    <!--<img src="imgs/shupeBackground.jpg"/>-->
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section8">
+            <div class="row">
+                <div class="intro col-md-4 offset-md-6 col-sm-10">
+                    <div class="col-12">
+                        <audio id="ratMisd">
+                            <source src="./imgs/rat_Misunderstanding.webm" type="audio/webm" />
+                            <source src="./imgs/rat_Misunderstanding.mp3" type="audio/mp3" />
+                            <!--<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />-->
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p>Rat has met many people who try to convince them that they are not transgender, just mentally ill. <br/></br>
+
+                        With hardly any data or surveys conducted exclusively on non-binary transgender people in the U.S.,
+                        it is hard to infer how many have experienced <span class="nb-button" id="nb-btn2">mental health</span> issues related to gender.
+                    </p>
+                </div>
+            </div>
+            <div class="bgImg" id="ratMirror">
+                <!--<img src="imgs/shupeBackground.jpg"/>-->
+            </div>
         </div>
 
-    </div>
+        <div class="section" id="section9">
+            <div class="row">
+                <div class="intro col-md-4 col-sm-12 offset-md-7">
+                    <p>
+                        Having spent 18 years living in fear about who they are, Shupe understands what it’s like to be on the receiving end of discrimination for being gay and trans, especially in the military.<br/><br/>
+                        Shupe has leveraged their experience into activism. They filed the petition for changing their gender to non-binary on April 27, 2016 and became the first person in the United States who was legally recognized as a non-binary person on June 10, 2016.<br/><br/>
+                    </p>
+                </div>
+            </div>
+            <div class="bgImg" id="shupeDMVbg">
+                <!--<img src="imgs/shupeBackground.jpg"/>-->
+            </div>
+            <!--<div class="bgImg">-->
+            <!--<img src="./imgs/shupeDMVbg.jpg"/>-->
+            <!--</div>-->
+        </div>
+        <div class="section" id="section10">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img class="fullPic" src="imgs/shupeYouth.jpg"/>
+                </div>
+                <div class="intro col-sm-12 col-md-4 offset-md-1">
+                    <p>
+                        Shupe worries more about their daughter experiencing backlash from their identity than themselves. “She’s dating and looking to get married and I’m a difficult thing to explain to the family of a boyfriend. And because I’ve had so much media coverage, there’s a good chance that her coworkers will tie her to me and possibly treat her negatively,” they said.<br/><br/>
+                        Shupe knows the pain of discrimination firsthand. “In addition to upsetting a lot of binary trans folks, I’ve upset a lot of religious elements in this country even more,” Shupe said. “They make that known in the comments section of articles about me.”
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section11">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img class="fullPic" src="imgs/ratTarget.jpg"/>
+                </div>
+                <div class="intro col-md-4 col-sm-12 offset-md-1">
+                    <div class="col-12">
+                        <audio id="ratHope">
+                            <source src="./imgs/ratHope.webm" type="audio/webm" />
+                            <source src="./imgs/ratHope.mp3" type="audio/mp3" />
+                            <!--<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />-->
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p>
+                        Rat has also been the target of hostility.<br/><br/>
+                        Rat has received death threats and vicious comments from people on the internet, including “I want to shoot you,” and “I hope someone hurts you.” It got so bad that Rat finally shut down their account on the website that they refrained from naming. <br/><br/>
+                        Finding empathy and a sense of belonging in the LGBTQ community has been difficult, too.<br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section12">
+            <div class="row">
+                <div class="intro col-md-4 offset-md-7 col-sm-12">
+                    <p>
+                        Shupe has another perspective. “Our population group has received zero representation from the trans legal organizations. They’re instead filing lawsuits for binary bathroom access to affirm their binary trans identities,” they said. When Shupe tried to fight their battle for a legal identity, they had to hire a private lawyer.<br/><br/>
+                        “I broke the gender binary for $1,056,” Shupe said, referring to their legal fees.
+                    </p>
+                </div>
+            </div>
+            <div class="bgImg" id="shupePride">
+                <!--<img src="imgs/shupeBackground.jpg"/>-->
+            </div>
+            <!--<div class="bgImg">-->
+            <!--<img src="./imgs/shupePride.jpg"/>-->
+            <!--</div>-->
+        </div>
+        <div class="section" id="section13">
 
+            <video poster="./imgs/widePlaceholder.png" id="ratBeautiful" playsinline autoplay>
+                <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                <source src="./imgs/ratBeautiful.webm" type="video/webm">
+                <!--<source src="./imgs/ratBeautiful.mp4" type="video/mp4">-->
+                Your browser does not support the video element.
+            </video>
+
+            <div class="row">
+                <div class="intro col-md-4 col-sm-12">
+                    <p>
+                        Rat continues to don bold wigs and outfits depending on their mood, refusing to adhere to any outward expectations of gender.<br/><br/>
+                        Rat’s expression of gender fluidity is what Shupe envisions for society.<br/><br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section14">
+            <div class="row">
+                <div class="col-md-2 offset-md-2 col-sm-12" >
+                    <img src="imgs/rathead.png" class="head"/>
+                    <audio id="ratFuture">
+                        <source src="./imgs/ratFuture.webm" type="audio/webm" />
+                        <source src="./imgs/ratFuture.mp3" type="audio/mp3" />
+                        <!--<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />-->
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="intro col-md-6 col-sm-12">
+                    <p class="endQuote">
+                        “We are human. And we are pretty kick-ass once you get to know us."
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 offset-md-2 col-sm-12" >
+                    <img id="shupeHead" src="imgs/shupeHead.png"/>
+                </div>
+                <div class="intro col-sm-12 col-md-6">
+                    <p class="endQuote">
+                        “We just want to exist at our most core human level, free of harassment for doing so.
+                        I want to see a society that’s been rebuilt and stripped of its existing hierarchies of things like sex and race.
+                        I think the non-binary community has the ability and vision to lead us into that future.”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="site-wrapper">
-
-    <div class="site-wrapper-inner">
-
-        <div class="container">
-            <div class="inner cover">
-                <p class="lead">This is a story about love with no gender                </p>
+<div id="infoMenu">
+    <ul>
+        <li>
+            <a href="#" id="showExamples">Examples</a>
+            <div id="examplesList">
             </div>
 
-        </div>
-
-    </div>
-
+        </li>
+    </ul>
 </div>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+<script src="audiobtn.js"></script>
+<script src="main.js"></script>
+
+
 </body>
 </html>

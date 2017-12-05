@@ -1,142 +1,480 @@
-/*
- * Globals
- */
+#fullpage{
+	-webkit-overflow-scrolling: touch;
+}
 
-/* Links */
-a,
-a:focus,
-a:hover {
-    color: #fff;
+.subtitle{
+	font-size: 1rem;
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
+	border-left: 0.5rem solid #8d529d;
+}
+
+
+.img{
+	max-width: 100%;
+	/*max-height: 100%;*/
+	overflow: hidden;
+}
+.intro p{
+	color: #000;
+	padding: 2rem;
+	background-color: rgba(255,255,255, 0.8);
+	vertical-align: middle;
+	/*border-left: 0.3rem solid #8d529d;*/
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	/*text-align:center;*/
+	font-family: Georgia, Times, "Times New Roman";
+	font-size: 1rem;
+	padding: 2rem;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
+.intro > img{
+	width: 50%
+}
+div.container-fluid{
+	padding: 0;
+}
+
+#ratDressVideo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	max-height: 830px;
+	width: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	background: url('./imgs/widePlaceholder.png') no-repeat;
+	background-size: cover;
+	transition: 1s opacity;
+	overflow:hidden;
+}
+#section1, #section2{
+	background-color: #000;
+}
+
+#ratRoom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	min-width: 100%;
+	max-height: 830px;
+	width: auto;
+	/*transform: translateX(-50%) translateY(-50%);*/
+	/*background: url('./imgs/widePlaceholder.png') no-repeat;*/
+	background-size: cover;
+	transition: 1s opacity;
+	overflow:hidden;
+}
+
+#audioPlay1,#audioPlay2,#audioPlay3,#audioPlay4,#audioPlay5 {
+	cursor:pointer;
+	width: 2rem;
+	position: absolute;
+}
+
+#audioPlay1{
+	top: 80%;
+	left: 70%;
+}
+#audioPlay2{
+	top: 30%;
+	left: 20%;
+}
+#audioPlay3{
+	top: 60%;
+	left: 40%;
+}
+#audioPlay4{
+	top: 60%;
+	left: 40%;
+}
+#audioPlay5{
+	top: 60%;
+	left:65%
+}
+#ratSpeech{
+	width: 80%;
+}
+
+.fullscreen-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -100;
+}
+
+.fullscreen-bg_video {
+	position: absolute;
+	top: 0;
+	left: 24%;
+	width: 100%;
+	height: 100%;
+}
+.bgPic{
+	position: absolute;
+	width:50%;
+	top:0;
+	left:0;
+}
+.bgPic img{
+	width: 100%;
+}
+#section0 .intro{
+	position: absolute;
+	bottom: 10%;
+}
+#section2 .intro p{
+	color: white;
+	background-color: rgba(0,0,0,.3);
+}
+.imgPart{
+	width: 80%;
+}
+#bothRat{
+	width: 100%;
+	height: 100%;
+}
+.bgImg{
+	position: absolute;
+	left:0%;
+	top:0%;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.bgImg img{
+	width: 100%;
+}
+
+/*#section8{*/
+	/*background-color: black;*/
+/*}*/
+.head{
+	width:120px;
+}
+#section10{
+	/*background-color: black;*/
+	/*color:white;*/
+}
+.fullPic{
+	width: 100%;
+	overflow: hidden;
+}
+
+#section9 .intro p{
+	margin-top: 20%;
+}
+#section10 .intro p{
+	/*color:white;*/
+	/*background-color: rgba(0,0,0,.3);*/
+	/*position: absolute;*/
+}
+#ratBeautiful{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	min-width: 100%;
+	max-height: 830px;
+	width: auto;
+	z-index: -100;
+	/*transform: translateX(-50%) translateY(-50%);*/
+	background: url('./imgs/widePlaceholder.png') no-repeat;
+	background-size: cover;
+	background-position:center;
+	transition: 1s opacity;
+	overflow:hidden;
+}
+
+#shupeHead{
+	width:120px;
+	horiz-align: center;
+}
+#audiobtn{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	z-index: 100;
+}
+#extraInfo{
+	position: absolute;
+	width: 30%;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 100;
+
+}
+.row{
+	margin-bottom: 25px;
+}
+#shupeBackground{
+	background-image: url("imgs/shupeBackground.jpg");
+	background-position: top;
+}
+#shupe2{
+	background-image: url("imgs/shupe2.jpg");
+	background-position: top;
+}
+#shupeFlag{
+	background-image: url("imgs/shupeFlag.jpg");
+	background-position: top;
+}
+#ratMirror{
+	background-image: url("./imgs/ratMirror.png");
+}
+#shupeDMVbg{
+	background-image: url("./imgs/ShupeX.jpg");
+	background-position: top;
+}
+#shupePride{
+	background-image: url("./imgs/shupePride.jpg");
+	background-position: top;
+}
+
+@media only screen and (max-width: 800px){
+	html, body{
+		font-size: 80%
+	}
+}
+.fp-controlArrow.fp-next{
+	opacity: 0;
+}
+#bouncyArrow1{
+	opacity: 0.7
+}
+/*.ratQuote{*/
+	/*font-family: 'Zeyada', cursive;*/
+	/*font-size: 1.2rem;*/
+/*}*/
+/*.shupeQuote{*/
+	/*font-family: 'Reenie Beanie', cursive;*/
+	/*font-size: 1.2rem;*/
+/*}*/
+
+
+a { color: white; text-decoration: none; }
+
+.arrow {
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	/*margin: 8% 0;*/
+	z-index: 1000;
+}
+.bounce {
+	-webkit-animation-delay: 5s; /* Safari 4.0 - 8.0 */
+	animation-delay: 5s;
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+.scrollTip{
+	color: white;
+	font-family: Helvetica;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+#nezumi{
+	width: 100%;
+	z-index: -100;
+	float: right;
 }
 
 
 
-/*
- * Base structure
- */
-
-html,
-body {
-    height: 100%;
-}
-body {
-    color: #333;
-    text-align: center;
-}
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-    display: table;
-    width: 100%;
-    height: 100%; /* For at least Firefox */
-    min-height: 100%;
+@media screen and (max-width:990px){
 
 }
-.site-wrapper-inner {
-    display: table-cell;
-    vertical-align: top;
-}
-.cover-container {
-    margin-right: auto;
-    margin-left: auto;
-}
+@media screen and (max-height:770px){
 
-/* Padding for spacing */
-.inner {
-    padding: 2rem;
 }
+@media screen and (max-height:680px){
 
-.inner.cover .lead{
-    font-size: 1rem;
 }
-/*
- * Header
- */
+@media screen and (max-height:580px){
 
-.masthead {
-    margin-bottom: 2rem;
 }
+@media screen and (max-height:480px){
 
-.masthead-brand {
-    margin-bottom: 0;
 }
-
-.nav-masthead .nav-link {
-    padding: .25rem 0;
-    font-weight: bold;
-    color: rgba(255,255,255,.5);
-    background-color: transparent;
-    border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255,255,255,.25);
-}
-
-.nav-masthead .nav-link + .nav-link {
-    margin-left: 1rem;
-}
-
-.nav-masthead .active {
-    color: #333;
+@media all and (max-width:900px){
 
 }
 
-@media (min-width: 48em) {
-    .masthead-brand {
-        float: left;
-    }
-    .nav-masthead {
-        float: right;
-    }
+@media all and (max-width:890px){
+
+	#ratBeautiful{
+		position: absolute;
+		left: -650px;
+	}
 }
 
+@media all and (max-width:650px){
 
-/*
- * Cover
- */
-
-.cover {
-    padding: 0 1.5rem;
 }
-.cover .btn-lg {
-    padding: .75rem 1.25rem;
-    font-weight: bold;
+@media all and (max-width:580px){
+
 }
+@media all and (max-width:480px){
 
+}
+@media all and (max-width:450px){
 
+}
+@media screen and (max-width:890px) and (max-height:680px){
 
-/*
- * Affix and center
- */
+}
+@media screen and (max-width:650px) and (max-height:680px){
 
-@media (min-width: 40em) {
-    /* Pull out the header and footer */
-    .masthead {
-        position: fixed;
-        top: 0;
-    }
-    .mastfoot {
-        position: fixed;
-        bottom: 0;
-    }
-    /* Start the vertical centering */
-    .site-wrapper-inner {
-        vertical-align: middle;
-    }
-    /* Handle the widths */
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
+}
+@media screen and (max-width:580px) and (max-height:580px){
+
+}
+@media screen and (max-width:500px) and (max-height:500px){
+
 }
 
-@media (min-width: 62em) {
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 42rem;
-    }
+#nb-title{
+	position: absolute;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 1.5rem;
+	color: #000;
+	padding:1rem;
+	background-color: rgba(255,255,255, 0.8);
+	border-left: 0.5rem solid #8d529d;
+	left: -40rem;
+	-webkit-transition: 2s ease-in-out;
+	transition: 2s ease-in-out;
+}
+.leftDivActive{
+	-webkit-transform: translate(42rem,0);
+	transform: translate(42rem,0);
+}
+
+h1{
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+.nb-button{
+	padding: 0.2rem;
+	border: 1px black solid;
+	border-radius: 0.5rem;
+}
+.nb-button:hover{
+	background-color: gold;
+	cursor: pointer;
+}
+#nb-note{
+	position: absolute;
+	left: -25.5rem;
+	top: 1rem;
+	max-width: 25rem;
+	min-height: 10rem;
+	background-color: white;
+	opacity: 0.9;
+	border: 1px black solid;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+	z-index: 1000;
+	font-size:0.8rem;
+	font-family: Helvetica, Arial;
+	font-weight: 100;
+	padding: 1rem;
+}
+
+.noteActive{
+	-webkit-transform: translate(26rem,0);
+	transform: translate(26rem,0);
+}
+#closeDiv{
+	position: absolute;
+	right: 5px;
+	top:5px;
+}
+#nb-audiobtn{
+	width: 50px;
+	height: 50px;
+	z-index: 2000;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+#section1 .intro{
+	display: none;
+}
+#section4 .intro{
+	display: none;
+}
+#section5 .intro{
+	display: none;
+ }
+#section7 .intro{
+	display: none;
+}
+#section8 .intro{
+	display: none;
+}
+#section9 .intro{
+	display: none;
+}
+#section12 .intro{
+	display: none;
+}
+#section13 .intro{
+	display: none;
+	position: absolute;
+	bottom: 50px;
+}
+#openNote{
+	font-family: Helvetica, Arial;
+	font-weight: 100;
+	font-size: 0.8rem;
+}
+
+#playable .control { opacity: 0; /* transition: opacity .2s linear; */ }
+#playable.not-started .play, #playable.paused .play { opacity: 1; }
+#playable.playing .pause { opacity: 1; }
+#playable.ended .stop {opacity: 1; }
+#playable.precache-bar .done {opacity: 0; }
+#playable.not-started .progress-bar, #playable.ended .progress-bar { display: none; }
+#playable.ended .progress-track { stroke-opacity: 1; }
+#playable .progress-bar,
+#playable .precache-bar {
+	stroke-dasharray: 298.1371428256714;
+	stroke-dashoffset: 298.1371428256714;
+}
+
+.endQuote{
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 1.5rem;
+}
+#note-content img{
+	padding:5px;
+	width: 100%;
 }
