@@ -2,152 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Jamie.Shupe_.X.Issued.3.July_.2017.Picture.2.copy_-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/longhair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shorthair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/RatMove.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ShupeX.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/TheMargins_logo_final.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/art3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/audio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/audioPause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/audioplay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/compatible.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/finalGraphic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/fullPage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/headphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/longhair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/mobilePlaceholder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nezumi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nezumi2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nezumihead.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nonbinaryGraphic.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/nonbinaryGraphicFinal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratActive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratB.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratB.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratBeautiful.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratCircle.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratComeout.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratComeout.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratDress.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratDress.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratFuture.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratFuture.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratG.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratG.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratHope.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratHope.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratMirror.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratMirror2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratNezumi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratPoem_body.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratPoem_body.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratTarget.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratWalk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstand.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstanding.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstanding.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rathead.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratspeech.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratweb.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shorthair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupe2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeArmy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeBackground.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeDMVbg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeFlag.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeHead.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeLaw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeMarried.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupePride.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/shupeYouth.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/slider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/tablets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/used-by-fullpage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/widePlaceholder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/searchicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Immigrant/.idea/Immigrant.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Immigrant/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Immigrant/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/audiobtn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/examples.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/art1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/bothRat.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/copyright.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratB.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratBeautiful.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratComeout.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratFuture.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratG.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratHope.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratPoem_body.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/ratRoom.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/imgs/rat_Misunderstanding.webm.xmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/indexPlayer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/index_tab.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/main2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/main2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/mainNew.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/testBubbleChart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/ScrollMagic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/TweenMax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/animation.gsap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/howler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.easings.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.fullPage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.fullPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/modernizr.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/parallax.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/scrolloverflow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinary/vendor/skrollr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/.idea/nonbinaryDataViz.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/Button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/CanvasTick.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/ForceLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/allData.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/data15.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/assets/data96.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/backup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/d3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/drawCircles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/forceSimulation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/main2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nonbinaryDataViz/mainNoUniversityName.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nonbinary/src/popper.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.html" afterPath="$PROJECT_DIR$/data.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nonbinary/.idea/workspace.xml" afterPath="$PROJECT_DIR$/nonbinary/.idea/workspace.xml" />
@@ -167,6 +21,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nonbinary/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2340">
+              <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="158" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -180,8 +44,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nonbinary/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="326" column="12" lean-forward="false" selection-start-line="326" selection-start-column="12" selection-end-line="326" selection-end-column="12" />
+            <state relative-caret-position="1012">
+              <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nonbinary/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -190,11 +64,11 @@
       <file leaf-file-name="data.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="191">
+              <caret line="59" column="168" lean-forward="true" selection-start-line="59" selection-start-column="168" selection-end-line="59" selection-end-column="168" />
               <folding>
-                <element signature="e#4611#4617#0" expanded="true" />
-                <element signature="e#4617#4623#0" expanded="true" />
+                <element signature="e#6382#6388#0" expanded="true" />
+                <element signature="e#6388#6394#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -264,6 +138,15 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;/br&gt;</find>
+      <find>LGBT</find>
+      <find>&lt;br/&gt;</find>
+      <find>background</find>
+      <find>main</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -280,6 +163,7 @@
         <option value="$PROJECT_DIR$/ParkingBoston/public/modules/Map.js" />
         <option value="$PROJECT_DIR$/crime/crimerate.js" />
         <option value="$PROJECT_DIR$/nonbinary/index.html" />
+        <option value="$PROJECT_DIR$/nonbinary/main.js" />
         <option value="$PROJECT_DIR$/data.html" />
       </list>
     </option>
@@ -298,6 +182,9 @@
     <option name="width" value="1280" />
     <option name="height" value="717" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -313,6 +200,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,12 +214,15 @@
               <item name="hermionewy.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hermionewy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hermionewy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="nonbinary" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,10 +230,10 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
     </key>
   </component>
@@ -439,24 +331,25 @@
       <workItem from="1509215267809" duration="509000" />
       <workItem from="1511934089699" duration="18000" />
       <workItem from="1512231828443" duration="696000" />
-      <workItem from="1512449924266" duration="568000" />
+      <workItem from="1512449924266" duration="2313000" />
+      <workItem from="1512824610044" duration="957000" />
+      <workItem from="1515256068617" duration="1235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8122000" />
+    <option name="totallyTimeSpent" value="12059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120200336" sideWeight="0.5059571" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120200336" sideWeight="0.51231134" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120200336" sideWeight="0.4940429" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120200336" sideWeight="0.48768863" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -479,6 +372,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="51" lean-forward="false" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <marker date="1495052163000" expanded="true" signature="2502:2517" ph="..." />
+            <marker date="1495052163000" expanded="true" signature="2601:2615" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParkingBoston/public/modules/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <folding>
+            <marker date="1508500536000" expanded="true" signature="741:747" ph="©" />
+            <marker date="1508500536000" expanded="true" signature="1248:1254" ph="©" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -891,6 +806,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nonbinary/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="158" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crime/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -903,21 +826,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nonbinary/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nonbinary/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="326" column="12" lean-forward="false" selection-start-line="326" selection-start-column="12" selection-end-line="326" selection-end-column="12" />
+        <state relative-caret-position="1012">
+          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state relative-caret-position="191">
+          <caret line="59" column="168" lean-forward="true" selection-start-line="59" selection-start-column="168" selection-end-line="59" selection-end-column="168" />
           <folding>
-            <element signature="e#4611#4617#0" expanded="true" />
-            <element signature="e#4617#4623#0" expanded="true" />
+            <element signature="e#6382#6388#0" expanded="true" />
+            <element signature="e#6388#6394#0" expanded="true" />
           </folding>
         </state>
       </provider>

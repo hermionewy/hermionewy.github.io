@@ -26,13 +26,13 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: anchorsLink,
         // sectionsColor: ['#000', '#fff', '#fff'],
-        scrollingSpeed: 1000,
+        scrollingSpeed: 1300,
         navigation: true,
         navigationPosition: 'right',
         autoScrolling: true,
         fitToSection: true,
         scrollOverflow: false,
-        fixedElements:'#bouncyArrow1，#nb-note, #nb-audiobtn, #menuToggle',
+        fixedElements:'#bouncyArrow1，#nb-note, #nb-audiobtn, #ShowNavBar',
         bigSectionsDestination: 'top',
         navigationTooltips: ['Start', 'Second page', 'Third page', 'Forth Page', 'Fifth Page', 'Sixth Page','Seventh Page',
             'Eighth Page','Ninth Page','10th Page','11th Page','12th Page','13th Page','14th Page','End'],
@@ -63,7 +63,6 @@ $(document).ready(function() {
             }
             if(index==7){
                 $('#nb-audiobtn').css( "opacity", 1);
-                //document.getElementById('ratComeout').play();
                 var testAudio = audioBtn().setAudioAttr('./imgs/ratComeout.webm');
                 testAudio();
             }
@@ -128,7 +127,6 @@ $(document).ready(function() {
                 videoBoth.currentTime = 0;
                 console.log('left');
                 if($('#nb-note').hasClass('noteActive')){
-                    console.log('has class');
                     $('#nb-note').removeClass('noteActive');
                 }
             }
@@ -213,7 +211,12 @@ $(document).ready(function() {
                 document.getElementById('ratPoem_body').play()
             }
     });
+
+    // $('#nb-note').on('click', function () {
+    //     $('#nb-note').toggleClass('noteActive');
+    // });
     $('#closeDiv').on('click', function () {
+        console.log('closeDivImg');
         $('#nb-note').toggleClass('noteActive');
     });
 
