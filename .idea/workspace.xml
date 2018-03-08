@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.html" afterPath="$PROJECT_DIR$/data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design.html" afterPath="$PROJECT_DIR$/design.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stories.html" afterPath="$PROJECT_DIR$/stories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/video.html" afterPath="$PROJECT_DIR$/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/videos.html" afterPath="$PROJECT_DIR$/videos.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +31,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+            <state relative-caret-position="267">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="30" column="98" lean-forward="false" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="design.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/design.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="31" column="98" lean-forward="false" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stories.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stories.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="30" column="96" lean-forward="false" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/video.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="35" column="98" lean-forward="false" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="videos.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="30" column="98" lean-forward="false" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -78,20 +132,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/design.html" />
-        <option value="$PROJECT_DIR$/stories.html" />
-        <option value="$PROJECT_DIR$/video.html" />
-        <option value="$PROJECT_DIR$/videos.html" />
         <option value="$PROJECT_DIR$/crime/main.js" />
         <option value="$PROJECT_DIR$/Hubway Competition Final V1.0/script.js" />
         <option value="$PROJECT_DIR$/ParkingBoston/public/modules/Map.js" />
         <option value="$PROJECT_DIR$/crime/crimerate.js" />
         <option value="$PROJECT_DIR$/nonbinary/index.html" />
         <option value="$PROJECT_DIR$/nonbinary/main.js" />
-        <option value="$PROJECT_DIR$/data.html" />
         <option value="$PROJECT_DIR$/360Video/index.html" />
         <option value="$PROJECT_DIR$/360Video/indexChelsea.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/stories.html" />
+        <option value="$PROJECT_DIR$/video.html" />
+        <option value="$PROJECT_DIR$/videos.html" />
+        <option value="$PROJECT_DIR$/data.html" />
+        <option value="$PROJECT_DIR$/design.html" />
       </list>
     </option>
   </component>
@@ -273,17 +327,18 @@
       <workItem from="1520258929353" duration="3799000" />
       <workItem from="1520268339579" duration="2923000" />
       <workItem from="1520287531925" duration="456000" />
-      <workItem from="1520530375324" duration="398000" />
+      <workItem from="1520530375324" duration="1025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29740000" />
+    <option name="totallyTimeSpent" value="30367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23351866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23351866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26711187" sideWeight="0.5369341" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -378,6 +433,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -393,6 +449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -448,6 +505,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -503,6 +561,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -543,27 +602,6 @@
             <marker date="1508500244000" expanded="true" signature="3080:3091" ph="..." />
             <marker date="1508500244000" expanded="true" signature="3171:3178" ph="–" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/video.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -628,13 +666,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/360Video/three.js" />
-    <entry file="file://$PROJECT_DIR$/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/360Video/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -669,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nonbinary/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -701,8 +725,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        <state relative-caret-position="267">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="30" column="96" lean-forward="false" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="35" column="98" lean-forward="false" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="30" column="98" lean-forward="false" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="30" column="98" lean-forward="false" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="31" column="98" lean-forward="false" selection-start-line="31" selection-start-column="98" selection-end-line="31" selection-end-column="98" />
           <folding />
         </state>
       </provider>
