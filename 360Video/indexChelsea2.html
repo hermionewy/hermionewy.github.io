@@ -35,10 +35,28 @@
       color: white;
       margin-top: 1em;
     }
+    #infoBox{
+      position: absolute;
+      top: 10px;
+      min-height: 50px;
+      width: 200px;
+      background-color: rgba(255, 255, 255, 0.6);
+      left: -70rem;
+      color: black;
+      padding: 8px;
+      transition: 1s ease-in-out;
+    }
+    .leftActive{
+      transform: translate(72rem, 0)
+    }
+
   </style>
 </head>
 
 <body>
+<div id="infoBox">
+  Hello world!
+</div>
 <div id="ui">
   <div id="vr-button"></div>
   <a id="magic-window" href="#">Try it without a headset</a>
@@ -112,10 +130,13 @@
 <script src="./webvr-ui.min.js"></script>
 <script src="./OrbitControls.js"></script>
 <script src="./onEvent.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.1/dat.gui.min.js"></script>
 
 
 <script>
     // Last time the scene was rendered.
+    var gui = new dat.GUI();
+
     var lastRenderTime = 0;
     // Currently active VRDisplay.
     var vrDisplay;
@@ -155,6 +176,9 @@
         //create orbit controls which allow you to pan and zoom before you enter VR mode
         orbitControls = new THREE.OrbitControls( camera );
         camera.position.z = 300;
+
+        //guiScene(gui, scene, camera);
+
         //camera.position.y = controls.userHeight;
 
 
@@ -196,35 +220,115 @@
         setupStage();
 
         //create info mesh
-        var threeOnEvent = new THREE.onEvent(scene,camera);
-        var geometryInfo = new THREE.PlaneGeometry(300, 150, 2, 2);
-        var loader = new THREE.TextureLoader();
-        var infoTexture = loader.load('https://stemkoski.github.io/Three.js/images/checkerboard.jpg');
-        infoTexture.wrapS = infoTexture.wrapT = THREE.RepeatWrapping;
-        infoTexture.repeat.set(5, 5);
+        var threeOnEvent = new THREE.onEvent(scene,camera); // add scene and camera with on Event
 
-        var materialInfo = new THREE.MeshBasicMaterial({
-            map: infoTexture,
-            side: THREE.DoubleSide
+        var jeveli = "Violations<br/>" +
+            "** 2<br/>" +
+            "* 7<br/>" +
+            "Description: <br/>";
+
+        var taqueria = 'No food violation detected in 2017';
+
+        var chinese = "Violations<br/>" +
+            "*** 3<br/>" +
+            "** 1<br/>" +
+            "* 5<br/>" +
+            "Description: The restaurant has 2 food protection violations, 2 management issues and 5 sanitation issues. <br/>";
+
+        var great = 'No food violation detected in 2017';
+
+        var pueblo = "Violations<br/>" +
+            "*** 6<br/>" +
+            "** 4<br/>" +
+            "* 6<br/>" +
+             "Description: <br/>";
+
+
+
+        var infoData = [
+            {width: 45, height: 45, x: 0, y: 250, z: 388, rx:0, ry: 0, rz:0, text: chinese},
+            {width: 45, height: 45, x: -438, y: 78, z: 126,  rx:0, ry: 2, rz:0, text: great},
+            {width: 45, height: 45, x: -388, y: 63, z: -171,  rx:0, ry: 7, rz:0, text: jeveli},
+            {width: 45, height: 45, x: 380, y: 67, z: -253,  rx:0, ry: 2, rz:0, text: pueblo},
+            {width: 45, height: 45, x: 237, y: 67, z: -363,  rx:0, ry: 6, rz:0, text: taqueria}
+        ];
+
+        infoData.forEach(function (info, i) {
+            CreateInfoMesh(info, i);
         });
-        infoMesh = new THREE.Mesh( geometryInfo, materialInfo );
 
-        infoMesh.position.z = 300;
-        infoMesh.position.y = 250;
-        //infoMesh.visible = false;
+//        var geometryInfo = new THREE.PlaneGeometry(50, 50, 2, 2);
+//        var loader = new THREE.TextureLoader();
+//        var infoTexture = loader.load('./infoIcon.png');
+////        infoTexture.wrapS = infoTexture.wrapT = THREE.RepeatWrapping;
+////        infoTexture.repeat.set(5, 5);
+//
+//        var materialInfo = new THREE.MeshBasicMaterial({
+//            map: infoTexture,
+//            transparent: true,
+//            side: THREE.DoubleSide
+//        });
+//        infoMesh = new THREE.Mesh( geometryInfo, materialInfo );
+//
+//        infoMesh.position.z = 300;
+//        infoMesh.position.y = 220;
+//        //infoMesh.visible = false;
+//
+//        scene.add( infoMesh );
+//
+//        infoMesh.on('hover', function (infomesh) {
+//            console.log('hover mesh');
+//            document.getElementById("infoBox").classList.add('leftActive');
+//
+//        }, function (infomesh) {
+//            document.getElementById("infoBox").classList.remove('leftActive');
+//
+//        });
 
-        scene.add( infoMesh );
 
-        infoMesh.on('hover', function (infomesh) {
-            infomesh.visible = true;
-            console.log('hover mesh');
-            infomesh.position.x += 10;
-        }, function (infomesh) {
-            infomesh.visible = false;
-            console.log('left mesh');
-            infomesh.position.x -= 10;
-        });
+        function CreateInfoMesh(info, i) {
+            var geometryInfo = new THREE.PlaneGeometry(info.width, info.height, 2, 2);
+            var loader = new THREE.TextureLoader();
+            var infoTexture = loader.load('./infoIcon.png');
+//        infoTexture.wrapS = infoTexture.wrapT = THREE.RepeatWrapping;
+//        infoTexture.repeat.set(5, 5);
 
+            var materialInfo = new THREE.MeshBasicMaterial({
+                map: infoTexture,
+                transparent: true,
+                side: THREE.DoubleSide
+            });
+            infoMesh = new THREE.Mesh( geometryInfo, materialInfo );
+
+            infoMesh.position.x = info.x;
+            infoMesh.position.z = info.z;
+            infoMesh.position.y = info.y;
+            infoMesh.rotation.x = info.rx;
+            infoMesh.rotation.y = info.ry;
+            infoMesh.rotation.z = info.rz;
+            //infoMesh.visible = false;
+
+            scene.add( infoMesh );
+            //gui
+            var folder = gui.addFolder(('param'+i) );
+            folder.add(infoMesh.position, 'x', -500, 800).name('x').listen();
+            folder.add(infoMesh.position, 'y', -500, 500).name('y').listen();
+            folder.add(infoMesh.position, 'z', -500, 500).name('z').listen();
+            folder.add(infoMesh.rotation, 'x', 0, Math.Pi).name('rx').listen();
+            folder.add(infoMesh.rotation, 'y', 0, Math.Pi).name('ry').listen();
+            folder.add(infoMesh.rotation, 'z', 0, Math.Pi).name('rz').listen();
+
+            infoMesh.on('hover', function (infomesh) {
+                console.log('hover mesh');
+                document.getElementById("infoBox").classList.add('leftActive');
+                document.getElementById("infoBox").innerHTML = '<p>'+ info.text +'</p>';
+
+            }, function (infomesh) {
+                document.getElementById("infoBox").classList.remove('leftActive');
+
+            });
+
+        }
         window.addEventListener('resize', onResize, true);
         window.addEventListener('vrdisplaypresentchange', onResize, true);
 
