@@ -49,6 +49,22 @@
     .leftActive{
       transform: translate(72rem, 0)
     }
+    .most-serious{
+      color: red;
+    }
+    .somewhat-serious{
+      color: orange;
+    }
+    .least-serious{
+      color: gold;
+    }
+    .subhed-v{
+      font-family: "Arial Black", arial, helvetica;
+      font-size: 0.8rem;
+    }
+    .content-v{
+      font-size: 0.8rem;
+    }
 
   </style>
 </head>
@@ -222,27 +238,19 @@
         //create info mesh
         var threeOnEvent = new THREE.onEvent(scene,camera); // add scene and camera with on Event
 
-        var jeveli = "Violations<br/>" +
-            "** 2<br/>" +
-            "* 7<br/>" +
-            "Description: <br/>";
+        var jeveli = "<p class='subhed-v'> <span class='somewhat-serious'>█ </span>SOMEWHATE SERIOUS</p><p class='content-v'>Food contact surfaces not clean.</p>" +
+            "<p class='subhed-v'> <span class='least-serious'>█ </span>LEAST SERIOUS</p> <p class='content-v'>Food protection issue. <br/>Equipment and utensils storage need cleaning.<br/>Improper maintenance of walls.</p>";
 
         var taqueria = 'No food violation detected in 2017';
 
-        var chinese = "Violations<br/>" +
-            "*** 3<br/>" +
-            "** 1<br/>" +
-            "* 5<br/>" +
-            "Description: The restaurant has 2 food protection violations, 2 management issues and 5 sanitation issues. <br/>";
+        var chinese = "<p class='subhed-v'> <span class='most-serious'>█ </span>MOST SERIOUS</p><p class='content-v'>Food was left in room temperature.<br/>Hand Washing Sink blocked with equipment at the cooking line.<br/>People in charge should re-train staff with regard to proper cold holding.</p>" +
+            "<p class='subhed-v'> <span class='somewhat-serious'>█ </span>SOMEWHAT SERIOUS</p><p class='content-v'>Large amount of rodent like droppings near the bulk food area.</p>"+
+            "<p class='subhed-v'> <span class='least-serious'>█ </span>LEAST SERIOUS</p><p class='content-v'>Soiled utensils stored improperly. <br/>Wiping cloths stored soiled on the counters.<br/> Freezer units needs cleaning. <br/>Floor at the prep area needs cleaning. </p>";
 
         var great = 'No food violation detected in 2017';
 
-        var pueblo = "Violations<br/>" +
-            "*** 6<br/>" +
-            "** 4<br/>" +
-            "* 6<br/>" +
-             "Description: <br/>";
-
+        var pueblo = "<p class='subhed-v'> <span class='most-serious'>█ </span>MOST SERIOUS</p><p class='content-v'>Roasted Chicken for serving to order after reheating it  left outside in room temperature. <br/>High temp dish machine works improperly.</p>" +
+            "<p class='subhed-v'> <span class='least-serious'>█ </span>LEAST SERIOUS</p><p class='content-v'>Bulk food items containers  without proper labeling.<br/>Plastic bawl used in addition to handled scoops  to dispense bulk food items.<br/>Outside area where the grease tank is located needs cleaning.</p>";
 
 
         var infoData = [
@@ -256,35 +264,6 @@
         infoData.forEach(function (info, i) {
             CreateInfoMesh(info, i);
         });
-
-//        var geometryInfo = new THREE.PlaneGeometry(50, 50, 2, 2);
-//        var loader = new THREE.TextureLoader();
-//        var infoTexture = loader.load('./infoIcon.png');
-////        infoTexture.wrapS = infoTexture.wrapT = THREE.RepeatWrapping;
-////        infoTexture.repeat.set(5, 5);
-//
-//        var materialInfo = new THREE.MeshBasicMaterial({
-//            map: infoTexture,
-//            transparent: true,
-//            side: THREE.DoubleSide
-//        });
-//        infoMesh = new THREE.Mesh( geometryInfo, materialInfo );
-//
-//        infoMesh.position.z = 300;
-//        infoMesh.position.y = 220;
-//        //infoMesh.visible = false;
-//
-//        scene.add( infoMesh );
-//
-//        infoMesh.on('hover', function (infomesh) {
-//            console.log('hover mesh');
-//            document.getElementById("infoBox").classList.add('leftActive');
-//
-//        }, function (infomesh) {
-//            document.getElementById("infoBox").classList.remove('leftActive');
-//
-//        });
-
 
         function CreateInfoMesh(info, i) {
             var geometryInfo = new THREE.PlaneGeometry(info.width, info.height, 2, 2);
@@ -321,7 +300,7 @@
             infoMesh.on('hover', function (infomesh) {
                 console.log('hover mesh');
                 document.getElementById("infoBox").classList.add('leftActive');
-                document.getElementById("infoBox").innerHTML = '<p>'+ info.text +'</p>';
+                document.getElementById("infoBox").innerHTML = '<h3>Violations</h3><div>'+ info.text +'</div>';
 
             }, function (infomesh) {
                 document.getElementById("infoBox").classList.remove('leftActive');
