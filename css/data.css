@@ -1,0 +1,35 @@
+.pj-wrapper{
+    margin-top: 60px;
+    width: 100%;
+    min-width: 300px;
+}
+.pj-wrapper h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 10px 0 10px 0;
+    padding: 0 5px 0 0;
+    font-size: 17px;
+    line-height: 20px;
+    color: #646464;
+}
+.pj-wrapper .intro_text{
+    font-size: 12px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pj-wrapper i{
+    font-style: normal;
+    background-color: #d1b559;
+    color: #ffffff;
+}
+
+.pj-img{
+    width: 100%;
+    height: auto;
+}
+div.row{
+    max-width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

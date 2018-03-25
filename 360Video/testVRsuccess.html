@@ -35,44 +35,10 @@
       color: white;
       margin-top: 1em;
     }
-    #infoBox{
-      position: absolute;
-      top: 10px;
-      min-height: 50px;
-      width: 200px;
-      background-color: rgba(255, 255, 255, 0.6);
-      left: -70rem;
-      color: black;
-      padding: 8px;
-      transition: 1s ease-in-out;
-    }
-    .leftActive{
-      transform: translate(72rem, 0)
-    }
-    .most-serious{
-      color: red;
-    }
-    .somewhat-serious{
-      color: orange;
-    }
-    .least-serious{
-      color: gold;
-    }
-    .subhed-v{
-      font-family: "Arial Black", arial, helvetica;
-      font-size: 0.8rem;
-    }
-    .content-v{
-      font-size: 0.8rem;
-    }
-
   </style>
 </head>
 
 <body>
-<div id="infoBox">
-  Hello world!
-</div>
 <div id="ui">
   <div id="vr-button"></div>
   <a id="magic-window" href="#">Try it without a headset</a>
@@ -145,14 +111,10 @@
 -->
 <script src="./webvr-ui.min.js"></script>
 <script src="./OrbitControls.js"></script>
-<script src="./onEvent.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.1/dat.gui.min.js"></script>
 
 
 <script>
     // Last time the scene was rendered.
-    var gui = new dat.GUI();
-
     var lastRenderTime = 0;
     // Currently active VRDisplay.
     var vrDisplay;
@@ -163,12 +125,10 @@
 
     var controls, orbitControls;
     var effect;
-    var aspect = window.innerWidth / window.innerHeight;
-    var camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 10000);
+    var camera;
     // EnterVRButton for rendering enter/exit UI.
     var vrButton;
     var meshSky;
-    var infoMesh;
     var video = document.createElement( 'video' );
     var videoTexture;
 
@@ -184,6 +144,8 @@
         scene = new THREE.Scene();
 
         // Create a three.js camera. Field of View: 75, Aspect Ratio: width/height, Camera Frustum Near Plane: 1, Far Plane: 1100
+        var aspect = window.innerWidth / window.innerHeight;
+        camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 10000);
 
         //create VR controls
         controls = new THREE.VRControls(camera);
@@ -192,9 +154,6 @@
         //create orbit controls which allow you to pan and zoom before you enter VR mode
         orbitControls = new THREE.OrbitControls( camera );
         camera.position.z = 300;
-
-        //guiScene(gui, scene, camera);
-
         //camera.position.y = controls.userHeight;
 
 
@@ -208,7 +167,7 @@
         video.height = window.innerHeight;
         video.loop = true;
         video.muted = true;
-        video.src = './chelseaSt.mp4';
+        video.src = './maverick1.mp4';
         video.crossOrigin = '';
         video.setAttribute('webkit-playsinline', 'true');
         video.setAttribute('playsinline', 'true');
@@ -235,79 +194,7 @@
         scene.add( meshSky );
         setupStage();
 
-        //create info mesh
-        var threeOnEvent = new THREE.onEvent(scene,camera); // add scene and camera with on Event
 
-        var jeveli = "<p class='subhed-v'> <span class='somewhat-serious'>█ </span>SOMEWHATE SERIOUS</p><p class='content-v'>Food contact surfaces not clean.</p>" +
-            "<p class='subhed-v'> <span class='least-serious'>█ </span>LEAST SERIOUS</p> <p class='content-v'>Food protection issue. <br/>Equipment and utensils storage need cleaning.<br/>Improper maintenance of walls.</p>";
-
-        var taqueria = 'No food violation detected in 2017';
-
-        var chinese = "<p class='subhed-v'> <span class='most-serious'>█ </span>MOST SERIOUS</p><p class='content-v'>Food was left in room temperature.<br/>Hand Washing Sink blocked with equipment at the cooking line.<br/>People in charge should re-train staff with regard to proper cold holding.</p>" +
-            "<p class='subhed-v'> <span class='somewhat-serious'>█ </span>SOMEWHAT SERIOUS</p><p class='content-v'>Large amount of rodent like droppings near the bulk food area.</p>"+
-            "<p class='subhed-v'> <span class='least-serious'>█ </span>LEAST SERIOUS</p><p class='content-v'>Soiled utensils stored improperly. <br/>Wiping cloths stored soiled on the counters.<br/> Freezer units needs cleaning. <br/>Floor at the prep area needs cleaning. </p>";
-
-        var great = 'No food violation detected in 2017';
-
-        var pueblo = "<p class='subhed-v'> <span class='most-serious'>█ </span>MOST SERIOUS</p><p class='content-v'>Roasted Chicken for serving to order after reheating it  left outside in room temperature. <br/>High temp dish machine works improperly.</p>" +
-            "<p class='subhed-v'> <span class='least-serious'>█ </span>LEAST SERIOUS</p><p class='content-v'>Bulk food items containers  without proper labeling.<br/>Plastic bawl used in addition to handled scoops  to dispense bulk food items.<br/>Outside area where the grease tank is located needs cleaning.</p>";
-
-
-        var infoData = [
-            {width: 45, height: 45, x: 0, y: 250, z: 388, rx:0, ry: 0, rz:0, text: chinese},
-            {width: 45, height: 45, x: -438, y: 78, z: 126,  rx:0, ry: 2, rz:0, text: great},
-            {width: 45, height: 45, x: -388, y: 63, z: -171,  rx:0, ry: 7, rz:0, text: jeveli},
-            {width: 45, height: 45, x: 380, y: 67, z: -253,  rx:0, ry: 2, rz:0, text: pueblo},
-            {width: 45, height: 45, x: 237, y: 67, z: -363,  rx:0, ry: 6, rz:0, text: taqueria}
-        ];
-
-        infoData.forEach(function (info, i) {
-            CreateInfoMesh(info, i);
-        });
-
-        function CreateInfoMesh(info, i) {
-            var geometryInfo = new THREE.PlaneGeometry(info.width, info.height, 2, 2);
-            var loader = new THREE.TextureLoader();
-            var infoTexture = loader.load('./infoIcon.png');
-//        infoTexture.wrapS = infoTexture.wrapT = THREE.RepeatWrapping;
-//        infoTexture.repeat.set(5, 5);
-
-            var materialInfo = new THREE.MeshBasicMaterial({
-                map: infoTexture,
-                transparent: true,
-                side: THREE.DoubleSide
-            });
-            infoMesh = new THREE.Mesh( geometryInfo, materialInfo );
-
-            infoMesh.position.x = info.x;
-            infoMesh.position.z = info.z;
-            infoMesh.position.y = info.y;
-            infoMesh.rotation.x = info.rx;
-            infoMesh.rotation.y = info.ry;
-            infoMesh.rotation.z = info.rz;
-            //infoMesh.visible = false;
-
-            scene.add( infoMesh );
-            //gui
-            var folder = gui.addFolder(('param'+i) );
-            folder.add(infoMesh.position, 'x', -500, 800).name('x').listen();
-            folder.add(infoMesh.position, 'y', -500, 500).name('y').listen();
-            folder.add(infoMesh.position, 'z', -500, 500).name('z').listen();
-            folder.add(infoMesh.rotation, 'x', 0, Math.Pi).name('rx').listen();
-            folder.add(infoMesh.rotation, 'y', 0, Math.Pi).name('ry').listen();
-            folder.add(infoMesh.rotation, 'z', 0, Math.Pi).name('rz').listen();
-
-            infoMesh.on('hover', function (infomesh) {
-                console.log('hover mesh');
-                document.getElementById("infoBox").classList.add('leftActive');
-                document.getElementById("infoBox").innerHTML = '<h3>Violations</h3><div>'+ info.text +'</div>';
-
-            }, function (infomesh) {
-                document.getElementById("infoBox").classList.remove('leftActive');
-
-            });
-
-        }
         window.addEventListener('resize', onResize, true);
         window.addEventListener('vrdisplaypresentchange', onResize, true);
 
