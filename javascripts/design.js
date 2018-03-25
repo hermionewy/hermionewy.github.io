@@ -1,6 +1,9 @@
 function changePic(d){
   document.getElementById('preview').src = d.src;
 }
+function changePic2(d){
+    document.getElementById('preview2').src = d.src;
+}
 
 function textChange(d){
   document.getElementById('introOne').innerHTML='Designing '+ d.alt + ' will be $20 per hour.<br /> You can get a 10% discount for more than one project.<br /> You can estimate the price below.<br />Please fill in the form below to get further information.';
