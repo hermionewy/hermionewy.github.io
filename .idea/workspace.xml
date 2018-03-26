@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/360Video/index.html" afterPath="$PROJECT_DIR$/360Video/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/360Video/indexChelsea2.html" afterPath="$PROJECT_DIR$/360Video/indexChelsea2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/360Video/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="231" column="10" lean-forward="false" selection-start-line="231" selection-start-column="10" selection-end-line="231" selection-end-column="10" />
+            <state relative-caret-position="15">
+              <caret line="231" column="8" lean-forward="false" selection-start-line="231" selection-start-column="8" selection-end-line="231" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -355,12 +354,12 @@
       <workItem from="1521390921714" duration="721000" />
       <workItem from="1521679064066" duration="5626000" />
       <workItem from="1521919666983" duration="947000" />
-      <workItem from="1522029666124" duration="1016000" />
+      <workItem from="1522029666124" duration="1175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58638000" />
+    <option name="totallyTimeSpent" value="58797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -770,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/360Video/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="231" column="10" lean-forward="false" selection-start-line="231" selection-start-column="10" selection-end-line="231" selection-end-column="10" />
+        <state relative-caret-position="15">
+          <caret line="231" column="8" lean-forward="false" selection-start-line="231" selection-start-column="8" selection-end-line="231" selection-end-column="8" />
           <folding />
         </state>
       </provider>
