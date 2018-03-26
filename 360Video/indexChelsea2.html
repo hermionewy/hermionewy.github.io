@@ -190,7 +190,7 @@
         //create material of the sky and add the video to the material
         var materialSky = new THREE.MeshBasicMaterial( { map: videoTexture, side: THREE.DoubleSide } );
         meshSky = new THREE.Mesh( geometrySky, materialSky );
-        meshSky.rotation.y = -Math.PI / 2;
+        //meshSky.rotation.y = -Math.PI / 2;
         scene.add( meshSky );
         setupStage();
 
