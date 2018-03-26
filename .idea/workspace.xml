@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/360Video/index.html" afterPath="$PROJECT_DIR$/360Video/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/360Video/indexChelsea.html" afterPath="$PROJECT_DIR$/360Video/indexChelsea.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,14 +59,14 @@
       <file leaf-file-name="video.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="181">
               <caret line="35" column="53" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/360Video/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="70">
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexChelsea.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="indexChelsea.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/360Video/indexChelsea.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="233" column="9" lean-forward="false" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="37" />
+              <caret line="233" column="10" lean-forward="false" selection-start-line="233" selection-start-column="10" selection-end-line="233" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -135,8 +135,8 @@
       <find>&lt;div class=&quot;crop span4&quot;&gt;</find>
       <find>a new i</find>
       <find>gui</find>
-      <find>animation</find>
       <find>rotation</find>
+      <find>animation</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div class=&quot;col-lg-4 col-md-6 col-12 pj-wrapper&quot;&gt;</replace>
@@ -162,9 +162,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/data.css" />
         <option value="$PROJECT_DIR$/data.html" />
-        <option value="$PROJECT_DIR$/360Video/indexChelsea.html" />
         <option value="$PROJECT_DIR$/360Video/indexChelsea2.html" />
         <option value="$PROJECT_DIR$/360Video/index.html" />
+        <option value="$PROJECT_DIR$/360Video/indexChelsea.html" />
       </list>
     </option>
   </component>
@@ -354,12 +354,12 @@
       <workItem from="1521390921714" duration="721000" />
       <workItem from="1521679064066" duration="5626000" />
       <workItem from="1521919666983" duration="947000" />
-      <workItem from="1522029666124" duration="1672000" />
+      <workItem from="1522029666124" duration="2569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59294000" />
+    <option name="totallyTimeSpent" value="60191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -705,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/video.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="53" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -759,18 +751,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/360Video/indexChelsea.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="233" column="9" lean-forward="false" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/360Video/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="343" column="35" lean-forward="true" selection-start-line="343" selection-start-column="35" selection-end-line="343" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="35" column="53" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/360Video/indexChelsea.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="233" column="10" lean-forward="false" selection-start-line="233" selection-start-column="10" selection-end-line="233" selection-end-column="10" />
           <folding />
         </state>
       </provider>
