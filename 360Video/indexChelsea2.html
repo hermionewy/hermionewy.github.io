@@ -167,7 +167,7 @@
         video.height = window.innerHeight;
         video.loop = true;
         video.muted = true;
-        video.src = './maverick1.mp4';
+        video.src = './chelseaSt.mp4';
         video.crossOrigin = '';
         video.setAttribute('webkit-playsinline', 'true');
         video.setAttribute('playsinline', 'true');
@@ -190,7 +190,7 @@
         //create material of the sky and add the video to the material
         var materialSky = new THREE.MeshBasicMaterial( { map: videoTexture, side: THREE.DoubleSide } );
         meshSky = new THREE.Mesh( geometrySky, materialSky );
-        meshSky.rotation.y = Math.PI / 2;
+        meshSky.rotation.y = -Math.PI / 2;
         scene.add( meshSky );
         setupStage();
 
@@ -231,7 +231,7 @@
     function animate(timestamp) {
         var delta = Math.min(timestamp - lastRenderTime, 500);
         lastRenderTime = timestamp;
-        meshSky.rotation.y += 0.0005;
+
         orbitControls.update();
 
         // Only update controls if we're presenting.
