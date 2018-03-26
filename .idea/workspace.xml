@@ -69,8 +69,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/360Video/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="231" column="8" lean-forward="false" selection-start-line="231" selection-start-column="8" selection-end-line="231" selection-end-column="8" />
+            <state relative-caret-position="70">
+              <caret line="343" column="35" lean-forward="true" selection-start-line="343" selection-start-column="35" selection-end-line="343" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -80,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/360Video/indexChelsea.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="233" column="24" lean-forward="false" selection-start-line="233" selection-start-column="16" selection-end-line="233" selection-end-column="24" />
+              <caret line="233" column="9" lean-forward="false" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
       <file leaf-file-name="indexChelsea2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/360Video/indexChelsea2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="-504">
               <caret line="192" column="10" lean-forward="false" selection-start-line="192" selection-start-column="10" selection-end-line="192" selection-end-column="10" />
               <folding />
             </state>
@@ -107,7 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;br/&gt;</find>
       <find>background</find>
       <find>main</find>
       <find>video</find>
@@ -136,6 +135,7 @@
       <find>&lt;div class=&quot;crop span4&quot;&gt;</find>
       <find>a new i</find>
       <find>gui</find>
+      <find>animation</find>
       <find>rotation</find>
     </findStrings>
     <replaceStrings>
@@ -354,12 +354,12 @@
       <workItem from="1521390921714" duration="721000" />
       <workItem from="1521679064066" duration="5626000" />
       <workItem from="1521919666983" duration="947000" />
-      <workItem from="1522029666124" duration="1175000" />
+      <workItem from="1522029666124" duration="1672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58797000" />
+    <option name="totallyTimeSpent" value="59294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -751,26 +751,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/360Video/indexChelsea.html">
+    <entry file="file://$PROJECT_DIR$/360Video/indexChelsea2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="233" column="24" lean-forward="false" selection-start-line="233" selection-start-column="16" selection-end-line="233" selection-end-column="24" />
+        <state relative-caret-position="-504">
+          <caret line="192" column="10" lean-forward="false" selection-start-line="192" selection-start-column="10" selection-end-line="192" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/360Video/indexChelsea2.html">
+    <entry file="file://$PROJECT_DIR$/360Video/indexChelsea.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="192" column="10" lean-forward="false" selection-start-line="192" selection-start-column="10" selection-end-line="192" selection-end-column="10" />
+        <state relative-caret-position="203">
+          <caret line="233" column="9" lean-forward="false" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/360Video/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="231" column="8" lean-forward="false" selection-start-line="231" selection-start-column="8" selection-end-line="231" selection-end-column="8" />
+        <state relative-caret-position="70">
+          <caret line="343" column="35" lean-forward="true" selection-start-line="343" selection-start-column="35" selection-end-line="343" selection-end-column="35" />
           <folding />
         </state>
       </provider>
