@@ -231,7 +231,7 @@
     function animate(timestamp) {
         var delta = Math.min(timestamp - lastRenderTime, 500);
         lastRenderTime = timestamp;
-        //meshSky.rotation.y += 0.0005;
+        meshSky.rotation.y += 0.0005;
         orbitControls.update();
 
         // Only update controls if we're presenting.
