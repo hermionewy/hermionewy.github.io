@@ -10,7 +10,8 @@ var colorCircle=['#ff2828','#ff00e1','#c65fa6','#796eef','#0054d3','#7b00ff','#2
 var crimeCatgory = ['Aggravated Assault','Homicide','Robbery','Burglary','Auto Theft','Larceny','Arson'];
 var popup = L.popup();
 
-L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy0/cj8zu1w3sj7532ss1o74t9ffv/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eTAiLCJhIjoiY2o4enR3NTBkMnQzbjMybzRnN3RyMm54NiJ9.LRK0M9BkcWGXQeMfR69HDA', {
+var streetURL = 'https://api.mapbox.com/styles/v1/wuyuyanran/cjgmbd45z00082spmmthhc1bu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid3V5dXlhbnJhbiIsImEiOiJjamN6ODhzczMwb2UyMndxb3lsN3JkZGNwIn0.kBRE1lc7gqCbjF7r2YKhow';
+L.tileLayer(streetURL, {
     id: 'mapbox.street',
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
