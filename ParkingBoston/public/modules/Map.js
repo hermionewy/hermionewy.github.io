@@ -18,18 +18,18 @@ function Map(){
     console.log('Set the Map');
     var arr = selection.datum();
     var mapid = 'mapid';
-    var streetMap = L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy0/cj8zu6n7bj8fz2ro2cxso3j42/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eTAiLCJhIjoiY2o4enR3NTBkMnQzbjMybzRnN3RyMm54NiJ9.LRK0M9BkcWGXQeMfR69HDA', {
+    var streetMap = L.tileLayer('https://api.mapbox.com/styles/v1/wuyuyanran/cjgmbd45z00082spmmthhc1bu/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid3V5dXlhbnJhbiIsImEiOiJjamN6ODhzczMwb2UyMndxb3lsN3JkZGNwIn0.kBRE1lc7gqCbjF7r2YKhow', {
         id: 'mapbox.street',
     		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     }),
-        satelliteMap = L.tileLayer('https://api.mapbox.com/styles/v1/hermionewy0/cj8zu94yz10z92rqnofw25kvl/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGVybWlvbmV3eTAiLCJhIjoiY2o4enR3NTBkMnQzbjMybzRnN3RyMm54NiJ9.LRK0M9BkcWGXQeMfR69HDA', {
+        satelliteMap = L.tileLayer('https://api.mapbox.com/styles/v1/wuyuyanran/cjcz89pss0dae2rm638z9fycx/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid3V5dXlhbnJhbiIsImEiOiJjamN6ODhzczMwb2UyMndxb3lsN3JkZGNwIn0.kBRE1lc7gqCbjF7r2YKhow', {
     		    id: 'mapbox.street',
     				attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     		});
 
 
     var theftCircles = Array.from(arr,function(d){
-      d.circle = L.circle(JSON.parse(d.location),_circleStyle)
+      d.circle = L.circle(d.location,_circleStyle)
              .bindPopup("Street:" + d.street+"<br/>Description: " + d.description.toLowerCase() + "<br/>Time: "+d.time  );
              return d.circle;
     })

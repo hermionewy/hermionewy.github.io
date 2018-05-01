@@ -2,7 +2,8 @@ $(document).ready(function(){
 // Got the data!
 //var theftUrl = 'https://data.cityofboston.gov/resource/29yf-ye7n.json?offense_code_group=Auto Theft&$limit=10000';
 //var larcenyUrl = 'https://data.cityofboston.gov/resource/29yf-ye7n.json?offense_code_group=Larceny From Motor Vehicle&$limit=10000';
-var MVAccUrl = 'https://data.cityofboston.gov/resource/29yf-ye7n.json?offense_code_group=Motor Vehicle Accident Response&$limit=50000';
+//var MVAccUrl = 'https://data.cityofboston.gov/resource/29yf-ye7n.json?offense_code_group=Motor Vehicle Accident Response&$limit=50000';
+var MVAccUrl2 = "https://data.boston.gov/api/3/action/datastore_search?resource_id=12cb3883-56f5-47de-afa5-3b1cf61b257b&limit=50000&q='Motor Vehicle Accident Response'";
 var theftData, theftDataClone, larcenyData, MVAccData;
 var crimeCatgory=['All','Auto Theft', 'Larceny from MV', 'MV Accident'];
 var mapText ='Hello';
@@ -22,8 +23,11 @@ function menuChanged(){
 }
 
 
-d3.json(MVAccUrl, function (data) {
-     // An array of objects
+d3.json(MVAccUrl2, function (data) {
+	data = data.result.records;
+	console.log(data);
+
+    // An array of objects
 		 var MapA=Map();
 		 MVAccData = data.map(parseJson);
 		// console.log(MVAccData);
@@ -72,17 +76,29 @@ var year = selectYear
 		.text(function(s){return s;});
 
 
-function parseJson(d){
-	return {
-		id:d.incident_number,
-		offenseCode:d.offense_code_group,
-		district:d.district,
-		street:d.street,
-	  description:d.offense_description,
-		time:parseTime(d.occurred_on_date),
-		location: d.location.coordinates?('['+d.location.coordinates[1]+','+d.location.coordinates[0]+']'):[0,0]
-	}
-}
+    function parseJson(d){
+        return {
+            id:d['INCIDENT_NUMBER'],
+            offenseCode:d['OFFENSE_CODE_GROUP'],
+            district:d['DISTRICT'],
+            street:d['STREET'],
+            description:d['OFFENSE_DESCRIPTION'],
+            time:parseTime(d['OCCURRED_ON_DATE']), //2016-11-29T13:21:00
+            location: d['Lat']&&d['Long'] ?([+d['Lat'], +d['Long']]):[0,0]
+        }
+    }
+
+// function parseJson(d){
+// 	return {
+// 		id:d.incident_number,
+// 		offenseCode:d.offense_code_group,
+// 		district:d.district,
+// 		street:d.street,
+// 	  description:d.offense_description,
+// 		time:parseTime(d.occurred_on_date),
+// 		location: d.location.coordinates?('['+d.location.coordinates[1]+','+d.location.coordinates[0]+']'):[0,0]
+// 	}
+// }
 function parseCSV(d){
 	return {
 		id:d['INCIDENT NUMBER'],
