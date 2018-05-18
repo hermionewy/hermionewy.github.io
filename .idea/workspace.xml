@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Best City/index.html" afterPath="$PROJECT_DIR$/Best City/index_wrong.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Best City/index3.html" afterPath="$PROJECT_DIR$/Best City/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/360Video/indexChelsea.html" afterPath="$PROJECT_DIR$/360Video/indexChelsea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Best City/content.html" afterPath="$PROJECT_DIR$/Best City/content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Best City/story.html" afterPath="$PROJECT_DIR$/Best City/story.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Best City/index.html" afterPath="$PROJECT_DIR$/Best City/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -103,8 +99,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Best City/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+            <state relative-caret-position="384">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -181,6 +177,7 @@
         <option value="$PROJECT_DIR$/data.html" />
         <option value="$PROJECT_DIR$/360Video/indexChelsea.html" />
         <option value="$PROJECT_DIR$/Best City/index_wrong.html" />
+        <option value="$PROJECT_DIR$/Best City/index.html" />
       </list>
     </option>
   </component>
@@ -380,12 +377,12 @@
       <workItem from="1525097031379" duration="3378000" />
       <workItem from="1526519461730" duration="827000" />
       <workItem from="1526589814271" duration="3564000" />
-      <workItem from="1526682117144" duration="1958000" />
+      <workItem from="1526682117144" duration="2488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79113000" />
+    <option name="totallyTimeSpent" value="79643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="720" extended-state="0" />
@@ -812,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Best City/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+        <state relative-caret-position="384">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
