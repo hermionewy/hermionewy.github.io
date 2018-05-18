@@ -145,7 +145,7 @@
 
         // Create a three.js camera. Field of View: 75, Aspect Ratio: width/height, Camera Frustum Near Plane: 1, Far Plane: 1100
         var aspect = window.innerWidth / window.innerHeight;
-        camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 10000);
+        camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 1000);
 
         //create VR controls
         controls = new THREE.VRControls(camera);
@@ -154,9 +154,6 @@
         //create orbit controls which allow you to pan and zoom before you enter VR mode
         orbitControls = new THREE.OrbitControls( camera );
         camera.position.z = 300;
-        //camera.position.y = controls.userHeight;
-
-
 
         // Apply VR stereo rendering to renderer.
         effect = new THREE.VREffect(renderer);
@@ -174,14 +171,14 @@
         video.load();
         video.play();
 
-        // create sky as a ball with textures inside of the ball, and the user is in the center of it.
+        // Create the sky as a ball with video textures inside of the ball, and the user is in the center of it.
         // The radius of the ball: 500,
         // Width Segments:60, Height Segments: 40. This decides how smooth the ball is.
         // The geometry is like bones of the ball
         var geometrySky = new THREE.SphereBufferGeometry( 500, 60, 40 );
         geometrySky.scale( -1, 1, 1 );
 
-        //create video texture and add the video to it.
+        //create video texture and add the video element to it.
         videoTexture = new THREE.VideoTexture( video );
         videoTexture.minFilter = THREE.LinearFilter;
         videoTexture.magFilter = THREE.LinearFilter;

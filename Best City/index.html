@@ -5,133 +5,47 @@
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- <link href="global.css" rel="stylesheet"/> -->
     <link href="style.css" rel="stylesheet"/>
-    <style>
-    body{
-      background-color: #00a0e9;
-      color:white;
-    }
-    #plot1{
-      width: 1200px;
-      height: 800px;
-      margin: 10px;
-      align-items: center;
-    }
-    .button{
-      background-color: white;
-      color: #00a0e9;
-      height: 30px;
-      line-height: 30px;
-      text-decoration: none;
-      width: 200px;
-      text-align: center;
-      margin-bottom: 10px;
-      float: left;
-      right: 220px;
-      top: 350px;
-      position: relative;
-    }
-    .water {
-      stroke: #ffffff;
-      fill:#00a0e9;
-    }
-
-    .land {
-      stroke: #00a0e9;
-      fill: #FFF;
-      stroke-width: 0.7px;
-    }
-
-    .land:hover {
-      fill:gold;
-      stroke-width: 1px;
-    }
-
-    .focused {
-      fill: gold;
-    }
-
-    select {
-      top: 130px;
-      border: solid #ccc 1px;
-      box-shadow: inset 1px 1px 2px #ddd8dc;
-      color: #666;
-      float: left;
-      right: 420px;
-      position: relative;
-    }
-
-    .countryTooltip {
-      position: absolute;
-      display: none;
-      pointer-events: none;
-      background: #fff;
-      padding: 5px;
-      text-align: left;
-      border: solid #ccc 1px;
-      color: #666;
-      font-size: 14px;
-      font-family: sans-serif;
-    }
-
-    .expl{
-      width: 300px;
-      height: 50px;
-      float: left;
-      position: relative;
-      top: 160px;
-      left: 80px;
-    }
-    .expl_number {
-      font-weight: bold;
-      font-size:1.5em;
-    }
-
-    .expl_cnt {
-      font-weight: bold;
-      font-size:1.5em;
-      background-color:gold;
-      border-radius: 4px;
-      padding:2px 5px;
-    }
-
-    .note{
-      width: 200px;
-        font-size: 12px;
-        padding-top: 20px;
-    }
-
-    .source{
-        width: 200px;
-        font-style: oblique;
-        font-size: 12px;
-        /* padding-top: 20px; */
-        font-weight: bold;
-    }
-    h3{
-      float: left;
-      position: absolute;
-      top: 60px;
-      left: 80px;
-    }
-    </style>
-
 </head>
 <body>
-    <div id='plot1'>
-        <div>
-        <h3> City Fits You Best</h3>
-        <div class='expl'><hr/>Select a country/region you have interests to see if your city is included in the database. <br/> Start the test if you want to find the city fits you the best.</div>
-        <a  href='index3.html' ><div class='button' id='link'>
-           <p>Start Your Test</p>
-        </div></a>
-    </div>
-
+  
+  <nav class='navbar navbar-inverse navbar-fixed-top'>
+		<div class='navbar-header leftheader'><a class='navbar-brand' href='#'>Which city fits you best?</a></div>
+		<div id='navbar' class='navbar-collapse collapse'></div>
+	 </nav>
+<div class="container-fluid">
+  <div class='row intro'>
+    <h4>Select three elements you care the most.</h4>
+  </div>
+  <div class='row allUIs'>
+				<div class='col-md-4 col-xs-12 col-md-offset-2 allUIs'>
+          <img class = 'rowUI' id='cost' src='cityUI2/cost0.png '/>
+          <img class = 'rowUI' id='purchase' src='cityUI2/purchase0.png '/>
+        </div>
+        <div class='col-md-4 col-xs-12 allUIs'>
+          <img class = 'rowUI' id='property' src='cityUI2/property0.png '/>
+          <img class = 'rowUI' id='traffic' src='cityUI2/traffic0.png '/>
+        </div>
+        <div class='col-md-4 col-xs-12 col-md-offset-2 allUIs'>
+          <img class = 'rowUI' id='safety' src='cityUI2/safety0.png '/>
+          <img class = 'rowUI' id='pollution' src='cityUI2/pollution0.png '/>
+        </div>
+        <div class='col-md-4 col-xs-12 allUIs'>
+          <img class = 'rowUI' id='health' src='cityUI2/health0.png '/>
+          <img class = 'rowUI' id='climate' src='cityUI2/climate0.png '/>
+				</div>
+        <div class ='col-md-1 col-md-offset-5'>
+          <a  href='content.html' ><div class='button' id='start'>
+             <p>Start</p>
+          </div></a>
+        </div>
+	</div>
+</div>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <div class="addthis_inline_share_toolbox"></div>
 <script src='jquery/jquery-1.12.4.min.js'></script>
 <script src="d3.js"></script>
 <!-- <script src="module/radarDraw.js"></script> -->
-<script src="module/RollingEarth.js"></script>
+<script src="select.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58458d9251de6254"></script>
 
 </body>
