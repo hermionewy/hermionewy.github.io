@@ -44,18 +44,21 @@ d3.queue()
         scaleX.domain( d3.extent(data,function(d){return d.travelDate}) );
         scaleColor.domain( airlines.values() );
 
+        var airlineName =['JetBlue', 'United', 'Sun Country', 'Virgin', 'Alaska'];
         //Add buttons
         d3.select('.btn-group')
             .selectAll('.btn')
             .data( airlines.values() )
             .enter()
             .append('a')
-            .html(function(d){return d})
+            .html(function(d, i){return airlineName[i]})
             .attr('href','#')
             .attr('class','btn btn-default')
             .style('color','white')
+            .style('font-family','Helvetica')
             .style('background',function(d){return scaleColor(d)})
             .style('border-color','white')
+            .style('padding','10px')
             .on('click',function(d){
                 //Hint: how do we filter flights for particular airlines?
                 FlightData = data.filter(function(data){return data.airline==d});
@@ -80,8 +83,10 @@ d3.queue()
             .attr('href','#')
             .attr('class','btn btn-default')
             .style('color','white')
+            .style('font-family','Helvetica')
             .style('background','gray')
             .style('border-color','white')
+            .style('padding','10px')
             .on('click',function(){
                 //Hint: how do we filter flights for particular airlines?
                 draw(data);
