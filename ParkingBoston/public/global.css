@@ -153,11 +153,14 @@ g .plot-radial .am-line{
 	display:none;
 }
 .navbar-inverse .navbar-brand{
-	color:#03afeb;
+	color:#d34e4e;
 }
 rect{
   background-color: #03afeb;
   padding: 3px;
   margin: 1px;
   color: white;
+}
+.jumbotron p.drive-note{
+	font-size: 0.8em;
 }
