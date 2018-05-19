@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/360Video/indexChelsea.html" afterPath="$PROJECT_DIR$/360Video/indexChelsea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParkingBoston/public/global.css" afterPath="$PROJECT_DIR$/ParkingBoston/public/global.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParkingBoston/public/index.html" afterPath="$PROJECT_DIR$/ParkingBoston/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crime/global.css" afterPath="$PROJECT_DIR$/crime/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crime/index.html" afterPath="$PROJECT_DIR$/crime/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.html" afterPath="$PROJECT_DIR$/data.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flightTickets/8.0/index.html" afterPath="$PROJECT_DIR$/flightTickets/8.0/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -117,8 +110,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ParkingBoston/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            <state relative-caret-position="232">
+              <caret line="24" column="200" lean-forward="false" selection-start-line="24" selection-start-column="200" selection-end-line="24" selection-end-column="200" />
               <folding />
             </state>
           </provider>
@@ -293,17 +286,6 @@
               <item name="flightTickets" type="462c0819:PsiDirectoryNode" />
               <item name="8.0" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hermionewy.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hermionewy.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ParkingBoston" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hermionewy.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hermionewy.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="ParkingBoston" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -447,12 +429,12 @@
       <workItem from="1525097031379" duration="3378000" />
       <workItem from="1526519461730" duration="827000" />
       <workItem from="1526589814271" duration="3564000" />
-      <workItem from="1526682117144" duration="5396000" />
+      <workItem from="1526682117144" duration="5832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82551000" />
+    <option name="totallyTimeSpent" value="82987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="720" extended-state="0" />
@@ -886,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ParkingBoston/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        <state relative-caret-position="232">
+          <caret line="24" column="200" lean-forward="false" selection-start-line="24" selection-start-column="200" selection-end-line="24" selection-end-column="200" />
           <folding />
         </state>
       </provider>
