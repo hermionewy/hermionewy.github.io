@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParkingBoston/public/index.html" afterPath="$PROJECT_DIR$/ParkingBoston/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flightTickets/8.0/index.html" afterPath="$PROJECT_DIR$/flightTickets/8.0/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -97,21 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flightTickets/8.0/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="232">
+              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParkingBoston/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="24" column="200" lean-forward="false" selection-start-line="24" selection-start-column="200" selection-end-line="24" selection-end-column="200" />
+            <state relative-caret-position="309">
+              <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -221,9 +222,9 @@
         <option value="$PROJECT_DIR$/data.html" />
         <option value="$PROJECT_DIR$/crime/index.html" />
         <option value="$PROJECT_DIR$/crime/global.css" />
-        <option value="$PROJECT_DIR$/flightTickets/8.0/index.html" />
         <option value="$PROJECT_DIR$/ParkingBoston/public/global.css" />
         <option value="$PROJECT_DIR$/ParkingBoston/public/index.html" />
+        <option value="$PROJECT_DIR$/flightTickets/8.0/index.html" />
       </list>
     </option>
   </component>
@@ -429,12 +430,12 @@
       <workItem from="1525097031379" duration="3378000" />
       <workItem from="1526519461730" duration="827000" />
       <workItem from="1526589814271" duration="3564000" />
-      <workItem from="1526682117144" duration="5832000" />
+      <workItem from="1526682117144" duration="6037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82987000" />
+    <option name="totallyTimeSpent" value="83192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="720" extended-state="0" />
@@ -834,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flightTickets/8.0/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crime/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -868,8 +861,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ParkingBoston/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flightTickets/8.0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="24" column="200" lean-forward="false" selection-start-line="24" selection-start-column="200" selection-end-line="24" selection-end-column="200" />
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
