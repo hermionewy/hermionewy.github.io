@@ -93,17 +93,6 @@ function nestDataById (data){
     d3.select('#plot2').datum(Data)
             .call(springtime);
     // // filter data to weekend
-    // var cf3 = crossfilter(trips);
-    // var tripsByWeekend = cf3.dimension (function(d){ return d.startTime;}).filter(function(d){
-    //   return d.getDay()== 6 || d.getDay()==0 ;
-    // });
-    // var dataWeekend = nestDataById(tripsByWeekend.top(Infinity));
-    // //WeekEnd trips
-    //  d3.select('#plot2').datum(dataWeekend)
-    //         .call(timeseries);
-
-    // d3.select('#plot2').datum(summerData)
-    //        .call(summertime);
 
     //Slider
     var slider = timeSlider();
