@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abea6a11-9b58-4628-b6a2-377c1ec5a034" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.html" afterPath="$PROJECT_DIR$/data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stories.html" afterPath="$PROJECT_DIR$/stories.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="data.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-53">
@@ -69,6 +67,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="stories.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stories.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="170" column="10" lean-forward="false" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="webgl_loader_fbx.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Documents/3D-data-viz/Siqister.github.io-master/satellites/lib/three/examples/webgl_loader_fbx.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onEvent</find>
       <find>info</find>
       <find>&lt;div class=&quot;crop span4&quot;&gt;</find>
       <find>a new i</find>
@@ -121,6 +128,7 @@
       <find>renderer</find>
       <find>effect</find>
       <find>videoElement</find>
+      <find>apples</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div class=&quot;col-lg-4 col-md-6 col-12 pj-wrapper&quot;&gt;</replace>
@@ -139,7 +147,6 @@
         <option value="$PROJECT_DIR$/javascripts/design.js" />
         <option value="$PROJECT_DIR$/videos.html" />
         <option value="$PROJECT_DIR$/video.html" />
-        <option value="$PROJECT_DIR$/stories.html" />
         <option value="$PROJECT_DIR$/design.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/data.css" />
@@ -164,6 +171,7 @@
         <option value="$PROJECT_DIR$/360Video/indexChelsea_tutorial.html" />
         <option value="$PROJECT_DIR$/360Video/tutorial_0.1.html" />
         <option value="$PROJECT_DIR$/data.html" />
+        <option value="$PROJECT_DIR$/stories.html" />
       </list>
     </option>
   </component>
@@ -368,12 +376,12 @@
       <workItem from="1530746855477" duration="3319000" />
       <workItem from="1532450486703" duration="1152000" />
       <workItem from="1535590555678" duration="861000" />
-      <workItem from="1554339195295" duration="767000" />
+      <workItem from="1554339195295" duration="1183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104285000" />
+    <option name="totallyTimeSpent" value="104701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -498,13 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -793,6 +794,14 @@
             <element signature="e#19510#19516#0" expanded="true" />
             <element signature="e#20014#20020#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="170" column="10" lean-forward="false" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
