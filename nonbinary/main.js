@@ -46,6 +46,7 @@ $(document).ready(function() {
                 console.log('ratRoom show!');
                 $('#section1 .intro').fadeIn(1500);
                 videoRoom.play();
+                videoRoom.loop = true;
             }
             if(index == 3){
                 $('#nb-audiobtn').css( "opacity", 1);
@@ -168,14 +169,17 @@ $(document).ready(function() {
             }
             if(index==13){
                 $('#section12 .intro').fadeOut();
+                videoBeautiful.pause();
             }
             if(index=14){
                 $('#section13 .intro').fadeOut();
-                // allAudio.currentTime =0;
                 videoBeautiful.currentTime =0;
+                videoBeautiful.autoplay = false;
+                videoBeautiful.play()
             }
             if(index=15){
                 $('#nb-audiobtn').css( "opacity", 0);
+                videoBeautiful.pause();
                 allAudio.pause();
                 allAudio.currentTime =0;
                 // audioFuture.currentTime =0;
