@@ -29,7 +29,8 @@
     height: auto;
 }
 div.row{
-    max-width: 1150px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 980px;
+    margin:auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
