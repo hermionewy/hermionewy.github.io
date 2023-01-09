@@ -31,6 +31,6 @@
 div.row{
     max-width: 980px;
     margin:auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0px;
+    padding-right: 0px;
 }

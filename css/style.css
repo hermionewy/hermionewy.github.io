@@ -26,11 +26,14 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 8px;
   text-decoration: none;
+  font-size: 14px;
 }
 .li_fl a:hover {
   background-color: #111;
+  color: #d1b559;
+  text-decoration: none;
 }
 
 #logo{
